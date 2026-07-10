@@ -3,6 +3,7 @@ package org.dejaq.plugins.musictracker.track.special;
 import java.util.ArrayList;
 import java.util.List;
 import net.runelite.api.gameval.VarbitID;
+import net.runelite.client.game.ItemManager;
 import org.dejaq.plugins.musictracker.MusicTrack;
 import org.dejaq.plugins.musictracker.MusicTrackerPlugin;
 import org.dejaq.plugins.musictracker.requirement.DynamicRequirement;
@@ -37,7 +38,7 @@ public class DefaultTrackHandler implements SpecialTrackHandler
 			return List.of();
 		}
 
-		return addFairyStaffRequirement(baseItems);
+		return addFairyStaffRequirement(musicTrackerPlugin.getItemManager(), baseItems);
 	}
 
 	private boolean isFairyRingRoute(Route route)
@@ -51,7 +52,7 @@ public class DefaultTrackHandler implements SpecialTrackHandler
 			.getVarbitValue(VarbitID.LUMBRIDGE_DIARY_ELITE_COMPLETE) > 0;
 	}
 
-	private List<DynamicRequirement<ItemRequirement>> addFairyStaffRequirement(List<ItemRequirement> baseItems)
+	private List<DynamicRequirement<ItemRequirement>> addFairyStaffRequirement(ItemManager itemManager, List<ItemRequirement> baseItems)
 	{
 		List<DynamicRequirement<ItemRequirement>> result = new ArrayList<>();
 
@@ -59,7 +60,7 @@ public class DefaultTrackHandler implements SpecialTrackHandler
 		{
 			result.add(DynamicRequirement.of(
 				item,
-				item.getDisplayText(null),
+				item.getDisplayText(itemManager),
 				null
 			));
 		}

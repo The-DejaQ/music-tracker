@@ -3,6 +3,7 @@ package org.dejaq.plugins.musictracker;
 import java.util.List;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.Singular;
 import net.runelite.api.coords.WorldPoint;
 import org.dejaq.plugins.musictracker.quest.Quest;
@@ -11,6 +12,7 @@ import org.dejaq.plugins.musictracker.track.TrackStep;
 import org.dejaq.plugins.musictracker.track.UnlockType;
 
 @Data
+@EqualsAndHashCode(of = "title")
 @Builder
 public class MusicTrack
 {

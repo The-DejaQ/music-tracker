@@ -1,6 +1,7 @@
 package org.dejaq.plugins.musictracker.track.special;
 
 import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.api.gameval.VarbitID;
@@ -12,6 +13,7 @@ import org.dejaq.plugins.musictracker.track.MusicTrackEntityPoint;
 import org.dejaq.plugins.musictracker.track.Route;
 import org.dejaq.plugins.musictracker.track.TrackStep;
 
+@Slf4j
 public class AztecHandler implements SpecialTrackHandler
 {
 	private static final WorldPoint CAPN_IZZY_LOCATION = new WorldPoint(2807, 3191, 0);
@@ -41,12 +43,10 @@ public class AztecHandler implements SpecialTrackHandler
 		}
 
 		Client client = musicTrackerPlugin.getClient();
-
 		if (!client.isClientThread())
 		{
-			musicTrackerPlugin.getClientThread().invokeLater(() ->
-				getDynamicEntityHighlights(musicTrack, route, trackStep, stageIndex, musicTrackerPlugin));
-			return cachedHighlights;
+			log.warn("getDynamicEntityHighlights called off the client thread; ignoring");
+			return null;
 		}
 
 		int currentTick = client.getTickCount();
@@ -60,6 +60,13 @@ public class AztecHandler implements SpecialTrackHandler
 		cachedHighlights = hasPaidTollToEnter ? buildLadderHighlights() : buildCapnIzzyHighlights();
 		cachedTick = currentTick;
 		return cachedHighlights;
+	}
+
+	@Override
+	public void reset()
+	{
+		cachedTick = -1;
+		cachedHighlights = null;
 	}
 
 	private List<MusicTrackEntityPoint> buildCapnIzzyHighlights()

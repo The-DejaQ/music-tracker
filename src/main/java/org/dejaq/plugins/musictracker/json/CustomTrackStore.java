@@ -3,7 +3,6 @@ package org.dejaq.plugins.musictracker.json;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import java.io.File;
 import java.io.FileReader;
@@ -15,6 +14,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadFactory;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
@@ -29,6 +31,12 @@ public class CustomTrackStore
 	private static final File DATA_DIRECTORY = new File(RuneLite.RUNELITE_DIR, "music-tracker");
 	private static final File CUSTOM_TRACKS_FILE = new File(DATA_DIRECTORY, "custom-tracks.json");
 	private static final File CUSTOM_ROUTES_FILE = new File(DATA_DIRECTORY, "custom-routes.json");
+
+	private final ExecutorService saveExecutor = Executors.newSingleThreadExecutor(runnable -> {
+		Thread thread = new Thread(runnable, "MusicTracker-CustomTrackStore-Save");
+		thread.setDaemon(true);
+		return thread;
+	});
 
 	@Inject
 	private Gson gson;
@@ -133,28 +141,18 @@ public class CustomTrackStore
 
 	public void saveCustomTracks(List<MusicTrack> customTracks)
 	{
-		ensureDataDirectoryExists();
-
 		List<MusicTrackJson> musicTrackJsonList = new ArrayList<>();
 		for (MusicTrack customTrack : customTracks)
 		{
 			musicTrackJsonList.add(RegionWriter.toJson(customTrack));
 		}
 
-		try (FileWriter fileWriter = new FileWriter(CUSTOM_TRACKS_FILE))
-		{
-			prettyPrintingGson().toJson(musicTrackJsonList, fileWriter);
-		}
-		catch (IOException saveException)
-		{
-			log.warn("Failed to save custom tracks to {}", CUSTOM_TRACKS_FILE, saveException);
-		}
+		String serializedTracks = prettyPrintingGson().toJson(musicTrackJsonList);
+		writeToFileAsync(CUSTOM_TRACKS_FILE, serializedTracks, "custom tracks");
 	}
 
 	public void saveCustomRoutesForExistingTracks(Map<String, List<Route>> customRoutesByTrackTitle)
 	{
-		ensureDataDirectoryExists();
-
 		Map<String, List<RouteJson>> routeJsonMap = new HashMap<>();
 		for (Map.Entry<String, List<Route>> trackEntry : customRoutesByTrackTitle.entrySet())
 		{
@@ -170,14 +168,23 @@ public class CustomTrackStore
 			routeJsonMap.put(trackEntry.getKey(), routeJsonList);
 		}
 
-		try (FileWriter fileWriter = new FileWriter(CUSTOM_ROUTES_FILE))
-		{
-			prettyPrintingGson().toJson(routeJsonMap, fileWriter);
-		}
-		catch (IOException saveException)
-		{
-			log.warn("Failed to save custom routes to {}", CUSTOM_ROUTES_FILE, saveException);
-		}
+		String serializedRoutes = prettyPrintingGson().toJson(routeJsonMap);
+		writeToFileAsync(CUSTOM_ROUTES_FILE, serializedRoutes, "custom routes");
+	}
+
+	private void writeToFileAsync(File targetFile, String content, String description)
+	{
+		saveExecutor.submit(() -> {
+			ensureDataDirectoryExists();
+			try (FileWriter fileWriter = new FileWriter(targetFile))
+			{
+				fileWriter.write(content);
+			}
+			catch (IOException saveException)
+			{
+				log.warn("Failed to save {} to {}", description, targetFile, saveException);
+			}
+		});
 	}
 
 	private void ensureDataDirectoryExists()
@@ -186,6 +193,11 @@ public class CustomTrackStore
 		{
 			DATA_DIRECTORY.mkdirs();
 		}
+	}
+
+	public void shutdown()
+	{
+		saveExecutor.shutdownNow();
 	}
 
 	public String resolveNonConflictingRouteName(String desiredName, List<Route> existingRoutesOnTrack)

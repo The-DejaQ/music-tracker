@@ -171,6 +171,8 @@ public class MusicTrackerPlugin extends Plugin
 		navigationCoordinator.clearWorldMapPoints();
 		trackNavigator.clear();
 		trackingStateService.setTrackingActive(false);
+		customTrackStore.shutdown();
+		musicTrackManager.shutdown();
 	}
 
 	private BufferedImage loadNavigationButtonIcon()
@@ -189,13 +191,14 @@ public class MusicTrackerPlugin extends Plugin
 
 	public void reloadRegions()
 	{
-		musicTrackManager.reloadRegionsFromJson();
-		musicTrackWorldMapOverlay.rebuildWorldMapPoints();
-		if (musicTrackPanel != null)
-		{
-			SwingUtilities.invokeLater(() -> musicTrackPanel.getTrackerContentPanel().buildTracksList());
-		}
-		sendDebugMessage("Reloaded " + musicTrackManager.getAllTracks().size() + " Music Tracks in " + musicTrackManager.getRegionNames().size() + " Regions.");
+		musicTrackManager.reloadRegionsFromJson(() -> {
+			musicTrackWorldMapOverlay.rebuildWorldMapPoints();
+			if (musicTrackPanel != null)
+			{
+				musicTrackPanel.getTrackerContentPanel().buildTracksList();
+			}
+			sendDebugMessage("Reloaded " + musicTrackManager.getAllTracks().size() + " Music Tracks in " + musicTrackManager.getRegionNames().size() + " Regions.");
+		});
 	}
 
 	public void toggleTracking()
@@ -728,11 +731,17 @@ public class MusicTrackerPlugin extends Plugin
 
 	private void addRouteBuilderTileMenu(MenuEntryAdded menuEntryAddedEvent)
 	{
+		Player localPlayer = client.getLocalPlayer();
+		if (localPlayer == null)
+		{
+			return;
+		}
+
 		// TODO Modern
 		Tile selectedSceneTile = client.getSelectedSceneTile();
 		WorldPoint tileWorldPoint = selectedSceneTile != null
 			? selectedSceneTile.getWorldLocation()
-			: WorldPoint.fromScene(client, menuEntryAddedEvent.getActionParam0(), menuEntryAddedEvent.getActionParam1(), client.getLocalPlayer().getWorldView().getPlane());
+			: WorldPoint.fromScene(client, menuEntryAddedEvent.getActionParam0(), menuEntryAddedEvent.getActionParam1(), localPlayer.getWorldView().getPlane());
 
 		if (tileWorldPoint == null)
 		{
@@ -787,9 +796,15 @@ public class MusicTrackerPlugin extends Plugin
 
 	private void addRouteBuilderObjectMenu(MenuEntryAdded menuEntryAddedEvent)
 	{
+		Player localPlayer = client.getLocalPlayer();
+		if (localPlayer == null)
+		{
+			return;
+		}
+
 		int objectId = menuEntryAddedEvent.getIdentifier();
 		String objectName = Text.removeTags(menuEntryAddedEvent.getTarget());
-		WorldPoint objectWorldPoint = resolveObjectWorldLocation(objectId, menuEntryAddedEvent.getActionParam0(), menuEntryAddedEvent.getActionParam1(), client.getLocalPlayer().getWorldView().getPlane());
+		WorldPoint objectWorldPoint = resolveObjectWorldLocation(objectId, menuEntryAddedEvent.getActionParam0(), menuEntryAddedEvent.getActionParam1(), localPlayer.getWorldView().getPlane());
 
 		MenuEntry routeBuilderParentEntry = client.getMenu().createMenuEntry(-1)
 			.setOption("Route Builder")
@@ -919,7 +934,12 @@ public class MusicTrackerPlugin extends Plugin
 
 	private NPC findNpcByIndex(int npcIndex)
 	{
-		return client.getLocalPlayer().getWorldView().npcs().stream()
+		Player localPlayer = client.getLocalPlayer();
+		if (localPlayer == null)
+		{
+			return null;
+		}
+		return localPlayer.getWorldView().npcs().stream()
 			.filter(npc -> npc != null && npc.getIndex() == npcIndex)
 			.findFirst()
 			.orElse(null);

@@ -12,9 +12,13 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import javax.swing.SwingUtilities;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
@@ -34,6 +38,14 @@ public class MusicTrackManager
 	@Getter
 	private final Map<String, List<MusicTrack>> regionNameToTracks = new ConcurrentHashMap<>();
 
+	private final ExecutorService reloadExecutor = Executors.newSingleThreadExecutor(runnable -> {
+		Thread thread = new Thread(runnable, "MusicTracker-MusicTrackManager-Reload");
+		thread.setDaemon(true);
+		return thread;
+	});
+
+	private final AtomicBoolean reloadInProgress = new AtomicBoolean(false);
+
 	private final CustomTrackStore customTrackStore;
 	private final Gson gson;
 
@@ -45,17 +57,45 @@ public class MusicTrackManager
 		loadAllRegionsFromJson();
 	}
 
-	public void reloadRegionsFromJson()
+	public void reloadRegionsFromJson(Runnable onReloadComplete)
 	{
-		log.debug("Reloading regions from JSON...");
+		if (!reloadInProgress.compareAndSet(false, true))
+		{
+			log.debug("Region reload already in progress, ignoring duplicate request.");
+			return;
+		}
 
-		allTracks.clear();
-		regionNameToTracks.clear();
+		reloadExecutor.submit(() -> {
+			try
+			{
+				log.debug("Reloading regions from JSON...");
 
-		populateFromJsonRegions();
-		mergeCustomContent();
+				allTracks.clear();
+				regionNameToTracks.clear();
 
-		log.debug("Reloaded {} tracks from JSON.", allTracks.size());
+				populateFromJsonRegions();
+				mergeCustomContent();
+
+				log.debug("Reloaded {} tracks from JSON.", allTracks.size());
+			}
+			catch (Exception reloadException)
+			{
+				log.warn("Failed to reload regions from JSON", reloadException);
+			}
+			finally
+			{
+				reloadInProgress.set(false);
+				if (onReloadComplete != null)
+				{
+					SwingUtilities.invokeLater(onReloadComplete);
+				}
+			}
+		});
+	}
+
+	public void shutdown()
+	{
+		reloadExecutor.shutdownNow();
 	}
 
 	private void loadAllRegionsFromJson()

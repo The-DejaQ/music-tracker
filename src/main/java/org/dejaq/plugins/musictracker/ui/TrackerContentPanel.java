@@ -84,7 +84,6 @@ public class TrackerContentPanel extends JPanel
 		refreshButton.addActionListener(actionEvent -> {
 			musicTrackerPlugin.reloadRegions();
 			musicTrackerPlugin.refreshAll();
-			buildTracksList();
 		});
 		topControlsPanel.add(refreshButton);
 		topControlsPanel.add(Box.createVerticalStrut(8));

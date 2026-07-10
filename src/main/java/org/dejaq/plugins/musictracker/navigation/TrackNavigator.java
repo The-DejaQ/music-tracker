@@ -64,6 +64,8 @@ public class TrackNavigator
 		this.currentStage = 0;
 		this.lastPlayerLocation = null;
 
+		SpecialTrackRegistry.resetAll();
+
 		populateAllFutureHighlights();
 
 		if (musicTrack != null && musicTrack.getUnlockType() == UnlockType.NORMAL) // we keep setting the route for non-pathed tracks
@@ -86,6 +88,8 @@ public class TrackNavigator
 		this.currentRoute = route;
 		this.currentStage = 0;
 		this.lastPlayerLocation = null;
+
+		SpecialTrackRegistry.resetAll();
 
 		populateAllFutureHighlights();
 		navigationCoordinator.onNavigationTargetChanged(currentTrack, getCurrentTargetPoint());
@@ -114,6 +118,7 @@ public class TrackNavigator
 		this.lastPlayerLocation = null;
 		navigationCoordinator.clearWorldMapPoints();
 		clearEntityHighlights();
+		SpecialTrackRegistry.resetAll();
 	}
 
 	public boolean hasActiveTrackStep()

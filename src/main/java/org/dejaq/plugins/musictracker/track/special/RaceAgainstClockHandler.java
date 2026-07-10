@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
 import net.runelite.api.Player;
 import net.runelite.api.coords.WorldPoint;
@@ -21,6 +22,7 @@ import org.dejaq.plugins.musictracker.track.MusicTrackEntityPoint;
 import org.dejaq.plugins.musictracker.track.Route;
 import org.dejaq.plugins.musictracker.track.TrackStep;
 
+@Slf4j
 public class RaceAgainstClockHandler implements SpecialTrackHandler
 {
 	private static final int REQUIRED_BARRONITE_SHARD_QUANTITY = 750;
@@ -136,12 +138,10 @@ public class RaceAgainstClockHandler implements SpecialTrackHandler
 	public List<MusicTrackEntityPoint> getDynamicEntityHighlights(MusicTrack musicTrack, Route route, TrackStep trackStep, int stageIndex, MusicTrackerPlugin musicTrackerPlugin)
 	{
 		Client client = musicTrackerPlugin.getClient();
-
 		if (!client.isClientThread())
 		{
-			musicTrackerPlugin.getClientThread().invokeLater(() ->
-				getDynamicEntityHighlights(musicTrack, route, trackStep, stageIndex, musicTrackerPlugin));
-			return cachedHighlights;
+			log.warn("getDynamicEntityHighlights called off the client thread; ignoring");
+			return null;
 		}
 
 		Player localPlayer = client.getLocalPlayer();
@@ -263,6 +263,14 @@ public class RaceAgainstClockHandler implements SpecialTrackHandler
 		cachedTick = -1;
 		cachedStageIndex = -1;
 		cachedHighlights = null;
+	}
+
+	@Override
+	public void reset()
+	{
+		invalidateHighlightCache();
+		hasCheckedSacredForge = false;
+		storedBarroniteShardQuantity = 0;
 	}
 
 	private List<MusicTrackEntityPoint> buildMiningHighlights()

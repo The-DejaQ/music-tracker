@@ -77,4 +77,8 @@ public interface SpecialTrackHandler
 	default void onChatMessage(MusicTrack musicTrack, Route route, ChatMessage chatMessageEvent, MusicTrackerPlugin musicTrackerPlugin)
 	{
 	}
+
+	default void reset()
+	{
+	}
 }

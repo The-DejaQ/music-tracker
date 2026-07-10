@@ -1,7 +1,9 @@
 package org.dejaq.plugins.musictracker.builder;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import javax.inject.Singleton;
 import lombok.Getter;
 import net.runelite.api.coords.WorldPoint;
@@ -14,17 +16,17 @@ import org.dejaq.plugins.musictracker.track.TrackStep;
 public class RouteBuilderSession
 {
 	@Getter
-	private MusicTrack targetTrack;
+	private volatile MusicTrack targetTrack;
 	@Getter
-	private Route routeBeingEdited;
+	private volatile Route routeBeingEdited;
 	@Getter
-	private boolean active;
+	private volatile boolean active;
 
-	private WorldPoint currentStepDestination;
-	private final List<InteractionTarget> currentStepInteractions = new ArrayList<>();
-	private final List<TrackStep> finishedSteps = new ArrayList<>();
+	private volatile WorldPoint currentStepDestination;
+	private final List<InteractionTarget> currentStepInteractions = new CopyOnWriteArrayList<>();
+	private final List<TrackStep> finishedSteps = new CopyOnWriteArrayList<>();
 
-	public void start(MusicTrack musicTrack, Route route)
+	public synchronized void start(MusicTrack musicTrack, Route route)
 	{
 		this.targetTrack = musicTrack;
 		this.routeBeingEdited = route;
@@ -38,7 +40,7 @@ public class RouteBuilderSession
 		this.active = true;
 	}
 
-	public void stop()
+	public synchronized void stop()
 	{
 		this.active = false;
 		this.targetTrack = null;
@@ -48,7 +50,7 @@ public class RouteBuilderSession
 		this.finishedSteps.clear();
 	}
 
-	public void setCurrentStepDestination(WorldPoint destination)
+	public synchronized void setCurrentStepDestination(WorldPoint destination)
 	{
 		if (destination != null)
 		{
@@ -56,7 +58,7 @@ public class RouteBuilderSession
 		}
 	}
 
-	public void addInteractionToCurrentStep(InteractionTarget interactionTarget)
+	public synchronized void addInteractionToCurrentStep(InteractionTarget interactionTarget)
 	{
 		if (interactionTarget == null)
 		{
@@ -69,7 +71,7 @@ public class RouteBuilderSession
 		}
 	}
 
-	public boolean finishCurrentStep(String stepName)
+	public synchronized boolean finishCurrentStep(String stepName)
 	{
 		if (currentStepDestination == null && currentStepInteractions.isEmpty())
 		{
@@ -92,18 +94,18 @@ public class RouteBuilderSession
 		return true;
 	}
 
-	public boolean hasInProgressStepContent()
+	public synchronized boolean hasInProgressStepContent()
 	{
 		return currentStepDestination != null || !currentStepInteractions.isEmpty();
 	}
 
-	public int getCurrentStepInteractionCount()
+	public synchronized int getCurrentStepInteractionCount()
 	{
 		return currentStepInteractions.size();
 	}
 
 	public List<TrackStep> getFinishedSteps()
 	{
-		return new ArrayList<>(finishedSteps);
+		return Collections.unmodifiableList(new ArrayList<>(finishedSteps));
 	}
 }

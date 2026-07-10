@@ -1,6 +1,5 @@
 package org.dejaq.plugins.musictracker.state;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -192,5 +191,6 @@ public class PlayerState
 		clearItemQuantityCaches();
 		questStateCache.clear();
 		questStatesInFlight.clear();
+		realSkillLevels.clear();
 	}
 }

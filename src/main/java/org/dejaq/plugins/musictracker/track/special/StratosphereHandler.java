@@ -69,12 +69,10 @@ public class StratosphereHandler implements SpecialTrackHandler
 	public List<MusicTrackEntityPoint> getDynamicEntityHighlights(MusicTrack musicTrack, Route route, TrackStep trackStep, int stageIndex, MusicTrackerPlugin musicTrackerPlugin)
 	{
 		Client client = musicTrackerPlugin.getClient();
-
 		if (!client.isClientThread())
 		{
-			musicTrackerPlugin.getClientThread().invokeLater(() ->
-				getDynamicEntityHighlights(musicTrack, route, trackStep, stageIndex, musicTrackerPlugin));
-			return cachedHighlights;
+			log.warn("getDynamicEntityHighlights called off the client thread; ignoring");
+			return null;
 		}
 
 		Player localPlayer = client.getLocalPlayer();
@@ -106,6 +104,14 @@ public class StratosphereHandler implements SpecialTrackHandler
 		cachedStageIndex = stageIndex;
 		cachedHighlights = computedHighlights;
 		return computedHighlights;
+	}
+
+	@Override
+	public void reset()
+	{
+		cachedTick = -1;
+		cachedStageIndex = -1;
+		cachedHighlights = null;
 	}
 
 	private StratospherePhase resolveCurrentPhase(WorldPoint playerLocation, int currentAgilityLevel)

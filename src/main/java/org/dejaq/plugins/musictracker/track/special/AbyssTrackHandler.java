@@ -207,13 +207,10 @@ public class AbyssTrackHandler implements SpecialTrackHandler
 		}
 
 		Client client = musicTrackerPlugin.getClient();
-
 		if (!client.isClientThread())
 		{
-			musicTrackerPlugin.getClientThread().invokeLater(() ->
-				getDynamicEntityHighlights(musicTrack, route, trackStep, stageIndex, musicTrackerPlugin)
-			);
-			return cachedHighlights;
+			log.warn("getDynamicEntityHighlights called off the client thread; ignoring");
+			return null;
 		}
 
 		Player localPlayer = client.getLocalPlayer();
@@ -252,6 +249,16 @@ public class AbyssTrackHandler implements SpecialTrackHandler
 		lastScannedPlayerLocation = playerLocation;
 
 		return computedHighlights;
+	}
+
+	@Override
+	public void reset()
+	{
+		cachedTick = -1;
+		cachedTrackTitle = null;
+		cachedStageIndex = -1;
+		cachedHighlights = null;
+		lastScannedPlayerLocation = null;
 	}
 
 	private boolean isCacheValid(int currentTick, String trackTitle, int stageIndex)

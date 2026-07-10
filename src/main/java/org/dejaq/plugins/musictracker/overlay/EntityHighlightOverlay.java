@@ -174,6 +174,9 @@ public class EntityHighlightOverlay extends Overlay
 
 	private Shape getObjectConvexHull(TileObject tileObject)
 	{
+		if (tileObject == null) {
+			return null;
+		}
 		if (tileObject instanceof GameObject)
 		{
 			return ((GameObject) tileObject).getConvexHull();

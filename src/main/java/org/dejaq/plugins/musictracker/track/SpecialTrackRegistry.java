@@ -1,9 +1,12 @@
 package org.dejaq.plugins.musictracker.track;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import org.dejaq.plugins.musictracker.MusicTrack;
 import org.dejaq.plugins.musictracker.track.special.AbyssTrackHandler;
 import org.dejaq.plugins.musictracker.track.special.AztecHandler;
@@ -93,5 +96,21 @@ public class SpecialTrackRegistry
 		}
 
 		return fallbackHandler != null ? fallbackHandler : DEFAULT_TRACK_HANDLER;
+	}
+
+	public static void resetAll()
+	{
+		DEFAULT_TRACK_HANDLER.reset();
+
+		Set<SpecialTrackHandler> uniqueHandlers = Collections.newSetFromMap(new IdentityHashMap<>());
+		for (List<SpecialTrackHandler> handlers : SPECIAL_TRACK_HANDLERS.values())
+		{
+			uniqueHandlers.addAll(handlers);
+		}
+
+		for (SpecialTrackHandler handler : uniqueHandlers)
+		{
+			handler.reset();
+		}
 	}
 }
