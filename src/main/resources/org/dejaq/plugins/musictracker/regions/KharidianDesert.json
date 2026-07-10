@@ -1,0 +1,1542 @@
+[
+  {
+    "title": "Al Kharid",
+    "region": "Kharidian Desert",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Al_Kharid_(music_track)",
+    "location": "Most of free-to-play part of Kharidian Desert",
+    "unlockHint": "This track unlocks in Al Kharid.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3307.0,
+              "y": 3235.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Amascut's Promise",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Amascut%27s_Promise",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3808.0,
+              "y": 5152.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "Ape-ex Predator",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ape-ex_Predator",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3808.0,
+              "y": 5408.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "Arabian",
+    "region": "Kharidian Desert",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Arabian",
+    "location": "Most of free-to-play part of Kharidian Desert",
+    "unlockHint": "This track unlocks in Al Kharid.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3307.0,
+              "y": 3235.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Arabian 2",
+    "region": "Kharidian Desert",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Arabian_2",
+    "location": "Most of free-to-play part of Kharidian Desert",
+    "unlockHint": "This track unlocks in Al Kharid.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3307.0,
+              "y": 3235.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Arabian 3",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Arabian_3",
+    "location": "Kharidian Desert",
+    "unlockHint": "This track unlocks in the Kharidian Desert.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3301.0,
+              "y": 3086.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Back to Life",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Back_to_Life",
+    "unlockType": "QUEST",
+    "location": "Sophanem",
+    "unlockHint": "This track unlocks in Sophanem.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3293.0,
+              "y": 2779.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ICTHLARINS_LITTLE_HELPER"
+      }
+    ]
+  },
+  {
+    "title": "Bandit Camp",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bandit_Camp_(music_track)",
+    "location": "Kharidian Bandit Camp",
+    "unlockHint": "This track unlocks at the Kharidian Bandit Camp.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 2982.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Beneath Cursed Sands",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Beneath_Cursed_Sands",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3552.0,
+              "y": 5152.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "Bone Dry",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bone_Dry",
+    "location": "Smoke Dungeon",
+    "unlockHint": "This track unlocks in the Pollnivneach Smoke Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3310.0,
+              "y": 2961.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Smokey well",
+                "location": {
+                  "x": 3310.0,
+                  "y": 2962.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb-down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemCollection": "MOUTH_PROTECTION",
+            "quantity": 1.0,
+            "label": "Facemask or Slayer helm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "City of the Dead",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/City_of_the_Dead",
+    "unlockType": "QUEST",
+    "location": "Sophanem",
+    "unlockHint": "This track unlocks in Sophanem.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3293.0,
+              "y": 2779.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ICTHLARINS_LITTLE_HELPER"
+      }
+    ]
+  },
+  {
+    "title": "Clan Wars",
+    "region": "Kharidian Desert",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Clan_Wars_(music_track)",
+    "location": "Clan Wars",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Clan Wars",
+    "unlockHint": "This track unlocks during the Clan Wars minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3360.0,
+              "y": 4896.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Desert Heat",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Desert_Heat_(music_track)",
+    "location": "Kharidian Desert",
+    "unlockHint": "This track unlocks in the Kharidian Desert.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3301.0,
+              "y": 3086.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Desert Voyage",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Desert_Voyage",
+    "location": "Kharidian Desert",
+    "unlockHint": "This track unlocks in the Kharidian Desert.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3301.0,
+              "y": 3086.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Desert",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Desert",
+    "location": "Kharidian Desert",
+    "unlockHint": "This track unlocks in the Kharidian Desert.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3301.0,
+              "y": 3086.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dynasty",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dynasty",
+    "location": "Pollnivneach",
+    "unlockHint": "This track unlocks in Pollnivneach.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3351.0,
+              "y": 2974.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Egypt",
+    "region": "Kharidian Desert",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Egypt",
+    "location": "Shantay Pass or Kharidian Desert",
+    "unlockHint": "This track unlocks in the Kharidian Desert.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3301.0,
+              "y": 3086.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Emir's Arena",
+    "region": "Kharidian Desert",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Emir%27s_Arena",
+    "location": "Emir's Arena",
+    "unlockHint": "This track unlocks at the Emir's Arena, north-east of Al Kharid",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3367.0,
+              "y": 3241.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Enchanter",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Enchanter",
+    "location": "Mage Training Arena",
+    "unlockHint": "This track unlocks in the Enchantment Chamber in the Mage Training Arena.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3363.0,
+              "y": 3298.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Doorway",
+                "location": {
+                  "x": 3363.0,
+                  "y": 3299.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3361.0,
+              "y": 3318.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Enchanters Teleport",
+                "location": {
+                  "x": 3360.0,
+                  "y": 3318.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Forgotten",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Forgotten",
+    "location": "Ruins of Uzer",
+    "unlockHint": "This track unlocks in the Ruins of Uzer.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3491.0,
+              "y": 3090.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Staircase",
+                "location": {
+                  "x": 3492.0,
+                  "y": 3090.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Garden of Autumn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Garden_of_Autumn",
+    "location": "Sorceress's Garden - Autumn",
+    "unlockHint": "This track unlocks in the Sorceress' Garden minigame.",
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Autumn section of the Sorceress's Garden minigame",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2908.0,
+              "y": 5455.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Garden of Spring",
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Spring section of the Sorceress's Garden minigame",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Garden_of_Spring",
+    "location": "Sorceress's Garden - Spring",
+    "unlockHint": "This track unlocks in the Sorceress' Garden minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2929.0,
+              "y": 5468.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Garden of Summer",
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Summer section of the Sorceress's Garden minigame",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Garden_of_Summer",
+    "location": "Sorceress's Garden - Summer",
+    "unlockHint": "This track unlocks in the Sorceress' Garden minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2916.0,
+              "y": 5489.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Garden of Winter",
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Winter section of the Sorceress's Garden minigame",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Garden_of_Winter",
+    "location": "Sorceress's Garden - Winter",
+    "unlockHint": "This track unlocks in the Sorceress' Garden minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2895.0,
+              "y": 5476.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Golden Touch",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Golden_Touch",
+    "location": "Mage Training Arena",
+    "unlockHint": "This track unlocks in the Mage Training Arena.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3363.0,
+              "y": 3298.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Doorway",
+                "location": {
+                  "x": 3363.0,
+                  "y": 3299.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3363.0,
+              "y": 3320.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Alchemists Teleport",
+                "location": {
+                  "x": 3363.0,
+                  "y": 3321.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Golem",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Golem_(music_track)",
+    "location": "Ruins of Uzer",
+    "unlockHint": "This track unlocks in the Ruins of Uzer.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3488.0,
+              "y": 3109.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Insect Queen",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Insect_Queen",
+    "location": "Kalphite lair",
+    "unlockHint": "This track unlocks in the Kalphite Lair.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3226.0,
+              "y": 3108.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Tunnel entrance",
+                "location": {
+                  "x": 3227.0,
+                  "y": 3108.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Use Rope on then climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 954,
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Into the Tombs",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Into_the_Tombs_(music_track)",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3356.0,
+              "y": 2712.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Entry",
+              "location": {
+                "x": 3357.0,
+                "y": 2711.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "Jaws of Gluttony",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jaws_of_Gluttony",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3936.0,
+              "y": 5408.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "Labyrinth",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Labyrinth",
+    "location": "Sophanem Dungeon",
+    "unlockHint": "This track unlocks during the Contact! quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 9248.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CONTACT"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Laid to Rest",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Laid_to_Rest",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3680.0,
+              "y": 5152.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "Mind over Matter",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mind_over_Matter",
+    "location": "Mage Training Arena",
+    "unlockHint": "This track unlocks at the Telekinetic Theatre.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3363.0,
+              "y": 3298.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Doorway",
+                "location": {
+                  "x": 3363.0,
+                  "y": 3299.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3363.0,
+              "y": 3316.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Telekinetic Teleport",
+                "location": {
+                  "x": 3363.0,
+                  "y": 3315.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "A Mother's Curse",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Mother%27s_Curse",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3552.0,
+              "y": 5408.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "Over to Nardah",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Over_to_Nardah",
+    "location": "Nardah",
+    "unlockHint": "This track unlocks in Nardah.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3456.0,
+              "y": 2905.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Pharaoh's Tomb",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Pharaoh%27s_Tomb",
+    "location": "Agility Pyramid",
+    "unlockHint": "This track unlocks at the Agility Pyramid.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3353.0,
+              "y": 2827.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "levels": [
+          {
+            "skill": "Agility",
+            "level": 30.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Plundered Tomb",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Plundered_Tomb",
+    "location": "Uzer Mastaba",
+    "unlockHint": "This track unlocks during The Curse of Arrav quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3872.0,
+              "y": 4576.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_CURSE_OF_ARRAV"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Quest",
+    "region": "Kharidian Desert",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Quest_(music_track)",
+    "location": "Fire Altar",
+    "unlockHint": "This track unlocks at the Fire Altar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3314.0,
+              "y": 3257.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Mysterious ruins",
+                "location": {
+                  "x": 3312.0,
+                  "y": 3254.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Enter / Use talisman on",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "notes": "Can also be accessed through the Abyss",
+        "items": [
+          {
+            "itemCollection": "FIRE_ALTAR",
+            "quantity": 1.0,
+            "label": "Fire Altar Access"
+          }
+        ]
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "quest": "ENTER_THE_ABYSS",
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3559.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3106.0,
+                "y": 3559.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Zamorak"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Roll the Bones",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Roll_the_Bones",
+    "location": "Mage Training Arena",
+    "unlockHint": "This track unlocks in the Mage Training Arena.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3363.0,
+              "y": 3298.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 10721.0,
+              "location": {
+                "x": 3363.0,
+                "y": 3299.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3365.0,
+              "y": 3318.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 23676.0,
+              "location": {
+                "x": 3366.0,
+                "y": 3318.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sands of Time",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sands_of_Time",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3680.0,
+              "y": 5408.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "Sarcophagus",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sarcophagus_(music_track)",
+    "unlockType": "QUEST",
+    "location": "4th level of the Ancient Pyramid",
+    "unlockHint": "This track unlocks during the Desert Treasure I quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 4960.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_I"
+      }
+    ]
+  },
+  {
+    "title": "Scarab",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scarab",
+    "location": "Kharidian Desert",
+    "unlockHint": "This track unlocks in the Kharidian Desert.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3301.0,
+              "y": 3086.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Shine",
+    "region": "Kharidian Desert",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Shine",
+    "location": "Mage Training Arena",
+    "unlockHint": "This track unlocks at the Mage Training Arena.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3364.0,
+              "y": 3298.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sorceress's Garden",
+    "region": "Kharidian Desert",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sorceress%27s_Garden_(music_track)",
+    "members": true,
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Sorceress's Garden",
+    "location": "Sorceress's Garden",
+    "unlockHint": "This track unlocks in the Sorceress's Garden."
+  },
+  {
+    "title": "Sphinx",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sphinx_(music_track)",
+    "location": "Kharidian Desert",
+    "unlockHint": "This track unlocks in the Kharidian Desert.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3301.0,
+              "y": 3086.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sunburn",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sunburn",
+    "location": "Kharidian Desert",
+    "unlockHint": "This track unlocks in the Kharidian Desert.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3301.0,
+              "y": 3086.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tempor of the Storm",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tempor_of_the_Storm",
+    "location": "Tempoross Cove",
+    "unlockHint": "This track unlocks while fighting Tempoross.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3036.0,
+              "y": 2849.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks while fighting Tempoross."
+  },
+  {
+    "title": "Test of Companionship",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Test_of_Companionship",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "quest": "BENEATH_CURSED_SANDS",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut."
+  },
+  {
+    "title": "Test of Isolation",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Test_of_Isolation",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "quest": "BENEATH_CURSED_SANDS",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut."
+  },
+  {
+    "title": "Test of Resourcefulness",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Test_of_Resourcefulness",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "quest": "BENEATH_CURSED_SANDS",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut."
+  },
+  {
+    "title": "Test of Strength",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Test_of_Strength",
+    "members": true,
+    "region": "Kharidian Desert",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks by participating in the Tombs of Amascut.",
+    "quest": "BENEATH_CURSED_SANDS",
+    "location": "Tombs of Amascut",
+    "unlockHint": "This track unlocks in the Tombs of Amascut."
+  },
+  {
+    "title": "Tomb Raider",
+    "region": "Kharidian Desert",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tomb_Raider_(music_track)",
+    "location": "Pyramid Plunder",
+    "unlockHint": "This track unlocks in the Pyramid Plunder minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3288.0,
+              "y": 2788.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "An anonymous looking door",
+                "location": {
+                  "x": 3293.0,
+                  "y": 2794.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Search each door until entrance",
+                "actions": [
+                  "search"
+                ]
+              },
+              {
+                "entity": "An anonymous looking door",
+                "location": {
+                  "x": 3288.0,
+                  "y": 2799.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Search each door until entrance"
+              },
+              {
+                "entity": "An anonymous looking door",
+                "location": {
+                  "x": 3283.0,
+                  "y": 2794.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Search each door until entrance"
+              },
+              {
+                "entity": "An anonymous looking door",
+                "location": {
+                  "x": 3288.0,
+                  "y": 2789.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Search each door until entrance"
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemId": 26948,
+            "quantity": 1.0,
+            "label": "Pharaoh's sceptre -> Jalsavrah teleport"
+          }
+        ],
+        "levels": [
+          {
+            "skill": "Thieving",
+            "level": 21.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Warpath",
+    "region": "Kharidian Desert",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Warpath",
+    "location": "Clan Wars",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Clan Wars",
+    "unlockHint": "This track unlocks during the Clan Wars minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3360.0,
+              "y": 4896.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  }
+]

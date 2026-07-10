@@ -1,0 +1,1778 @@
+[
+  {
+    "title": "Adventure",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Adventure",
+    "location": "Varrock",
+    "unlockHint": "This track unlocks in Varrock.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3214.0,
+              "y": 3440.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Attack 3",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Attack_3",
+    "location": "Obor's Lair",
+    "unlockHint": "This track unlocks in Obor's Lair.",
+    "routes": [
+      {
+        "name": "Obor",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Trapdoor",
+            "destination": {
+              "x": 3097,
+              "y": 3468,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Trapdoor",
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gate",
+            "destination": {
+              "x": 3095,
+              "y": 9833,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Gate",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "open"
+                ]
+              }
+            ]
+          }
+        ],
+        "items": [
+          {
+            "itemId": 20754,
+            "quantity": 1
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemId": 30638,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Autumn Voyage",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Autumn_Voyage",
+    "location": "Lumbridge",
+    "unlockHint": "This track unlocks in Lumbridge.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 3244.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Barbarianism",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Barbarianism",
+    "location": "Barbarian Village",
+    "unlockHint": "This track unlocks at Barbarian Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3089.0,
+              "y": 3430.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Book of Spells",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Book_of_Spells",
+    "location": "Lumbridge",
+    "unlockHint": "This track unlocks in Lumbridge.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 3244.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Cave of the Goblins",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Cave_of_the_Goblins",
+    "location": "Lumbridge Swamp Caves",
+    "unlockHint": "This track unlocks beneath Lumbridge Swamp.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3169.0,
+              "y": 3173.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Dark hole",
+                "location": {
+                  "x": 3169.0,
+                  "y": 3172.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Use Rope on then climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 954,
+            "quantity": 1.0
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemCollection": "LIGHT_SOURCES",
+            "quantity": 1.0,
+            "label": "Light source"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Cellar Song",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Cellar_Song",
+    "location": "Varrock West bank vault, Clan Cup lobby",
+    "unlockHint": "This track unlocks beneath the Varrock west bank.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3186.0,
+              "y": 3434.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Staircase",
+                "location": {
+                  "x": 3188.0,
+                  "y": 3433.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Clanliness",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Clanliness",
+    "location": "Clan Hall",
+    "unlockHint": "This track unlocks in a Clan Hall.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3185.0,
+              "y": 3472.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Clan hall portal",
+                "location": {
+                  "x": 3186.0,
+                  "y": 3472.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Enter as member or guest",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Doorways",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Doorways",
+    "location": "Varrock surroundings",
+    "unlockHint": "This track unlocks in the area around Varrock.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3216.0,
+              "y": 3424.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dorgeshuun City",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dorgeshuun_City",
+    "location": "Dorgesh-Kaan",
+    "unlockHint": "This track unlocks in Dorgesh-Kaan.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3210.0,
+              "y": 3216.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3209.0,
+                  "y": 3216.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3219.0,
+              "y": 9618.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Hole",
+                "location": {
+                  "x": 3219.0,
+                  "y": 9618.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "squeeze-through"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 3231.0,
+              "y": 9610.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Kazgar",
+                "location": {
+                  "x": 3232.0,
+                  "y": 9609.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Mines",
+                "actions": [
+                  "mines"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 3318.0,
+              "y": 9602.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Door",
+                "location": {
+                  "x": 3318.0,
+                  "y": 9601.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "open"
+                ]
+              }
+            ],
+            "name": "Step 4"
+          }
+        ],
+        "quest": "DEATH_TO_THE_DORGESHUUN",
+        "items": [
+          {
+            "itemCollection": "LIGHT_SOURCES",
+            "quantity": 1.0,
+            "label": "Light source"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dorgeshuun Deep",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dorgeshuun_Deep",
+    "location": "Dorgesh-Kaan South Dungeon",
+    "unlockHint": "This track unlocks in the Dorgesh-Kaan South Dungeon.",
+    "routes": [
+      {
+        "name": "Fairy Ring",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3129.0,
+              "y": 3496.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Fairy ring",
+                "location": {
+                  "x": 3129.0,
+                  "y": 3496.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Configure -> A J Q",
+                "actions": [
+                  "configure"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DEATH_TO_THE_DORGESHUUN",
+        "recommendedItems": [
+          {
+            "itemCollection": "LIGHT_SOURCES",
+            "quantity": 1.0,
+            "label": "Light source"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Down Below",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Down_Below",
+    "location": "Sewer Dungeon below Draynor Village",
+    "unlockHint": "This track unlocks in the Draynor Sewers.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3117.0,
+              "y": 3244.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3118.0,
+                  "y": 3244.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Down to Earth",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Down_to_Earth",
+    "location": "Earth Altar",
+    "unlockHint": "This track unlocks at the Earth Altar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3306.0,
+              "y": 3472.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Mysterious ruins",
+                "location": {
+                  "x": 3305.0,
+                  "y": 3473.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Enter / Use talisman on",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "notes": "Can also be accessed through the Abyss",
+        "items": [
+          {
+            "itemCollection": "EARTH_ALTAR",
+            "quantity": 1.0,
+            "label": "Earth Altar access"
+          }
+        ]
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "quest": "ENTER_THE_ABYSS",
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3559.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3106.0,
+                "y": 3559.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Zamorak"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dream",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dream_(music_track)",
+    "location": "Lumbridge",
+    "unlockHint": "This track unlocks in Lumbridge.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 3244.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Expanse",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Expanse",
+    "location": "Varrock surroundings",
+    "unlockHint": "This track unlocks in the area around Varrock.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3216.0,
+              "y": 3424.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Flute Salad",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Flute_Salad",
+    "location": "Lumbridge",
+    "unlockHint": "This track unlocks in Lumbridge.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 3244.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Forever",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Forever",
+    "location": "Edgeville, Edgeville Dungeon",
+    "unlockHint": "This track unlocks in Edgeville.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3104.0,
+              "y": 3489.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Garden",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Garden_(music_track)",
+    "location": "Varrock",
+    "unlockHint": "This track unlocks in Varrock.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3214.0,
+              "y": 3440.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Greatness",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Greatness",
+    "location": "Varrock surroundings",
+    "unlockHint": "This track unlocks in the area around Varrock.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3216.0,
+              "y": 3424.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Harmony",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Harmony_(music_track)",
+    "location": "Lumbridge",
+    "unlockHint": "This track unlocks in Lumbridge.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 3244.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Harmony 2",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Harmony_2",
+    "location": "Lumbridge Castle basement",
+    "unlockHint": "This track unlocks in the Lumbridge Castle cellar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3210.0,
+              "y": 3216.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3209.0,
+                  "y": 3216.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Looking Back",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Looking_Back",
+    "location": "Varrock Museum",
+    "unlockHint": "This track unlocks in the Varrock Museum.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3260.0,
+              "y": 3451.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Lost Melody",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Lost_Melody",
+    "location": "Dorgesh-Kaan mine",
+    "unlockHint": "This track unlocks in the Dorgesh-Kaan mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3210.0,
+              "y": 3216.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3209.0,
+                  "y": 3216.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3219.0,
+              "y": 9618.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Hole",
+                "location": {
+                  "x": 3219.0,
+                  "y": 9618.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "squeeze-through"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 3231.0,
+              "y": 9610.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Kazgar",
+                "location": {
+                  "x": 3232.0,
+                  "y": 9609.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Mines",
+                "actions": [
+                  "mines"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          }
+        ],
+        "quest": "DEATH_TO_THE_DORGESHUUN",
+        "notes": "You may have to logout and back in to unlock this track.",
+        "items": [
+          {
+            "itemCollection": "LIGHT_SOURCES",
+            "quantity": 1.0,
+            "label": "Light source"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Lost Tribe",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Lost_Tribe_(music_track)",
+    "location": "Dorgesh-Kaan mine",
+    "unlockHint": "This track unlocks in the Dorgesh-Kaan mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3210.0,
+              "y": 3216.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3209.0,
+                  "y": 3216.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3219.0,
+              "y": 9618.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Hole",
+                "location": {
+                  "x": 3219.0,
+                  "y": 9618.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "squeeze-through"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 3231.0,
+              "y": 9610.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Kazgar",
+                "location": {
+                  "x": 3232.0,
+                  "y": 9609.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Mines",
+                "actions": [
+                  "mines"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          }
+        ],
+        "quest": "DEATH_TO_THE_DORGESHUUN",
+        "items": [
+          {
+            "itemCollection": "LIGHT_SOURCES",
+            "quantity": 1.0,
+            "label": "Light source"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lullaby",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lullaby",
+    "location": "South-west of Rellekka",
+    "unlockHint": "This track unlocks south-west of Rellekka.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3342.0,
+              "y": 3400.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mausoleum",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mausoleum_(music_track)",
+    "location": "Paterdomus",
+    "unlockHint": "This track unlocks in the Paterdomus temple.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3405.0,
+              "y": 3506.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3405.0,
+                  "y": 3507.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Medieval",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Medieval",
+    "location": "Varrock",
+    "unlockHint": "This track unlocks in Varrock.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3214.0,
+              "y": 3440.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Monster Melee",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Monster_Melee",
+    "location": "H.A.M. cave",
+    "unlockHint": "This track unlocks in the H.A.M. area.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Lockpick",
+            "destination": {
+              "x": 3166,
+              "y": 3252,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Trapdoor",
+                "type": "GAME_OBJECT",
+                "hint": "Pick Lock",
+                "actions": [
+                  "pick-lock"
+                ]
+              }
+            ]
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemId": 1523,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Oh Rats!",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Oh_Rats!",
+    "location": "Varrock Sewers",
+    "unlockHint": "This track unlocks while fighting Scurrius, the Rat King.",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks while fighting Scurrius, the Rat King.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3300.0,
+              "y": 9866.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Parade",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Parade",
+    "location": "Silvarea",
+    "unlockHint": "This track unlocks at Silvarea.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3367.0,
+              "y": 3490.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Rat a Tat Tat",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Rat_a_Tat_Tat",
+    "location": "Varrock Rat Pits",
+    "unlockHint": "This track unlocks at the Varrock Rat Pits.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3267.0,
+              "y": 3401.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Manhole",
+                "location": {
+                  "x": 3267.0,
+                  "y": 3400.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RATCATCHERS"
+      }
+    ]
+  },
+  {
+    "title": "Rhapsody",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Rhapsody",
+    "members": false,
+    "unlockType": "SPECIAL",
+    "region": "Misthalin",
+    "location": "Clan Hall",
+    "unlockHint": "This track unlocks at the piano in a Clan Hall.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3185.0,
+              "y": 3472.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Clan hall portal",
+              "location": {
+                "x": 3186.0,
+                "y": 3472.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          }
+        ],
+        "notes": "Requires you to be in a clan or enter as a guest"
+      }
+    ]
+  },
+  {
+    "title": "Roots and Flutes",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Roots_and_Flutes",
+    "location": "Bryophyta's lair",
+    "unlockHint": "This track unlocks while fighting Bryophyta.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Manhole",
+            "destination": {
+              "x": 3237,
+              "y": 3458,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Manhole",
+                "type": "GAME_OBJECT",
+                "hint": "Open / Climb down",
+                "actions": [
+                  "open",
+                  "climb-down"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Web",
+            "destination": {
+              "x": 3210,
+              "y": 9898,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Web",
+                "type": "GAME_OBJECT",
+                "hint": "Slash web",
+                "actions": [
+                  "slash"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gate",
+            "destination": {
+              "x": 3174,
+              "y": 9901,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Gate",
+                "type": "GAME_OBJECT",
+                "hint": "Open",
+                "actions": [
+                  "open"
+                ]
+              }
+            ]
+          }
+        ],
+        "items": [
+          {
+            "itemId": 946,
+            "quantity": 1
+          },
+          {
+            "itemId": 22374,
+            "quantity": 1
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemId": 30638,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Slice of Silent Movie",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Slice_of_Silent_Movie",
+    "location": "Dorgesh-Kaan-Keldagrim train system tracks",
+    "unlockHint": "This track unlocks during the Another Slice of H.A.M quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2544.0,
+              "y": 5536.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ANOTHER_SLICE_OF_HAM"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Slice of Station",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Slice_of_Station",
+    "location": "Dorgesh-Kaan-Keldagrim train system station",
+    "unlockHint": "This track unlocks at the Dorgesh-Kaan Train station.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2464.0,
+              "y": 5536.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ANOTHER_SLICE_OF_HAM"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Spirit",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Spirit_(music_track)",
+    "location": "Varrock",
+    "unlockHint": "This track unlocks in Varrock.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3214.0,
+              "y": 3440.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Spooky",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Spooky",
+    "location": "Draynor Manor",
+    "unlockHint": "This track unlocks in Draynor Manor.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3358.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Start",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Start",
+    "location": "Draynor Village",
+    "unlockHint": "This track unlocks in Draynor Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3112.0,
+              "y": 3296.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Still Night",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Still_Night",
+    "location": "Varrock surroundings",
+    "unlockHint": "This track unlocks in the area around Varrock.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3216.0,
+              "y": 3424.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Title Fight",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Title_Fight",
+    "location": "Champions' Guild",
+    "unlockHint": "This track unlocks in the Champions' Challenge area.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3190.0,
+              "y": 3356.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3190.0,
+                  "y": 3355.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Trade Parade",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Trade_Parade",
+    "location": "Grand Exchange",
+    "unlockHint": "This track unlocks at the Grand Exchange.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3169.0,
+              "y": 3492.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Unknown Land",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Unknown_Land",
+    "location": "Draynor Village",
+    "unlockHint": "This track unlocks in Draynor Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3112.0,
+              "y": 3296.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Venture",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Venture",
+    "location": "The Dig Site",
+    "unlockHint": "This track unlocks at the Digsite.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3342.0,
+              "y": 3400.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Venture 2",
+    "region": "Misthalin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Venture_2",
+    "location": "Digsite Dungeon",
+    "unlockHint": "This track unlocks during The Digsite quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3360.0,
+              "y": 9792.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_DIG_SITE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Vision",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Vision",
+    "location": "Wizards' Tower",
+    "unlockHint": "This track unlocks at the Wizards' Tower.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3109.0,
+              "y": 3172.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wander",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wander",
+    "location": "Draynor Village",
+    "unlockHint": "This track unlocks in Draynor Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3112.0,
+              "y": 3296.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Yesteryear",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Yesteryear",
+    "location": "Lumbridge",
+    "unlockHint": "This track unlocks in Lumbridge.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 3244.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Zealot",
+    "region": "Misthalin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Zealot_(music_track)",
+    "location": "Water Altar",
+    "unlockHint": "This track unlocks at the Water Altar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3183.0,
+              "y": 3165.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Mysterious ruins",
+                "location": {
+                  "x": 3184.0,
+                  "y": 3164.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Enter / Use talisman on",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "notes": "Can also be accessed through the Abyss",
+        "items": [
+          {
+            "itemCollection": "WATER_ALTAR",
+            "quantity": 1.0,
+            "label": "Water Altar Access"
+          }
+        ]
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "quest": "ENTER_THE_ABYSS",
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3559.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3106.0,
+                "y": 3559.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Zamorak"
+          }
+        ]
+      }
+    ]
+  }
+]

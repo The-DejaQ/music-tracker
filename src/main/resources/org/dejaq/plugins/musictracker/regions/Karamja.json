@@ -1,0 +1,897 @@
+[
+  {
+    "title": "7th Realm",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/7th_Realm",
+    "location": "Brimhaven Dungeon",
+    "unlockHint": "This track unlocks in Brimhaven Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2745.0,
+              "y": 3152.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Saniboch",
+                "location": {
+                  "x": 2744.0,
+                  "y": 3152.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Pay (875 coins)",
+                "actions": [
+                  "pay"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 995,
+            "quantity": 875.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Ambient Jungle",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ambient_Jungle",
+    "unlockType": "QUEST",
+    "location": "Shilo Village",
+    "unlockHint": "This track unlocks at Shilo Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 2975.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SHILO_VILLAGE"
+      }
+    ]
+  },
+  {
+    "title": "Aztec",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Aztec",
+    "location": "Brimhaven Agility Arena",
+    "unlockHint": "This track unlocks in the Brimhaven Agility Arena.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2809.0,
+              "y": 3193.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cap'n Izzy No-Beard",
+                "location": {
+                  "x": 2807.0,
+                  "y": 3191.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Pay (200 coins)"
+              },
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 2809.0,
+                  "y": 3194.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down once paid",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 995,
+            "quantity": 200.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dangerous Road",
+    "region": "Karamja",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dangerous_Road",
+    "location": "Crandor and Karamja Dungeon",
+    "unlockHint": "This track unlocks beneath Crandor.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2856.0,
+              "y": 3167.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Rocks",
+                "location": {
+                  "x": 2856.0,
+                  "y": 3168.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "High Seas",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/High_Seas",
+    "location": "Brimhaven",
+    "unlockHint": "This track unlocks in Brimhaven.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2754.0,
+              "y": 3200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "In the Pits",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/In_the_Pits",
+    "location": "Mor Ul Rek",
+    "unlockHint": "This track unlocks in Mor Ul Rek.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 9571.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Rocks",
+                "location": {
+                  "x": 2856.0,
+                  "y": 3168.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              },
+              {
+                "entity": "Cave entrance",
+                "location": {
+                  "x": 2863.0,
+                  "y": 9572.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Inferno",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Inferno_(music_track)",
+    "location": "Inferno",
+    "unlockHint": "This track unlocks in the Inferno.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2457.0,
+              "y": 5119.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Hot vent door",
+                "location": {
+                  "x": 2457.0,
+                  "y": 5119.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Pass",
+                "actions": [
+                  "pass"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2493.0,
+              "y": 5124.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "The Inferno",
+                "location": {
+                  "x": 2493.0,
+                  "y": 5124.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Jump in",
+                "actions": [
+                  "jump-in"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Jolly R",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jolly_R",
+    "location": "North dock of Brimhaven",
+    "unlockHint": "This track unlocks in Brimhaven.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2754.0,
+              "y": 3200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Jungle Island",
+    "region": "Karamja",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jungle_Island",
+    "location": "Musa Point or Kharazi Jungle",
+    "unlockHint": "This track unlocks at Musa Point.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2892.0,
+              "y": 3172.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Jungle Troubles",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jungle_Troubles",
+    "location": "Near the Jogres north-east or north of Tai Bwo Wannai",
+    "unlockHint": "This track unlocks on Karamja.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 3062.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Jungly 2",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jungly_2",
+    "location": "Karamjan Jungle",
+    "unlockHint": "This track unlocks on Karamja.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 3062.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Jungly 3",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jungly_3",
+    "location": "Tai Bwo Wannai",
+    "unlockHint": "This track unlocks on Karamja.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 3062.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Karamja Jam",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Karamja_Jam",
+    "location": "Brimhaven Dungeon",
+    "unlockHint": "This track unlocks in Brimhaven Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2745.0,
+              "y": 3152.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Saniboch",
+                "location": {
+                  "x": 2744.0,
+                  "y": 3152.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Pay (875 coins)",
+                "actions": [
+                  "pay"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 995,
+            "quantity": 875.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Landlubber",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Landlubber",
+    "location": "West of Brimhaven",
+    "unlockHint": "This track unlocks Brimhaven.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2754.0,
+              "y": 3200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mor Ul Rek",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mor_Ul_Rek_(music_track)",
+    "location": "Mor Ul Rek",
+    "unlockHint": "This track unlocks in Mor Ul Rek.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2457.0,
+              "y": 5119.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Hot vent door",
+                "location": {
+                  "x": 2457.0,
+                  "y": 5119.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Pass",
+                "actions": [
+                  "pass"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 6570,
+            "quantity": 1.0,
+            "label": "Fire cape"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Nether Realm",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Nether_Realm",
+    "location": "Brimhaven Dungeon's task-only metal dragon area",
+    "unlockHint": "This track unlocks in Brimhaven Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2745.0,
+              "y": 3152.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Saniboch",
+                "location": {
+                  "x": 2744.0,
+                  "y": 3152.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Pay (875 coins)",
+                "actions": [
+                  "pay"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 995,
+            "quantity": 875.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Pathways",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Pathways",
+    "location": "Brimhaven Dungeon",
+    "unlockHint": "This track unlocks in Brimhaven Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2745.0,
+              "y": 3152.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Saniboch",
+                "location": {
+                  "x": 2744.0,
+                  "y": 3152.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Pay (875 coins)",
+                "actions": [
+                  "pay"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 995,
+            "quantity": 875.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Reggae",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Reggae",
+    "location": "South-east of the Kharazi Jungle",
+    "unlockHint": "This track unlocks on Karamja.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 3062.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Reggae 2",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Reggae_2",
+    "location": "East of Karamja Jungle",
+    "unlockHint": "This track unlocks on Karamja.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 3062.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sea Shanty",
+    "region": "Karamja",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sea_Shanty",
+    "location": "Musa Point",
+    "unlockHint": "This track unlocks at Musa Point.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2892.0,
+              "y": 3172.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Spooky Jungle",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Spooky_Jungle",
+    "unlockType": "QUEST",
+    "location": "South-west Karamja",
+    "unlockHint": "This track unlocks on Karamja.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2866.0,
+              "y": 2915.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LEGENDS_QUEST"
+      }
+    ]
+  },
+  {
+    "title": "Tribal",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tribal",
+    "location": "Tai Bwo Wannai Village",
+    "unlockHint": "This track unlocks on Karamja.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 3062.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tribal Background",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tribal_Background",
+    "location": "Kharazi Jungle",
+    "unlockHint": "This track unlocks in Tai Bwo Wannai.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2800.0,
+              "y": 3083.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TzHaar!",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/TzHaar!",
+    "location": "TzHaar Fight Cave",
+    "unlockHint": "This track unlocks in the TzHaar Fight Cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 5088.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the TzHaar Fight Cave."
+  },
+  {
+    "title": "Understanding",
+    "region": "Karamja",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Understanding",
+    "location": "Nature Altar",
+    "unlockHint": "This track unlocks at the Nature Altar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2869.0,
+              "y": 3017.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Mysterious ruins",
+                "location": {
+                  "x": 2868.0,
+                  "y": 3018.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Enter / Use talisman on",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "notes": "Can also be accessed through the Abyss",
+        "items": [
+          {
+            "itemCollection": "NATURE_ALTAR",
+            "quantity": 1.0,
+            "label": "Nature Altar Access"
+          }
+        ]
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3105.0,
+              "y": 3558.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3105.0,
+                "y": 3558.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3035.0,
+              "y": 4842.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 24975.0,
+              "location": {
+                "x": 3035.0,
+                "y": 4842.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Exit-through"
+            },
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 4844.0,
+              "z": 0.0
+            },
+            "name": "Step 3"
+          }
+        ],
+        "quest": "ENTER_THE_ABYSS"
+      }
+    ]
+  }
+]

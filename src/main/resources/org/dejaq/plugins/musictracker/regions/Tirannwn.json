@@ -1,0 +1,500 @@
+[
+  {
+    "title": "Breeze",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Breeze",
+    "location": "Isafdar near the Underground Pass exit",
+    "unlockHint": "This track unlocks in Isafdar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2240.0,
+              "y": 3200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "REGICIDE"
+      }
+    ]
+  },
+  {
+    "title": "Coil",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Coil",
+    "location": "Zulrah's shrine",
+    "unlockHint": "This track unlocks while fighting Zulrah.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2213.0,
+              "y": 3056.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Sacrificial boat",
+              "location": {
+                "x": 2214.0,
+                "y": 3056.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Board"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 11300.0,
+              "y": 8156.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "quest": "REGICIDE",
+        "notes": "Unlocks when fighting Zulrah"
+      }
+    ]
+  },
+  {
+    "title": "Crystal Castle",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Crystal_Castle",
+    "location": "South-east of Prifddinas",
+    "unlockHint": "This track unlocks south of Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2242.0,
+              "y": 3301.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "REGICIDE"
+      }
+    ]
+  },
+  {
+    "title": "Elven Seed",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Elven_Seed",
+    "location": "Gwenith",
+    "unlockHint": "This track unlocks in Gwenith.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2202.0,
+              "y": 3421.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Everywhere",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Everywhere",
+    "location": "North of Prifddinas",
+    "unlockHint": "This track unlocks north of Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2265.0,
+              "y": 3412.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Far Away",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Far_Away",
+    "unlockType": "QUEST",
+    "location": "Lletya",
+    "unlockHint": "This track unlocks during the Mourning's End Part I quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2335.0,
+              "y": 3172.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MOURNINGS_END_PART_I"
+      }
+    ]
+  },
+  {
+    "title": "Forest",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Forest_(music_track)",
+    "location": "North-east of Poison Waste",
+    "unlockHint": "This track unlocks in Isafdar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2240.0,
+              "y": 3200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "REGICIDE"
+      }
+    ]
+  },
+  {
+    "title": "The Gauntlet",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Gauntlet_(music_track)",
+    "location": "The Gauntlet/The Corrupted Gauntlet",
+    "unlockHint": "This track unlocks in the Gauntlet.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3228.0,
+              "y": 6116.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Gauntlet Portal",
+                "location": {
+                  "x": 3229.0,
+                  "y": 6116.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3032.0,
+              "y": 6127.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "The Gauntlet",
+                "location": {
+                  "x": 3032.0,
+                  "y": 6128.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Enter",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "La Mort",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/La_Mort",
+    "location": "Death Altar",
+    "unlockHint": "This track unlocks during Mourning's End Part II.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2208.0,
+              "y": 4832.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MOURNINGS_END_PART_II"
+      }
+    ],
+    "quest": "MOURNINGS_END_PART_II",
+    "unlockMessage": "This track unlocks during Mourning's End Part II.",
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Lost Soul",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lost_Soul_(music_track)",
+    "location": "Poison Waste",
+    "unlockHint": "This track unlocks at the Poison Waste.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2165.0,
+              "y": 3085.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "REGICIDE"
+      }
+    ]
+  },
+  {
+    "title": "Meridian",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Meridian",
+    "location": "South of Isafdar",
+    "unlockHint": "This track unlocks in Isafdar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2240.0,
+              "y": 3200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "REGICIDE"
+      }
+    ]
+  },
+  {
+    "title": "Overpass",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Overpass",
+    "location": "Arandar",
+    "unlockHint": "This track unlocks at Arandar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2345.0,
+              "y": 3285.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "REGICIDE"
+      }
+    ]
+  },
+  {
+    "title": "Riverside",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Riverside",
+    "location": "Tyras Camp",
+    "unlockHint": "This track unlocks in Isafdar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2240.0,
+              "y": 3200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "REGICIDE"
+      }
+    ]
+  },
+  {
+    "title": "Sharp End of the Crystal",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sharp_End_of_the_Crystal",
+    "location": "Iorwerth Dungeon",
+    "unlockHint": "This track unlocks in the Iorwerth Slayer Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Cave",
+            "destination": {
+              "x": 3225,
+              "y": 6044,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Cave",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Spurned Demon",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Spurned_Demon_(music_track)",
+    "location": "Prifddinas",
+    "unlockMessage": "This track unlocks while fighting Zalcano.",
+    "unlockType": "SPECIAL",
+    "unlockHint": "This track unlocks while fighting Zalcano.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3040.0,
+              "y": 6039.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Thrall of the Serpent",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Thrall_of_the_Serpent",
+    "location": "Zul-Andra",
+    "unlockHint": "This track unlocks in Zul-Andra.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2196.0,
+              "y": 3056.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "REGICIDE"
+      }
+    ]
+  },
+  {
+    "title": "Woodland",
+    "region": "Tirannwn",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Woodland_(music_track)",
+    "location": "Iorwerth Camp",
+    "unlockHint": "This track unlocks in Isafdar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2240.0,
+              "y": 3200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "REGICIDE"
+      }
+    ]
+  }
+]

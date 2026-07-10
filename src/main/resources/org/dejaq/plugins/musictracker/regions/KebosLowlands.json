@@ -1,0 +1,756 @@
+[
+  {
+    "title": "Alchemical Attack!",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Alchemical_Attack!",
+    "location": "Kebos Lowlands",
+    "unlockHint": "This track unlocks while fighting the Alchemical Hydra.",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks while fighting the Alchemical Hydra.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1368.0,
+              "y": 10268.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Ascent",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ascent",
+    "location": "Mount Quidamortem",
+    "unlockHint": "This track unlocks at Mount Quidamortem.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1252.0,
+              "y": 3516.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Beyond the Meadow",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Beyond_the_Meadow",
+    "location": "Western Hosidius",
+    "unlockHint": "This track unlocks west of Hosidius.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1653.0,
+              "y": 3569.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Burning Desire",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Burning_Desire",
+    "location": "Mount Karuulm",
+    "unlockHint": "This track unlocks at Mount Karuulm.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1300.0,
+              "y": 3814.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Creeping Vines",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Creeping_Vines",
+    "location": "Farming Guild",
+    "unlockHint": "This track unlocks in the Farming Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1230.0,
+              "y": 3730.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave",
+                "location": {
+                  "x": 1232.0,
+                  "y": 3729.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "levels": [
+          {
+            "skill": "Farming",
+            "level": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Desolate Mage",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Desolate_Mage",
+    "location": "Chambers of Xeric",
+    "unlockHint": "This track unlocks at Mount Quidamortem.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1245.0,
+              "y": 3562.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "A Farmer's Grind",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Farmer%27s_Grind",
+    "location": "Farming Guild",
+    "unlockHint": "This track unlocks in the Farming Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1248.0,
+              "y": 3743.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT",
+        "levels": [
+          {
+            "skill": "Farming",
+            "level": 45.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fire in the Deep",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fire_in_the_Deep",
+    "location": "Chambers of Xeric",
+    "unlockHint": "This track unlocks in the Chambers of Xeric.",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Chambers of Xeric.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3232.0,
+              "y": 5728.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Forests of Shayzien",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Forests_of_Shayzien",
+    "location": "Forest around Shayzien",
+    "unlockHint": "This track unlocks west of Shayzien.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1497.0,
+              "y": 3601.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Ful to the Brim",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ful_to_the_Brim",
+    "location": "Karuulm Slayer Dungeon",
+    "unlockHint": "This track unlocks in the Karuulm Slayer Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1311.0,
+              "y": 3806.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Elevator",
+                "location": {
+                  "x": 1311.0,
+                  "y": 3807.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Activate",
+                "actions": [
+                  "activate"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Getting Down to Business",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Getting_Down_to_Business",
+    "location": "East of the Farming Guild",
+    "unlockHint": "This track unlocks east of the Farming Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1273.0,
+              "y": 3743.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Gill Bill",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Gill_Bill",
+    "location": "Molch Island",
+    "unlockHint": "This track unlocks on Molch Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1408.0,
+              "y": 3612.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Boaty",
+              "location": {
+                "x": 1406.0,
+                "y": 3612.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Molch Island"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 1368.0,
+              "y": 3635.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT",
+        "levels": [
+          {
+            "skill": "Fishing",
+            "level": 43.0
+          },
+          {
+            "skill": "Hunter",
+            "level": 35.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Grow Grow Grow",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Grow_Grow_Grow",
+    "location": "Farming Guild",
+    "unlockHint": "This track unlocks in the Farming Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1248.0,
+              "y": 3743.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Hoe Down",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Hoe_Down",
+    "location": "Farming Guild",
+    "unlockHint": "This track unlocks in the Farming Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1248.0,
+              "y": 3743.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Kanon of Kahlith",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Kanon_of_Kahlith",
+    "location": "Karuulm Slayer Dungeon",
+    "unlockHint": "This track unlocks in the Karuulm Slayer Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1311.0,
+              "y": 3806.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Elevator",
+                "location": {
+                  "x": 1311.0,
+                  "y": 3807.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Activate",
+                "actions": [
+                  "activate"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lower Depths",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lower_Depths",
+    "location": "Chambers of Xeric",
+    "unlockHint": "This track unlocks in the Chambers of Xeric.",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Chambers of Xeric.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3312.0,
+              "y": 5728.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TALE_OF_THE_RIGHTEOUS"
+      }
+    ]
+  },
+  {
+    "title": "March of the Shayzien",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/March_of_the_Shayzien",
+    "location": "Shayziens' wall",
+    "unlockHint": "This track unlocks in the Lizardman Canyon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1405.0,
+              "y": 3535.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Military Life",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Military_Life",
+    "location": "Shayzien Encampment",
+    "unlockHint": "This track unlocks in the Shayzien Encampment.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1513.0,
+              "y": 3649.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Newbie Farming",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Newbie_Farming",
+    "location": "South of the Farming Guild",
+    "unlockHint": "This track unlocks south of the Farming Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1232.0,
+              "y": 3688.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "On the Frontline",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/On_the_Frontline",
+    "location": "Kebos Battlefront",
+    "unlockHint": "This track unlocks on the Kebos Battlefront.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1368.0,
+              "y": 3720.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Out at the Mines",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Out_at_the_Mines",
+    "location": "North-west of Lovakengj",
+    "unlockHint": "This track unlocks north west of Lovakengj.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1490.0,
+              "y": 3847.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Rose",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Rose_(music_track)",
+    "unlockType": "QUEST",
+    "location": "North-east of Farming Guild,",
+    "unlockHint": "This track unlocks during the A Kingdom Divided quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1279.0,
+              "y": 3763.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_KINGDOM_DIVIDED"
+      }
+    ]
+  },
+  {
+    "title": "Servants of Strife",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Servants_of_Strife",
+    "location": "Molch",
+    "unlockHint": "This track unlocks in Molch.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1308.0,
+              "y": 3673.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Stuck in the Mire",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Stuck_in_the_Mire",
+    "location": "Kebos Swamp",
+    "unlockHint": "This track unlocks in Kebos Swamp.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1255.0,
+              "y": 3659.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "A Thorn in My Side",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Thorn_in_My_Side",
+    "members": true,
+    "unlockType": "SPECIAL",
+    "region": "Kebos Lowlands",
+    "location": "Farming Guild",
+    "unlockHint": "This track unlocks while fighting the Hespori.",
+    "unlockMessage": "This track unlocks while fighting the Hespori."
+  },
+  {
+    "title": "Upper Depths",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Upper_Depths",
+    "location": "Chambers of Xeric",
+    "unlockHint": "This track unlocks in the Chambers of Xeric.",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Chambers of Xeric.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3312.0,
+              "y": 5296.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Way of the Wyrm",
+    "region": "Kebos Lowlands",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Way_of_the_Wyrm",
+    "location": "Karuulm Slayer Dungeon",
+    "unlockHint": "This track unlocks in the Karuulm Slayer Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1311.0,
+              "y": 3806.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Elevator",
+                "location": {
+                  "x": 1311.0,
+                  "y": 3807.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Activate",
+                "actions": [
+                  "activate"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  }
+]

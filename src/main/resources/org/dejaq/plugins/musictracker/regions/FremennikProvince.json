@@ -1,0 +1,2078 @@
+[
+  {
+    "title": "Borderland",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Borderland",
+    "location": "East of Rellekka",
+    "unlockHint": "This track unlocks in the area around Rellekka.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2689.0,
+              "y": 3627.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Bubble and Squeak",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bubble_and_Squeak",
+    "location": "Keldagrim Rat Pits",
+    "unlockHint": "This track unlocks in the Keldagrim Rat Pits.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2914.0,
+              "y": 10187.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Stairs",
+              "location": {
+                "x": 2914.0,
+                "y": 10188.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RATCATCHERS"
+      }
+    ]
+  },
+  {
+    "title": "Corridors of Power",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Corridors_of_Power",
+    "unlockType": "QUEST",
+    "location": "Miscellania and Etceteria Dungeon",
+    "unlockHint": "This track unlocks during the Royal Trouble quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2592.0,
+              "y": 10272.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ROYAL_TROUBLE"
+      }
+    ]
+  },
+  {
+    "title": "Dagannoth Dawn",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dagannoth_Dawn",
+    "location": "Waterbirth Island Dungeon",
+    "unlockHint": "This track unlocks in the Waterbirth Island Dungeon.",
+    "routes": [
+      {
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2621.0,
+              "y": 3683.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Jarvald",
+                "location": {
+                  "x": 2621.0,
+                  "y": 3683.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Waterbirth Island",
+                "actions": [
+                  "waterbirth island"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2520.0,
+              "y": 3739.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave entrance",
+                "location": {
+                  "x": 2520.0,
+                  "y": 3739.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Enter",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2490.0,
+              "y": 10162.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 2490.0,
+                  "y": 10162.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "1. Drop Pet rock"
+              },
+              {
+                "location": {
+                  "x": 2490.0,
+                  "y": 10164.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "2. Stand here"
+              },
+              {
+                "entity": "Door",
+                "location": {
+                  "x": 2491.0,
+                  "y": 10163.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "3. Open",
+                "actions": [
+                  "open"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 2545.0,
+              "y": 10146.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 2545.0,
+                  "y": 10146.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Stand here & Equip Rune thrownaxe"
+              },
+              {
+                "entity": "Door-support",
+                "location": {
+                  "x": 2543.0,
+                  "y": 10143.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Turn on SPECIAL ATTACK & Destroy"
+              },
+              {
+                "entity": "Iron ladder",
+                "location": {
+                  "x": 2546.0,
+                  "y": 10143.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Magic & Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 4"
+          },
+          {
+            "destination": {
+              "x": 1808.0,
+              "y": 4405.0,
+              "z": 3.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1808.0,
+                  "y": 4405.0,
+                  "z": 3.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 5"
+          },
+          {
+            "destination": {
+              "x": 1823.0,
+              "y": 4404.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1823.0,
+                  "y": 4404.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb up",
+                "actions": [
+                  "climb-up"
+                ]
+              }
+            ],
+            "name": "Step 6"
+          },
+          {
+            "destination": {
+              "x": 1834.0,
+              "y": 4389.0,
+              "z": 3.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1834.0,
+                  "y": 4389.0,
+                  "z": 3.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Missiles & Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 7"
+          },
+          {
+            "destination": {
+              "x": 1811.0,
+              "y": 4394.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1811.0,
+                  "y": 4394.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Magic & Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 8"
+          },
+          {
+            "destination": {
+              "x": 1799.0,
+              "y": 4388.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1799.0,
+                  "y": 4388.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb up",
+                "actions": [
+                  "climb-up"
+                ]
+              }
+            ],
+            "name": "Step 9"
+          },
+          {
+            "destination": {
+              "x": 1797.0,
+              "y": 4382.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1797.0,
+                  "y": 4382.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 10"
+          },
+          {
+            "destination": {
+              "x": 1802.0,
+              "y": 4369.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1802.0,
+                  "y": 4369.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Climb up",
+                "actions": [
+                  "climb-up"
+                ]
+              }
+            ],
+            "name": "Step 11"
+          },
+          {
+            "destination": {
+              "x": 1826.0,
+              "y": 4362.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1826.0,
+                  "y": 4362.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 12"
+          },
+          {
+            "destination": {
+              "x": 1863.0,
+              "y": 4371.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1863.0,
+                  "y": 4371.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb up",
+                "actions": [
+                  "climb-up"
+                ]
+              }
+            ],
+            "name": "Step 13"
+          },
+          {
+            "destination": {
+              "x": 1864.0,
+              "y": 4388.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1864.0,
+                  "y": 4388.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              },
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1890.0,
+                  "y": 4407.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 14"
+          },
+          {
+            "destination": {
+              "x": 1884.0,
+              "y": 4381.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 1884.0,
+                  "y": 4381.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Protect from Magic"
+              },
+              {
+                "entity": "Kings' ladder",
+                "location": {
+                  "x": 1911.0,
+                  "y": 4367.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Standard",
+                "actions": [
+                  "standard"
+                ]
+              }
+            ],
+            "name": "Step 15"
+          }
+        ],
+        "name": "Route 1",
+        "defaultRoute": true,
+        "quest": "THE_FREMENNIK_TRIALS",
+        "items": [
+          {
+            "itemId": 3695,
+            "quantity": 1.0
+          },
+          {
+            "itemId": 805,
+            "quantity": 1.0
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemId": 24953,
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Desolate Isle",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Desolate_Isle",
+    "location": "Waterbirth Island",
+    "unlockHint": "This track unlocks on Waterbirth Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2621.0,
+              "y": 3683.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Jarvald",
+              "location": {
+                "x": 2621.0,
+                "y": 3683.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Waterbirth Island"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2543.0,
+              "y": 3758.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Down and Out",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Down_and_Out",
+    "location": "Lunar Isle mine",
+    "unlockHint": "This track unlocks during the Dream Mentor quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2352.0,
+              "y": 10360.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Etceteria",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Etceteria_(music_track)",
+    "location": "Etceteria",
+    "unlockHint": "This track unlocks on Etceteria.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2629.0,
+              "y": 3693.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Sailor",
+              "location": {
+                "x": 2629.0,
+                "y": 3693.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Miscellania"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2600.0,
+              "y": 3872.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "quest": "THE_FREMENNIK_TRIALS",
+        "recommendedLevels": [
+          {
+            "skill": "Agility",
+            "level": 55.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Exposed",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Exposed",
+    "location": "Fremennik Province",
+    "unlockHint": "This track unlocks on the Island of Stone.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2470.0,
+              "y": 4010.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FREMENNIK_EXILES"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Have a Blast",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Have_a_Blast",
+    "location": "Blast Furnace",
+    "unlockHint": "This track unlocks during the Blast Furnace minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1952.0,
+              "y": 4960.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_GIANT_DWARF"
+      },
+      {
+        "name": "Route 2",
+        "defaultRoute": false,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2731.0,
+              "y": 3713.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Tunnel",
+                "location": {
+                  "x": 2731.0,
+                  "y": 3713.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2781.0,
+              "y": 10161.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave entrance",
+                "location": {
+                  "x": 2781.0,
+                  "y": 10161.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "go-through"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2842.0,
+              "y": 10129.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Dwarven Boatman",
+                "location": {
+                  "x": 2842.0,
+                  "y": 10129.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Travel",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 2930.0,
+              "y": 10196.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Stairs",
+                "location": {
+                  "x": 2930.0,
+                  "y": 10196.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 4"
+          }
+        ],
+        "quest": "THE_GIANT_DWARF"
+      }
+    ]
+  },
+  {
+    "title": "In Between",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/In_Between",
+    "location": "Arzinian Mine",
+    "unlockHint": "This track unlocks in Dondakan's mine after the Between a Rock quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2730.0,
+              "y": 3713.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Tunnel",
+                "location": {
+                  "x": 2731.0,
+                  "y": 3713.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              },
+              {
+                "entity": "Dwarven Boatman",
+                "location": {
+                  "x": 2888.0,
+                  "y": 10227.0,
+                  "z": 0.0
+                },
+                "hint": "Travel",
+                "type": "NPC"
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2780.0,
+              "y": 10161.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave entrance",
+                "location": {
+                  "x": 2781.0,
+                  "y": 10161.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "go-through"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2838.0,
+              "y": 10124.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Dwarven Ferryman",
+                "location": {
+                  "x": 2840.0,
+                  "y": 10129.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Travel",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 2825.0,
+              "y": 10168.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 2825.0,
+                  "y": 10168.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Wear Gold helmet"
+              },
+              {
+                "entity": "Dwarf MultiCannon",
+                "location": {
+                  "x": 2821.0,
+                  "y": 10165.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Fire (Gold helmet equipped)",
+                "actions": [
+                  "fire"
+                ]
+              }
+            ],
+            "name": "Step 4"
+          }
+        ],
+        "quest": "BETWEEN_A_ROCK",
+        "items": [
+          {
+            "itemId": 4567,
+            "quantity": 1.0
+          },
+          {
+            "itemId": 995,
+            "quantity": 2.0,
+            "label": "2 Coins for Ferry"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemCollection": "RING_OF_WEALTHS",
+            "quantity": 1.0,
+            "label": "Ring of Wealth -> Dondakan's rock"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Island of the Trolls",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Island_of_the_Trolls",
+    "unlockType": "QUEST",
+    "location": "North of Neitiznot and Jatizso",
+    "unlockHint": "This track unlocks north of Neitiznot and Jatizso.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2366.0,
+              "y": 3861.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FREMENNIK_ISLES"
+      }
+    ]
+  },
+  {
+    "title": "Isle of Everywhere",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Isle_of_Everywhere",
+    "unlockType": "QUEST",
+    "location": "East coast of Lunar Isle",
+    "unlockHint": "This track unlocks on Lunar Isle.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2112.0,
+              "y": 3904.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LUNAR_DIPLOMACY"
+      }
+    ]
+  },
+  {
+    "title": "Land Down Under",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Land_Down_Under",
+    "location": "Caves under Miscellania",
+    "unlockHint": "This track unlocks in the caves under Miscellania.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2509.0,
+              "y": 3846.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 2509.0,
+                  "y": 3846.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ROYAL_TROUBLE"
+      }
+    ]
+  },
+  {
+    "title": "Legend",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Legend",
+    "location": "Rellekka",
+    "unlockHint": "This track unlocks in the area around Rellekka.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2690.0,
+              "y": 3626.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lighthouse",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lighthouse_(music_track)",
+    "location": "Lighthouse",
+    "unlockHint": "This track unlocks at the Lighthouse.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2547.0,
+              "y": 3617.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "recommendedLevels": [
+          {
+            "skill": "Agility",
+            "level": 35.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Lunar Isle",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Lunar_Isle",
+    "unlockType": "QUEST",
+    "location": "Lunar Isle",
+    "unlockHint": "This track unlocks on Lunar Isle.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2112.0,
+              "y": 3904.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LUNAR_DIPLOMACY"
+      }
+    ]
+  },
+  {
+    "title": "Major Miner",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Major_Miner",
+    "location": "Jatizso mine",
+    "unlockHint": "This track unlocks in the Jatizso mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2644.0,
+              "y": 3709.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Mord Gunnars",
+                "location": {
+                  "x": 2644.0,
+                  "y": 3709.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Jatizso",
+                "actions": [
+                  "jatizso"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2397.0,
+              "y": 3812.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Staircase",
+                "location": {
+                  "x": 2397.0,
+                  "y": 3812.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ],
+        "quest": "THE_FREMENNIK_ISLES"
+      }
+    ]
+  },
+  {
+    "title": "Masquerade",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Masquerade",
+    "location": "Fremennik Slayer Dungeon",
+    "unlockHint": "This track unlocks in the Fremennik Slayer Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2797.0,
+              "y": 3615.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave Entrance",
+                "location": {
+                  "x": 2797.0,
+                  "y": 3615.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Miscellania",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Miscellania_(music_track)",
+    "location": "Miscellania",
+    "unlockHint": "This track unlocks on Miscellania.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2629.0,
+              "y": 3693.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Sailor",
+              "location": {
+                "x": 2629.0,
+                "y": 3693.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Miscellania"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2540.0,
+              "y": 3870.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "quest": "THE_FREMENNIK_TRIALS"
+      }
+    ]
+  },
+  {
+    "title": "The Monsters Below",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Monsters_Below",
+    "location": "Waterbirth Island",
+    "unlockHint": "This track unlocks in the Waterbirth Island Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2621.0,
+              "y": 3683.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Jarvald",
+                "location": {
+                  "x": 2621.0,
+                  "y": 3683.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Waterbirth Island",
+                "actions": [
+                  "waterbirth island"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2520.0,
+              "y": 3739.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave entrance",
+                "location": {
+                  "x": 2520.0,
+                  "y": 3739.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Enter",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Norse Code",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Norse_Code",
+    "unlockType": "QUEST",
+    "location": "Jatizso",
+    "unlockHint": "This track unlocks on Jatizso.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2399.0,
+              "y": 3810.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FREMENNIK_ISLES"
+      }
+    ]
+  },
+  {
+    "title": "Ogre the Top",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ogre_the_Top",
+    "unlockType": "QUEST",
+    "location": "North of Neitiznot and Jatizso",
+    "unlockHint": "This track unlocks during The Fremennik Isles quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2644.0,
+              "y": 3710.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Maria Gunnars",
+              "location": {
+                "x": 2644.0,
+                "y": 3710.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Neitiznot"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2317.0,
+              "y": 3823.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 21306.0,
+              "location": {
+                "x": 2317.0,
+                "y": 3824.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2314.0,
+              "y": 3839.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 21310.0,
+              "location": {
+                "x": 2314.0,
+                "y": 3840.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 2317.0,
+              "y": 3893.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 21585.0,
+              "location": {
+                "x": 2316.0,
+                "y": 3894.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 4"
+          }
+        ],
+        "quest": "THE_FREMENNIK_ISLES"
+      }
+    ]
+  },
+  {
+    "title": "Poles Apart",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Poles_Apart",
+    "location": "Rellekka Hunter area",
+    "unlockHint": "This track unlocks at the Rellekka Hunter area.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2724.0,
+              "y": 3784.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Rellekka",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Rellekka_(music_track)",
+    "location": "Rellekka",
+    "unlockHint": "This track unlocks in Rellekka.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2647.0,
+              "y": 3690.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Saga",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Saga",
+    "location": "South of Rellekka",
+    "unlockHint": "This track unlocks in the area around Rellekka.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2690.0,
+              "y": 3626.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Slayer",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Slayer",
+    "location": "Fremennik Slayer Dungeon",
+    "unlockHint": "This track unlocks in the Fremennik Slayer Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2797.0,
+              "y": 3615.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave Entrance",
+                "location": {
+                  "x": 2797.0,
+                  "y": 3615.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Subterranea",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Subterranea",
+    "location": "Waterbirth Island Dungeon, Crabclaw Caves",
+    "unlockHint": "This track unlocks in the Waterbirth Island Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2621.0,
+              "y": 3683.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Jarvald",
+                "location": {
+                  "x": 2621.0,
+                  "y": 3683.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Waterbirth Island",
+                "actions": [
+                  "waterbirth island"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2520.0,
+              "y": 3739.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave entrance",
+                "location": {
+                  "x": 2520.0,
+                  "y": 3739.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Enter",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2985.0,
+              "y": 10474.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 2985.0,
+                  "y": 10474.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Drop Pet rock"
+              },
+              {
+                "location": {
+                  "x": 3095.0,
+                  "y": 10520.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "2. Stand here"
+              },
+              {
+                "entity": "Door",
+                "location": {
+                  "x": 2491.0,
+                  "y": 10163.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "3. Open",
+                "actions": [
+                  "open"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Volcanic Vikings",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Volcanic_Vikings",
+    "unlockType": "QUEST",
+    "location": "Neitiznot",
+    "unlockHint": "This track unlocks on Neitiznot.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2336.0,
+              "y": 3799.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FREMENNIK_ISLES"
+      }
+    ]
+  },
+  {
+    "title": "Xenophobe",
+    "region": "Fremennik Province",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Xenophobe",
+    "location": "Waterbirth Island Dungeon",
+    "unlockHint": "This track unlocks in the Waterbirth Island Dungeon.",
+    "routes": [
+      {
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2621.0,
+              "y": 3683.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Jarvald",
+                "location": {
+                  "x": 2621.0,
+                  "y": 3683.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Waterbirth Island",
+                "actions": [
+                  "waterbirth island"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2520.0,
+              "y": 3739.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave entrance",
+                "location": {
+                  "x": 2520.0,
+                  "y": 3739.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Enter",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2985.0,
+              "y": 10474.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 2985.0,
+                  "y": 10474.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Drop Pet rock"
+              },
+              {
+                "location": {
+                  "x": 3095.0,
+                  "y": 10520.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "2. Stand here"
+              },
+              {
+                "entity": "Door",
+                "location": {
+                  "x": 2491.0,
+                  "y": 10163.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "3. Open",
+                "actions": [
+                  "3. Open"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 3146.0,
+              "y": 10526.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 3146.0,
+                  "y": 10526.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Stand here & Equip Rune thrownaxe"
+              },
+              {
+                "entity": "Door-support",
+                "location": {
+                  "x": 2543.0,
+                  "y": 10143.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Turn on SPECIAL ATTACK & Destroy"
+              },
+              {
+                "entity": "Iron ladder",
+                "location": {
+                  "x": 2546.0,
+                  "y": 10143.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 4"
+          },
+          {
+            "destination": {
+              "x": 1808.0,
+              "y": 4405.0,
+              "z": 3.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1808.0,
+                  "y": 4405.0,
+                  "z": 3.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 5"
+          },
+          {
+            "destination": {
+              "x": 1823.0,
+              "y": 4404.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1823.0,
+                  "y": 4404.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb up",
+                "actions": [
+                  "climb-up"
+                ]
+              }
+            ],
+            "name": "Step 6"
+          },
+          {
+            "destination": {
+              "x": 1834.0,
+              "y": 4389.0,
+              "z": 3.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1834.0,
+                  "y": 4389.0,
+                  "z": 3.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Missiles & Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 7"
+          },
+          {
+            "destination": {
+              "x": 1811.0,
+              "y": 4394.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1811.0,
+                  "y": 4394.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Magic & Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 8"
+          },
+          {
+            "destination": {
+              "x": 1799.0,
+              "y": 4388.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1799.0,
+                  "y": 4388.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb up",
+                "actions": [
+                  "climb-up"
+                ]
+              }
+            ],
+            "name": "Step 9"
+          },
+          {
+            "destination": {
+              "x": 1797.0,
+              "y": 4382.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1797.0,
+                  "y": 4382.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 10"
+          },
+          {
+            "destination": {
+              "x": 1802.0,
+              "y": 4369.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1802.0,
+                  "y": 4369.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Climb up",
+                "actions": [
+                  "climb-up"
+                ]
+              }
+            ],
+            "name": "Step 11"
+          },
+          {
+            "destination": {
+              "x": 1826.0,
+              "y": 4362.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1826.0,
+                  "y": 4362.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Protect from Melee & Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 12"
+          },
+          {
+            "destination": {
+              "x": 1863.0,
+              "y": 4371.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1863.0,
+                  "y": 4371.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb up",
+                "actions": [
+                  "climb-up"
+                ]
+              }
+            ],
+            "name": "Step 13"
+          },
+          {
+            "destination": {
+              "x": 1864.0,
+              "y": 4388.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1864.0,
+                  "y": 4388.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              },
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 1890.0,
+                  "y": 4407.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 14"
+          },
+          {
+            "destination": {
+              "x": 2399.0,
+              "y": 4708.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 2399.0,
+                  "y": 4708.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Protect from Magic"
+              },
+              {
+                "entity": "Kings' ladder",
+                "location": {
+                  "x": 1911.0,
+                  "y": 4367.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Standard",
+                "actions": [
+                  "standard"
+                ]
+              }
+            ],
+            "name": "Step 15"
+          }
+        ],
+        "name": "Route 1",
+        "defaultRoute": true
+      }
+    ]
+  }
+]

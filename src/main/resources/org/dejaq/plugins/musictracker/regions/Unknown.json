@@ -1,0 +1,1838 @@
+[
+  {
+    "title": "The Angel's Fury",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Angel%27s_Fury",
+    "location": "Ancient Prison",
+    "unlockMessage": "This track unlocks while fighting Nex.",
+    "unlockType": "SPECIAL",
+    "unlockHint": "This track unlocks in the God Wars Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2926.0,
+              "y": 5216.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Armadyl Alliance",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Armadyl_Alliance",
+    "unlockMessage": "This track unlocks while fighting Kree'arra.",
+    "unlockType": "SPECIAL",
+    "location": "Armadyl's Eyrie",
+    "unlockHint": "This track unlocks in the God Wars Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 5280.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Artistry",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Artistry",
+    "location": "Mime Random event",
+    "unlockMessage": "Mime",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during the Mime random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2016.0,
+              "y": 4768.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Bandos Battalion",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bandos_Battalion",
+    "location": "Bandos' Stronghold",
+    "unlockMessage": "This track unlocks while fighting General Graardor.",
+    "unlockType": "SPECIAL",
+    "unlockHint": "This track unlocks in the God Wars Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 5344.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Box of Delights",
+    "region": "Unknown",
+    "members": true,
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks while fighting The Mimic",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Box_of_Delights",
+    "location": "The Mimic chest",
+    "unlockHint": "This track unlocks in the Mimic Chest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2720.0,
+              "y": 4320.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Corporal Punishment",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Corporal_Punishment",
+    "location": "Drill Demon random event",
+    "unlockMessage": "Drill Demon",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during the Drill Demon random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 4832.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Crystal Cave",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Crystal_Cave",
+    "location": "East Zanaris",
+    "unlockHint": "This track unlocks in Zanaris.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3201.0,
+              "y": 3169.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Door",
+                "location": {
+                  "x": 3202.0,
+                  "y": 3169.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Equip staff then open",
+                "actions": [
+                  "open"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LOST_CITY",
+        "items": [
+          {
+            "itemCollection": "FAIRY_STAFF",
+            "label": "Dramen or Lunar staff",
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dance of Death",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dance_of_Death",
+    "location": "Sepulchre of Death",
+    "unlockHint": "This track unlocks in the Stronghold of Security.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2336.0,
+              "y": 5216.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Stronghold of Security"
+  },
+  {
+    "title": "Distillery Hilarity",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Distillery_Hilarity",
+    "location": "Trouble Brewing",
+    "unlockHint": "This track unlocks during the Trouble Brewing minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3813.0,
+              "y": 3020.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CABIN_FEVER"
+      }
+    ]
+  },
+  {
+    "title": "Dogs of War",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dogs_of_War",
+    "location": "Vault of War",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Stronghold of Security",
+    "unlockHint": "This track unlocks in the Stronghold of Security.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 5216.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dusk in Yu'biusk",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dusk_in_Yu%27biusk",
+    "location": "Yu'biusk",
+    "unlockHint": "This track unlocks in Yu'biusk.",
+    "routes": [
+      {
+        "name": "Fairy Ring",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3129.0,
+              "y": 3496.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Fairy ring",
+                "location": {
+                  "x": 3129.0,
+                  "y": 3496.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Configure -> B L Q",
+                "actions": [
+                  "configure"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LAND_OF_THE_GOBLINS"
+      }
+    ]
+  },
+  {
+    "title": "Evil Bob's Island",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Evil_Bob%27s_Island",
+    "location": "Evil Bob's random event",
+    "unlockMessage": "Evil Bob's island",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks on Evil Bob's island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2528.0,
+              "y": 4768.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Faerie",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Faerie",
+    "location": "Western Zanaris",
+    "unlockHint": "This track unlocks in Zanaris.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3201.0,
+              "y": 3169.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Door",
+                "location": {
+                  "x": 3202.0,
+                  "y": 3169.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Equip staff then open",
+                "actions": [
+                  "open"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LOST_CITY",
+        "items": [
+          {
+            "itemCollection": "FAIRY_STAFF",
+            "label": "Dramen or Lunar staff",
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fire and Brimstone",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fire_and_Brimstone",
+    "location": "TzHaar Fight Pit",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "TzHaar Fight Pit",
+    "unlockHint": "This track unlocks in the TzHaar Fight Pit.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 5152.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Food for Thought",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Food_for_Thought",
+    "location": "Catacomb of Famine",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Stronghold of Security",
+    "unlockHint": "This track unlocks in the Stronghold of Security.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2016.0,
+              "y": 5216.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fossilised",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fossilised",
+    "location": "Wyvern Cave",
+    "unlockHint": "This track unlocks beneath Fossil Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3680.0,
+              "y": 3854.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trap Door",
+                "location": {
+                  "x": 3678.0,
+                  "y": 3854.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BONE_VOYAGE"
+      }
+    ]
+  },
+  {
+    "title": "Frogland",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Frogland",
+    "location": "Kiss the frog random event",
+    "unlockMessage": "Frog",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during the Frog random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2464.0,
+              "y": 4768.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Head to Head",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Head_to_Head",
+    "location": "Evil Twin random event",
+    "unlockMessage": "Evil Twin",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during Evil Twin random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 5152.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "In the Brine",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/In_the_Brine",
+    "location": "Mos Le'Harmless",
+    "unlockHint": "This track unlocks on Mos Le'Harmless.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3709.0,
+              "y": 3496.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Gangplank",
+              "location": {
+                "x": 3710.0,
+                "y": 3496.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3712.0,
+              "y": 3496.0,
+              "z": 1.0
+            },
+            "interaction": {
+              "entity": "Bill Teach",
+              "location": {
+                "x": 3712.0,
+                "y": 3496.0,
+                "z": 1.0
+              },
+              "type": "NPC",
+              "hint": "Travel"
+            },
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 3684.0,
+              "y": 2950.0,
+              "z": 1.0
+            },
+            "name": "Step 3"
+          }
+        ],
+        "quest": "CABIN_FEVER"
+      }
+    ]
+  },
+  {
+    "title": "In the Clink",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/In_the_Clink",
+    "location": "Prison Pete random event",
+    "unlockMessage": "Prison Pete",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during the Prison Pete random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2080.0,
+              "y": 4448.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Jungly 1",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jungly_1",
+    "location": "Cairn Isle",
+    "unlockHint": "This track unlocks on Karamja.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 3062.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lagoon",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lagoon",
+    "location": "Fossil Island",
+    "unlockHint": "This track unlocks beneath Fossil Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3765.0,
+              "y": 3879.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Zip line",
+                "location": {
+                  "x": 3765.0,
+                  "y": 3883.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "74+ Agility - Teeth-grip"
+              },
+              {
+                "entity": "Magic Mushtree",
+                "location": {
+                  "x": 3764.0,
+                  "y": 3880.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Mushroom Meadow",
+                "actions": [
+                  "use"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3734.0,
+              "y": 3893.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Rowboat",
+                "location": {
+                  "x": 3735.0,
+                  "y": 3894.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Row out to sea",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 3763.0,
+              "y": 3899.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 3763.0,
+                  "y": 3899.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Unequip weapon / shield"
+              },
+              {
+                "entity": "Rowboat",
+                "location": {
+                  "x": 3761.0,
+                  "y": 3899.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Dive (UNEQUIP WEAPON AND SHIELD)",
+                "actions": [
+                  "dive"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          }
+        ],
+        "quest": "BONE_VOYAGE",
+        "items": [
+          {
+            "itemId": 7534,
+            "quantity": 1.0
+          },
+          {
+            "itemId": 7535,
+            "quantity": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Route 2",
+        "defaultRoute": false,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3362.0,
+              "y": 3445.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Barge guard",
+                "location": {
+                  "x": 3362.0,
+                  "y": 3446.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Quick-Travel",
+                "actions": [
+                  "quick-travel"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3724.0,
+              "y": 3807.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Rowboat",
+                "location": {
+                  "x": 3724.0,
+                  "y": 3805.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Row out to sea, north of the island",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 3763.0,
+              "y": 3899.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 3763.0,
+                  "y": 3899.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Unequip weapon / shield"
+              },
+              {
+                "entity": "Rowboat",
+                "location": {
+                  "x": 3761.0,
+                  "y": 3899.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Dive (UNEQUIP WEAPON AND SHIELD)",
+                "actions": [
+                  "dive"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          }
+        ],
+        "quest": "BONE_VOYAGE",
+        "items": [
+          {
+            "itemId": 7534,
+            "quantity": 1.0
+          },
+          {
+            "itemId": 7535,
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Last Man Standing",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Last_Man_Standing_(music_track)",
+    "location": "Last Man Standing",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Last Man Standing",
+    "unlockHint": "This track unlocks in the Last Man Standing minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3456.0,
+              "y": 5856.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lava is Mine",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lava_is_Mine",
+    "location": "Fossil Island",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Volcanic Mine",
+    "unlockHint": "This track unlocks during the Volcanic Mine minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3808.0,
+              "y": 10176.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Life's a Beach!",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Life%27s_a_Beach!",
+    "location": "South Mos Le'Harmless",
+    "unlockHint": "This track unlocks on Mos Le'Harmless.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3709.0,
+              "y": 3496.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Gangplank",
+              "location": {
+                "x": 3710.0,
+                "y": 3496.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3712.0,
+              "y": 3496.0,
+              "z": 1.0
+            },
+            "interaction": {
+              "entity": "Bill Teach",
+              "location": {
+                "x": 3712.0,
+                "y": 3496.0,
+                "z": 1.0
+              },
+              "type": "NPC",
+              "hint": "Travel"
+            },
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 3684.0,
+              "y": 2950.0,
+              "z": 1.0
+            },
+            "name": "Step 3"
+          }
+        ],
+        "quest": "CABIN_FEVER"
+      }
+    ]
+  },
+  {
+    "title": "Malady",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Malady",
+    "location": "Pit of Pestilence",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Stronghold of Security",
+    "unlockHint": "This track unlocks in the Stronghold of Security.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2144.0,
+              "y": 5280.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Monarch Waltz",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Monarch_Waltz",
+    "location": "Sinclair Mansion",
+    "unlockHint": "This track unlocks north of Seers' Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2701.0,
+              "y": 3562.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Newbie Melody",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Newbie_Melody",
+    "location": "Tutorial Island",
+    "unlockHint": "This track unlocks on Tutorial Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3105.0,
+              "y": 3095.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "AUTOMATIC",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Null and Void",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Null_and_Void",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Pest Control",
+    "location": "Void Knight Outpost",
+    "unlockHint": "This track unlocks at the Void Knights' Outpost.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2655.0,
+              "y": 2658.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Pheasant Peasant",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Pheasant_Peasant",
+    "location": "Freaky Forester random event",
+    "unlockMessage": "Freaky Forester",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during the Freaky Forester random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2592.0,
+              "y": 4768.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Pinball Wizard",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Pinball_Wizard",
+    "location": "Pinball random event",
+    "unlockMessage": "Pinball",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during the Pinball random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1968.0,
+              "y": 5040.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Pirates of Penance",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Pirates_of_Penance",
+    "location": "Barbarian Assault",
+    "unlockHint": "This track unlocks during the Barbarian Assault minigame.",
+    "routes": [
+      {
+        "name": "Quetzal",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Renu",
+                "type": "NPC",
+                "hint": "Travel -> Aldarin",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1888,
+              "y": 5408,
+              "z": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Power of Tears",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Power_of_Tears",
+    "location": "Chasm of Tears",
+    "unlockHint": "This track unlocks during the Tears of Guthix minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3259.0,
+              "y": 9504.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks while collecting the Tears of Guthix."
+  },
+  {
+    "title": "Preservation",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Preservation",
+    "unlockType": "QUEST",
+    "location": "Fossil Island",
+    "unlockHint": "This track unlocks on Fossil Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Barge",
+            "destination": {
+              "x": 3362,
+              "y": 3446,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Barge guard",
+                "type": "NPC",
+                "hint": "Quick Travel",
+                "actions": [
+                  "quick-travel"
+                ]
+              }
+            ]
+          }
+        ],
+        "quest": "BONE_VOYAGE"
+      }
+    ]
+  },
+  {
+    "title": "Preserved",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Preserved",
+    "location": "Fossil Island Volcano",
+    "unlockHint": "This track unlocks on Fossil Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Barge",
+            "destination": {
+              "x": 3362,
+              "y": 3446,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Barge guard",
+                "type": "NPC",
+                "hint": "Quick Travel",
+                "actions": [
+                  "quick-travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 3744,
+              "y": 3776,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "BONE_VOYAGE"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Quizmaster",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Quizmaster",
+    "location": "Quiz Master random event",
+    "unlockMessage": "Quiz Master",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during the Quiz Master random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1952.0,
+              "y": 4768.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Rest in Peace",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Rest_in_Peace",
+    "location": "Death's Office",
+    "unlockHint": "This track unlocks in Death's Office.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Death",
+            "destination": {
+              "x": 3238,
+              "y": 3192,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Death's Domain",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Rune Essence",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Rune_Essence_(music_track)",
+    "location": "Rune Essence mine",
+    "unlockHint": "This track unlocks in the Rune Essence Mine.",
+    "routes": [
+      {
+        "name": "Aubury",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Aubury",
+            "destination": {
+              "x": 3253,
+              "y": 3401,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Aubury",
+                "type": "NPC",
+                "hint": "Teleport",
+                "actions": [
+                  "teleport"
+                ]
+              }
+            ]
+          }
+        ],
+        "quest": "RUNE_MYSTERIES"
+      }
+    ]
+  },
+  {
+    "title": "Scape Cave",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Cave",
+    "location": "Tutorial Island",
+    "unlockHint": "This track unlocks in the Varrock Sewers.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3104.0,
+              "y": 9504.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "AUTOMATIC",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Scape Main",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Main",
+    "location": "None",
+    "unlockHint": "This track unlocks automatically.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1664.0,
+              "y": 5696.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "AUTOMATIC",
+    "unlockMessage": ""
+  },
+  {
+    "title": "School's Out",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/School%27s_Out",
+    "location": "Surprise Exam random event",
+    "unlockMessage": "Surprise Exam",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during the Surprise Exam random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 5024.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Soul Wars",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Soul_Wars_(music_track)",
+    "location": "Soul Wars",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Soul Wars",
+    "unlockHint": "This track unlocks during the Soul Wars minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2209.0,
+              "y": 2912.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Strange Place",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Strange_Place",
+    "location": "A Tail of Two Cats",
+    "unlockHint": "This track unlocks during the A Tail of Two Cats quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 4512.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_TAIL_OF_TWO_CATS"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "A_TAIL_OF_TWO_CATS",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Stratosphere",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Stratosphere",
+    "location": "Cosmic Altar",
+    "unlockHint": "This track unlocks at the Cosmic Altar.",
+    "routes": [
+      {
+        "name": "Zanaris",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 3201,
+              "y": 3169,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Door",
+                "type": "GAME_OBJECT",
+                "hint": "Equip staff then open",
+                "actions": [
+                  "open"
+                ]
+              }
+            ]
+          }
+        ],
+        "notes": "Can also be accessed through the Abyss",
+        "quest": "LOST_CITY",
+        "items": [
+          {
+            "itemCollection": "FAIRY_STAFF",
+            "quantity": 1,
+            "label": "Dramen or Lunar staff"
+          },
+          {
+            "itemCollection": "COSMIC_ALTAR",
+            "quantity": 1,
+            "label": "Cosmic Altar Access"
+          }
+        ],
+        "recommendedLevels": [
+          {
+            "skill": "AGILITY",
+            "level": 46
+          }
+        ]
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "quest": "ENTER_THE_ABYSS",
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3559.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3106.0,
+                "y": 3559.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Zamorak"
+          }
+        ],
+        "notes": "Requires Lost City to be complete\n\nCan also be unlocked in Zanaris"
+      }
+    ]
+  },
+  {
+    "title": "Strength of Saradomin",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Strength_of_Saradomin",
+    "location": "Saradomin's Encampment",
+    "unlockMessage": "This track unlocks while fighting Commander Zilyana.",
+    "unlockType": "SPECIAL",
+    "unlockHint": "This track unlocks in the God Wars Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2912.0,
+              "y": 5280.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Time Out",
+    "region": "Unknown",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Time_Out",
+    "location": "Maze random event",
+    "unlockMessage": "Maze",
+    "unlockType": "RANDOM_EVENT",
+    "unlockHint": "This track unlocks during the Maze random event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2912.0,
+              "y": 4576.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Trouble Brewing",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Trouble_Brewing_(music_track)",
+    "location": "Trouble Brewing",
+    "unlockHint": "This track unlocks during the Trouble Brewing minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3808.0,
+              "y": 2976.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "SPECIAL",
+    "unlockMessage": "Trouble Brewing"
+  },
+  {
+    "title": "Victory is Mine",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Victory_is_Mine",
+    "location": "Champion's Challenge",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks during the Champions' Challenge minigame.",
+    "unlockHint": "This track unlocks during the Champions' Challenge minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [],
+        "items": [
+          {
+            "itemCollection": "CHAMPION_CHALLENGE_SCROLLS",
+            "quantity": 1,
+            "label": "Champion's Challenge scroll"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Waiting Game",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Waiting_Game",
+    "location": "Soul Wars",
+    "unlockHint": "This track unlocks in the Soul Wars lobby.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Portal",
+            "destination": {
+              "x": 3083,
+              "y": 3474,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Soul Wars Portal",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 2208,
+              "y": 2853,
+              "z": 0
+            }
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Watch Your Step",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Watch_Your_Step",
+    "location": "Hallowed Sepulchre",
+    "unlockHint": "This track unlocks in the Hallowed Sepulchre.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 2400,
+              "y": 5920,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "SINS_OF_THE_FATHER"
+      }
+    ],
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Hallowed Sepulchre."
+  },
+  {
+    "title": "Well Hallowed Air",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Well_Hallowed_Air",
+    "location": "Hallowed Sepulchre",
+    "unlockHint": "This track unlocks in the Hallowed Sepulchre lobby.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 5984.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in the Hallowed Sepulchre lobby."
+  },
+  {
+    "title": "Zamorak Zoo",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Zamorak_Zoo",
+    "location": "Zamorak's Fortress",
+    "unlockMessage": "This track unlocks while fighting K'ril Tsutsaroth.",
+    "unlockType": "SPECIAL",
+    "unlockHint": "This track unlocks in the God Wars Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2912.0,
+              "y": 5344.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Zaros Zeitgeist",
+    "region": "Unknown",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Zaros_Zeitgeist",
+    "location": "Ancient Prison",
+    "unlockMessage": "This track unlocks while fighting Nex.",
+    "unlockType": "SPECIAL",
+    "unlockHint": "This track unlocks in the God Wars Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2926.0,
+              "y": 5216.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  }
+]

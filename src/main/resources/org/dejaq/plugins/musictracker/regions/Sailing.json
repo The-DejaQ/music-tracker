@@ -1,0 +1,622 @@
+[
+  {
+    "title": "All Aboard",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/All_Aboard",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Ardent Ocean.",
+    "unlockHint": "This track unlocks in the Ardent Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2967.0,
+              "y": 2807.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Ardent Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Crashing Waves",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Crashing_Waves",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Unquiet Ocean",
+    "unlockHint": "This track unlocks in the Unquiet Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2873.0,
+              "y": 2430.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Unquiet Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Echoes of the North",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Echoes_of_the_North",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Northern Ocean",
+    "unlockHint": "This track unlocks in the Northern Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2277.0,
+              "y": 3899.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Northern Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Elder Wisdom",
+    "region": "Sailing",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Elder_Wisdom",
+    "unlockType": "QUEST",
+    "location": "The Great Conch",
+    "unlockHint": "This track unlocks during the Troubled Tortugans quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 2446.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TROUBLED_TORTUGANS"
+      }
+    ]
+  },
+  {
+    "title": "The Eternal Waves",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Eternal_Waves",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Shrouded Ocean",
+    "unlockHint": "This track unlocks in the Shrouded Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2492.0,
+              "y": 2626.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Shrouded Ocean"
+      }
+    ]
+  },
+  {
+    "title": "The Great North",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Great_North",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Northern Ocean",
+    "unlockHint": "This track unlocks in the Northern Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2277.0,
+              "y": 3899.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Northern Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Honkytonky Sea Shanty 2",
+    "region": "Sailing",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Honkytonky_Sea_Shanty_2",
+    "unlockType": "QUEST",
+    "location": "The Pandemonium",
+    "unlockHint": "This track unlocks during the Pandemonium quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3045.0,
+              "y": 2981.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM"
+      }
+    ]
+  },
+  {
+    "title": "Into the Blue",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Into_the_Blue",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Shrouded Ocean",
+    "unlockHint": "This track unlocks in the Shrouded Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2492.0,
+              "y": 2626.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Shrouded Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Life at Sea",
+    "region": "Sailing",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Life_at_Sea",
+    "location": "Shipyard, Deepfin Point",
+    "unlockHint": "This track unlocks on various islands out at sea.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3024.0,
+              "y": 3204.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Shipwright Sam",
+              "location": {
+                "x": 3024.0,
+                "y": 3204.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Customise-boat"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2084.0,
+              "y": 2728.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Requires a boat docked at Port Sarim"
+      }
+    ]
+  },
+  {
+    "title": "Lurking Threats",
+    "region": "Sailing",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lurking_Threats",
+    "location": "Charred Dungeon",
+    "unlockHint": "This track unlocks in the Charred Dungeon",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2637.0,
+              "y": 2414.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Mooring point",
+                "location": {
+                  "x": 2660.0,
+                  "y": 2394.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Disembark"
+              },
+              {
+                "entity": "Dark hole",
+                "location": {
+                  "x": 2636.0,
+                  "y": 2415.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Use Rope on then Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 954,
+            "quantity": 1.0
+          }
+        ],
+        "quest": "THE_RED_REEF",
+        "notes": "Recommended to have a boat docked at Red Rock.\n\nCan also recover boat at Red Rock.\n\nCan reach Red Rock by Charter Ship."
+      }
+    ]
+  },
+  {
+    "title": "Mysterious Lands",
+    "region": "Sailing",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mysterious_Lands",
+    "location": "Sunbleak Island and the Onyx Crest",
+    "unlockHint": "This track unlocks on various islands out at sea.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2212.0,
+              "y": 2318.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Track is unlocked by Sailing to Sunbleak Island"
+      }
+    ]
+  },
+  {
+    "title": "Over the Horizon",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Over_the_Horizon",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Sunset Ocean",
+    "unlockHint": "This track unlocks in the Sunset Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1387.0,
+              "y": 2606.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Sunset Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Remote Waters",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Remote_Waters",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Unquiet Ocean",
+    "unlockHint": "This track unlocks in the Unquiet Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2873.0,
+              "y": 2430.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Unquiet Ocean"
+      }
+    ]
+  },
+  {
+    "title": "A Sailor's Dream",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Sailor%27s_Dream",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Western Ocean",
+    "unlockHint": "This track unlocks in the Western Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2016.0,
+              "y": 3305.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Western Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Scape Sail",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Sail",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Sailing",
+    "location": "None",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Set Sail",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Set_Sail",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Ardent Ocean",
+    "unlockHint": "This track unlocks in the Ardent Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2967.0,
+              "y": 2807.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Ardent Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Shadow of the Ocean",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Shadow_of_the_Ocean",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Sunset Ocean",
+    "unlockHint": "This track unlocks in the Sunset Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1387.0,
+              "y": 2606.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Sunset Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Test Your Sails",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Test_Your_Sails",
+    "members": true,
+    "region": "Sailing",
+    "location": "None",
+    "unlockHint": "This track unlocks during a Barracuda Trial.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3034.0,
+              "y": 2926.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks during a Barracuda Trial\nRequires a Skiff"
+      }
+    ]
+  },
+  {
+    "title": "The Tortugan Way",
+    "region": "Sailing",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Tortugan_Way",
+    "location": "The Great Conch",
+    "unlockHint": "This track unlocks during the Troubled Tortugans quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 2446.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TROUBLED_TORTUGANS"
+      }
+    ]
+  },
+  {
+    "title": "Tranquillity",
+    "region": "Sailing",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tranquillity",
+    "location": "Dognose Island, Shimmering Atoll, Wintumber Island, Here Be Minotaurs, Limbo",
+    "unlockHint": "This track unlocks on various islands out at sea.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3049.0,
+              "y": 2646.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "levels": [
+          {
+            "skill": "Sailing",
+            "level": 40.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Western Seas",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Western_Seas",
+    "members": true,
+    "unlockType": "NORMAL",
+    "region": "Sailing",
+    "location": "Western Ocean",
+    "unlockHint": "This track unlocks in the Western Ocean.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2016.0,
+              "y": 3305.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM",
+        "notes": "Unlocks while Sailing in the Western Ocean"
+      }
+    ]
+  },
+  {
+    "title": "Yo Ho Ho!",
+    "region": "Sailing",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Yo_Ho_Ho!",
+    "unlockType": "QUEST",
+    "location": "The Pandemonium",
+    "unlockHint": "This track unlocks during the Pandemonium quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3045.0,
+              "y": 2981.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PANDEMONIUM"
+      }
+    ]
+  }
+]

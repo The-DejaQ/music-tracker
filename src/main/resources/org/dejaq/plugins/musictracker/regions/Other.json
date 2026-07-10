@@ -1,0 +1,607 @@
+[
+  {
+    "title": "Armageddon",
+    "region": "Other",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Armageddon",
+    "location": "God Wars Dungeon",
+    "unlockHint": "This track unlocks in the God Wars Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2899.0,
+              "y": 3713.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Boulder",
+                "location": {
+                  "x": 2899.0,
+                  "y": 3717.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "60 Strength - Move"
+              },
+              {
+                "entity": "Little crack",
+                "location": {
+                  "x": 2900.0,
+                  "y": 3713.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "60 Agility - Crawl through"
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2912.0,
+              "y": 3749.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Knight",
+                "location": {
+                  "x": 2912.0,
+                  "y": 3749.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "1. Talk to Knight",
+                "actions": [
+                  "talk-to"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2916.0,
+              "y": 3746.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Hole",
+                "location": {
+                  "x": 2917.0,
+                  "y": 3745.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "2. Attach rope then climb down"
+              }
+            ],
+            "name": "Step 3"
+          }
+        ],
+        "recommendedLevels": [
+          {
+            "skill": "Agility",
+            "level": 60.0
+          },
+          {
+            "skill": "Strength",
+            "level": 60.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Attack 6",
+    "region": "Other",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Attack_6",
+    "location": "Gu'Tanoth Ogre Enclave",
+    "unlockHint": "This track unlocks at Gu'Tanoth.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2592.0,
+              "y": 9440.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "WATCHTOWER"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Chompy Hunt",
+    "region": "Other",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_Hunt",
+    "location": "Feldip Hills, Rantz's Cave, Corsair Cove Dungeon",
+    "unlockHint": "This track unlocks in the Feldip Hills.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2560.0,
+              "y": 2944.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Crest of a Wave",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Crest_of_a_Wave",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "Crandor",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Gaol",
+    "region": "Other",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Gaol",
+    "location": "Gu'Tanoth",
+    "unlockHint": "This track unlocks in Gu'Tanoth.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2553.0,
+              "y": 3055.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Grumpy",
+    "region": "Other",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Grumpy",
+    "location": "Feldip Hills, Corsair Cove Dungeon",
+    "unlockHint": "This track unlocks in the Feldip Hills.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2560.0,
+              "y": 2944.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Impetuous",
+    "region": "Other",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Impetuous",
+    "location": "Puro-Puro",
+    "unlockHint": "This track unlocks in Puro-Puro.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3129.0,
+              "y": 3496.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Fairy ring",
+                "location": {
+                  "x": 3129.0,
+                  "y": 3496.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Zanaris",
+                "actions": [
+                  "zanaris"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2425.0,
+              "y": 4445.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Centre of crop circle",
+                "location": {
+                  "x": 2427.0,
+                  "y": 4446.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ],
+        "quest": "LOST_CITY"
+      }
+    ]
+  },
+  {
+    "title": "Impulses",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Impulses",
+    "members": true,
+    "unlockType": "SPECIAL",
+    "region": "Other",
+    "location": "Crop circles",
+    "unlockHint": "This track unlocks near a portal to Puro-Puro.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3129.0,
+              "y": 3496.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Fairy ring",
+                "location": {
+                  "x": 3129.0,
+                  "y": 3496.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Zanaris",
+                "actions": [
+                  "zanaris"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2425.0,
+              "y": 4445.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Centre of crop circle",
+                "location": {
+                  "x": 2427.0,
+                  "y": 4446.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ],
+        "quest": "LOST_CITY"
+      }
+    ]
+  },
+  {
+    "title": "Invader",
+    "region": "Other",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Invader",
+    "location": "Abyssal Sire boss room",
+    "unlockHint": "This track unlocks while fighting the Abyssal Sire.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3559.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3106.0,
+                "y": 3559.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3039.0,
+              "y": 4805.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 27054.0,
+              "location": {
+                "x": 3039.0,
+                "y": 4804.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2980.0,
+              "y": 4837.0,
+              "z": 0.0
+            },
+            "name": "Step 3"
+          }
+        ],
+        "notes": "Can also access through Fairy Ring D.I.P"
+      }
+    ]
+  },
+  {
+    "title": "Marzipan",
+    "region": "Other",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Marzipan",
+    "location": "Keldagrim tunnel, Troll Stronghold",
+    "unlockHint": "This track unlocks in the Trollheim Cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2840.0,
+              "y": 3690.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Stronghold",
+                "location": {
+                  "x": 2839.0,
+                  "y": 3690.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DEATH_PLATEAU"
+      }
+    ]
+  },
+  {
+    "title": "Nomad",
+    "region": "Other",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Nomad_(music_track)",
+    "location": "Ruins of Unkah",
+    "unlockHint": "This track unlocks in the Ruins of Unkah.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Board",
+            "destination": {
+              "x": 3270,
+              "y": 3142,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Ferry",
+                "type": "GAME_OBJECT",
+                "hint": "Board",
+                "actions": [
+                  "Board"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Step 2",
+            "destination": {
+              "x": 3162,
+              "y": 2843,
+              "z": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Organ Music 1",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Organ_Music_1",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "Church organ",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Organ Music 2",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Organ_Music_2",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "Church organ",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Pest Control",
+    "region": "Other",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Pest_Control_(music_track)",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Pest Control",
+    "location": "Void Knights' Outpost",
+    "unlockHint": "This track unlocks during the Pest Control minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2656.0,
+              "y": 2589.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Scape Ape",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Ape",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "None",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Scape Crystal",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Crystal",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Scape Five",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Five",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "Unlocked automatically",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Scape Ground",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Ground",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Scape Home",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Home",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Scape Hunter",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Hunter",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "No",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Scape Original",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Original",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "Unlocked automatically",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Scape Santa",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Santa",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "Unlocked automatically",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Scape Scared",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Scared",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "Login screen during a Halloween event",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Shattered Relics",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Shattered_Relics_(music_track)",
+    "members": false,
+    "unlockType": "AUTOMATIC",
+    "region": "Other",
+    "location": "None",
+    "unlockHint": "This track unlocks automatically."
+  }
+]

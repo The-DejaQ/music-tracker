@@ -1,0 +1,899 @@
+[
+  {
+    "title": "Are You Not Entertained?",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Are_You_Not_Entertained%3F",
+    "location": "Fortis Colosseum",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks during the first wave in the Fortis Colosseum.",
+    "unlockHint": "This track unlocks in the Fortis Colosseum.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 3107.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "Call of the Tlati",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Call_of_the_Tlati",
+    "location": "Tlati Rainforest, Crypt of Tonali, Dragon Nest",
+    "unlockHint": "This track unlocks in the Tlati Rainforest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1301.0,
+              "y": 3091.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "The City of Sun",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_City_of_Sun",
+    "location": "Civitas illa Fortis",
+    "unlockHint": "This track unlocks in Civitas illa Fortis.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1728.0,
+              "y": 3121.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "Creatures of Varlamore",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Creatures_of_Varlamore",
+    "location": "Avium Savannah",
+    "unlockHint": "This track unlocks in the Avium Savannah.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1600.0,
+              "y": 3042.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "The Doom",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Doom",
+    "location": "Ruins of Mokhaiotl",
+    "unlockHint": "This track unlocks while fighting the Doom of Mokhaiotl.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1697.0,
+              "y": 3140.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Renu",
+                "location": {
+                  "x": 1696.0,
+                  "y": 3141.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Tal Teklan",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 1308.0,
+              "y": 3103.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Lift Platform",
+                "location": {
+                  "x": 1310.0,
+                  "y": 3103.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "use"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 1312.0,
+              "y": 9467.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Door",
+                "location": {
+                  "x": 1310.0,
+                  "y": 9468.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "pass-through"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 1311.0,
+              "y": 9505.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Pillar",
+                "location": {
+                  "x": 1311.0,
+                  "y": 9509.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "jump-to"
+                ]
+              }
+            ],
+            "name": "Step 4"
+          },
+          {
+            "destination": {
+              "x": 1311.0,
+              "y": 9532.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Entrance",
+                "location": {
+                  "x": 1310.0,
+                  "y": 9533.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "pass-through"
+                ]
+              }
+            ],
+            "name": "Step 5"
+          },
+          {
+            "destination": {
+              "x": 1311.0,
+              "y": 9556.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Gap",
+                "location": {
+                  "x": 1311.0,
+                  "y": 9557.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "jump-over"
+                ]
+              }
+            ],
+            "name": "Step 6"
+          }
+        ],
+        "quest": "THE_FINAL_DAWN"
+      }
+    ]
+  },
+  {
+    "title": "Emissaries of Twilight",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Emissaries_of_Twilight",
+    "unlockType": "QUEST",
+    "location": "Twilight Temple",
+    "unlockHint": "This track unlocks at the Twilight Temple.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1672.0,
+              "y": 3245.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_HEART_OF_DARKNESS"
+      }
+    ]
+  },
+  {
+    "title": "The Feathered Serpent",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Feathered_Serpent",
+    "location": "The Darkfrost",
+    "unlockHint": "This track unlocks while fighting the Hueycoatl.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1696.0,
+              "y": 3141.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Renu",
+              "location": {
+                "x": 1696.0,
+                "y": 3141.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Travel Quetzacalli Gorge"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 1513.0,
+              "y": 3243.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 55323.0,
+              "location": {
+                "x": 1514.0,
+                "y": 3242.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 1508.0,
+              "y": 3264.0,
+              "z": 0.0
+            },
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 1527.0,
+              "y": 3285.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Chain",
+              "location": {
+                "x": 1527.0,
+                "y": 3285.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Climb"
+            },
+            "name": "Step 4"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "The Guidance of Ralos",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Guidance_of_Ralos",
+    "location": "Ralos' Rise",
+    "unlockHint": "This track unlocks on Ralos' Rise.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": false,
+        "trackSteps": [
+          {
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Renu",
+                "type": "NPC",
+                "hint": "Travel -> The Teomat",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "Isle of Serenity",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Isle_of_Serenity",
+    "location": "Aldarin",
+    "unlockHint": "This track unlocks on Aldarin.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1400.0,
+              "y": 2950.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "Mistrock",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mistrock_(music_track)",
+    "location": "Mistrock",
+    "unlockHint": "This track unlocks in Mistrock.",
+    "routes": [
+      {
+        "name": "Quetzal",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Renu",
+                "type": "NPC",
+                "hint": "Travel -> Aldarin",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1397,
+              "y": 2869,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "quest": "CHILDREN_OF_THE_SUN",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Over the Mountains",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Over_the_Mountains",
+    "location": "Custodia Mountains",
+    "unlockHint": "This track unlocks in the Custodia Mountains.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1286.0,
+              "y": 3374.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "quest": "CHILDREN_OF_THE_SUN",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Peace and Prosperity",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Peace_and_Prosperity",
+    "location": "Aldarin",
+    "unlockHint": "This track unlocks on Aldarin.",
+    "routes": [
+      {
+        "name": "Quetzal",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Renu",
+                "type": "NPC",
+                "hint": "Travel -> Aldarin",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1400,
+              "y": 2950,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "quest": "CHILDREN_OF_THE_SUN",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Prospering Fortune",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Prospering_Fortune",
+    "location": "Civitas illa Fortis",
+    "unlockHint": "This track unlocks in Civitas illa Fortis.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1728.0,
+              "y": 3121.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "Ready for the Hunt",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ready_for_the_Hunt",
+    "location": "Hunter Guild",
+    "unlockHint": "This track unlocks in the Hunter Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1564.0,
+              "y": 3046.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "Scorching Horizon",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scorching_Horizon",
+    "location": "Avium Savannah",
+    "unlockHint": "This track unlocks in the Avium Savannah.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1600.0,
+              "y": 3042.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "Spirit of the Forest",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Spirit_of_the_Forest",
+    "location": "Auburn Valley",
+    "unlockHint": "This track unlocks in the Auburn Valley.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1400,
+              "y": 3300,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Spiritbloom",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Spiritbloom",
+    "location": "Auburn Valley",
+    "unlockHint": "This track unlocks in the Auburn Valley.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1400,
+              "y": 3300,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Stones of Old",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Stones_of_Old",
+    "location": "Quetzacalli Gorge",
+    "unlockHint": "This track unlocks in Quetzacalli Gorge.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1506,
+              "y": 3237,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Talkasti People",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Talkasti_People",
+    "location": "Kastori",
+    "unlockHint": "This track unlocks in Kastori.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1371,
+              "y": 3044,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Teklan",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Teklan",
+    "location": "Tal Teklan",
+    "unlockHint": "This track unlocks in Tal Teklan.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1217,
+              "y": 3110,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Under the Mountain",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Under_the_Mountain",
+    "location": "Cam Torum",
+    "unlockHint": "This track unlocks in Cam Torum.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1696.0,
+              "y": 3141.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Renu",
+              "location": {
+                "x": 1696.0,
+                "y": 3141.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Cam Torum"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 1436.0,
+              "y": 3122.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 51375.0,
+              "location": {
+                "x": 1435.0,
+                "y": 3129.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 2"
+          }
+        ],
+        "quest": "PERILOUS_MOONS"
+      }
+    ]
+  },
+  {
+    "title": "The Undying Light",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Undying_Light",
+    "location": "Avium Savannah",
+    "unlockHint": "This track unlocks in the Avium Savannah.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1600.0,
+              "y": 3042.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "Varlamore's Sunset",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Varlamore%27s_Sunset",
+    "location": "Sunset Coast",
+    "unlockHint": "This track unlocks in Sunset Coast.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Renu",
+                "type": "NPC",
+                "hint": "Travel -> Sunset Coast",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "destination": {
+              "x": 1517.0,
+              "y": 2986.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ]
+  },
+  {
+    "title": "Whispering Wind",
+    "region": "Varlamore",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Whispering_Wind",
+    "location": "Quetzacalli Gorge",
+    "unlockHint": "This track unlocks in the mountains around Quetzacalli Gorge.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1584,
+              "y": 3250,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "CHILDREN_OF_THE_SUN"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  }
+]

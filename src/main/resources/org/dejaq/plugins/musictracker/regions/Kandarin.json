@@ -1,0 +1,1702 @@
+[
+  {
+    "title": "Altar Ego",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Altar_Ego",
+    "location": "Ourania Altar",
+    "unlockHint": "This track unlocks in the Ourania Cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2453.0,
+              "y": 3231.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 2452.0,
+                  "y": 3231.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Assault and Battery",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Assault_and_Battery",
+    "location": "Barbarian Assault",
+    "unlockHint": "This track unlocks during the Barbarian Assault minigame.",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Barbarian Assault",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 5472.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Attack 1",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Attack_1",
+    "location": "Khazard Battlefield",
+    "unlockHint": "This track unlocks at the Khazard Battlefield.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2499.0,
+              "y": 3251.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Ballad of Enchantment",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ballad_of_Enchantment",
+    "location": "Ardougne Monastery",
+    "unlockHint": "This track unlocks south of Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2608.0,
+              "y": 3232.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Barb Wire",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Barb_Wire",
+    "location": "North of Baxtorian Falls",
+    "unlockHint": "This track unlocks in the Ancient Cavern.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2512.0,
+              "y": 3516.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 2512.0,
+                  "y": 3516.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "1. Stand here"
+              },
+              {
+                "entity": "Whirlpool",
+                "location": {
+                  "x": 2512.0,
+                  "y": 3508.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "2. Dive in",
+                "actions": [
+                  "dive in"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BARBARIAN_TRAINING"
+      }
+    ]
+  },
+  {
+    "title": "Baroque",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Baroque",
+    "location": "Ardougne Market",
+    "unlockHint": "This track unlocks in East Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2624.0,
+              "y": 3304.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Beneath the Stronghold",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Beneath_the_Stronghold",
+    "location": "Stronghold Slayer Cave",
+    "unlockHint": "This track unlocks in the Gnome Stronghold Slayer Cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2430.0,
+              "y": 3424.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave",
+                "location": {
+                  "x": 2428.0,
+                  "y": 3424.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Big Chords",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Big_Chords",
+    "location": "West Yanille",
+    "unlockHint": "This track unlocks in and around Yanille.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2596.0,
+              "y": 3111.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Brimstail's Scales",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Brimstail%27s_Scales",
+    "location": "Brimstail's cave",
+    "unlockHint": "This track unlocks in Brimstail's cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2402.0,
+              "y": 3419.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave entrance",
+                "location": {
+                  "x": 2403.0,
+                  "y": 3419.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_EYES_OF_GLOUPHRIE"
+      }
+    ]
+  },
+  {
+    "title": "Cain's Tutorial",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Cain%27s_Tutorial",
+    "members": true,
+    "unlockType": "MINIGAME",
+    "region": "Kandarin",
+    "location": "Barbarian Assault",
+    "unlockHint": "This track unlocks during the Barbarian Assault tutorial.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2534.0,
+              "y": 3568.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Captain Cain",
+              "location": {
+                "x": 2534.0,
+                "y": 3568.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Do Tutorial"
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Camelot",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Camelot_(music_track)",
+    "location": "Camelot Castle",
+    "unlockHint": "This track unlocks at Camelot.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2764.0,
+              "y": 3500.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Castle Wars",
+    "region": "Kandarin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Castle_Wars_(music_track)",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Castle Wars",
+    "location": "Castle Wars",
+    "unlockHint": "This track unlocks during the Castle Wars minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 3104.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "notes": "Unlocks by playing a game of Castle Wars"
+      }
+    ]
+  },
+  {
+    "title": "Catch Me If You Can",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Catch_Me_If_You_Can",
+    "location": "Ardougne",
+    "unlockHint": "This track unlocks in the Ardougne Rat Pits.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2562.0,
+              "y": 3320.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 2561.0,
+                  "y": 3320.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RATCATCHERS"
+      }
+    ]
+  },
+  {
+    "title": "Cavern",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Cavern",
+    "location": "Yanille Agility Dungeon",
+    "unlockHint": "This track unlocks in the Yanille Agility dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2569.0,
+              "y": 3121.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Web",
+                "location": {
+                  "x": 2569.0,
+                  "y": 3118.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Slash Web"
+              },
+              {
+                "entity": "Staircase",
+                "location": {
+                  "x": 2569.0,
+                  "y": 3123.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Cellar Dwellers",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Cellar_Dwellers",
+    "location": "Sewers of East Ardougne",
+    "unlockHint": "This track unlocks in the Ardougne sewers.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2560.0,
+              "y": 9664.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "HAZEEL_CULT"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Devils May Care",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Devils_May_Care",
+    "location": "Smoke Devil Dungeon",
+    "unlockHint": "This track unlocks in the Smoke Devil Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2412.0,
+              "y": 3060.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Smoky cave",
+                "location": {
+                  "x": 2412.0,
+                  "y": 3061.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Enter",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemCollection": "MOUTH_PROTECTION",
+            "quantity": 1.0,
+            "label": "Facemask or Slayer helm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Eagles' Peak",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Eagles%27_Peak_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Piscatoris Hunter area",
+    "unlockHint": "This track unlocks at Eagles' Peak.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2340.0,
+              "y": 3477.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "EAGLES_PEAK"
+      }
+    ]
+  },
+  {
+    "title": "Elven Mist",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Elven_Mist",
+    "unlockType": "QUEST",
+    "location": "Exit of the Underground Pass",
+    "unlockHint": "This track unlocks in Isafdar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2240.0,
+              "y": 3200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "UNDERGROUND_PASS"
+      }
+    ]
+  },
+  {
+    "title": "Emotion",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Emotion",
+    "unlockType": "QUEST",
+    "location": "Tree Gnome Village, Fisher Realm",
+    "unlockHint": "This track unlocks at the Tree Gnome Maze.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2527.0,
+              "y": 3168.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "WATERFALL_QUEST"
+      }
+    ]
+  },
+  {
+    "title": "Escape",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Escape",
+    "location": "Hellhounds' area in Witchaven Dungeon",
+    "unlockHint": "This track unlocks in the Witchaven dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2720.0,
+              "y": 9696.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "FAMILY_CREST"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Expecting",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Expecting",
+    "location": "Near the Ourania Altar",
+    "unlockHint": "This track unlocks north of the Observatory.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2469.0,
+              "y": 3236.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fanfare 3",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fanfare_3",
+    "location": "Port Khazard",
+    "unlockHint": "This track unlocks in and around Port Khazard.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2620.0,
+              "y": 3168.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fishing",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fishing_(music_track)",
+    "location": "Catherby and southernmost part of White Wolf Mountain",
+    "unlockHint": "This track unlocks in Catherby.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2808.0,
+              "y": 3456.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gnome King",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Gnome_King",
+    "location": "Tree Gnome Stronghold",
+    "unlockHint": "This track unlocks in the Tree Gnome Stronghold.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2440.0,
+              "y": 3456.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_GRAND_TREE"
+      }
+    ]
+  },
+  {
+    "title": "Gnome Village",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Gnome_Village",
+    "location": "Gnome Stronghold Agility Course",
+    "unlockHint": "This track unlocks in the Tree Gnome Stronghold.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2440.0,
+              "y": 3456.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_GRAND_TREE"
+      }
+    ]
+  },
+  {
+    "title": "Gnome Village 2",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Gnome_Village_2",
+    "location": "South-west of the Tree Gnome Stronghold",
+    "unlockHint": "This track unlocks in the Tree Gnome Stronghold.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2440.0,
+              "y": 3456.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_GRAND_TREE"
+      }
+    ]
+  },
+  {
+    "title": "Gnomeball",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Gnomeball_(music_track)",
+    "location": "Gnome Ball Field",
+    "unlockHint": "This track unlocks during the Gnomeball minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2382.0,
+              "y": 3488.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Gate",
+              "location": {
+                "x": 2383.0,
+                "y": 3488.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2396.0,
+              "y": 3488.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Goblin Game",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Goblin_Game",
+    "location": "Goblin Cave",
+    "unlockHint": "This track unlocks in the Goblin Cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2623.0,
+              "y": 3391.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave Entrance",
+                "location": {
+                  "x": 2623.0,
+                  "y": 3392.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "In the Manor",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/In_the_Manor",
+    "location": "South of Yanille",
+    "unlockHint": "This track unlocks south of Yanille.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2575.0,
+              "y": 3056.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Joy of the Hunt",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Joy_of_the_Hunt",
+    "location": "Piscatoris Hunter area",
+    "unlockHint": "This track unlocks at Piscatoris.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2332.0,
+              "y": 3592.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Jungle Hunt",
+    "region": "Kandarin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jungle_Hunt",
+    "location": "Feldip Hunter Area",
+    "unlockHint": "This track unlocks in the Feldip Hills.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2560.0,
+              "y": 2944.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Knightly",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Knightly",
+    "location": "East Ardougne Castle",
+    "unlockHint": "This track unlocks in East Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2624.0,
+              "y": 3304.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lasting",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lasting",
+    "location": "Hemenster",
+    "unlockHint": "This track unlocks south of Seers' Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2688.0,
+              "y": 3400.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Legion",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Legion",
+    "location": "Barbarian Outpost",
+    "unlockHint": "This track unlocks at the Barbarian Outpost.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2523.0,
+              "y": 3560.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lightwalk",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lightwalk",
+    "location": "Catherby",
+    "unlockHint": "This track unlocks in Catherby.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2808.0,
+              "y": 3456.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Long Ago",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Long_Ago",
+    "location": "Yanille Chain",
+    "unlockHint": "This track unlocks east of Yanille.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2663.0,
+              "y": 3111.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Magic Dance",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Magic_Dance",
+    "location": "East of Yanille",
+    "unlockHint": "This track unlocks in Yanille.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2596.0,
+              "y": 3111.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Magical Journey",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Magical_Journey",
+    "location": "Sorcerer's Tower",
+    "unlockHint": "This track unlocks south of Seers' Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2688.0,
+              "y": 3400.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Making Waves",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Making_Waves",
+    "unlockType": "QUEST",
+    "location": "Piscatoris Fishing Colony",
+    "unlockHint": "This track unlocks at the Piscatoris Fishing Colony.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2331.0,
+              "y": 3683.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SWAN_SONG"
+      }
+    ]
+  },
+  {
+    "title": "March",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/March",
+    "location": "Combat Training Camp",
+    "unlockHint": "This track unlocks north west of Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2517.0,
+              "y": 3354.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mellow",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mellow",
+    "location": "Fishing Guild",
+    "unlockHint": "This track unlocks north of Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2609.0,
+              "y": 3388.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Melodrama",
+    "region": "Kandarin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Melodrama",
+    "location": "Castle Wars",
+    "unlockHint": "This track unlocks north west of Yanille.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2488.0,
+              "y": 3152.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Mollusc Menace",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Mollusc_Menace",
+    "location": "Witchaven",
+    "unlockHint": "This track unlocks in Witchaven.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2716.0,
+              "y": 3288.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Neverland",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Neverland",
+    "location": "Tree Gnome Stronghold",
+    "unlockHint": "This track unlocks north west of Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2463.0,
+              "y": 3390.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "On the Wing",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/On_the_Wing",
+    "location": "Piscatoris Hunter area, Enchanted Valley",
+    "unlockHint": "This track unlocks at Piscatoris.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2332.0,
+              "y": 3592.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Overture",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Overture",
+    "location": "Seers' Village",
+    "unlockHint": "This track unlocks in Seers' Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2688.0,
+              "y": 3488.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Ready for Battle",
+    "region": "Kandarin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ready_for_Battle",
+    "location": "Castle Wars waiting room",
+    "unlockHint": "This track unlocks in the Castle Wars waiting room.",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Castle Wars",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 9504.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Romper Chomper",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Romper_Chomper",
+    "location": "Chompy Marsh",
+    "unlockHint": "This track unlocks south of Castle Wars.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2388.0,
+              "y": 3054.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Serenade",
+    "region": "Kandarin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Serenade",
+    "location": "Areas north west and west of Yanille, including the Castle Wars Lobby.",
+    "unlockHint": "This track unlocks north west of Yanille.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2488.0,
+              "y": 3152.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Soundscape",
+    "region": "Kandarin",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Soundscape",
+    "location": "Areas north west, and west of Yanille, including the Castle Wars Lobby.",
+    "unlockHint": "This track unlocks north west of Yanille.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2488.0,
+              "y": 3152.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Talking Forest",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Talking_Forest",
+    "location": "Camelot",
+    "unlockHint": "This track unlocks in Seers' Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2688.0,
+              "y": 3488.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Tower",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Tower",
+    "location": "North-western area of East Ardougne",
+    "unlockHint": "This track unlocks in East Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2624.0,
+              "y": 3304.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Trawler",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Trawler_(music_track)",
+    "location": "Fishing Trawler minigame",
+    "unlockHint": "This track unlocks during the Fishing Trawler minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 4832.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Fishing Trawler"
+  },
+  {
+    "title": "Trawler Minor",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Trawler_Minor",
+    "location": "Fishing Trawler minigame",
+    "unlockHint": "This track unlocks during the Fishing Trawler minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1984.0,
+              "y": 4832.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Fishing Trawler"
+  },
+  {
+    "title": "Tree Spirits",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tree_Spirits",
+    "location": "Tree Gnome Stronghold",
+    "unlockHint": "This track unlocks north west of Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2463.0,
+              "y": 3390.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tribal 2",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tribal_2",
+    "location": "Gnome glider on Karamja",
+    "unlockHint": "This track unlocks on Karamja.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 3062.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Trinity",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Trinity",
+    "location": "Legends' Guild",
+    "unlockHint": "This track unlocks in the Legends' Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2729.0,
+              "y": 3368.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LEGENDS_QUEST"
+      }
+    ]
+  },
+  {
+    "title": "Troubled Waters",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Troubled_Waters",
+    "location": "Kraken Cove",
+    "unlockHint": "This track unlocks at the Kraken Cove.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Cave",
+            "destination": {
+              "x": 2278,
+              "y": 3611,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Cave Entrance",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Upcoming",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Upcoming",
+    "location": "South of Ardougne",
+    "unlockHint": "This track unlocks south of Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2608.0,
+              "y": 3232.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Voyage",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Voyage",
+    "location": "Baxtorian Falls",
+    "unlockHint": "This track unlocks north of Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2563.0,
+              "y": 3440.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Waterfall",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Waterfall_(music_track)",
+    "location": "Baxtorian Falls",
+    "unlockHint": "This track unlocks north of Ardougne.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2563.0,
+              "y": 3440.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wonderous",
+    "region": "Kandarin",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wonderous",
+    "location": "Near Legends' Guild",
+    "unlockHint": "This track unlocks south of Seers' Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2688.0,
+              "y": 3400.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  }
+]

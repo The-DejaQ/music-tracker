@@ -1,0 +1,650 @@
+[
+  {
+    "title": "Arcane",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Arcane_(music_track)",
+    "location": "Arceuus",
+    "unlockHint": "This track unlocks in Arceuus.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1648.0,
+              "y": 3791.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Beneath the Kingdom",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Beneath_the_Kingdom",
+    "location": "Catacombs of Kourend",
+    "unlockHint": "This track unlocks in the Catacombs of Kourend.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1639.0,
+              "y": 3673.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Statue",
+                "location": {
+                  "x": 1636.0,
+                  "y": 3673.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Investigate",
+                "actions": [
+                  "investigate"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Country Jig",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Country_Jig",
+    "location": "Hosidius",
+    "unlockHint": "This track unlocks south of Hosidius.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1777.0,
+              "y": 3541.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Darkly Altared",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Darkly_Altared",
+    "location": "Skotizo's chamber",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks while fighting Skotizo.",
+    "unlockHint": "This track unlocks while fighting Skotizo.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2272.0,
+              "y": 5664.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Darkness in the Depths",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Darkness_in_the_Depths",
+    "location": "Chasm of Fire",
+    "unlockHint": "This track unlocks in the Chasm of Fire.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1435.0,
+              "y": 3671.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Chasm",
+                "location": {
+                  "x": 1436.0,
+                  "y": 3671.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "The Doors of Dinh",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Doors_of_Dinh",
+    "location": "Northern Tundras",
+    "unlockHint": "This track unlocks in the Northern Tundras.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1600.0,
+              "y": 3914.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Down by the Docks",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Down_by_the_Docks",
+    "location": "Port Piscarilius",
+    "unlockHint": "This track unlocks in Port Piscarilius.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1795.0,
+              "y": 3743.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Dwarven Domain",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dwarven_Domain",
+    "location": "Lovakengj",
+    "unlockHint": "This track unlocks in Lovakengj.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1502.0,
+              "y": 3786.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "A Forgotten Religion",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Forgotten_Religion",
+    "location": "Forthos Dungeon",
+    "unlockHint": "This track unlocks in the Forthos Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1808.0,
+              "y": 3479.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Minecart",
+                "location": {
+                  "x": 1808.0,
+                  "y": 3480.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Travel -> Hosidus West",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 1671.0,
+              "y": 3567.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Staircase",
+                "location": {
+                  "x": 1669.0,
+                  "y": 3567.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "The Forlorn Homestead",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Forlorn_Homestead",
+    "location": "Hosidius",
+    "unlockHint": "This track unlocks in Hosidius.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1751.0,
+              "y": 3601.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Ice and Fire",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ice_and_Fire",
+    "location": "Wintertodt camp",
+    "unlockHint": "This track unlocks while fighting the Wintertodt.",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks while fighting the Wintertodt.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1632.0,
+              "y": 4000.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Kourend the Magnificent",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Kourend_the_Magnificent",
+    "location": "The Legless Faun, Kingstown, Kourend Castle",
+    "unlockHint": "This track unlocks in Kingstown.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1695.0,
+              "y": 3680.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "The Militia",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Militia",
+    "location": "Shayzien",
+    "unlockHint": "This track unlocks in Shayzien.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1532.0,
+              "y": 3563.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Not a Moment of Relief",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Not_a_Moment_of_Relief",
+    "location": "North of Arceuus",
+    "unlockHint": "This track unlocks north of Arceuus.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1696.0,
+              "y": 3861.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Rugged Terrain",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Rugged_Terrain",
+    "location": "Between Kourend Castle and Shayzien/Lovakengj",
+    "unlockHint": "This track unlocks west of Kingstown.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1581,
+              "y": 3710,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "Sarachnis",
+    "region": "GreatKourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sarachnis_(music_track)",
+    "location": "Sarachnis' lair",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks while fighting Sarachnis.",
+    "unlockHint": "This track unlocks while fighting Sarachnis.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 9884.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sign Here",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sign_Here",
+    "location": "Chasm of Fire",
+    "unlockHint": "This track unlocks while fighting Yama.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1435.0,
+              "y": 3671.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Chasm",
+                "location": {
+                  "x": 1436.0,
+                  "y": 3671.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 1437.0,
+              "y": 10093.0,
+              "z": 2.0
+            },
+            "interactions": [
+              {
+                "entity": "Lift",
+                "location": {
+                  "x": 1437.0,
+                  "y": 10094.0,
+                  "z": 2.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 1457.0,
+              "y": 10095.0,
+              "z": 1.0
+            },
+            "interactions": [
+              {
+                "entity": "Gap",
+                "location": {
+                  "x": 1450.0,
+                  "y": 10097.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Jump if 73+ Agility"
+              },
+              {
+                "entity": "Lift",
+                "location": {
+                  "x": 1458.0,
+                  "y": 10095.0,
+                  "z": 1.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ],
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 1440.0,
+              "y": 10078.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Voice of Yama",
+                "location": {
+                  "x": 1439.0,
+                  "y": 10079.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Travel",
+                "actions": [
+                  "travel"
+                ]
+              }
+            ],
+            "name": "Step 4"
+          },
+          {
+            "destination": {
+              "x": 11929.0,
+              "y": 12652.0,
+              "z": 0.0
+            },
+            "name": "Step 5"
+          }
+        ],
+        "quest": "A_KINGDOM_DIVIDED",
+        "recommendedLevels": [
+          {
+            "skill": "Agility",
+            "level": 73.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Soul Fall",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Soul_Fall",
+    "location": "Soul Altar",
+    "unlockHint": "This track unlocks north east of Arceuus.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1815.0,
+              "y": 3850.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  },
+  {
+    "title": "A Walk in the Woods",
+    "region": "Great Kourend",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Walk_in_the_Woods",
+    "location": "Kourend Woodland",
+    "unlockHint": "This track unlocks in the Kourend Woodland.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1567.0,
+              "y": 3465.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "X_MARKS_THE_SPOT"
+      }
+    ]
+  }
+]

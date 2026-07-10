@@ -1,0 +1,1182 @@
+[
+  {
+    "title": "Army of Darkness",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Army_of_Darkness",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Bane",
+    "region": "Wilderness",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bane",
+    "location": "Corporeal Beast's Lair",
+    "unlockHint": "This track unlocks while fighting the Corporeal Beast.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3206.0,
+              "y": 3681.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Cave",
+              "location": {
+                "x": 3203.0,
+                "y": 3681.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Enter"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2970.0,
+              "y": 4384.0,
+              "z": 2.0
+            },
+            "interaction": {
+              "entity": "Passage",
+              "location": {
+                "x": 2972.0,
+                "y": 4384.0,
+                "z": 2.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Go-through"
+            },
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2989.0,
+              "y": 4384.0,
+              "z": 2.0
+            },
+            "name": "Step 3"
+          }
+        ],
+        "notes": "Can also use Games necklace (Option 3)"
+      }
+    ]
+  },
+  {
+    "title": "Close Quarters",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Close_Quarters",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Complication",
+    "region": "Wilderness",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Complication",
+    "location": "Chaos Altar",
+    "unlockHint": "This track unlocks at the Chaos Altar.",
+    "routes": [
+      {
+        "name": "Wilderness",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Ruins",
+            "destination": {
+              "x": 3059,
+              "y": 3590,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Mysterious ruins",
+                "type": "GAME_OBJECT",
+                "hint": "Enter / Use talisman on",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          }
+        ],
+        "items": [
+          {
+            "itemCollection": "CHAOS_ALTAR",
+            "quantity": 1,
+            "label": "Chaos Altar Access"
+          }
+        ],
+        "notes": "Can also be unlocked via the Abyss and in the Wilderness"
+      },
+      {
+        "name": "Tunnel of Chaos",
+        "defaultRoute": false,
+        "trackSteps": [
+          {
+            "name": "Statue",
+            "destination": {
+              "x": 3283,
+              "y": 3468,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Open statue",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Portal",
+            "destination": {
+              "x": 3152,
+              "y": 5233,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Portal",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "use"
+                ]
+              }
+            ]
+          }
+        ],
+        "quest": "WHAT_LIES_BELOW",
+        "notes": "Can also be unlocked via the Abyss and in the Wilderness"
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "quest": "ENTER_THE_ABYSS",
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3559.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3106.0,
+                "y": 3559.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Zamorak"
+          }
+        ],
+        "notes": "Can also be unlocked via Tunnel of Chaos and in the Wilderness"
+      }
+    ]
+  },
+  {
+    "title": "Crystal Sword",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Crystal_Sword",
+    "location": "Wilderness, Ardougne sewers",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dangerous",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dangerous",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "A Dangerous Game",
+    "region": "Wilderness",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Dangerous_Game",
+    "location": "Wilderness Slayer Cave",
+    "unlockHint": "This track unlocks in the Wilderness Slayer Cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Stairs",
+            "destination": {
+              "x": 3259,
+              "y": 3665,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Stairs",
+                "type": "GAME_OBJECT",
+                "hint": "Walk down",
+                "actions": [
+                  "walk-down"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Dark",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dark",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dead Can Dance",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dead_Can_Dance",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Deep Wildy",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Deep_Wildy",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Enclave",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Enclave",
+    "location": "Ferox Enclave",
+    "unlockHint": "This track unlocks in Ferox Enclave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3140.0,
+              "y": 3632.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Everlasting Fire",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Everlasting_Fire",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Faithless",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Faithless",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Forbidden",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Forbidden",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Inspiration",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Inspiration",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Into the Abyss",
+    "region": "Wilderness",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Into_the_Abyss",
+    "location": "Abyss",
+    "unlockHint": "This track unlocks in the Abyss.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3105.0,
+              "y": 3558.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3105.0,
+                "y": 3558.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ENTER_THE_ABYSS"
+      }
+    ]
+  },
+  {
+    "title": "Mage Arena",
+    "region": "Wilderness",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mage_Arena_(music_track)",
+    "location": "Mage Arena",
+    "unlockHint": "This track unlocks at the Mage Arena.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3158.0,
+              "y": 3950.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Web",
+              "location": {
+                "x": 3158.0,
+                "y": 3951.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Slash"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3105.0,
+              "y": 3959.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Web",
+              "location": {
+                "x": 3105.0,
+                "y": 3958.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Slash"
+            },
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 3105.0,
+              "y": 3956.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Lever",
+              "location": {
+                "x": 3104.0,
+                "y": 3956.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Pull"
+            },
+            "name": "Step 3"
+          },
+          {
+            "destination": {
+              "x": 3105.0,
+              "y": 3951.0,
+              "z": 0.0
+            },
+            "name": "Step 4"
+          }
+        ],
+        "notes": "Deep wilderness. Bring only a knife.",
+        "items": [
+          {
+            "itemCollection": "SLASH_WEB_KNIFE",
+            "label": "Knife",
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Moody",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Moody",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Pirates of Peril",
+    "region": "Wilderness",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Pirates_of_Peril",
+    "location": "Pirates' Hideout",
+    "unlockHint": "This track unlocks at the Pirates' Hideout.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3031.0,
+              "y": 3955.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Regal",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Regal",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Revenants",
+    "region": "Wilderness",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Revenants_(music_track)",
+    "location": "Revenant Caves",
+    "unlockHint": "This track unlocks in the Revenant Caves.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Crevice",
+            "destination": {
+              "x": 3067,
+              "y": 3741,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Crevice",
+                "type": "GAME_OBJECT",
+                "hint": "Jump down",
+                "actions": [
+                  "jump-down"
+                ]
+              }
+            ]
+          }
+        ],
+        "items": [
+          {
+            "itemId": 995,
+            "quantity": 100000,
+            "label": "100k Entry fee (in Bank or Inventory)"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemId": 21802,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Scape Sad",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Sad",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Scape Wild",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Wild",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Scorpia Dances",
+    "region": "Wilderness",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scorpia_Dances",
+    "location": "Cave beneath Scorpion Pit",
+    "unlockHint": "This track unlocks while fighting Scorpia.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Cavern",
+            "destination": {
+              "x": 3232,
+              "y": 3936,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Cavern",
+                "type": "GAME_OBJECT",
+                "hint": "Enter",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Shining",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Shining",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Shining Spirit",
+    "region": "Wilderness",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Shining_Spirit",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Corporeal Beast cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3206.0,
+              "y": 3681.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Cave",
+              "location": {
+                "x": 3203.0,
+                "y": 3681.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Enter"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2968.0,
+              "y": 4382.0,
+              "z": 2.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "notes": "Can also use Games necklace (Option 3)"
+      }
+    ]
+  },
+  {
+    "title": "Troubled",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Troubled",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Undercurrent",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Undercurrent",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Underground",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Underground_(music_track)",
+    "location": "Wilderness, Entrana Dungeon, Taverley Dungeon, Deepfin Mine",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Venomous",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Venomous",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wild Isle",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wild_Isle",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wild Side",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wild_Side",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wilderness",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wilderness_(music_track)",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wilderness 2",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wilderness_2",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wilderness 3",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wilderness_3",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wildwood",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wildwood",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Witching",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Witching",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wonder",
+    "region": "Wilderness",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wonder",
+    "location": "Wilderness",
+    "unlockHint": "This track unlocks in the Wilderness.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3090.0,
+              "y": 3529.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1936 @@
+[
+  {
+    "title": "Alone",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Alone",
+    "location": "Ice Mountain north of Falador.",
+    "unlockHint": "This track unlocks at Ice Mountain.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3008.0,
+              "y": 3500.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Arabique",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Arabique",
+    "location": "Taverley Dungeon",
+    "unlockHint": "This track unlocks in Taverley Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2884.0,
+              "y": 3396.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 16680.0,
+              "location": {
+                "x": 2884.0,
+                "y": 3397.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2869.0,
+              "y": 9828.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Arrival",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Arrival",
+    "location": "Falador",
+    "unlockHint": "This track unlocks in Falador.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2995.0,
+              "y": 3354.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Attention",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Attention",
+    "location": "Rimmington",
+    "unlockHint": "This track unlocks in Rimmington.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 2954.0,
+              "y": 3232.0,
+              "z": 0.0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Background",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Background",
+    "location": "Entrana",
+    "unlockHint": "This track unlocks on Entrana.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 2840.0,
+              "y": 3361.0,
+              "z": 0.0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Beyond",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Beyond",
+    "location": "Ice Queen's Lair, Warriors' Guild basement, Dwarven Tunnel",
+    "unlockHint": "This track unlocks under White Wolf Mountain.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2877.0,
+              "y": 3482.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 57.0,
+              "location": {
+                "x": 2876.0,
+                "y": 3480.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Cave Background",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Cave_Background",
+    "location": "Dwarven Mines",
+    "unlockHint": "This track unlocks in the Dwarven Mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3021.0,
+              "y": 3339.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 30367.0,
+              "location": {
+                "x": 3020.0,
+                "y": 3339.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Competition",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Competition",
+    "location": "Burthorpe Games Room",
+    "unlockHint": "This track unlocks in the Burthorpe Games Room.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2208.0,
+              "y": 4960.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Contest",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Contest",
+    "unlockType": "QUEST",
+    "location": "Troll arena and eastern edge of Death Plateau",
+    "unlockHint": "This track unlocks in southern Troll Country.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2889.0,
+              "y": 3680.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TROLL_STRONGHOLD"
+      }
+    ]
+  },
+  {
+    "title": "Courage",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Courage",
+    "location": "Taverley Dungeon",
+    "unlockHint": "This track unlocks in Taverley Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2884.0,
+              "y": 3396.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 16680.0,
+              "location": {
+                "x": 2884.0,
+                "y": 3397.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dunjun",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dunjun",
+    "location": "Taverley Dungeon",
+    "unlockHint": "This track unlocks in Taverley Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2944.0,
+              "y": 9760.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dwarf Theme",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dwarf_Theme",
+    "location": "Dwarven Mine surface camp",
+    "unlockHint": "This track unlocks at the entrance to the Dwarven Mines.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3009.0,
+              "y": 3453.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Emperor",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Emperor",
+    "location": "Rimmington",
+    "unlockHint": "This track unlocks in Rimmington.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2954.0,
+              "y": 3232.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fanfare",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fanfare",
+    "location": "Falador",
+    "unlockHint": "This track unlocks in Falador.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2995.0,
+              "y": 3354.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Far Side",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Far_Side",
+    "location": "Rogues' Den",
+    "unlockHint": "This track unlocks in the Rogues' Den minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2906.0,
+              "y": 3537.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 7257.0,
+              "location": {
+                "x": 2905.0,
+                "y": 3537.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Enter"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3056.0,
+              "y": 4991.0,
+              "z": 1.0
+            },
+            "interaction": {
+              "entityId": 7256.0,
+              "location": {
+                "x": 3056.0,
+                "y": 4991.0,
+                "z": 1.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Play Minigame"
+            },
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Floating Free",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Floating_Free",
+    "members": true,
+    "region": "Asgarnia",
+    "unlockType": "QUEST",
+    "quest": "ENLIGHTENED_JOURNEY",
+    "location": "Entrana",
+    "unlockHint": "This track unlocks during the Enlightened Journey quest."
+  },
+  {
+    "title": "Goblin Village",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Goblin_Village_(music_track)",
+    "location": "Goblin Village",
+    "unlockHint": "This track unlocks in Goblin Village.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2956.0,
+              "y": 3498.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Heart and Mind",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Heart_and_Mind",
+    "location": "Body Altar",
+    "unlockHint": "This track unlocks at the Body Altar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3053.0,
+              "y": 3443.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mysterious ruins",
+              "location": {
+                "x": 3052.0,
+                "y": 3444.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Enter / Use talisman on"
+            },
+            "name": "Step 1"
+          }
+        ],
+        "notes": "Can also be accessed through the Abyss",
+        "items": [
+          {
+            "itemCollection": "BODY_ALTAR",
+            "quantity": 1.0,
+            "label": "Body Altar Access"
+          }
+        ]
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3105.0,
+              "y": 3558.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3105.0,
+                "y": 3558.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ENTER_THE_ABYSS"
+      }
+    ]
+  },
+  {
+    "title": "Horizon",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Horizon",
+    "location": "Taverley",
+    "unlockHint": "This track unlocks in Taverley.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2910.0,
+              "y": 3450.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Ice Melody",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ice_Melody",
+    "location": "White Wolf Mountain",
+    "unlockHint": "This track unlocks at White Wolf Mountain.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2834.0,
+              "y": 3485.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Kingdom",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Kingdom_(music_track)",
+    "location": "Warriors' Guild",
+    "unlockHint": "This track unlocks in Burthorpe.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2898.0,
+              "y": 3547.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Knightmare",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Knightmare",
+    "unlockType": "QUEST",
+    "location": "Black Knights' Fortress",
+    "unlockHint": "This track unlocks in the Black Knights' Fortress.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3020.0,
+              "y": 3512.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BLACK_KNIGHTS_FORTRESS"
+      }
+    ]
+  },
+  {
+    "title": "Lightness",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lightness",
+    "location": "North of Falador",
+    "unlockHint": "This track unlocks north of Falador.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3031.0,
+              "y": 3426.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Long Way Home",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Long_Way_Home",
+    "location": "Falador surroundings",
+    "unlockHint": "This track unlocks south of Falador.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2985.0,
+              "y": 3290.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Mad Mole",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Mad_Mole",
+    "location": "Mole Hole",
+    "unlockHint": "This track unlocks while fighting the Giant Mole.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2996.0,
+              "y": 3377.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mole hill",
+              "location": {
+                "x": 2996.0,
+                "y": 3377.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Dig with Spade"
+            },
+            "name": "Step 1"
+          }
+        ],
+        "items": [
+          {
+            "itemId": 952.0,
+            "quantity": 1.0
+          },
+          {
+            "itemId": 594.0,
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Maws Jaws & Claws",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Maws_Jaws_%26_Claws",
+    "location": "Cerberus' Lair",
+    "unlockHint": "This track unlocks while fighting Cerberus.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2885.0,
+              "y": 3397.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 2884.0,
+                  "y": 3397.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2915.0,
+              "y": 9849.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Strange floor",
+                "location": {
+                  "x": 2879.0,
+                  "y": 9813.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "80 Agility"
+              },
+              {
+                "entity": "Obstacle pipe",
+                "location": {
+                  "x": 2887.0,
+                  "y": 9799.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "70 Agility (Continue EAST)"
+              },
+              {
+                "entity": "Loose Railing",
+                "location": {
+                  "x": 2935.0,
+                  "y": 9810.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "63 Agility"
+              },
+              {
+                "entity": "Gate",
+                "location": {
+                  "x": 2924.0,
+                  "y": 9803.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Dusty Key"
+              }
+            ],
+            "name": "Step 2"
+          },
+          {
+            "destination": {
+              "x": 2874.0,
+              "y": 9847.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Cave",
+                "location": {
+                  "x": 2874.0,
+                  "y": 9847.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "crawl"
+                ]
+              }
+            ],
+            "name": "Cave"
+          },
+          {
+            "destination": {
+              "x": 1291.0,
+              "y": 1254.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Iron Winch",
+                "location": {
+                  "x": 1291.0,
+                  "y": 1254.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "turn"
+              }
+            ],
+            "name": "Step 4"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemCollection": "ANTIFIRE_SHIELDS",
+            "quantity": 1.0,
+            "label": "Anti-dragon shield"
+          },
+          {
+            "itemCollection": "ANTIFIRE_POTIONS",
+            "quantity": 1.0,
+            "label": "Antifire potion"
+          }
+        ],
+        "recommendedLevels": [
+          {
+            "skill": "Agility",
+            "level": 80.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Maze",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Maze",
+    "unlockType": "QUEST",
+    "location": "Melzar's Maze",
+    "unlockHint": "This track unlocks during the Dragon Slayer I quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2931.0,
+              "y": 3247.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DRAGON_SLAYER_I"
+      }
+    ]
+  },
+  {
+    "title": "Miles Away",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Miles_Away",
+    "location": "Falador surroundings",
+    "unlockHint": "This track unlocks south of Falador.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2985.0,
+              "y": 3290.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Miracle Dance",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Miracle_Dance",
+    "location": "Mind Altar",
+    "unlockHint": "This track unlocks at the Mind Altar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2980.0,
+              "y": 3513.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mysterious ruins",
+              "location": {
+                "x": 2981.0,
+                "y": 3513.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Enter / Use talisman on"
+            },
+            "name": "Step 1"
+          }
+        ],
+        "notes": "Can be accessed through the Abyss",
+        "items": [
+          {
+            "itemCollection": "MIND_ALTAR",
+            "quantity": 1.0,
+            "label": "Mind Altar Access"
+          }
+        ]
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "quest": "ENTER_THE_ABYSS",
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3559.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3106.0,
+                "y": 3559.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Zamorak"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mudskipper Melody",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mudskipper_Melody",
+    "location": "Mudskipper Point",
+    "unlockHint": "This track unlocks at Mudskipper Point.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2994.0,
+              "y": 3120.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Museum Medley",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Museum_Medley",
+    "location": "Old School Museum",
+    "unlockHint": "This track unlocks in the Old School Museum.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Staircase",
+            "destination": {
+              "x": 3037,
+              "y": 3383,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Staircase",
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Nightfall",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Nightfall",
+    "location": "Falador surroundings",
+    "unlockHint": "This track unlocks south of Falador.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2985.0,
+              "y": 3290.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Pick & Shovel",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Pick_%26_Shovel",
+    "location": "Motherlode Mine",
+    "unlockHint": "This track unlocks in the Motherlode Mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3061.0,
+              "y": 3376.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Staircase",
+              "location": {
+                "x": 3059.0,
+                "y": 3376.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3060.0,
+              "y": 9766.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Cave",
+              "location": {
+                "x": 3060.0,
+                "y": 9764.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 2"
+          }
+        ],
+        "items": [
+          {
+            "itemCollection": "PICKAXES",
+            "quantity": 1.0
+          }
+        ],
+        "levels": [
+          {
+            "skill": "Mining",
+            "level": 30.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Principality",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Principality",
+    "location": "Burthorpe",
+    "unlockHint": "This track unlocks in Burthorpe.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2898.0,
+              "y": 3547.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Race Against the Clock",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Race_Against_the_Clock",
+    "location": "Ruins of Camdozaal",
+    "unlockHint": "This track unlocks in the Camdozaal Vault.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Ruins",
+            "destination": {
+              "x": 2999,
+              "y": 3493,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Ruins Entrance",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          }
+        ],
+        "quest": "BELOW_ICE_MOUNTAIN",
+        "items": [
+          {
+            "itemId": 25676,
+            "quantity": 750
+          },
+          {
+            "itemCollection": "PICKAXES",
+            "quantity": 1,
+            "label": "Any pickaxe to mine shards"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemId": 2347,
+            "quantity": 1,
+            "label": "Hammer to break down deposits"
+          }
+        ],
+        "levels": [
+          {
+            "skill": "MINING",
+            "level": 14
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Righteousness",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Righteousness",
+    "location": "Law Altar",
+    "unlockHint": "This track unlocks at the Law Altar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3046.0,
+              "y": 3237.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Monk of Entrana",
+                "location": {
+                  "x": 3046.0,
+                  "y": 3237.0,
+                  "z": 0.0
+                },
+                "type": "NPC",
+                "hint": "Take-boat"
+              },
+              {
+                "entityId": 26254.0,
+                "location": {
+                  "x": 3045.0,
+                  "y": 3234.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Deposit all combat gear"
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2858.0,
+              "y": 3379.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mysterious ruins",
+              "location": {
+                "x": 2857.0,
+                "y": 3380.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Enter / Use talisman on"
+            },
+            "name": "Step 2"
+          }
+        ],
+        "notes": "You visit Entrana, bank combat items.\nCan also be accessed through the Abyss",
+        "items": [
+          {
+            "itemCollection": "LAW_ALTAR",
+            "quantity": 1.0,
+            "label": "Law Altar Access"
+          }
+        ]
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "quest": "ENTER_THE_ABYSS",
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3559.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3106.0,
+                "y": 3559.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Zamorak"
+          }
+        ],
+        "notes": "Can also be accessed via Entrana"
+      }
+    ]
+  },
+  {
+    "title": "The Rogues' Den",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Rogues%27_Den",
+    "location": "Rogues' Den",
+    "unlockHint": "This track unlocks in the Rogues' Den minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2906.0,
+              "y": 3537.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entityId": 7257.0,
+              "location": {
+                "x": 2905.0,
+                "y": 3537.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Enter"
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Royale",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Royale",
+    "location": "Black Knights' base in Taverley Dungeon",
+    "unlockHint": "This track unlocks in Taverley Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2885.0,
+              "y": 3397.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Ladder",
+              "location": {
+                "x": 2884.0,
+                "y": 3397.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 2907.0,
+              "y": 9706.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemId": 1590,
+            "quantity": 1.0
+          },
+          {
+            "itemCollection": "ANTIFIRE_POTIONS",
+            "quantity": 1.0,
+            "label": "Antifire Potion"
+          },
+          {
+            "itemCollection": "ANTIFIRE_SHIELDS",
+            "quantity": 1.0,
+            "label": "Antifire Shield"
+          }
+        ],
+        "recommendedLevels": [
+          {
+            "skill": "Agility",
+            "level": 70.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Scape Soft",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scape_Soft",
+    "location": "North of Falador",
+    "unlockHint": "This track unlocks north of Falador.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3031.0,
+              "y": 3426.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sea Shanty 2",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sea_Shanty_2",
+    "location": "Port Sarim, Prifddinas docks, Tempoross Cove",
+    "unlockHint": "This track unlocks in Port Sarim.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3028.0,
+              "y": 3225.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Serene",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Serene",
+    "location": "Air Altar",
+    "unlockHint": "This track unlocks at the Air Altar.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2985.0,
+              "y": 3290.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mysterious ruins",
+              "location": {
+                "x": 2984.0,
+                "y": 3291.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Enter / Use talisman on"
+            },
+            "name": "Step 1"
+          }
+        ],
+        "notes": "Can be accessed through the Abyss",
+        "items": [
+          {
+            "itemCollection": "AIR_ALTAR",
+            "quantity": 1.0,
+            "label": "Air Altar Access"
+          }
+        ]
+      },
+      {
+        "name": "Abyss",
+        "defaultRoute": false,
+        "quest": "ENTER_THE_ABYSS",
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3106.0,
+              "y": 3559.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Mage of Zamorak",
+              "location": {
+                "x": 3106.0,
+                "y": 3559.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Teleport"
+            },
+            "name": "Zamorak"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sojourn",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sojourn",
+    "location": "Troll Stronghold",
+    "unlockHint": "This track unlocks in southern Troll Country.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2866.0,
+              "y": 3591.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Splendour",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Splendour",
+    "location": "Chaos Temple, path between Taverley and Burthorpe",
+    "unlockHint": "This track unlocks in Taverley.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2910.0,
+              "y": 3450.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Starlight",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Starlight_(music_track)",
+    "location": "Asgarnian Ice Dungeon",
+    "unlockHint": "This track unlocks in the Asgarnia Ice Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3009.0,
+              "y": 3150.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Trapdoor",
+              "location": {
+                "x": 3008.0,
+                "y": 3150.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3009.0,
+              "y": 9550.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "That Sullen Hall",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/That_Sullen_Hall",
+    "location": "Cerberus's Lair",
+    "unlockHint": "This track unlocks in Cerberus's Lair.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 2885.0,
+              "y": 3397.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Ladder",
+                "location": {
+                  "x": 2884.0,
+                  "y": 3397.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Step 2",
+            "destination": {
+              "x": 1291.0,
+              "y": 1253.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Strange floor",
+                "location": {
+                  "x": 2879.0,
+                  "y": 9813.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "80 Agility"
+              },
+              {
+                "entity": "Obstacle pipe",
+                "location": {
+                  "x": 2887.0,
+                  "y": 9799.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "70 Agility"
+              },
+              {
+                "entity": "Loose Railing",
+                "location": {
+                  "x": 2935.0,
+                  "y": 9810.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "63 Agility",
+                "actions": [
+                  "63 Agility"
+                ]
+              },
+              {
+                "entity": "Gate",
+                "location": {
+                  "x": 2924.0,
+                  "y": 9803.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Dusty Key"
+              },
+              {
+                "entity": "Cave",
+                "location": {
+                  "x": 2874.0,
+                  "y": 9847.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "crawl"
+                ]
+              }
+            ]
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemCollection": "ANTIFIRE_SHIELDS",
+            "quantity": 1.0,
+            "label": "Anti-dragon shield"
+          },
+          {
+            "itemCollection": "ANTIFIRE_POTIONS",
+            "quantity": 1.0,
+            "label": "Antifire potion"
+          }
+        ],
+        "recommendedLevels": [
+          {
+            "skill": "Agility",
+            "level": 80.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tomorrow",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tomorrow",
+    "location": "Coastline south of Port Sarim",
+    "unlockHint": "This track unlocks south of Port Sarim.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3010.0,
+              "y": 3171.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Too Many Cooks...",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Too_Many_Cooks...",
+    "location": "Goblin Village Kitchen",
+    "unlockHint": "This track unlocks during the Recipe for Disaster quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2960.0,
+              "y": 3506.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Ladder",
+              "location": {
+                "x": 2960.0,
+                "y": 3507.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tremble",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tremble",
+    "location": "Death Plateau",
+    "unlockHint": "This track unlocks in southern Troll Country.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2866.0,
+              "y": 3591.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Warriors' Guild",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Warriors%27_Guild_(music_track)",
+    "location": "Warriors' Guild",
+    "unlockHint": "This track unlocks at the Warriors' Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2877.0,
+              "y": 3546.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Door",
+              "location": {
+                "x": 2877.0,
+                "y": 3546.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Woe of the Wyvern",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Woe_of_the_Wyvern",
+    "location": "Asgarnian Ice Dungeon",
+    "unlockHint": "This track unlocks in the Asgarnian Ice Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3007.0,
+              "y": 3150.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Trapdoor",
+              "location": {
+                "x": 3008.0,
+                "y": 3150.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3056.0,
+              "y": 9555.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemCollection": "ANTI_WYVERN_SHIELDS",
+            "quantity": 1.0,
+            "label": "Icy breath protection"
+          }
+        ],
+        "recommendedLevels": [
+          {
+            "skill": "Agility",
+            "level": 82.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Workshop",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Workshop_(music_track)",
+    "location": "Falador",
+    "unlockHint": "This track unlocks in Falador.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2995.0,
+              "y": 3354.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  }
+]

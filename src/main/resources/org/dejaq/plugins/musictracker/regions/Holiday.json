@@ -1,0 +1,259 @@
+[
+  {
+    "title": "All the Trimmings",
+    "region": "Holiday",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/All_the_Trimmings",
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "location": "Blue Moon Inn",
+    "unlockHint": "This track unlocks during a Christmas event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3225.0,
+              "y": 3398.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Bunny's Sugar Rush",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bunny%27s_Sugar_Rush",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Easter",
+    "region": "Holiday",
+    "location": "Easter Bunny's warren",
+    "unlockHint": "This track unlocks during an Easter event."
+  },
+  {
+    "title": "Diango's Little Helpers",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Diango%27s_Little_Helpers",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "Diango's Workshop",
+    "unlockHint": "This track unlocks during a Christmas event."
+  },
+  {
+    "title": "Dies Irae",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dies_Irae",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "Halloween Events (Formerly Grim Reaper's House in 2015)",
+    "unlockHint": "This track unlocks during a Halloween event."
+  },
+  {
+    "title": "Dot's Yuletide",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dot%27s_Yuletide",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "Lumbridge",
+    "unlockHint": "This track unlocks during a Christmas event."
+  },
+  {
+    "title": "Easter Jig",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Easter_Jig",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Easter",
+    "region": "Holiday",
+    "location": "2013 Easter event",
+    "unlockHint": "This track unlocks during an Easter event."
+  },
+  {
+    "title": "Eve's Epinette",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Eve%27s_Epinette",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Halloween",
+    "region": "Holiday",
+    "location": "Eve's party",
+    "unlockHint": "This track unlocks during a Halloween event."
+  },
+  {
+    "title": "A Festive Party",
+    "region": "Holiday",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Festive_Party",
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "location": "2021 Christmas event",
+    "unlockHint": "This track unlocks during a Christmas event.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3001.0,
+              "y": 3352.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Funny Bunnies",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Funny_Bunnies",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Easter",
+    "region": "Holiday",
+    "location": "2014 Easter event",
+    "unlockHint": "This track unlocks during an Easter event."
+  },
+  {
+    "title": "Gnome Village Party",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Gnome_Village_Party",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Thanksgiving",
+    "region": "Holiday",
+    "unlockHint": "This track unlocks automatically."
+  },
+  {
+    "title": "Grimly Fiendish",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Grimly_Fiendish",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Halloween",
+    "region": "Holiday",
+    "location": "2014 Halloween event",
+    "unlockHint": "This track unlocks during a Halloween event."
+  },
+  {
+    "title": "High Spirits",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/High_Spirits",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "Draynor Village",
+    "unlockHint": "This track unlocks during a Halloween event."
+  },
+  {
+    "title": "Jungle Bells",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jungle_Bells",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "Gublinch lair",
+    "unlockHint": "This track unlocks during a Christmas event."
+  },
+  {
+    "title": "Jungle Island Xmas",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jungle_Island_Xmas",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "Musa Point",
+    "unlockHint": "This track unlocks during a Christmas event."
+  },
+  {
+    "title": "Land of Snow",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Land_of_Snow_(music_track)",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "Land of Snow",
+    "unlockHint": "This track unlocks during a Christmas event."
+  },
+  {
+    "title": "Nox Irae",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Nox_Irae",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "Halloween Events (Formerly Grim Reaper's House in 2015)",
+    "unlockHint": "This track unlocks during a Halloween event."
+  },
+  {
+    "title": "Scrubfoot's Descent",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scrubfoot%27s_Descent",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "2020 Christmas event",
+    "unlockHint": "This track unlocks during a Christmas event."
+  },
+  {
+    "title": "Sea Minor Shanty",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sea_Minor_Shanty",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Holiday",
+    "region": "Holiday",
+    "location": "Rick's room in the Wizards' Tower",
+    "unlockHint": "This track unlocks during a Halloween event."
+  },
+  {
+    "title": "Sea Shanty Xmas",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sea_Shanty_Xmas",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "2013 Christmas event",
+    "unlockHint": "This track unlocks during a Christmas event."
+  },
+  {
+    "title": "Sunny Side Up",
+    "region": "Holiday",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sunny_Side_Up",
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Easter",
+    "location": "Varrock",
+    "unlockHint": "This track unlocks during an Easter event",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 3488.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Winter Funfair",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Winter_Funfair",
+    "members": false,
+    "unlockType": "HOLIDAY_EVENT",
+    "unlockMessage": "Christmas",
+    "region": "Holiday",
+    "location": "Land of Snow",
+    "unlockHint": "This track unlocks during a Christmas event."
+  }
+]

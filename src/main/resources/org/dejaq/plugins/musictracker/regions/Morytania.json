@@ -1,0 +1,1528 @@
+[
+  {
+    "title": "Arachnids of Vampyrium",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Arachnids_of_Vampyrium_(music_track)",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks during the fight in the Nylocas lair within the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 4256.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Bane of Ashihama",
+    "region": "Morytania",
+    "unlockMessage": "This track unlocks while fighting the Nightmare.",
+    "unlockType": "SPECIAL",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Bane_of_Ashihama",
+    "location": "The Nightmare",
+    "unlockHint": "This track unlocks while fighting the Nightmare.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3872.0,
+              "y": 9952.0,
+              "z": 3.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Barking Mad",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Barking_Mad",
+    "location": "Werewolf Agility Course",
+    "unlockHint": "This track unlocks at the Werewolf Agility Course.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3543.0,
+              "y": 3463.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3543.0,
+                  "y": 3462.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CREATURE_OF_FENKENSTRAIN",
+        "items": [
+          {
+            "itemCollection": "RING_OF_CHAROS",
+            "quantity": 1.0
+          }
+        ],
+        "levels": [
+          {
+            "skill": "Agility",
+            "level": 60.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Bloodbath",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bloodbath",
+    "location": "Slepe",
+    "unlockHint": "This track unlocks in Slepe.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3671.0,
+              "y": 3543.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Andras",
+              "location": {
+                "x": 3671.0,
+                "y": 3543.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Travel"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3712.0,
+              "y": 3328.0,
+              "z": 0.0
+            },
+            "name": "Step 2"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL",
+        "items": [
+          {
+            "itemId": 995,
+            "quantity": 10000.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Bone Dance",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bone_Dance",
+    "location": "Area west of Mort'ton",
+    "unlockHint": "This track unlocks west of Mort'ton.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3439.0,
+              "y": 3268.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ]
+  },
+  {
+    "title": "Brew Hoo Hoo!",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Brew_Hoo_Hoo!",
+    "location": "Port Phasmatys brewery",
+    "unlockHint": "This track unlocks in the Port Phasmatys brewery.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3660.0,
+              "y": 3509.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Energy Barrier",
+                "location": {
+                  "x": 3659.0,
+                  "y": 3508.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "pass"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3681.0,
+              "y": 3497.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3681.0,
+                  "y": 3498.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "itemId": 4251,
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Conspiracy",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Conspiracy",
+    "location": "Theatre of Blood",
+    "unlockHint": "This track unlocks during the A Taste of Hope quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3592.0,
+              "y": 9696.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_TASTE_OF_HOPE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Curtain Closes",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Curtain_Closes",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks in Verzik Vitur's treasure vault after defeating her in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3232.0,
+              "y": 4320.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dance of the Nylocas",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dance_of_the_Nylocas",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks upon entering the Nylocas lair in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 4256.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dance of the Undead",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dance_of_the_Undead",
+    "location": "Barrows",
+    "unlockHint": "This track unlocks at the Barrows.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3549.0,
+              "y": 3299.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ]
+  },
+  {
+    "title": "Dangerous Way",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dangerous_Way",
+    "location": "Barrows",
+    "unlockHint": "This track unlocks in the Barrows.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3575.0,
+              "y": 3298.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "location": {
+                  "x": 3575.0,
+                  "y": 3298.0,
+                  "z": 0.0
+                },
+                "type": "TILE",
+                "hint": "Dig Here"
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL",
+        "items": [
+          {
+            "itemId": 952,
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Dark Beast Sotetseg",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Dark_Beast_Sotetseg",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks upon entering Sotetseg's room in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 4320.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Darkmeyer",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Darkmeyer_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Darkmeyer",
+    "unlockHint": "This track unlocks during the Sins of the Father quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3628.0,
+              "y": 3356.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SINS_OF_THE_FATHER"
+      }
+    ]
+  },
+  {
+    "title": "Dead Quiet",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dead_Quiet",
+    "location": "Northern Mort Myre Swamp",
+    "unlockHint": "This track unlocks in Mort Myre Swamp.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3464.0,
+              "y": 3424.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ]
+  },
+  {
+    "title": "Deadlands",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Deadlands",
+    "location": "Haunted Woods",
+    "unlockHint": "This track unlocks in the Haunted Woods.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3599.0,
+              "y": 3495.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Distant Land",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Distant_Land",
+    "location": "Burgh de Rott",
+    "unlockHint": "This track unlocks at Burgh de Rott.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3520.0,
+              "y": 3212.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ]
+  },
+  {
+    "title": "Dragontooth Island",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dragontooth_Island_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Dragontooth Island",
+    "unlockHint": "This track unlocks on Dragontooth Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3660.0,
+              "y": 3509.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Energy Barrier",
+              "location": {
+                "x": 3659.0,
+                "y": 3508.0,
+                "z": 0.0
+              },
+              "type": "GAME_OBJECT",
+              "hint": "Pass"
+            },
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3703.0,
+              "y": 3487.0,
+              "z": 0.0
+            },
+            "interaction": {
+              "entity": "Ghost captain",
+              "location": {
+                "x": 3703.0,
+                "y": 3487.0,
+                "z": 0.0
+              },
+              "type": "NPC",
+              "hint": "Travel"
+            },
+            "name": "Step 2"
+          }
+        ],
+        "quest": "GHOSTS_AHOY"
+      }
+    ]
+  },
+  {
+    "title": "The Everlasting Slumber",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Everlasting_Slumber",
+    "location": "Sisterhood Sanctuary",
+    "unlockHint": "This track unlocks in the Slepe Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3525.0,
+              "y": 3170.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Boat",
+                "location": {
+                  "x": 3522.0,
+                  "y": 3169.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Slepe",
+                "actions": [
+                  "board"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          },
+          {
+            "destination": {
+              "x": 3727.0,
+              "y": 3302.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Stairs",
+                "location": {
+                  "x": 3728.0,
+                  "y": 3300.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fangs for the Memory",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fangs_for_the_Memory",
+    "location": "Myreque's hideout in Burgh de Rott",
+    "unlockHint": "This track unlocks during the In Search of the Myreque quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 4576.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "IN_AID_OF_THE_MYREQUE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Fat Lady Sings",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fat_Lady_Sings",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks during the fight with Lady Verzik Vitur in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 4320.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fenkenstrain's Refrain",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fenkenstrain%27s_Refrain",
+    "location": "Fenkenstrain's Castle",
+    "unlockHint": "This track unlocks at Fenkenstrain's Castle.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3549.0,
+              "y": 3542.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Grotto",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Grotto_(music_track)",
+    "location": "Mort Myre Swamp",
+    "unlockHint": "This track unlocks in the Nature Grotto.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3424.0,
+              "y": 9760.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "NATURE_SPIRIT"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "It's not over 'til...",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/It%27s_not_over_%27til...",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks upon entering Lady Verzik Vitur's room in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3167.0,
+              "y": 4319.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Itsy Bitsy...",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Itsy_Bitsy...",
+    "location": "Morytania Spider Cave",
+    "unlockHint": "This track unlocks inside the Morytania Spider Cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Cave",
+            "destination": {
+              "x": 3657,
+              "y": 3408,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Cave",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          }
+        ],
+        "recommendedItems": [
+          {
+            "label": "Combat gear"
+          },
+          {
+            "itemCollection": "GOOD_EATING_FOOD",
+            "quantity": 1,
+            "label": "Food"
+          },
+          {
+            "itemId": 29782,
+            "quantity": 1
+          },
+          {
+            "itemCollection": "ANTIVENOMS",
+            "quantity": 1,
+            "label": "Anti-venom or"
+          },
+          {
+            "itemCollection": "SERPENTINE_HELM",
+            "quantity": 1,
+            "label": "Serpentine helm (charged) (equipped)"
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "quest": "PRIEST_IN_PERIL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Lair",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lair",
+    "location": "Shade Catacombs",
+    "unlockType": "MINIGAME",
+    "unlockMessage": "Shades of Mort'ton",
+    "unlockHint": "This track unlocks in the Shade Catacombs.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3488.0,
+              "y": 9696.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lament of Meiyerditch",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lament_of_Meiyerditch",
+    "location": "Meiyerditch",
+    "unlockHint": "This track unlocks in Meiyerditch.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3610.0,
+              "y": 3284.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DARKNESS_OF_HALLOWVALE"
+      }
+    ]
+  },
+  {
+    "title": "Last King of the Yarasa",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Last_King_of_the_Yarasa",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks during the fight with Xarpus in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 4384.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Last Shanty",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Last_Shanty",
+    "location": "Meiyerditch",
+    "unlockHint": "This track unlocks in Meiyerditch.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3610.0,
+              "y": 3284.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DARKNESS_OF_HALLOWVALE"
+      }
+    ]
+  },
+  {
+    "title": "The Maiden's Anger",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Maiden%27s_Anger",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks during the fight with The Maiden of Sugadinti in the Theatre of Blood",
+    "location": "Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 4448.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Maiden's Sorrow",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Maiden%27s_Sorrow",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks upon entering The Maiden of Sugadinti's room in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3200.0,
+              "y": 4448.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Morytania",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Morytania_(music_track)",
+    "location": "North-west Morytania",
+    "unlockHint": "This track unlocks in north-west Morytania.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 3520,
+              "y": 3540,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "quest": "PRIEST_IN_PERIL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Natural",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Natural",
+    "unlockType": "QUEST",
+    "location": "Nature Grotto",
+    "unlockHint": "This track unlocks at the Nature Grotto.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3441.0,
+              "y": 3338.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "NATURE_SPIRIT"
+      }
+    ]
+  },
+  {
+    "title": "The Nightmare Continues",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Nightmare_Continues",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks during the fight with the Pestilent Bloat in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 4448.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Noxious Awakening",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Noxious_Awakening",
+    "location": "Morytania Spider Cave",
+    "unlockHint": "This track unlocks while fighting Araxxor.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Cave",
+            "destination": {
+              "x": 3657,
+              "y": 3408,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Cave",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "enter"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tunnel",
+            "destination": {
+              "x": 3655,
+              "y": 9814,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Web tunnel",
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "squeeze-through"
+                ]
+              }
+            ]
+          }
+        ],
+        "recommendedItems": [
+          {
+            "label": "Combat gear"
+          },
+          {
+            "itemCollection": "GOOD_EATING_FOOD",
+            "quantity": 1,
+            "label": "Food"
+          },
+          {
+            "itemId": 29782,
+            "quantity": 1
+          },
+          {
+            "itemCollection": "ANTIVENOMS",
+            "quantity": 1,
+            "label": "Anti-venom or"
+          },
+          {
+            "itemCollection": "SERPENTINE_HELM",
+            "quantity": 1,
+            "label": "Serpentine helm (charged) (equipped)"
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "quest": "PRIEST_IN_PERIL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Other Side",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Other_Side",
+    "location": "Port Phasmatys",
+    "unlockHint": "This track unlocks in Port Phasmatys.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3684.0,
+              "y": 3504.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ]
+  },
+  {
+    "title": "Phasmatys",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Phasmatys",
+    "location": "Under the Ectofuntus",
+    "unlockHint": "This track unlocks in Port Phasmatys.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3654.0,
+              "y": 3519.0,
+              "z": 0.0
+            },
+            "interactions": [
+              {
+                "entity": "Trapdoor",
+                "location": {
+                  "x": 3653.0,
+                  "y": 3519.0,
+                  "z": 0.0
+                },
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ],
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL",
+        "recommendedItems": [
+          {
+            "itemId": 4251,
+            "quantity": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Power of the Shadow Realm",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Power_of_the_Shadow_Realm",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks during the fight with the Sotetseg in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 4320.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Predator Xarpus",
+    "region": "Morytania",
+    "members": true,
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks upon entering Xarpus's room in the Theatre of Blood",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Predator_Xarpus",
+    "location": "Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 4384.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Shadowland",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Shadowland",
+    "location": "Mort'ton",
+    "unlockHint": "This track unlocks in Mort'ton.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3492.0,
+              "y": 3285.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ]
+  },
+  {
+    "title": "Shipwrecked",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Shipwrecked",
+    "location": "Shipwreck on the north coast of Morytania",
+    "unlockHint": "This track unlocks at the shipwreck east of Fenkenstrain's Castle.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 3604,
+              "y": 3542,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL",
+        "recommendedItems": [
+          {
+            "itemId": 4251,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Stagnant",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Stagnant",
+    "location": "Mort Myre Swamp",
+    "unlockHint": "This track unlocks in Mort Myre Swamp.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3464.0,
+              "y": 3424.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ]
+  },
+  {
+    "title": "Tempest",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tempest",
+    "location": "Slayer Tower rooftop",
+    "unlockHint": "This track unlocks while fighting the Grotesque Guardians.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 1696,
+              "y": 4576,
+              "z": 0
+            }
+          }
+        ],
+        "items": [
+          {
+            "itemId": 21724,
+            "quantity": 1,
+            "label": "Brittle key"
+          }
+        ]
+      }
+    ],
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks while fighting the Grotesque Guardians."
+  },
+  {
+    "title": "The Terrible Caverns",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Terrible_Caverns",
+    "location": "Darkmeyer",
+    "unlockHint": "This track unlocks during the Sins of the Father quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3610.0,
+              "y": 9735.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Terrible Tower",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Terrible_Tower",
+    "location": "Slayer Tower",
+    "unlockHint": "This track unlocks at the Slayer Tower.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Step 1",
+            "destination": {
+              "x": 3428,
+              "y": 3556,
+              "z": 0
+            }
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Village",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Village",
+    "unlockType": "QUEST",
+    "location": "Canifis",
+    "unlockHint": "This track unlocks at Canifis.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3491.0,
+              "y": 3487.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_I"
+      }
+    ]
+  },
+  {
+    "title": "Waterlogged",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Waterlogged",
+    "location": "South of Canifis",
+    "unlockHint": "This track unlocks in Mort Myre Swamp.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3464.0,
+              "y": 3424.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ]
+  },
+  {
+    "title": "Welcome to my Nightmare",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Welcome_to_my_Nightmare",
+    "location": "Theatre of Blood",
+    "unlockType": "SPECIAL",
+    "unlockMessage": "This track unlocks upon entering the Pestilent Bloat's room in the Theatre of Blood",
+    "unlockHint": "This track unlocks in the Theatre of Blood.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 4448.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Welcome to the Theatre",
+    "region": "Morytania",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Welcome_to_the_Theatre",
+    "location": "Theatre of Blood",
+    "unlockHint": "This track unlocks at Ver Sinhaza.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3668.0,
+              "y": 3219.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PRIEST_IN_PERIL"
+      }
+    ]
+  }
+]

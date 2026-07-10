@@ -1,0 +1,6084 @@
+[
+  {
+    "title": "All's Fairy in Love & War",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/All%27s_Fairy_in_Love_%26_War",
+    "unlockType": "QUEST",
+    "location": "Fairy Resistance Hideout",
+    "unlockHint": "This track unlocks during the Fairytale II - Cure a Queen quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2336.0,
+              "y": 4448.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "FAIRYTALE_II__CURE_A_QUEEN"
+      }
+    ]
+  },
+  {
+    "title": "Alternative Root",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Alternative_Root",
+    "location": "Tunnel of Chaos",
+    "unlockHint": "This track unlocks during the What Lies Below quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 5216.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "WHAT_LIES_BELOW"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Ancient Prison",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Ancient_Prison",
+    "unlockType": "QUEST",
+    "unlockMessage": "THE_FROZEN_DOOR",
+    "location": "Ancient Prison",
+    "unlockHint": "This track unlocks in the God Wars Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2862.0,
+              "y": 5216.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FROZEN_DOOR"
+      }
+    ]
+  },
+  {
+    "title": "Anywhere",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Anywhere",
+    "unlockType": "QUEST",
+    "location": "Ape Atoll",
+    "unlockHint": "This track unlocks on Ape Atoll.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2752.0,
+              "y": 2752.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_I"
+      }
+    ]
+  },
+  {
+    "title": "Arboretum",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Arboretum",
+    "unlockType": "QUEST",
+    "location": "Darkmeyer",
+    "unlockHint": "This track unlocks during the Sins of the Father quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3626.0,
+              "y": 3362.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SINS_OF_THE_FATHER"
+      }
+    ]
+  },
+  {
+    "title": "Architects of Prifddinas",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Architects_of_Prifddinas",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks in Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3264.0,
+              "y": 6080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Attack 2",
+    "region": "Quests",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Attack_2",
+    "location": "Elvarg's lair",
+    "unlockHint": "This track unlocks during the Dragon Slayer I quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2863.0,
+              "y": 9642.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DRAGON_SLAYER_I"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Attack 4",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Attack_4",
+    "unlockType": "QUEST",
+    "location": "Fight Arena or the Rune Essence Mine during Wanted!.",
+    "unlockHint": "This track unlocks during the Fight Arena quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2596.0,
+              "y": 3162.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "FIGHT_ARENA"
+      }
+    ]
+  },
+  {
+    "title": "Attack 5",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Attack_5",
+    "location": "King Black Dragon Lair",
+    "unlockHint": "This track unlocks while fighting the King Black Dragon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2272.0,
+              "y": 4704.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "DRAGON_SLAYER_II",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Awful Anthem",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Awful_Anthem_(music_track)",
+    "members": true,
+    "quest": "THRONE_OF_MISCELLANIA",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Miscellania",
+    "unlockHint": "This track unlocks during the Throne of Miscellania quest."
+  },
+  {
+    "title": "Aye Car Rum Ba",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Aye_Car_Rum_Ba",
+    "location": "Braindeath Island",
+    "unlockHint": "This track unlocks on Braindeath Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2144.0,
+              "y": 5088.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RUM_DEAL"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Bait",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bait_(music_track)",
+    "members": true,
+    "quest": "A_TASTE_OF_HOPE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Theatre of Blood",
+    "unlockHint": "This track unlocks during the A Taste of Hope quest."
+  },
+  {
+    "title": "Ballad of the Basilisk",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_FREMENNIK_EXILES",
+    "location": "Rellekka Longhall",
+    "unlockHint": "This track unlocks during The Fremennik Exiles quest."
+  },
+  {
+    "title": "Barbarian Workout",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "BELOW_ICE_MOUNTAIN",
+    "location": "Barbarian Village",
+    "unlockHint": "This track unlocks during the Below Ice Mountain quest."
+  },
+  {
+    "title": "Barren Land",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Barren_Land",
+    "unlockType": "QUEST",
+    "location": "Weiss",
+    "unlockHint": "This track unlocks in the icy lands around Weiss.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2850.0,
+              "y": 3942.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MAKING_FRIENDS_WITH_MY_ARM"
+      }
+    ]
+  },
+  {
+    "title": "Beetle Juice",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Beetle_Juice",
+    "unlockType": "QUEST",
+    "location": "Sophanem Dungeon",
+    "unlockHint": "This track unlocks during the Contact! quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2272.0,
+              "y": 4320.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CONTACT"
+      }
+    ]
+  },
+  {
+    "title": "Below the Conch",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Below_the_Conch",
+    "location": "Gryphon Caves",
+    "unlockHint": "This track unlocks during the Troubled Tortugans quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3104.0,
+              "y": 8864.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TROUBLED_TORTUGANS"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Black of Knight",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Black_of_Knight",
+    "unlockType": "QUEST",
+    "location": "Black Knight Catacombs",
+    "unlockHint": "This track unlocks during the While Guthix Sleeps quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 4128.0,
+              "y": 4768.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "WHILE_GUTHIX_SLEEPS"
+      }
+    ]
+  },
+  {
+    "title": "Blistering Barnacles",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Blistering_Barnacles",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "RUM_DEAL"
+  },
+  {
+    "title": "The Blood Moon Rises",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Blood_Moon_Rises_(music_track)",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Blood Rush",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Blood_Rush_(music_track)",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE",
+    "location": "The Stranglewood",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest."
+  },
+  {
+    "title": "Boat 'Em Up",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_RED_REEF",
+    "location": "Last Light",
+    "unlockHint": "This track unlocks during The Red Reef quest."
+  },
+  {
+    "title": "Bob's on Holiday",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Bob%27s_on_Holiday",
+    "members": true,
+    "quest": "A_TAIL_OF_TWO_CATS",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Sophanem",
+    "unlockHint": "This track unlocks during the A Tail of Two Cats quest."
+  },
+  {
+    "title": "Body Parts",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Body_Parts",
+    "location": "Experiment Cave",
+    "unlockHint": "This track unlocks in Fenkenstrain's Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3520.0,
+              "y": 9952.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CREATURE_OF_FENKENSTRAIN"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Bolrie's Diary",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_PATH_OF_GLOUPHRIE",
+    "location": "Tree Gnome Village Dungeon",
+    "unlockHint": "This track unlocks during The Path of Glouphrie quest."
+  },
+  {
+    "title": "Boss Moosic",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_IDES_OF_MILK",
+    "location": "Lumbridge cow field",
+    "unlockHint": "This track unlocks during the Ides of Milk quest."
+  },
+  {
+    "title": "Brain Battle",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Brain_Battle",
+    "members": true,
+    "quest": "THE_GREAT_BRAIN_ROBBERY",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Harmony Island",
+    "unlockHint": "This track unlocks during The Great Brain Robbery quest."
+  },
+  {
+    "title": "The Bridge",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Bridge",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES",
+    "unlockHint": "This track unlocks during The Blood Moon Rises quest."
+  },
+  {
+    "title": "The Burning Sun",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "CHILDREN_OF_THE_SUN",
+    "location": "Varrock Square",
+    "unlockHint": "This track unlocks during the Children of the Sun quest."
+  },
+  {
+    "title": "Business as Unusual",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Business_as_Unusual",
+    "unlockType": "QUEST",
+    "location": "Red Rock",
+    "unlockHint": "This track unlocks during The Red Reef quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2797.0,
+              "y": 2515.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_RED_REEF"
+      }
+    ]
+  },
+  {
+    "title": "Cabin Fever",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Cabin_Fever_(music_track)",
+    "unlockType": "QUEST",
+    "location": "The Adventurous",
+    "unlockHint": "This track unlocks during the Cabin Fever quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 4832.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CABIN_FEVER"
+      }
+    ]
+  },
+  {
+    "title": "Cannonballin'",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Cannonballin%27",
+    "unlockType": "QUEST",
+    "location": "Last Light",
+    "unlockHint": "This track unlocks during The Red Reef quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2858.0,
+              "y": 2329.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_RED_REEF"
+      }
+    ]
+  },
+  {
+    "title": "Castle Drakan",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Castle_Drakan_(music_track)",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Catacombs and Tombs",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Catacombs_and_Tombs",
+    "location": "Crypt in the Goblin Temple",
+    "unlockHint": "This track unlocks during the Land of the Goblins quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3744.0,
+              "y": 4384.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LAND_OF_THE_GOBLINS"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Cave of Beasts",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Cave_of_Beasts",
+    "location": "Kendal's Lair",
+    "unlockHint": "This track unlocks during the Mountain Daughter quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2784.0,
+              "y": 10080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MOUNTAIN_DAUGHTER"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Chain of Command",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Chain_of_Command",
+    "location": "Temple of Ikov",
+    "unlockHint": "This track unlocks during the Temple of Ikov quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2656.0,
+              "y": 9824.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TEMPLE_OF_IKOV"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Chamber",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Chamber",
+    "unlockType": "QUEST",
+    "location": "Fourth level of the Haunted Mine",
+    "unlockHint": "This track unlocks in the Haunted Mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2720.0,
+              "y": 4448.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "HAUNTED_MINE"
+      }
+    ]
+  },
+  {
+    "title": "Chef Surprise",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Chef_Surprise",
+    "location": "Culinaromancer's dimension",
+    "unlockHint": "This track unlocks during the Recipe for Disaster quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 5344.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RECIPE_FOR_DISASTER"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Chickened Out",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Chickened_Out",
+    "location": "Evil Chicken's Lair",
+    "unlockHint": "This track unlocks in the Evil Chicken's Lair.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2464.0,
+              "y": 4384.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RECIPE_FOR_DISASTER__SIR_AMIK_VARZE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Children of the Sun",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "CHILDREN_OF_THE_SUN",
+    "location": "Varrock Square",
+    "unlockHint": "This track unlocks during the Children of the Sun quest."
+  },
+  {
+    "title": "The Chosen",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Chosen",
+    "unlockType": "QUEST",
+    "location": "Temple Knight Recruitment Chambers",
+    "unlockHint": "This track unlocks during the Recruitment Drive quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2464.0,
+              "y": 4960.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RECRUITMENT_DRIVE"
+      }
+    ]
+  },
+  {
+    "title": "Claustrophobia",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Claustrophobia",
+    "unlockType": "QUEST",
+    "location": "Dondakan's mine",
+    "unlockHint": "This track unlocks during the Between a Rock quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2368.0,
+              "y": 4960.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BETWEEN_A_ROCK"
+      }
+    ]
+  },
+  {
+    "title": "Colossus of the Deep",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Colossus_of_the_Deep",
+    "location": "The Scar",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2080.0,
+              "y": 6368.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Confrontation",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "A_KINGDOM_DIVIDED",
+    "location": "Port Piscarilius",
+    "unlockHint": "This track unlocks during the A Kingdom Divided quest."
+  },
+  {
+    "title": "The Consortium",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Consortium_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Keldagrim",
+    "unlockHint": "This track unlocks during The Giant Dwarf quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2016.0,
+              "y": 4512.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_GIANT_DWARF"
+      }
+    ]
+  },
+  {
+    "title": "Creature Cruelty",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Creature_Cruelty",
+    "unlockType": "QUEST",
+    "location": "Tower of Life",
+    "unlockHint": "This track unlocks during the Tower of Life quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2649.0,
+              "y": 3218.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TOWER_OF_LIFE"
+      }
+    ]
+  },
+  {
+    "title": "Cursed",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Cursed",
+    "unlockType": "QUEST",
+    "location": "Underground Pass",
+    "unlockHint": "This track unlocks during the Underground Pass quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2432.0,
+              "y": 9696.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "UNDERGROUND_PASS"
+      }
+    ]
+  },
+  {
+    "title": "Dance of the Meilyr",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dance_of_the_Meilyr",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks in Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3264.0,
+              "y": 6080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Dangerous Logic",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dangerous_Logic",
+    "unlockType": "QUEST",
+    "location": "Movario's base",
+    "unlockHint": "This track unlocks during the While Guthix Sleeps quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 4132.0,
+              "y": 4959.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "WHILE_GUTHIX_SLEEPS"
+      }
+    ]
+  },
+  {
+    "title": "Davy Jones' Locker",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Davy_Jones%27_Locker",
+    "unlockType": "QUEST",
+    "location": "Underwater near Port Khazard",
+    "unlockHint": "This track unlocks during the Recipe for Disaster quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2976.0,
+              "y": 9504.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RECIPE_FOR_DISASTER"
+      }
+    ]
+  },
+  {
+    "title": "Dawn",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dawn_(music_track)",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Deep Down",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Deep_Down",
+    "unlockType": "QUEST",
+    "location": "Bottom of the Haunted Mine",
+    "unlockHint": "This track unlocks in the Haunted Mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2752.0,
+              "y": 4544.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "HAUNTED_MINE"
+      }
+    ]
+  },
+  {
+    "title": "Delrith",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Delrith_(music_track)",
+    "members": false,
+    "quest": "DEMON_SLAYER",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Varrock",
+    "unlockHint": "This track unlocks during the Demon Slayer quest."
+  },
+  {
+    "title": "The Depths",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Depths",
+    "location": "Sophanem Dungeon",
+    "unlockHint": "This track unlocks during the Contact! quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3232.0,
+              "y": 9248.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CONTACT"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "A Desolate Past",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Desolate_Past",
+    "unlockType": "QUEST",
+    "location": "Crypt of Tonali",
+    "unlockHint": "This track unlocks during The Final Dawn quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1312.0,
+              "y": 9451.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FINAL_DAWN"
+      }
+    ]
+  },
+  {
+    "title": "Dimension X",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dimension_X",
+    "location": "Gorak Plane",
+    "unlockHint": "This track unlocks at the Gorak Plane.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3040.0,
+              "y": 5344.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "FAIRYTALE_II__CURE_A_QUEEN"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Dogfight",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dogfight",
+    "members": true,
+    "quest": "THE_GENERALS_SHADOW",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Goblin Cave",
+    "unlockHint": "This track unlocks during The General's Shadow miniquest."
+  },
+  {
+    "title": "Domain of the Vampyres",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Domain_of_the_Vampyres",
+    "members": true,
+    "quest": "DARKNESS_OF_HALLOWVALE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Castle Drakan",
+    "unlockHint": "This track unlocks during the Darkness of Hallowvale quest."
+  },
+  {
+    "title": "Don't Panic Zanik",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Don%27t_Panic_Zanik",
+    "members": true,
+    "quest": "LAND_OF_THE_GOBLINS",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Yu'biusk",
+    "unlockHint": "This track unlocks during the Land of the Goblins quest."
+  },
+  {
+    "title": "Dorgeshuun Treaty",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dorgeshuun_Treaty",
+    "members": true,
+    "quest": "THE_LOST_TRIBE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Lumbridge",
+    "unlockHint": "This track unlocks during The Lost Tribe quest."
+  },
+  {
+    "title": "The Dragon Slayer",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Dragon_Slayer",
+    "members": true,
+    "quest": "DRAGON_SLAYER_II",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Lithkren Vault",
+    "unlockHint": "This track unlocks during the Dragon Slayer II quest."
+  },
+  {
+    "title": "The Dream Theatre",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "DEFENDER_OF_VARROCK",
+    "location": "Ruins of Camdozaal",
+    "unlockHint": "This track unlocks during the Defender of Varrock quest."
+  },
+  {
+    "title": "Dreamstate",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dreamstate",
+    "location": "Dream World",
+    "unlockHint": "This track unlocks during the Lunar Diplomacy quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1760.0,
+              "y": 5088.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LUNAR_DIPLOMACY"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Dunes of Eternity",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Dunes_of_Eternity",
+    "unlockType": "QUEST",
+    "location": "Necropolis",
+    "unlockHint": "This track unlocks during the Beneath Cursed Sands quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3339.0,
+              "y": 2718.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "Elven Guardians",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Elven_Guardians",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks in Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3264.0,
+              "y": 6080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Espionage",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Espionage",
+    "unlockType": "QUEST",
+    "location": "Cold War",
+    "unlockHint": "This track unlocks during the Cold War quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2656.0,
+              "y": 10400.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "COLD_WAR"
+      }
+    ]
+  },
+  {
+    "title": "Everlasting",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Everlasting",
+    "unlockType": "QUEST",
+    "location": "Dream Mentor",
+    "unlockHint": "This track unlocks during the Dream Mentor quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 5152.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DREAM_MENTOR"
+      }
+    ]
+  },
+  {
+    "title": "The Evil Within",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Evil_Within",
+    "unlockType": "QUEST",
+    "location": "Chaos Temple",
+    "unlockHint": "This track unlocks during the While Guthix Sleeps quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2952.0,
+              "y": 3821.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "WHILE_GUTHIX_SLEEPS"
+      }
+    ]
+  },
+  {
+    "title": "Expedition",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Expedition",
+    "location": "Observatory Dungeon",
+    "unlockHint": "This track unlocks in the Observatory Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2912.0,
+              "y": 10016.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "OBSERVATORY_QUEST"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Eye of the Storm",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Eye_of_the_Storm",
+    "members": false,
+    "quest": "DRAGON_SLAYER_I",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Crandor",
+    "unlockHint": "This track unlocks during the Dragon Slayer I quest."
+  },
+  {
+    "title": "Eye See You",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Eye_See_You",
+    "location": "Ghorrock Prison",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3039.0,
+              "y": 6454.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Fairy Dragon",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "RECIPE_FOR_DISASTER__SIR_AMIK_VARZE",
+    "location": "Zanaris",
+    "unlockHint": "This track unlocks during the Recipe for Disaster quest."
+  },
+  {
+    "title": "Faith of the Hefin",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Faith_of_the_Hefin",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks in Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3264.0,
+              "y": 6080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "The Fallen Empire",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fallen_Empire_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Lassar Undercity",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2656.0,
+              "y": 6368.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+      }
+    ]
+  },
+  {
+    "title": "Fanfare 2",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fanfare_2",
+    "unlockType": "QUEST",
+    "location": "Ship Yard",
+    "unlockHint": "This track unlocks in the Karamja Shipyard.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2975.0,
+              "y": 3041.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_GRAND_TREE"
+      }
+    ]
+  },
+  {
+    "title": "Fe Fi Fo Fum",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fe_Fi_Fo_Fum",
+    "unlockType": "QUEST",
+    "location": "Top of the beanstalk",
+    "unlockHint": "This track unlocks during the Grim Tales quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2144.0,
+              "y": 5536.0,
+              "z": 3.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "GRIM_TALES"
+      }
+    ]
+  },
+  {
+    "title": "Fear and Loathing",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fear_and_Loathing",
+    "location": "Fear room in Tolna's rift",
+    "unlockHint": "This track unlocks in Tolna's rift.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3056.0,
+              "y": 5232.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_SOULS_BANE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Fight of the Basilisk",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_FREMENNIK_EXILES",
+    "location": "Jormungand's Prison",
+    "unlockHint": "This track unlocks during The Fremennik Exiles quest."
+  },
+  {
+    "title": "Fight or Flight",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fight_or_Flight",
+    "location": "Slave mine below West Ardougne",
+    "unlockHint": "This track unlocks during the Mourning's End Part I quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1984.0,
+              "y": 4640.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MOURNINGS_END_PART_I"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Find My Way",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Find_My_Way",
+    "location": "Ape Atoll Dungeon",
+    "unlockHint": "This track unlocks in the Ape Atoll Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2752.0,
+              "y": 9120.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_I"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Fires of Lletya",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fires_of_Lletya",
+    "unlockType": "QUEST",
+    "location": "Lletya",
+    "unlockHint": "This track unlocks during the Song of the Elves quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2912.0,
+              "y": 6176.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Forgettable Melody",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Forgettable_Melody",
+    "unlockType": "QUEST",
+    "location": "Red Axe Quest Base",
+    "unlockHint": "This track unlocks during the Forgettable Tale... quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 4960.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "FORGETTABLE_TALE"
+      }
+    ]
+  },
+  {
+    "title": "The Forgotten Tomb",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Forgotten_Tomb",
+    "unlockType": "QUEST",
+    "location": "Tomb below Ruins of Ullek",
+    "unlockHint": "This track unlocks during the Beneath Cursed Sands quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3392.0,
+              "y": 9248.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BENEATH_CURSED_SANDS"
+      }
+    ]
+  },
+  {
+    "title": "The Forsaken Tower",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Forsaken_Tower_(music_track)",
+    "unlockType": "QUEST",
+    "location": "The Forsaken Tower",
+    "unlockHint": "This track unlocks during The Forsaken Tower quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1382.0,
+              "y": 3823.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FORSAKEN_TOWER"
+      }
+    ]
+  },
+  {
+    "title": "The Forsaken",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Forsaken",
+    "location": "Lithkren Vault",
+    "unlockHint": "This track unlocks during the Dragon Slayer II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1568.0,
+              "y": 5088.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DRAGON_SLAYER_II"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Foundry",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Foundry",
+    "location": "Giants' Foundry",
+    "unlockHint": "This track unlocks during the Sleeping Giants quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3360.0,
+              "y": 11488.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SLEEPING_GIANTS"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Fragment",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fragment",
+    "unlockType": "QUEST",
+    "location": "Temple of Light",
+    "unlockHint": "This track unlocks during the Song of the Elves quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 5920.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "The Fremennik Kings",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Fremennik_Kings",
+    "members": true,
+    "quest": "THE_FREMENNIK_ISLES",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Jatiszo",
+    "unlockHint": "This track unlocks during The Fremennik Isles quest."
+  },
+  {
+    "title": "Frostbite",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Frostbite",
+    "unlockType": "QUEST",
+    "location": "Ice Path",
+    "unlockHint": "This track unlocks during the Desert Treasure I quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 3808.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_I"
+      }
+    ]
+  },
+  {
+    "title": "Fruits de Mer",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Fruits_de_Mer",
+    "unlockType": "QUEST",
+    "location": "Fishing Platform",
+    "unlockHint": "This track unlocks at the Fishing Platform.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2778.0,
+              "y": 3282.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SEA_SLUG"
+      }
+    ]
+  },
+  {
+    "title": "The Galleon",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Galleon",
+    "unlockType": "QUEST",
+    "location": "Pirates' Cove",
+    "unlockHint": "This track unlocks during the Lunar Diplomacy quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2208.0,
+              "y": 3809.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LUNAR_DIPLOMACY"
+      }
+    ]
+  },
+  {
+    "title": "The Gates of Menaphos",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Gates_of_Menaphos",
+    "members": true,
+    "quest": "CONTACT",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Sophanem",
+    "unlockHint": "This track unlocks during the Contact! quest."
+  },
+  {
+    "title": "Gathering",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Gathering",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "The Genie",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Genie",
+    "location": "Genie's cave",
+    "unlockHint": "This track unlocks during the Spirits of the Elid quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3360.0,
+              "y": 9312.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SPIRITS_OF_THE_ELID"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Grip of the Talon",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Grip_of_the_Talon",
+    "members": true,
+    "quest": "SHADOW_OF_THE_STORM",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Fight with Agrith Naar",
+    "unlockHint": "This track unlocks during the Shadow of the Storm quest."
+  },
+  {
+    "title": "The Guardian of Tapoyauik",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Guardian_of_Tapoyauik",
+    "location": "Ruins of Tapoyauik",
+    "unlockHint": "This track unlocks during The Heart of Darkness quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1376.0,
+              "y": 4512.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_HEART_OF_DARKNESS"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Guardians of the Rift",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Guardians_of_the_Rift_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Temple of the Eye",
+    "unlockHint": "This track unlocks during the Temple of the Eye quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3616.0,
+              "y": 9509.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TEMPLE_OF_THE_EYE"
+      }
+    ]
+  },
+  {
+    "title": "The Guardians Prepare",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Guardians_Prepare",
+    "unlockType": "QUEST",
+    "location": "Temple of the Eye",
+    "unlockHint": "This track unlocks during the Temple of the Eye quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3616.0,
+              "y": 9509.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TEMPLE_OF_THE_EYE"
+      }
+    ]
+  },
+  {
+    "title": "H.A.M. and Seek",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/H.A.M._and_Seek",
+    "unlockType": "QUEST",
+    "location": "Another Slice of H.A.M.",
+    "unlockHint": "This track unlocks during the Another Slice of H.A.M. quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 5536.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ANOTHER_SLICE_OF_HAM"
+      }
+    ]
+  },
+  {
+    "title": "H.A.M. Attack",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/H.A.M._Attack",
+    "unlockType": "QUEST",
+    "location": "Assault of Goblin Village",
+    "unlockHint": "This track unlocks during the Another Slice of H.A.M. quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2464.0,
+              "y": 5408.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ANOTHER_SLICE_OF_HAM"
+      }
+    ]
+  },
+  {
+    "title": "H.A.M. Fisted",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/H.A.M._Fisted",
+    "unlockType": "QUEST",
+    "location": "H.A.M. Store room",
+    "unlockHint": "This track unlocks during the Death to the Dorgeshuun quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2592.0,
+              "y": 5216.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DEATH_TO_THE_DORGESHUUN"
+      }
+    ]
+  },
+  {
+    "title": "Haunted Mine",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Haunted_Mine_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Fight with Treus Dayth",
+    "unlockHint": "This track unlocks during the Haunted Mine quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2784.0,
+              "y": 4448.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "HAUNTED_MINE"
+      }
+    ]
+  },
+  {
+    "title": "Have an Ice Day",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Have_an_Ice_Day",
+    "unlockType": "QUEST",
+    "location": "Iceberg",
+    "unlockHint": "This track unlocks during the Cold War quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2652.0,
+              "y": 4033.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "COLD_WAR"
+      }
+    ]
+  },
+  {
+    "title": "Healin' Feelin'",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_PATH_OF_GLOUPHRIE",
+    "location": "Galarpos Mountains",
+    "unlockHint": "This track unlocks during The Path of Glouphrie quest."
+  },
+  {
+    "title": "Heavy Security",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Heavy_Security",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_CURSE_OF_ARRAV",
+    "location": "Unknown",
+    "unlockHint": "This track unlocks during The Curse of Arrav quest."
+  },
+  {
+    "title": "The Heist",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Heist",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_CURSE_OF_ARRAV",
+    "location": "Zemouregal's Base",
+    "unlockHint": "This track unlocks during The Curse of Arrav quest."
+  },
+  {
+    "title": "Hells Bells",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Hells_Bells",
+    "unlockType": "QUEST",
+    "location": "Trollweiss Mountain",
+    "unlockHint": "This track unlocks during the Troll Romance quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2784.0,
+              "y": 3773.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TROLL_ROMANCE"
+      }
+    ]
+  },
+  {
+    "title": "Hermit",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Hermit",
+    "unlockType": "QUEST",
+    "location": "Hermit's cave north-west of Burthorpe",
+    "unlockHint": "This track unlocks in Saba's cave north-west of Burthorpe.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2272.0,
+              "y": 4768.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DEATH_PLATEAU"
+      }
+    ]
+  },
+  {
+    "title": "His Faithful Servants",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/His_Faithful_Servants_(music_track)",
+    "members": true,
+    "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Ancient Vault",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest."
+  },
+  {
+    "title": "Home",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Home",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Home Sweet Home",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Home_Sweet_Home",
+    "location": "Player-owned house",
+    "unlockHint": "This track unlocks inside a Player-owned house.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1920.0,
+              "y": 5760.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DADDYS_HOME"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Houses of Kourend",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Houses_of_Kourend",
+    "unlockType": "QUEST",
+    "location": "Xeric's Lookout",
+    "unlockHint": "This track unlocks during the A Kingdom Divided quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1568.0,
+              "y": 9952.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_KINGDOM_DIVIDED"
+      }
+    ]
+  },
+  {
+    "title": "Hunted",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Hunted",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Hypnotised",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Hypnotised",
+    "location": "Icthlarin's Little Helper",
+    "unlockHint": "This track unlocks during the Icthlarin's Little Helper quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 9184.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ICTHLARINS_LITTLE_HELPER"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "I'm Sorry",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/I%27m_Sorry",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Iban",
+    "region": "Quests",
+    "members": true,
+    "unlockType": "QUEST",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Iban_(music_track)",
+    "location": "Underground Pass, at Iban's Lair",
+    "unlockHint": "This track unlocks at Lord Iban's Lair.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2144.0,
+              "y": 4640.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "UNDERGROUND_PASS"
+      }
+    ]
+  },
+  {
+    "title": "Illusive",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Illusive",
+    "unlockType": "QUEST",
+    "location": "Dream World",
+    "unlockHint": "This track unlocks during the Dream Mentor quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 5152.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DREAM_MENTOR"
+      }
+    ]
+  },
+  {
+    "title": "In the Shadows",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "SECRETS_OF_THE_NORTH",
+    "location": "Ghorrock Dungeon",
+    "unlockHint": "This track unlocks during the Secrets of the North quest."
+  },
+  {
+    "title": "Inadequacy",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Inadequacy",
+    "unlockType": "QUEST",
+    "location": "Dream World",
+    "unlockHint": "This track unlocks during the Dream Mentor quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 5152.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DREAM_MENTOR"
+      }
+    ]
+  },
+  {
+    "title": "Incantation",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Incantation",
+    "location": "Shadow of the Storm",
+    "unlockHint": "This track unlocks during the Shadow of the Storm quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2720.0,
+              "y": 4896.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SHADOW_OF_THE_STORM"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Incarceration",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "WHILE_GUTHIX_SLEEPS",
+    "location": "White Knights' Castle",
+    "unlockHint": "This track unlocks during the While Guthix Sleeps quest."
+  },
+  {
+    "title": "Intrepid",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Intrepid",
+    "unlockType": "QUEST",
+    "location": "Underground Pass",
+    "unlockHint": "This track unlocks during the Underground Pass quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2336.0,
+              "y": 9856.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "UNDERGROUND_PASS"
+      }
+    ]
+  },
+  {
+    "title": "Iorwerth's Lament",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Iorwerth%27s_Lament",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks in Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3264.0,
+              "y": 6080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Island Life",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Island_Life",
+    "unlockType": "QUEST",
+    "location": "Ape Atoll",
+    "unlockHint": "This track unlocks on Ape Atoll.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2752.0,
+              "y": 2752.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_I"
+      }
+    ]
+  },
+  {
+    "title": "Jaws of the Basilisk",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_FREMENNIK_EXILES",
+    "location": "Fight against the basilisks in Rellekka",
+    "unlockHint": "This track unlocks during The Fremennik Exiles quest."
+  },
+  {
+    "title": "Jester Minute",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Jester_Minute",
+    "members": true,
+    "quest": "THE_FREMENNIK_ISLES",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Neitiznot",
+    "unlockHint": "This track unlocks during The Fremennik Isles quest."
+  },
+  {
+    "title": "Judgement of the Depths",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Judgement_of_the_Depths",
+    "unlockType": "QUEST",
+    "location": "Port Piscarilius",
+    "unlockHint": "This track unlocks during the A Kingdom Divided quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1664.0,
+              "y": 5920.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_KINGDOM_DIVIDED"
+      }
+    ]
+  },
+  {
+    "title": "The Kin",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Kin",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "DRAGON_SLAYER_II",
+    "location": "Lithkren Vault",
+    "unlockHint": "This track unlocks after completing the While Guthix Sleeps and Dragon Slayer II quests."
+  },
+  {
+    "title": "King of the Trolls",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/King_of_the_Trolls",
+    "members": true,
+    "quest": "THE_FREMENNIK_ISLES",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Ice Troll Caves",
+    "unlockHint": "This track unlocks during The Fremennik Isles quest."
+  },
+  {
+    "title": "Lair of the Basilisk",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lair_of_the_Basilisk",
+    "unlockType": "QUEST",
+    "location": "Jormungand's Prison",
+    "unlockHint": "This track unlocks during The Fremennik Exiles quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2432.0,
+              "y": 10432.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FREMENNIK_EXILES"
+      }
+    ]
+  },
+  {
+    "title": "Lament",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lament",
+    "unlockType": "QUEST",
+    "location": "Enakhra's Temple",
+    "unlockHint": "This track unlocks in Enakhra's Temple.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3104.0,
+              "y": 9312.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ENAKHRAS_LAMENT"
+      }
+    ]
+  },
+  {
+    "title": "Lament for the Hallowed",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lament_for_the_Hallowed",
+    "unlockType": "QUEST",
+    "location": "Icyene Graveyard",
+    "unlockHint": "This track unlocks during the Sins of the Father quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3689.0,
+              "y": 3217.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SINS_OF_THE_FATHER"
+      }
+    ]
+  },
+  {
+    "title": "Lamistard's Labyrinth",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lamistard%27s_Labyrinth",
+    "location": "Zemouregal's Fort's basement",
+    "unlockHint": "This track unlocks during The Curse of Arrav quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2784.0,
+              "y": 10272.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_CURSE_OF_ARRAV"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Land of the Dwarves",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Land_of_the_Dwarves",
+    "location": "West Keldagrim",
+    "unlockHint": "This track unlocks in Keldagrim.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2880.0,
+              "y": 10176.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_GIANT_DWARF"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Last Stand",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Last_Stand_(music_track)",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "SWAN_SONG",
+    "location": "Sea Troll Queen battle",
+    "unlockHint": "This track unlocks during the Swan Song quest."
+  },
+  {
+    "title": "Little Cave of Horrors",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Little_Cave_of_Horrors",
+    "unlockType": "QUEST",
+    "location": "Mos Le'Harmless Cave",
+    "unlockHint": "This track unlocks in the Mos Le'Harmless Caves.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3776.0,
+              "y": 9408.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "CABIN_FEVER"
+      }
+    ]
+  },
+  {
+    "title": "Lonesome",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lonesome",
+    "unlockType": "QUEST",
+    "location": "Desert Mining Camp",
+    "unlockHint": "This track unlocks at the Desert Mining Camp.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 9440.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_TOURIST_TRAP"
+      }
+    ]
+  },
+  {
+    "title": "The Longramble Scramble",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Longramble_Scramble",
+    "unlockType": "QUEST",
+    "location": "Galarpos Mountains",
+    "unlockHint": "This track unlocks during The Path of Glouphrie quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2335.0,
+              "y": 3108.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_PATH_OF_GLOUPHRIE"
+      }
+    ]
+  },
+  {
+    "title": "Look to the Stars",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "OBSERVATORY_QUEST",
+    "location": "Observatory",
+    "unlockHint": "This track unlocks during the Observatory Quest."
+  },
+  {
+    "title": "Lord of the Larvae",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lord_of_the_Larvae",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Lore and Order",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lore_and_Order",
+    "unlockType": "QUEST",
+    "location": "Seers' Village courthouse",
+    "unlockHint": "This track unlocks during the King's Ransom quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 4256.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "KINGS_RANSOM"
+      }
+    ]
+  },
+  {
+    "title": "Lost to Time",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lost_to_Time",
+    "unlockType": "QUEST",
+    "location": "Neypotzli and Ruins of Tapoyauik",
+    "unlockHint": "This track unlocks during The Heart of Darkness or Perilous Moons quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1648.0,
+              "y": 9632.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PERILOUS_MOONS"
+      }
+    ]
+  },
+  {
+    "title": "Lucid Dream",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lucid_Dream",
+    "location": "Dream World",
+    "unlockHint": "This track unlocks during the Dragon Slayer II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 5198.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DRAGON_SLAYER_II"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Lucid Nightmare",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lucid_Nightmare",
+    "location": "Dream World",
+    "unlockHint": "This track unlocks during the Dragon Slayer II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 5230.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DRAGON_SLAYER_II"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Lumbering",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Lumbering",
+    "unlockType": "QUEST",
+    "location": "Weiss",
+    "unlockHint": "This track unlocks in Weiss.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2873.0,
+              "y": 3939.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MAKING_FRIENDS_WITH_MY_ARM"
+      }
+    ]
+  },
+  {
+    "title": "Mad Eadgar",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mad_Eadgar",
+    "location": "Eadgar's cave",
+    "unlockHint": "This track unlocks in Mad Eadgar's cave.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2912.0,
+              "y": 10080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "EADGARS_RUSE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Magic Magic Magic",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Magic_Magic_Magic",
+    "unlockType": "QUEST",
+    "location": "Tower of Life",
+    "unlockHint": "This track unlocks during the Tower of Life quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2649.0,
+              "y": 3218.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TOWER_OF_LIFE"
+      }
+    ]
+  },
+  {
+    "title": "Marooned",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Marooned",
+    "location": "Crash Island",
+    "unlockHint": "This track unlocks on Crash Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2913.0,
+              "y": 2720.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_I"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Master of Puppets",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Master_of_Puppets",
+    "members": true,
+    "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Ancient Vault",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest."
+  },
+  {
+    "title": "Mastermindless",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mastermindless",
+    "members": true,
+    "quest": "RECIPE_FOR_DISASTER",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Wizards' Tower",
+    "unlockHint": "This track unlocks during the Recipe for Disaster quest."
+  },
+  {
+    "title": "A Matter of Intrigue",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "TWILIGHTS_PROMISE",
+    "location": "Sunrise Palace/Villa Lucens",
+    "unlockHint": "This track unlocks during the Twilight's Promise quest."
+  },
+  {
+    "title": "Meddling Kids",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Meddling_Kids",
+    "members": true,
+    "quest": "ROYAL_TROUBLE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Royal Trouble",
+    "unlockHint": "This track unlocks during the Royal Trouble quest."
+  },
+  {
+    "title": "Memories of the Myreque",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Memories_of_the_Myreque",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Method of Madness",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Method_of_Madness",
+    "location": "Confusion room of Tolna's Rift",
+    "unlockHint": "This track unlocks in Tolna's rift.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3056.0,
+              "y": 5200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_SOULS_BANE"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "A_SOULS_BANE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Mirage",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mirage",
+    "location": "Hypnotised cutscene during Icthlarin's Little Helper",
+    "unlockHint": "This track unlocks during the Icthlarin's Little Helper quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3296.0,
+              "y": 9184.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "ICTHLARINS_LITTLE_HELPER",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Monkey Badness",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Monkey_Badness",
+    "members": true,
+    "quest": "MONKEY_MADNESS_II",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Crash Site",
+    "unlockHint": "This track unlocks during the Monkey Madness II quest."
+  },
+  {
+    "title": "Monkey Business",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Monkey_Business",
+    "location": "Crash Site Cavern",
+    "unlockHint": "This track unlocks during the Monkey Madness II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2112.0,
+              "y": 5664.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_II"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Monkey Madness",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Monkey_Madness_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Ape Atoll",
+    "unlockHint": "This track unlocks on Ape Atoll.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2752.0,
+              "y": 2752.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_I"
+      }
+    ]
+  },
+  {
+    "title": "Monkey Sadness",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Monkey_Sadness",
+    "location": "Glough's laboratory",
+    "unlockHint": "This track unlocks during the Monkey Madness II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2208.0,
+              "y": 5472.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_II"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "MONKEY_MADNESS_II",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Monkey Trouble",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Monkey_Trouble",
+    "location": "Kruk's Dungeon",
+    "unlockHint": "This track unlocks during the Monkey Madness II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2496.0,
+              "y": 9152.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_II"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "MONKEY_MADNESS_II",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Moons of Ruin",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Moons_of_Ruin",
+    "unlockType": "QUEST",
+    "location": "Neypotzli",
+    "unlockHint": "This track unlocks during the Perilous Moons quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1440.0,
+              "y": 9664.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PERILOUS_MOONS"
+      }
+    ]
+  },
+  {
+    "title": "More Than Meets the Eye",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/More_Than_Meets_the_Eye",
+    "location": "Ghorrock Dungeon",
+    "unlockHint": "This track unlocks during the Secrets of the North quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 4256.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SECRETS_OF_THE_NORTH"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "SECRETS_OF_THE_NORTH",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Morytanian Mystery",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "DARKNESS_OF_HALLOWVALE",
+    "location": "Silvarea",
+    "unlockHint": "This track unlocks during the Darkness of Hallowvale quest."
+  },
+  {
+    "title": "Mother Ruckus",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mother_Ruckus",
+    "members": true,
+    "quest": "MAKING_FRIENDS_WITH_MY_ARM",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Weiss",
+    "unlockHint": "This track unlocks during the Making Friends with My Arm quest."
+  },
+  {
+    "title": "Mouse Trap",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mouse_Trap",
+    "unlockType": "QUEST",
+    "location": "Mouse hole",
+    "unlockHint": "This track unlocks during the Grim Tales quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2272.0,
+              "y": 5536.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "GRIM_TALES"
+      }
+    ]
+  },
+  {
+    "title": "Mutant Medley",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mutant_Medley",
+    "location": "Tower of Life",
+    "unlockHint": "This track unlocks during the Creature Creation minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3040.0,
+              "y": 4384.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "TOWER_OF_LIFE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "My Arm's Journey",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/My_Arm%27s_Journey",
+    "location": "Southern Sea",
+    "unlockHint": "This track unlocks during the My Arm's Big Adventure quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 4896.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MY_ARMS_BIG_ADVENTURE"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "MY_ARMS_BIG_ADVENTURE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Mystics of Nature",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mystics_of_Nature",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks in Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3264.0,
+              "y": 6080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Mythical",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Mythical",
+    "unlockType": "QUEST",
+    "location": "Myths' Guild",
+    "unlockHint": "This track unlocks at the Myths' Guild.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2456.0,
+              "y": 2841.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DRAGON_SLAYER_II"
+      }
+    ]
+  },
+  {
+    "title": "Narnode's Theme",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Narnode%27s_Theme",
+    "location": "Under the Grand Tree",
+    "unlockHint": "This track unlocks in the Grand Tree mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2464.0,
+              "y": 9888.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_GRAND_TREE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Navigator",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Navigator",
+    "location": "The Fremennik Trials",
+    "unlockHint": "This track unlocks during The Fremennik Trials quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2656.0,
+              "y": 10016.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FREMENNIK_TRIALS"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Night of the Vampyre",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Night_of_the_Vampyre",
+    "location": "Castle Drakan",
+    "unlockHint": "This track unlocks in Meiyerditch.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3610.0,
+              "y": 3284.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DARKNESS_OF_HALLOWVALE"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "DARKNESS_OF_HALLOWVALE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "No Pasaran",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/No_Pasaran",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks during the Song of the Elves quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2464.0,
+              "y": 6144.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "No Way Out",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/No_Way_Out",
+    "unlockType": "QUEST",
+    "location": "Hopeless room in Tolna's Rift",
+    "unlockHint": "This track unlocks in Tolna's rift.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3024.0,
+              "y": 5200.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_SOULS_BANE"
+      }
+    ]
+  },
+  {
+    "title": "The Noble Rodent",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "RATCATCHERS",
+    "location": "Upstairs warehouse in Varrock",
+    "unlockHint": "This track unlocks during the Ratcatchers quest."
+  },
+  {
+    "title": "The North",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_North_(music_track)",
+    "location": "Zemouregal's Fort",
+    "unlockHint": "This track unlocks during The Curse of Arrav quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 3872.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "quest": "THE_CURSE_OF_ARRAV",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Ocean Depths",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_RED_REEF",
+    "location": "Red Reef",
+    "unlockHint": "This track unlocks during The Red Reef quest."
+  },
+  {
+    "title": "The Old Ones",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_GARDEN_OF_DEATH",
+    "location": "Varies",
+    "unlockHint": "This track unlocks during The Garden of Death quest."
+  },
+  {
+    "title": "On the Shore",
+    "region": "Quests",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/On_the_Shore",
+    "unlockType": "QUEST",
+    "location": "Corsair Cove",
+    "unlockHint": "This track unlocks at Corsair Cove.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2572.0,
+              "y": 2854.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_CORSAIR_CURSE"
+      }
+    ]
+  },
+  {
+    "title": "On the Up",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "DREAM_MENTOR",
+    "location": "Lunar Isle mine",
+    "unlockHint": "This track unlocks during the Dream Mentor quest."
+  },
+  {
+    "title": "On Thin Ice",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/On_Thin_Ice",
+    "location": "Ungael Crater",
+    "unlockHint": "This track unlocks during the Dragon Slayer II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2272.0,
+              "y": 4065.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DRAGON_SLAYER_II"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "DRAGON_SLAYER_II",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Oncoming Foe",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Oncoming_Foe",
+    "members": true,
+    "quest": "DRAGON_SLAYER_II",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Ungael",
+    "unlockHint": "This track unlocks during the Dragon Slayer II quest."
+  },
+  {
+    "title": "Oriental",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Oriental",
+    "location": "Ah Za Rhoon",
+    "unlockHint": "This track unlocks during the Shilo Village quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2912.0,
+              "y": 9376.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "SHILO_VILLAGE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Out of the Deep",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Out_of_the_Deep",
+    "location": "Dagannoth cave under the Lighthouse",
+    "unlockHint": "This track unlocks during the Horror from the Deep quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2528.0,
+              "y": 4640.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "HORROR_FROM_THE_DEEP"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "The Part Where You Die",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Part_Where_You_Die",
+    "unlockType": "QUEST",
+    "location": "Lizardman Temple",
+    "unlockHint": "This track unlocks during the A Kingdom Divided quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3040.0,
+              "y": 5938.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_KINGDOM_DIVIDED"
+      }
+    ]
+  },
+  {
+    "title": "Path of Peril",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Path_of_Peril",
+    "location": "Shadow Dungeon",
+    "unlockHint": "This track unlocks in the Shadow Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2688.0,
+              "y": 5088.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "DESERT_TREASURE_I",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Penguin Bards",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Penguin_Bards",
+    "members": true,
+    "quest": "COLD_WAR",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Iceberg",
+    "unlockHint": "This track unlocks during the Cold War quest."
+  },
+  {
+    "title": "Penguin Plots",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Penguin_Plots",
+    "members": true,
+    "quest": "COLD_WAR",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Iceberg",
+    "unlockHint": "This track unlocks during the Cold War quest."
+  },
+  {
+    "title": "The Pharaoh",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "BENEATH_CURSED_SANDS",
+    "location": "Sophanem",
+    "unlockHint": "This track unlocks during the Beneath Cursed Sands quest."
+  },
+  {
+    "title": "Plots and Plans",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "CHILDREN_OF_THE_SUN",
+    "location": "Varrock Square",
+    "unlockHint": "This track unlocks during the Children of the Sun quest."
+  },
+  {
+    "title": "Prey",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Prey",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Prime Time",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Prime_Time",
+    "location": "Elemental Workshop second floor and mind room",
+    "unlockHint": "This track unlocks during the Elemental Workshop II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1952.0,
+              "y": 5152.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "ELEMENTAL_WORKSHOP_II",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Prison Break",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Prison_Break_(music_track)",
+    "members": true,
+    "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Ghorrock Prison",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest."
+  },
+  {
+    "title": "Rat Hunt",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Rat_Hunt",
+    "unlockType": "QUEST",
+    "location": "Ratcatchers Mansion",
+    "unlockHint": "This track unlocks during the Ratcatchers quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 5088.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RATCATCHERS"
+      }
+    ]
+  },
+  {
+    "title": "Regal Pomp",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Regal_Pomp",
+    "unlockType": "QUEST",
+    "location": "Kourend Castle",
+    "unlockHint": "This track unlocks during the A Kingdom Divided quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2080.0,
+              "y": 6176.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_KINGDOM_DIVIDED"
+      }
+    ]
+  },
+  {
+    "title": "Reign of the Basilisk",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_FREMENNIK_EXILES",
+    "location": "Jormungand's Prison",
+    "unlockHint": "This track unlocks during The Fremennik Exiles quest."
+  },
+  {
+    "title": "Relics",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Relics_(music_track)",
+    "location": "Crandor, Ungael, Lithkren",
+    "unlockHint": "This track unlocks during the Dragon Slayer II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 9696.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "DRAGON_SLAYER_II",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Remnants",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Remnants",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Right on Track",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Right_on_Track",
+    "unlockType": "QUEST",
+    "location": "Forgettable Tale of a Drunken Dwarf",
+    "unlockHint": "This track unlocks during the Forgettable Tale... quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 4960.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "FORGETTABLE_TALE"
+      }
+    ]
+  },
+  {
+    "title": "Rising Damp",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Rising_Damp",
+    "unlockType": "QUEST",
+    "location": "Brine Rat Cavern",
+    "unlockHint": "This track unlocks in the Brine Rat Cavern.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2720.0,
+              "y": 10144.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "OLAFS_QUEST"
+      }
+    ]
+  },
+  {
+    "title": "The Rising Sun",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_HEART_OF_DARKNESS",
+    "location": "Tower of Ascension/Twilight Temple",
+    "unlockHint": "This track unlocks during The Heart of Darkness quest."
+  },
+  {
+    "title": "Roc and Roll",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Roc_and_Roll",
+    "members": true,
+    "quest": "MY_ARMS_BIG_ADVENTURE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Troll Stronghold roof",
+    "unlockHint": "This track unlocks during the My Arm's Big Adventure quest."
+  },
+  {
+    "title": "Romancing the Crone",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Romancing_the_Crone",
+    "unlockType": "QUEST",
+    "location": "Trollweiss Mountain",
+    "unlockHint": "This track unlocks during the Troll Romance quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2784.0,
+              "y": 3855.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TROLL_ROMANCE"
+      }
+    ]
+  },
+  {
+    "title": "The Route of All Evil",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Route_of_All_Evil",
+    "unlockType": "QUEST",
+    "location": "Black Knight Catacombs",
+    "unlockHint": "This track unlocks during the While Guthix Sleeps quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 4137.0,
+              "y": 4850.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "WHILE_GUTHIX_SLEEPS"
+      }
+    ]
+  },
+  {
+    "title": "The Route of the Problem",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "WHILE_GUTHIX_SLEEPS",
+    "location": "McGrubor's Wood",
+    "unlockHint": "This track unlocks during the While Guthix Sleeps quest."
+  },
+  {
+    "title": "The Ruins of Camdozaal",
+    "region": "Quests",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Ruins_of_Camdozaal",
+    "unlockType": "QUEST",
+    "location": "Ruins of Camdozaal",
+    "unlockHint": "This track unlocks during the Below Ice Mountain quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2976.0,
+              "y": 5824.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BELOW_ICE_MOUNTAIN"
+      }
+    ]
+  },
+  {
+    "title": "Ruins of Isolation",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Ruins_of_Isolation",
+    "location": "Ruins of Ullek",
+    "unlockHint": "This track unlocks in the Ruins of Ullek.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3418.0,
+              "y": 2806.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "BENEATH_CURSED_SANDS",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Sad Meadow",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sad_Meadow",
+    "unlockType": "QUEST",
+    "location": "West Ardougne",
+    "unlockHint": "This track unlocks during the Plague City quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2495.0,
+              "y": 3300.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "PLAGUE_CITY"
+      }
+    ]
+  },
+  {
+    "title": "Safety in Numbers",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Safety_in_Numbers",
+    "unlockType": "QUEST",
+    "location": "Sourhog Cave",
+    "unlockHint": "This track unlocks during the A Porcine of Interest quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 9696.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_PORCINE_OF_INTEREST"
+      }
+    ]
+  },
+  {
+    "title": "Sarim's Vermin",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sarim%27s_Vermin",
+    "unlockType": "QUEST",
+    "location": "Port Sarim's Rat Pits",
+    "unlockHint": "This track unlocks during the Ratcatchers quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2976.0,
+              "y": 9632.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "RATCATCHERS"
+      }
+    ]
+  },
+  {
+    "title": "Scar Tissue",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Scar_Tissue",
+    "location": "The Scar",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1984.0,
+              "y": 6400.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Secrets of the North",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Secrets_of_the_North_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Ghorrock Dungeon",
+    "unlockHint": "This track unlocks during the Secrets of the North quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2912.0,
+              "y": 10336.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SECRETS_OF_THE_NORTH"
+      }
+    ]
+  },
+  {
+    "title": "The Seed of Crwys",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Seed_of_Crwys",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks in Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3264.0,
+              "y": 6080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "The Setting Sun",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_FINAL_DAWN",
+    "location": "Crypt of Tonali",
+    "unlockHint": "This track unlocks during The Final Dawn quest."
+  },
+  {
+    "title": "Settlement",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Settlement",
+    "location": "Mountain Camp",
+    "unlockHint": "This track unlocks at the Mountain Camp.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2788.0,
+              "y": 3680.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "MOUNTAIN_DAUGHTER",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Shadow",
+    "region": "Quests",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Shadow",
+    "unlockType": "QUEST",
+    "location": "Crandor",
+    "unlockHint": "This track unlocks during the Dragon Slayer I quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2839.0,
+              "y": 3271.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DRAGON_SLAYER_I"
+      }
+    ]
+  },
+  {
+    "title": "Showdown",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Showdown",
+    "location": "Banana plantation",
+    "unlockHint": "This track unlocks during the Monkey Madness quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2720.0,
+              "y": 9184.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "MONKEY_MADNESS_I",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Sigmund's Showdown",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Sigmund%27s_Showdown",
+    "location": "Water mill cellar",
+    "unlockHint": "This track unlocks during the Death to the Dorgeshuun quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2016.0,
+              "y": 5088.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DEATH_TO_THE_DORGESHUUN"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "DEATH_TO_THE_DORGESHUUN",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Sinclairs",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Sinclairs",
+    "members": true,
+    "quest": "KINGS_RANSOM",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Camelot",
+    "unlockHint": "This track unlocks during the King's Ransom quest."
+  },
+  {
+    "title": "Slither and Thither",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Slither_and_Thither",
+    "location": "Giant Sea Snake lair",
+    "unlockHint": "This track unlocks during the Royal Trouble quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2616.0,
+              "y": 10288.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ROYAL_TROUBLE"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "ROYAL_TROUBLE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Slug a Bug Ball",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Slug_a_Bug_Ball",
+    "location": "Mother Mallum's lair",
+    "unlockHint": "This track unlocks during The Slug Menace quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2336.0,
+              "y": 5088.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "THE_SLUG_MENACE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Snowflake & My Arm",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Snowflake_%26_My_Arm",
+    "members": true,
+    "quest": "MAKING_FRIENDS_WITH_MY_ARM",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Weiss",
+    "unlockHint": "This track unlocks during the Making Friends with My Arm quest."
+  },
+  {
+    "title": "Solitude",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Solitude",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_BLOOD_MOON_RISES"
+  },
+  {
+    "title": "Song of the Elves",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Song_of_the_Elves_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks during the Song of the Elves quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2624.0,
+              "y": 6144.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Song of the Silent Choir",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Song_of_the_Silent_Choir",
+    "members": true,
+    "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Lassar Undercity",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest."
+  },
+  {
+    "title": "The Sound of Guthix",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Sound_of_Guthix",
+    "unlockType": "QUEST",
+    "location": "Ancient Guthixian Temple",
+    "unlockHint": "This track unlocks during the While Guthix Sleeps quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 4064.0,
+              "y": 4576.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "WHILE_GUTHIX_SLEEPS"
+      }
+    ]
+  },
+  {
+    "title": "Spirits of the Elid",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Spirits_of_the_Elid_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Spirits of the Elid",
+    "unlockHint": "This track unlocks during the Spirits of the Elid quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3360.0,
+              "y": 9568.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SPIRITS_OF_THE_ELID"
+      }
+    ]
+  },
+  {
+    "title": "Spooky 2",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Spooky_2",
+    "location": "First level of the Abandoned Mine",
+    "unlockHint": "This track unlocks at the entrance to the Haunted Mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3456.0,
+              "y": 9632.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "HAUNTED_MINE"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "HAUNTED_MINE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Spymaster",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Spymaster",
+    "members": true,
+    "quest": "CONTACT",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Sophanem Dungeon",
+    "unlockHint": "This track unlocks during the Contact! quest."
+  },
+  {
+    "title": "Stalkers",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Stalkers",
+    "location": "Stalker Den",
+    "unlockHint": "This track unlocks during the Shadows of Custodia quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1292.0,
+              "y": 9780.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SHADOWS_OF_CUSTODIA"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "SHADOWS_OF_CUSTODIA",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Stand Up and Be Counted",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "SONG_OF_THE_ELVES",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks during the Song of the Elves quest."
+  },
+  {
+    "title": "Stillness",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Stillness",
+    "location": "Tunnels under Mort Myre",
+    "unlockHint": "This track unlocks during the In Search of the Myreque quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3456.0,
+              "y": 9856.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "IN_SEARCH_OF_THE_MYREQUE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Storeroom Shuffle",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Storeroom_Shuffle",
+    "unlockType": "QUEST",
+    "location": "Tree Gnome Village Dungeon",
+    "unlockHint": "This track unlocks during The Path of Glouphrie quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2784.0,
+              "y": 4256.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_PATH_OF_GLOUPHRIE"
+      }
+    ]
+  },
+  {
+    "title": "Storm Brew",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Storm_Brew",
+    "location": "Killerwatt plane",
+    "unlockHint": "This track unlocks on the Killerwatt plane.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2656.0,
+              "y": 5216.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "ERNEST_THE_CHICKEN",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Stranded",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Stranded",
+    "unlockType": "QUEST",
+    "location": "North of Trollheim",
+    "unlockHint": "This track unlocks at the Ice Path.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2880.0,
+              "y": 3746.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_I"
+      }
+    ]
+  },
+  {
+    "title": "Strangled",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Strangled_(music_track)",
+    "unlockType": "QUEST",
+    "location": "The Stranglewood",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1163.0,
+              "y": 3360.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+      }
+    ]
+  },
+  {
+    "title": "Superstition",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Superstition",
+    "location": "Cave below Kharazi Dungeon",
+    "unlockHint": "This track unlocks during the Legends' Quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2784.0,
+              "y": 9312.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "LEGENDS_QUEST",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Surok's Theme",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Surok%27s_Theme",
+    "members": true,
+    "quest": "WHAT_LIES_BELOW",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Varrock",
+    "unlockHint": "This track unlocks during the What Lies Below quest."
+  },
+  {
+    "title": "Suspicious",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Suspicious",
+    "location": "Ape Atoll",
+    "unlockHint": "This track unlocks during the Monkey Madness quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2624.0,
+              "y": 4576.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_I"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Tale of Keldagrim",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tale_of_Keldagrim",
+    "location": "East Keldagrim",
+    "unlockHint": "This track unlocks in Keldagrim.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2880.0,
+              "y": 10176.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_GIANT_DWARF"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Tarn Razorlor",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tarn_Razorlor_(music_track)",
+    "members": true,
+    "quest": "LAIR_OF_TARN_RAZORLOR",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Tarn's Lair",
+    "unlockHint": "This track unlocks during the Lair of Tarn Razorlor miniquest."
+  },
+  {
+    "title": "A Taste of Hope",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Taste_of_Hope_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Theatre of Blood",
+    "unlockHint": "This track unlocks during the A Taste of Hope quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2080.0,
+              "y": 4896.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_TASTE_OF_HOPE"
+      }
+    ]
+  },
+  {
+    "title": "Tears of Guthix",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tears_of_Guthix_(music_track)",
+    "location": "Chasm of Tears",
+    "unlockHint": "This track unlocks during the Tears of Guthix minigame.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3227.0,
+              "y": 9504.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "TEARS_OF_GUTHIX",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Technology",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Technology",
+    "location": "Glider hangar",
+    "unlockHint": "This track unlocks during the Monkey Madness quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 9888.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "MONKEY_MADNESS_I",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Temple",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Temple_(music_track)",
+    "location": "Temple of Marimbo",
+    "unlockHint": "This track unlocks in the Temple of Marimbo Dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2784.0,
+              "y": 9184.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MONKEY_MADNESS_I"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Temple Desecrated",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Temple_Desecrated",
+    "unlockType": "QUEST",
+    "location": "Ancient Guthixian Temple",
+    "unlockHint": "This track unlocks during the While Guthix Sleeps quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 4096.0,
+              "y": 4416.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "WHILE_GUTHIX_SLEEPS"
+      }
+    ]
+  },
+  {
+    "title": "Temple of Light",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Temple_of_Light_(music_track)",
+    "location": "Temple of Light",
+    "unlockHint": "This track unlocks during the Mourning's End Part II quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1888.0,
+              "y": 4640.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "MOURNINGS_END_PART_II",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Temple of the Eye",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Temple_of_the_Eye_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Temple of the Eye",
+    "unlockHint": "This track unlocks during the Temple of the Eye quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3616.0,
+              "y": 9472.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TEMPLE_OF_THE_EYE"
+      }
+    ]
+  },
+  {
+    "title": "Temple of Tribes",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Temple_of_Tribes",
+    "location": "Goblin Temple",
+    "unlockHint": "This track unlocks during the Land of the Goblins quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3744.0,
+              "y": 4320.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LAND_OF_THE_GOBLINS"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "LAND_OF_THE_GOBLINS",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Terrible Tunnels",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Terrible_Tunnels",
+    "unlockType": "QUEST",
+    "location": "Darkmeyer",
+    "unlockHint": "This track unlocks during the Sins of the Father quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3580.0,
+              "y": 9746.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SINS_OF_THE_FATHER"
+      }
+    ]
+  },
+  {
+    "title": "Terrorbird Tussle",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "THE_PATH_OF_GLOUPHRIE",
+    "location": "Poison Waste Dungeon",
+    "unlockHint": "This track unlocks during The Path of Glouphrie quest."
+  },
+  {
+    "title": "Theme",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Theme",
+    "location": "Coal Trucks",
+    "unlockHint": "This track unlocks during the Waterfall Quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2592.0,
+              "y": 9888.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "WATERFALL_QUEST",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Thrall of the Devourer",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "BENEATH_CURSED_SANDS",
+    "location": "Ruins of Ullek",
+    "unlockHint": "This track unlocks during the Beneath Cursed Sands quest."
+  },
+  {
+    "title": "Throne of the Demon",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Throne_of_the_Demon",
+    "location": "Thammaron's throne room",
+    "unlockHint": "This track unlocks during the Shadow of the Storm quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2720.0,
+              "y": 4896.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "NORMAL",
+    "quest": "SHADOW_OF_THE_STORM",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Tick Tock",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tick_Tock",
+    "members": true,
+    "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Ancient Vault",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest."
+  },
+  {
+    "title": "Time to Mine",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Time_to_Mine",
+    "location": "Keldagrim south-west mine",
+    "unlockHint": "This track unlocks during the Between a Rock quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2848.0,
+              "y": 10144.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "BETWEEN_A_ROCK"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Tiptoe",
+    "region": "Quests",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Tiptoe",
+    "unlockType": "QUEST",
+    "location": "Draynor Manor's cellar",
+    "unlockHint": "This track unlocks in Draynor Manor.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3104.0,
+              "y": 9760.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "VAMPYRE_SLAYER"
+      }
+    ]
+  },
+  {
+    "title": "The Tower of Voices",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Tower_of_Voices",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks in Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3264.0,
+              "y": 6080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Trahaearn Toil",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Trahaearn_Toil",
+    "unlockType": "QUEST",
+    "location": "Prifddinas",
+    "unlockHint": "This track unlocks in Prifddinas.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3264.0,
+              "y": 6080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SONG_OF_THE_ELVES"
+      }
+    ]
+  },
+  {
+    "title": "Troll Shuffle",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Troll_Shuffle",
+    "location": "Weiss",
+    "unlockHint": "This track unlocks during the Making Friends with My Arm quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2720.0,
+              "y": 5792.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "MAKING_FRIENDS_WITH_MY_ARM"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Truth",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Truth",
+    "members": true,
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "quest": "THE_FINAL_DAWN",
+    "location": "Ruins of Mokhaiotl",
+    "unlockHint": "This track unlocks during The Final Dawn quest."
+  },
+  {
+    "title": "Twilight",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Twilight",
+    "location": "Elemental Workshop first floor",
+    "unlockHint": "This track unlocks during the Elemental Workshop I quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2720.0,
+              "y": 9888.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ELEMENTAL_WORKSHOP_I"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "ELEMENTAL_WORKSHOP_I",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Undead Army",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "DEFENDER_OF_VARROCK",
+    "location": "Zemouregal's Base",
+    "unlockHint": "This track unlocks during the Defender of Varrock quest."
+  },
+  {
+    "title": "Undead Dungeon",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Undead_Dungeon",
+    "location": "Tarn's Lair",
+    "unlockHint": "This track unlocks in Tarn's Lair.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 4608.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "LAIR_OF_TARN_RAZORLOR",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Underground Pass",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Underground_Pass_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Underground Pass",
+    "unlockHint": "This track unlocks during the Underground Pass quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 9600.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "UNDERGROUND_PASS"
+      }
+    ]
+  },
+  {
+    "title": "Untouchable",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Untouchable",
+    "unlockType": "QUEST",
+    "location": "Dream World",
+    "unlockHint": "This track unlocks during the Dream Mentor quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 5152.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DREAM_MENTOR"
+      }
+    ]
+  },
+  {
+    "title": "Unturned Stones",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Unturned_Stones",
+    "unlockType": "QUEST",
+    "location": "Digsite",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2784.0,
+              "y": 6432.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+      }
+    ]
+  },
+  {
+    "title": "Upir Likhyi",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Upir_Likhyi",
+    "unlockType": "QUEST",
+    "location": "Castle Drakan courtyard",
+    "unlockHint": "This track unlocks during the Sins of the Father quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3570.0,
+              "y": 3358.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "SINS_OF_THE_FATHER"
+      }
+    ]
+  },
+  {
+    "title": "Vampyre Assault",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "IN_AID_OF_THE_MYREQUE",
+    "location": "Burgh de Rott",
+    "unlockHint": "This track unlocks during the In Aid of the Myreque quest."
+  },
+  {
+    "title": "Vanescula",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "A_TASTE_OF_HOPE",
+    "location": "Theatre of Blood",
+    "unlockHint": "This track unlocks during the A Taste of Hope quest."
+  },
+  {
+    "title": "The Vault",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Vault",
+    "location": "Ancient Vault",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3232.0,
+              "y": 6432.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Voodoo Cult",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Voodoo_Cult",
+    "location": "Ah Za Rhoon",
+    "unlockHint": "This track unlocks during the Legends' Quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2400.0,
+              "y": 4704.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "LEGENDS_QUEST",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Waking Dream",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Waking_Dream",
+    "location": "Dream World",
+    "unlockHint": "This track unlocks during the Lunar Diplomacy quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1824.0,
+              "y": 5088.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LUNAR_DIPLOMACY"
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "LUNAR_DIPLOMACY",
+    "unlockMessage": ""
+  },
+  {
+    "title": "The Walking Dead",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Walking_Dead",
+    "location": "Shayzien Crypts",
+    "unlockHint": "This track unlocks in the Shayzien Crypts.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1504.0,
+              "y": 9952.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "DRAGON_SLAYER_II"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Wally the Hero",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wally_the_Hero",
+    "members": false,
+    "quest": "DEMON_SLAYER",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Varrock",
+    "unlockHint": "This track unlocks during the Demon Slayer quest."
+  },
+  {
+    "title": "Warrior",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Warrior_(music_track)",
+    "unlockType": "QUEST",
+    "location": "Fremennik Province",
+    "unlockHint": "This track unlocks during The Fremennik Trials quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2656.0,
+              "y": 10080.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_FREMENNIK_TRIALS"
+      }
+    ]
+  },
+  {
+    "title": "Waste Defaced",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Waste_Defaced",
+    "unlockType": "QUEST",
+    "location": "Poison Waste Dungeon",
+    "unlockHint": "This track unlocks during The Path of Glouphrie quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1504.0,
+              "y": 4288.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "THE_PATH_OF_GLOUPHRIE"
+      }
+    ]
+  },
+  {
+    "title": "Way of the Enchanter",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Way_of_the_Enchanter",
+    "location": "Lunar Isle mine",
+    "unlockHint": "This track unlocks in the Lunar Isle mine.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2336.0,
+              "y": 10336.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LUNAR_DIPLOMACY"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "Wayward",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wayward",
+    "location": "Jiggig Dungeon",
+    "unlockHint": "This track unlocks in the Jiggig dungeon.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2464.0,
+              "y": 9408.0,
+              "z": 2.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ZOGRE_FLESH_EATERS"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "We are the Fairies",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/We_are_the_Fairies",
+    "location": "Cosmic Plane",
+    "unlockHint": "This track unlocks during the Fairytale II - Cure a Queen quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2080.0,
+              "y": 4832.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "FAIRYTALE_II__CURE_A_QUEEN",
+    "unlockMessage": ""
+  },
+  {
+    "title": "Well of Voyage",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Well_of_Voyage_(music_track)",
+    "location": "Well of Voyage",
+    "unlockHint": "This track unlocks during the Regicide quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2016.0,
+              "y": 4704.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "REGICIDE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "What Happens Below...",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/What_Happens_Below...",
+    "location": "The Warrens",
+    "unlockHint": "This track unlocks in the Warrens.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1792.0,
+              "y": 10144.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "THE_QUEEN_OF_THIEVES",
+    "unlockMessage": ""
+  },
+  {
+    "title": "What the Shell!",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/What_the_Shell!",
+    "unlockType": "QUEST",
+    "location": "Shellbane Gryphon Cave",
+    "unlockHint": "This track unlocks during the Troubled Tortugans quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3168.0,
+              "y": 8864.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TROUBLED_TORTUGANS"
+      }
+    ]
+  },
+  {
+    "title": "Where Eagles Lair",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Where_Eagles_Lair",
+    "unlockType": "QUEST",
+    "location": "Eagles' Peak",
+    "unlockHint": "This track unlocks during the Eagles' Peak quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 1952.0,
+              "y": 4896.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "EAGLES_PEAK"
+      }
+    ]
+  },
+  {
+    "title": "Work Work Work",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Work_Work_Work",
+    "location": "Tower of Life",
+    "unlockHint": "This track unlocks during the Tower of Life quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2648.0,
+              "y": 3220.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "TOWER_OF_LIFE"
+      }
+    ],
+    "unlockType": "QUEST"
+  },
+  {
+    "title": "A Worthy Foe",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/A_Worthy_Foe",
+    "members": true,
+    "quest": "DESERT_TREASURE_II__THE_FALLEN_EMPIRE",
+    "unlockType": "QUEST",
+    "region": "Quests",
+    "location": "Gielinor",
+    "unlockHint": "This track unlocks during the Desert Treasure II - The Fallen Empire quest."
+  },
+  {
+    "title": "Wrath and Ruin",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Wrath_and_Ruin",
+    "location": "Anger room in Tolna's Rift.",
+    "unlockHint": "This track unlocks in Tolna's Rift.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2992.0,
+              "y": 5216.0,
+              "z": 1.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "A_SOULS_BANE"
+      }
+    ],
+    "unlockType": "NORMAL",
+    "quest": "A_SOULS_BANE",
+    "unlockMessage": ""
+  },
+  {
+    "title": "You Have My Attention",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "SINS_OF_THE_FATHER",
+    "location": "Darkmeyer",
+    "unlockHint": "This track unlocks during the Sins of the Father quest."
+  },
+  {
+    "title": "Zanik's Theme",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Zanik%27s_Theme",
+    "unlockType": "QUEST",
+    "location": "Dorgesh-Kaan",
+    "unlockHint": "This track unlocks during the Land of the Goblins quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3872.0,
+              "y": 4384.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "LAND_OF_THE_GOBLINS"
+      }
+    ]
+  },
+  {
+    "title": "Zogre Dance",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Zogre_Dance",
+    "unlockType": "QUEST",
+    "location": "Jiggig",
+    "unlockHint": "This track unlocks south of Castle Wars.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2476.0,
+              "y": 3047.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ],
+        "quest": "ZOGRE_FLESH_EATERS"
+      }
+    ]
+  },
+  {
+    "title": "Zombie Invasion",
+    "region": "Quests",
+    "unlockType": "QUEST",
+    "quest": "DEFENDER_OF_VARROCK",
+    "location": "Varrock Palace",
+    "unlockHint": "This track unlocks during the Defender of Varrock quest."
+  },
+  {
+    "title": "Zombiism",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Zombiism",
+    "location": "Harmony Island",
+    "unlockHint": "This track unlocks on Harmony Island.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3808.0,
+              "y": 2848.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ],
+    "unlockType": "QUEST",
+    "quest": "THE_GREAT_BRAIN_ROBBERY",
+    "unlockMessage": ""
+  }
+]
