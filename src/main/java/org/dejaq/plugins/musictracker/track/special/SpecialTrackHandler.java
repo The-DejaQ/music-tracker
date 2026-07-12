@@ -1,6 +1,8 @@
 package org.dejaq.plugins.musictracker.track.special;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.api.events.ChatMessage;
 import org.dejaq.plugins.musictracker.MusicTrack;
@@ -8,6 +10,7 @@ import org.dejaq.plugins.musictracker.MusicTrackerPlugin;
 import org.dejaq.plugins.musictracker.requirement.DynamicRequirement;
 import org.dejaq.plugins.musictracker.requirement.ItemRequirement;
 import org.dejaq.plugins.musictracker.requirement.LevelRequirement;
+import org.dejaq.plugins.musictracker.track.InteractionTarget;
 import org.dejaq.plugins.musictracker.track.MusicTrackEntityPoint;
 import org.dejaq.plugins.musictracker.track.Route;
 import org.dejaq.plugins.musictracker.track.TrackStep;
@@ -80,5 +83,141 @@ public interface SpecialTrackHandler
 
 	default void reset()
 	{
+	}
+
+	default List<DynamicRequirement<ItemRequirement>> addDynamicItems(
+		Route route, MusicTrackerPlugin musicTrackerPlugin, List<DynamicRequirement<ItemRequirement>> additionalItems)
+	{
+		List<ItemRequirement> staticItems = route != null ? route.getItems() : null;
+		return mergeStaticWithDynamicAdditions(staticItems, item -> item.getDisplayText(musicTrackerPlugin.getItemManager()), additionalItems);
+	}
+
+	default List<DynamicRequirement<ItemRequirement>> addDynamicItems(
+		Route route, MusicTrackerPlugin musicTrackerPlugin, DynamicRequirement<ItemRequirement> additionalItem)
+	{
+		return addDynamicItems(route, musicTrackerPlugin, List.of(additionalItem));
+	}
+
+	default List<DynamicRequirement<ItemRequirement>> addDynamicItemRecommendations(
+		Route route, MusicTrackerPlugin musicTrackerPlugin, List<DynamicRequirement<ItemRequirement>> additionalItemRecommendations)
+	{
+		List<ItemRequirement> staticItemRecommendations = route != null ? route.getRecommendedItems() : null;
+		return mergeStaticWithDynamicAdditions(staticItemRecommendations, item -> item.getDisplayText(musicTrackerPlugin.getItemManager()), additionalItemRecommendations);
+	}
+
+	default List<DynamicRequirement<ItemRequirement>> addDynamicItemRecommendations(
+		Route route, MusicTrackerPlugin musicTrackerPlugin, DynamicRequirement<ItemRequirement> additionalItemRecommendation)
+	{
+		return addDynamicItemRecommendations(route, musicTrackerPlugin, List.of(additionalItemRecommendation));
+	}
+
+	default List<DynamicRequirement<LevelRequirement>> addDynamicLevels(
+		Route route, List<DynamicRequirement<LevelRequirement>> additionalLevels)
+	{
+		List<LevelRequirement> staticLevels = route != null ? route.getLevels() : null;
+		return mergeStaticWithDynamicAdditions(staticLevels, SpecialTrackHandler::formatLevelRequirement, additionalLevels);
+	}
+
+	default List<DynamicRequirement<LevelRequirement>> addDynamicLevels(
+		Route route, DynamicRequirement<LevelRequirement> additionalLevel)
+	{
+		return addDynamicLevels(route, List.of(additionalLevel));
+	}
+
+	default List<DynamicRequirement<LevelRequirement>> addDynamicLevelRecommendations(
+		Route route, List<DynamicRequirement<LevelRequirement>> additionalLevelRecommendations)
+	{
+		List<LevelRequirement> staticLevelRecommendations = route != null ? route.getRecommendedLevels() : null;
+		return mergeStaticWithDynamicAdditions(staticLevelRecommendations, SpecialTrackHandler::formatLevelRequirement, additionalLevelRecommendations);
+	}
+
+	default List<DynamicRequirement<LevelRequirement>> addDynamicLevelRecommendations(
+		Route route, DynamicRequirement<LevelRequirement> additionalLevelRecommendation)
+	{
+		return addDynamicLevelRecommendations(route, List.of(additionalLevelRecommendation));
+	}
+
+	default List<Route> addDynamicRoutes(MusicTrack musicTrack, List<Route> additionalRoutes)
+	{
+		List<Route> combinedRoutes = new ArrayList<>();
+		if (musicTrack != null && musicTrack.getAllRoutes() != null)
+		{
+			combinedRoutes.addAll(musicTrack.getAllRoutes());
+		}
+		if (additionalRoutes != null)
+		{
+			combinedRoutes.addAll(additionalRoutes);
+		}
+		return combinedRoutes;
+	}
+
+	default List<Route> addDynamicRoutes(MusicTrack musicTrack, Route additionalRoute)
+	{
+		return addDynamicRoutes(musicTrack, List.of(additionalRoute));
+	}
+
+	default List<MusicTrackEntityPoint> addDynamicEntityHighlights(TrackStep trackStep, List<MusicTrackEntityPoint> additionalHighlights)
+	{
+		List<MusicTrackEntityPoint> combinedHighlights = new ArrayList<>();
+		if (trackStep != null && trackStep.getAllHighlights() != null)
+		{
+			for (InteractionTarget interactionTarget : trackStep.getAllHighlights())
+			{
+				MusicTrackEntityPoint staticHighlight = toEntityHighlight(trackStep, interactionTarget);
+				if (staticHighlight != null)
+				{
+					combinedHighlights.add(staticHighlight);
+				}
+			}
+		}
+		if (additionalHighlights != null)
+		{
+			combinedHighlights.addAll(additionalHighlights);
+		}
+		return combinedHighlights;
+	}
+
+	default List<MusicTrackEntityPoint> addDynamicEntityHighlights(TrackStep trackStep, MusicTrackEntityPoint additionalHighlights)
+	{
+		return addDynamicEntityHighlights(trackStep, List.of(additionalHighlights));
+	}
+
+	private static MusicTrackEntityPoint toEntityHighlight(TrackStep trackStep, InteractionTarget interactionTarget)
+	{
+		if (interactionTarget == null)
+		{
+			return null;
+		}
+		WorldPoint highlightLocation = interactionTarget.getLocation() != null
+			? interactionTarget.getLocation()
+			: trackStep.getDestination();
+		if (highlightLocation == null)
+		{
+			return null;
+		}
+		return MusicTrackEntityPoint.from(highlightLocation, interactionTarget);
+	}
+
+	private static <T> List<DynamicRequirement<T>> mergeStaticWithDynamicAdditions(
+		List<T> staticRequirements, Function<T, String> displayTextResolver, List<DynamicRequirement<T>> additions)
+	{
+		List<DynamicRequirement<T>> combined = new ArrayList<>();
+		if (staticRequirements != null)
+		{
+			for (T staticRequirement : staticRequirements)
+			{
+				combined.add(DynamicRequirement.of(staticRequirement, displayTextResolver.apply(staticRequirement), null));
+			}
+		}
+		if (additions != null)
+		{
+			combined.addAll(additions);
+		}
+		return combined;
+	}
+
+	private static String formatLevelRequirement(LevelRequirement levelRequirement)
+	{
+		return levelRequirement.getLevel() + " " + levelRequirement.getSkill().getName();
 	}
 }

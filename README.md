@@ -1,6 +1,6 @@
 # Music Tracker
 
-<!--![Installs](https://img.shields.io/endpoint?color=informational&label=Installs&url=COMING_SOON)-->
+![Installs](https://img.shields.io/endpoint?color=informational&label=Installs&url=https://api.runelite.net/pluginhub/shields/installs/plugin/music-tracker)
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-blue.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
 A music unlock tracker for Old School RuneScape.
@@ -9,12 +9,15 @@ Track the progress of your music tracks with route navigation, requirement overl
 
 > **Note:** This plugin integrates with the [Shortest Path](https://runelite.net/plugin-hub/show/shortest-path) plugin for navigation. It is highly recommended to have the Shortest Path plugin installed for the best experience.
 
-<img src="/docs/tracker-main.png" alt="Music Tracker" />
+> **Issues:** If you encounter any issues, please feel free to [report them here](https://github.com/The-DejaQ/music-tracker/issues/new).
+
+![Music Tracker](./docs/tracker-main.png)
 
 ## Features
 
-- **Multi-Route Support** — Provides multiple route options for numerous tracks (e.g. standard path vs. Abyss route), with new routes added regularly.
-- **Smart Progression** — Automatically advances stages when you complete interactions or reach destinations. Handles plane changes, teleports, and backtracking intelligently. (Still a WIP)
+- **Guided Pathing** — Navigate directly to music track unlocks with precise step-by-step routing, highlights, and Shortest Path support instead of just seeing a final destination.
+- **Intelligent Progression** — The plugin automatically moves you through complex routes by recognizing when you complete interactions or reach key locations, while smartly handling teleports and plane changes.
+- **Multiple Routes** — Choose between different paths for many tracks (including Abyss routes). Right-click any track to quickly switch routes on the fly.
 - **Requirement Overlays** — See required and recommended items, levels, quests, and notes directly on screen.
 - **Dynamic Requirements** — Automatically evaluates special requirements based on your current game state for certain tracks (e.g. whether you've sacrificed a Fire Cape for the Inferno, or completed specific diaries).
 - **Entity Highlighting** — Highlights the correct NPC or object for the current step, with optional hint text.
@@ -26,21 +29,29 @@ Track the progress of your music tracks with route navigation, requirement overl
 
 ## Screenshots
 
+### Advanced unlocking (more routes to be added routinely)
+![Advanced unlocking](./docs/tracker-unlocking1.png)
+![Advanced unlocking](./docs/tracker-unlocking2.png)
+
 ### Side Panel
 
-<img src="/docs/tracker-side.png" alt="Music Tracker Side Panel" />
+![Music Tracker Side Panel](./docs/tracker-side.png)
+
+### Minimap Indicator
+
+![Music Tracker Minimap](./docs/tracker-minimap.png)
 
 ### In-Game Overlay
 
-<img src="/docs/tracker-overlay.png" alt="Music Tracker Overlay" />
+![Music Tracker Overlay](./docs/tracker-overlay.png)
 
 ### Entity Highlighting
 
-<img src="/docs/tracker-highlight.png" alt="Music Tracker Highlighting" />
+![Music Tracker Highlighting](./docs/tracker-highlight.png)
 
 ### World Map
 
-<img src="/docs/tracker-worldmap.png" alt="Music Tracker World Map" />
+![Music Tracker World Map](./docs/tracker-worldmap.png)
 
 ## Installation
 
@@ -61,13 +72,32 @@ Alternatively, you can build from source (see below).
 
 ## Configuration
 
-The plugin has several configuration sections:
+- **General**
+    - Show progress bars in region headers
+    - Remember skipped tracks between sessions
+    - Use Shortest Path plugin for navigation
 
-- **General** — Auto progress, save skipped tracks, use Shortest Path, show world map points.
-- **Filters** — Hide unlocked tracks, hide tracks missing levels/quests, hide members tracks.
-- **Overlay** — Toggle various information shown on the in-game overlay.
-- **Entity Highlighting** — Customize highlight colors.
-- **Debug** — Fake unlock mode and debug data.
+- **Progression**
+    - Automatically progress to the next track after unlocking one
+    - Prefer staying in the current region before moving to another
+
+- **Messages**
+    - Customize the color of plugin messages in the game chat
+
+- **Overlay**
+    - Toggle display of region, location, quest requirements, items, levels, notes, unlock hints, distance, and suggested next track
+
+- **Entity Highlighting**
+    - Customize the fill and outline color of on-screen highlights for the current step
+
+- **World Map**
+    - Show harp icons at music track unlock locations
+    - Enable clicking world map icons to start tracking
+    - Display a Music Cape world map point for the current target
+
+- **Minimap**
+    - Show a minimap arrow pointing to the current step's destination
+    - Customize arrow color and animation style
 
 ### Building from Source
 

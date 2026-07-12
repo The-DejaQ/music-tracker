@@ -57,7 +57,7 @@ import org.dejaq.plugins.musictracker.ui.components.CollapsibleRegionHeader;
 
 public class TrackBuilderPanel extends JPanel
 {
-	private static final boolean DEVELOPER_MODE = true;
+	private static final boolean DEVELOPER_MODE = false;
 	private static final int SCROLLBAR_UNIT_INCREMENT_PIXELS = 16;
 
 	private final MusicTrackerPlugin musicTrackerPlugin;

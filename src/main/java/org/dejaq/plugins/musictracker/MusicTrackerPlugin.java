@@ -88,6 +88,8 @@ public class MusicTrackerPlugin extends Plugin
 	@Getter
 	private MusicTrackerConfig musicTrackerConfig;
 	@Inject
+	private ConfigManager configManager;
+	@Inject
 	private ClientToolbar clientToolbar;
 	@Inject
 	@Getter
@@ -138,9 +140,11 @@ public class MusicTrackerPlugin extends Plugin
 	@Override
 	protected void startUp()
 	{
+		musicTrackManager.startup();
 		trackingStateService.loadSkippedTracksFromConfig();
+		migrateLegacyFiltersIfNeeded();
 
-		musicTrackPanel = new MusicTrackPanel(this, client, clientThread, musicTrackerConfig, musicTrackManager);
+		musicTrackPanel = new MusicTrackPanel(this, client, clientThread, musicTrackerConfig, musicTrackManager, configManager);
 
 		BufferedImage navigationButtonIcon = loadNavigationButtonIcon();
 		navigationButton = NavigationButton.builder()
@@ -173,6 +177,31 @@ public class MusicTrackerPlugin extends Plugin
 		trackingStateService.setTrackingActive(false);
 		customTrackStore.shutdown();
 		musicTrackManager.shutdown();
+	}
+
+	private void migrateLegacyFiltersIfNeeded()
+	{
+		if (musicTrackerConfig.legacyFiltersMigrated())
+		{
+			return;
+		}
+
+		if (Boolean.parseBoolean(configManager.getConfiguration(CONFIG_GROUP_NAME, "hideUnlockedTracks")))
+		{
+			configManager.setConfiguration(CONFIG_GROUP_NAME, "statusFilter", "LOCKED");
+		}
+
+		if (Boolean.parseBoolean(configManager.getConfiguration(CONFIG_GROUP_NAME, "hideMembersTracks")))
+		{
+			configManager.setConfiguration(CONFIG_GROUP_NAME, "membersFilter", "FREE");
+		}
+
+		if (Boolean.parseBoolean(configManager.getConfiguration(CONFIG_GROUP_NAME, "hideMissingQuest")))
+		{
+			configManager.setConfiguration(CONFIG_GROUP_NAME, "questsFilter", "NONE");
+		}
+
+		configManager.setConfiguration(CONFIG_GROUP_NAME, "legacyFiltersMigrated", true);
 	}
 
 	private BufferedImage loadNavigationButtonIcon()
@@ -492,7 +521,7 @@ public class MusicTrackerPlugin extends Plugin
 	{
 		if (itemRequirement.isItemCollection())
 		{
-			return playerState.hasAnyItemFromGroup(itemRequirement.getGroupItemIds(), itemRequirement.getQuantity());
+			return playerState.hasItemFromCollection(itemRequirement.getGroupItemIds(), itemRequirement.getQuantity());
 		}
 		if (itemRequirement.isNameBased())
 		{
@@ -1061,11 +1090,10 @@ public class MusicTrackerPlugin extends Plugin
 				refreshTrackList();
 				break;
 
-			case "hideUnlockedTracks":
+			case "statusFilter":
+			case "membersFilter":
+			case "questsFilter":
 			case "hideMissingLevel":
-			case "hideMissingQuest":
-			case "hideMembersTracks":
-			case "hideFilteredHeaders":
 				if (musicTrackPanel != null)
 				{
 					SwingUtilities.invokeLater(() -> musicTrackPanel.getTrackerContentPanel().refreshVisibleTracks());

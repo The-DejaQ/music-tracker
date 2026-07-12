@@ -96,44 +96,44 @@ public interface MusicTrackerConfig extends Config
 		return true;
 	}
 
-	@ConfigSection(
-		name = "Filters",
-		description = "Control which tracks are shown in the list",
-		position = 2,
-		closedByDefault = true
-	)
-	String filtersSection = "filters";
-
 	@ConfigItem(
-		keyName = "hideFilteredHeaders",
-		name = "Hide Filtered Headers",
-		description = "Hides a region's header entirely when every one of its tracks has been filtered out",
-		position = 0,
-		section = filtersSection
+		keyName = "statusFilter",
+		name = "",
+		description = "",
+		hidden = true
 	)
-	default boolean hideFilteredHeaders()
+	default String statusFilter()
 	{
-		return false;
+		return "ALL";
 	}
 
 	@ConfigItem(
-		keyName = "hideUnlockedTracks",
-		name = "Hide Unlocked Tracks",
-		description = "Hide Tracks that have been previously unlocked",
-		position = 1,
-		section = filtersSection
+		keyName = "membersFilter",
+		name = "",
+		description = "",
+		hidden = true
 	)
-	default boolean hideUnlockedTracks()
+	default String membersFilter()
 	{
-		return false;
+		return "ALL";
+	}
+
+	@ConfigItem(
+		keyName = "questsFilter",
+		name = "",
+		description = "",
+		hidden = true
+	)
+	default String questsFilter()
+	{
+		return "ALL";
 	}
 
 	@ConfigItem(
 		keyName = "hideMissingLevel",
-		name = "Hide Tracks Missing Levels",
-		description = "Hide tracks that require levels you don't have",
-		position = 2,
-		section = filtersSection
+		name = "",
+		description = "",
+		hidden = true
 	)
 	default boolean hideMissingLevel()
 	{
@@ -141,25 +141,12 @@ public interface MusicTrackerConfig extends Config
 	}
 
 	@ConfigItem(
-		keyName = "hideMissingQuest",
-		name = "Hide Tracks Missing Quests",
-		description = "Hide tracks that require a quest you haven't completed",
-		position = 3,
-		section = filtersSection
+		keyName = "legacyFiltersMigrated",
+		name = "",
+		description = "",
+		hidden = true
 	)
-	default boolean hideMissingQuest()
-	{
-		return false;
-	}
-
-	@ConfigItem(
-		keyName = "hideMembersTracks",
-		name = "Hide Members Tracks",
-		description = "Hide tracks that are in members-only areas",
-		position = 4,
-		section = filtersSection
-	)
-	default boolean hideMemberTracks()
+	default boolean legacyFiltersMigrated()
 	{
 		return false;
 	}
@@ -177,7 +164,8 @@ public interface MusicTrackerConfig extends Config
 		name = "Notify on Unlock",
 		description = "Send a notification when a music track is unlocked",
 		position = 0,
-		section = messagesSection
+		section = messagesSection,
+		hidden = true
 	)
 	default boolean notifyOnUnlock()
 	{

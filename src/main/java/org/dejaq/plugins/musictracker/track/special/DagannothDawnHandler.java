@@ -10,7 +10,7 @@ import org.dejaq.plugins.musictracker.requirement.DynamicRequirement;
 import org.dejaq.plugins.musictracker.requirement.ItemRequirement;
 import org.dejaq.plugins.musictracker.track.Route;
 
-public class DesolateIsleHandler implements SpecialTrackHandler
+public class DagannothDawnHandler implements SpecialTrackHandler
 {
 	private static final int TRAVEL_COINS_QUANTITY = 1000;
 	private static final String TRAVEL_DISPLAY_TEXT = "1,000 coins to travel";
@@ -29,12 +29,8 @@ public class DesolateIsleHandler implements SpecialTrackHandler
 			return List.of();
 		}
 
-		return List.of(
-			DynamicRequirement.of(
-				new ItemRequirement(ItemID.COINS, TRAVEL_COINS_QUANTITY),
-				TRAVEL_DISPLAY_TEXT,
-				null
-			)
+		return addDynamicItems(route, musicTrackerPlugin,
+			DynamicRequirement.of(new ItemRequirement(ItemID.COINS, TRAVEL_COINS_QUANTITY), TRAVEL_DISPLAY_TEXT, null)
 		);
 	}
 }

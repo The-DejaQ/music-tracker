@@ -14,33 +14,44 @@ public class WarriorsGuildHandler implements SpecialTrackHandler
 	private static final int REQUIRED_SINGLE_SKILL_LEVEL = 99;
 	private static final int REQUIRED_COMBINED_SKILL_LEVEL = 130;
 
+	private static final String SINGLE_ATTACK_TEXT = REQUIRED_SINGLE_SKILL_LEVEL + " Attack";
+	private static final String SINGLE_STRENGTH_TEXT = REQUIRED_SINGLE_SKILL_LEVEL + " Strength";
+	private static final String COMBINED_TEXT = "Combined level " + REQUIRED_COMBINED_SKILL_LEVEL + " Attack and Strength";
+
 	@Override
 	public List<DynamicRequirement<LevelRequirement>> getDynamicLevels(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)
 	{
 		int currentAttackLevel = musicTrackerPlugin.getClient().getRealSkillLevel(Skill.ATTACK);
 		int currentStrengthLevel = musicTrackerPlugin.getClient().getRealSkillLevel(Skill.STRENGTH);
+		int currentCombinedLevel = currentAttackLevel + currentStrengthLevel;
 
-		boolean hasRequiredAttackLevel = currentAttackLevel >= REQUIRED_SINGLE_SKILL_LEVEL;
-		boolean hasRequiredStrengthLevel = currentStrengthLevel >= REQUIRED_SINGLE_SKILL_LEVEL;
-		boolean hasRequiredCombinedLevel = (currentAttackLevel + currentStrengthLevel) >= REQUIRED_COMBINED_SKILL_LEVEL;
-
-		if (hasRequiredAttackLevel)
+		if (currentAttackLevel >= REQUIRED_SINGLE_SKILL_LEVEL)
 		{
-			return List.of(DynamicRequirement.of(null, REQUIRED_SINGLE_SKILL_LEVEL + " Attack", ColorScheme.PROGRESS_COMPLETE_COLOR));
+			return List.of(satisfied(SINGLE_ATTACK_TEXT));
 		}
-		if (hasRequiredStrengthLevel)
+		if (currentStrengthLevel >= REQUIRED_SINGLE_SKILL_LEVEL)
 		{
-			return List.of(DynamicRequirement.of(null, REQUIRED_SINGLE_SKILL_LEVEL + " Strength", ColorScheme.PROGRESS_COMPLETE_COLOR));
+			return List.of(satisfied(SINGLE_STRENGTH_TEXT));
 		}
-		if (hasRequiredCombinedLevel)
+		if (currentCombinedLevel >= REQUIRED_COMBINED_SKILL_LEVEL)
 		{
-			return List.of(DynamicRequirement.of(null, "Combined level " + REQUIRED_COMBINED_SKILL_LEVEL + " Attack and Strength", ColorScheme.PROGRESS_COMPLETE_COLOR));
+			return List.of(satisfied(COMBINED_TEXT));
 		}
 
 		return List.of(
-			DynamicRequirement.of(null, "Combined level " + REQUIRED_COMBINED_SKILL_LEVEL + " Attack and Strength or", ColorScheme.PROGRESS_ERROR_COLOR),
-			DynamicRequirement.of(null, REQUIRED_SINGLE_SKILL_LEVEL + " Attack", ColorScheme.PROGRESS_ERROR_COLOR),
-			DynamicRequirement.of(null, REQUIRED_SINGLE_SKILL_LEVEL + " Strength", ColorScheme.PROGRESS_ERROR_COLOR)
+			unsatisfied(COMBINED_TEXT + " or"),
+			unsatisfied(SINGLE_ATTACK_TEXT),
+			unsatisfied(SINGLE_STRENGTH_TEXT)
 		);
+	}
+
+	private static DynamicRequirement<LevelRequirement> satisfied(String displayText)
+	{
+		return DynamicRequirement.of(null, displayText, ColorScheme.PROGRESS_COMPLETE_COLOR);
+	}
+
+	private static DynamicRequirement<LevelRequirement> unsatisfied(String displayText)
+	{
+		return DynamicRequirement.of(null, displayText, ColorScheme.PROGRESS_ERROR_COLOR);
 	}
 }

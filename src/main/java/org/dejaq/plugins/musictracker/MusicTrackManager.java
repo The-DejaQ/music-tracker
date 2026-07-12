@@ -38,11 +38,7 @@ public class MusicTrackManager
 	@Getter
 	private final Map<String, List<MusicTrack>> regionNameToTracks = new ConcurrentHashMap<>();
 
-	private final ExecutorService reloadExecutor = Executors.newSingleThreadExecutor(runnable -> {
-		Thread thread = new Thread(runnable, "MusicTracker-MusicTrackManager-Reload");
-		thread.setDaemon(true);
-		return thread;
-	});
+	private ExecutorService reloadExecutor;
 
 	private final AtomicBoolean reloadInProgress = new AtomicBoolean(false);
 
@@ -57,8 +53,28 @@ public class MusicTrackManager
 		loadAllRegionsFromJson();
 	}
 
+	public void startup()
+	{
+		reloadInProgress.set(false);
+
+		if (reloadExecutor == null || reloadExecutor.isShutdown())
+		{
+			reloadExecutor = Executors.newSingleThreadExecutor(runnable -> {
+				Thread thread = new Thread(runnable, "MusicTracker-MusicTrackManager-Reload");
+				thread.setDaemon(true);
+				return thread;
+			});
+		}
+	}
+
 	public void reloadRegionsFromJson(Runnable onReloadComplete)
 	{
+		if (reloadExecutor == null || reloadExecutor.isShutdown())
+		{
+			log.warn("Reload executor is not available, skipping region reload.");
+			return;
+		}
+
 		if (!reloadInProgress.compareAndSet(false, true))
 		{
 			log.debug("Region reload already in progress, ignoring duplicate request.");
@@ -95,7 +111,10 @@ public class MusicTrackManager
 
 	public void shutdown()
 	{
-		reloadExecutor.shutdownNow();
+		if (reloadExecutor != null)
+		{
+			reloadExecutor.shutdownNow();
+		}
 	}
 
 	private void loadAllRegionsFromJson()

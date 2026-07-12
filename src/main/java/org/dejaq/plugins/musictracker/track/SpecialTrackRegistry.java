@@ -10,6 +10,7 @@ import java.util.Set;
 import org.dejaq.plugins.musictracker.MusicTrack;
 import org.dejaq.plugins.musictracker.track.special.AbyssTrackHandler;
 import org.dejaq.plugins.musictracker.track.special.AztecHandler;
+import org.dejaq.plugins.musictracker.track.special.DagannothDawnHandler;
 import org.dejaq.plugins.musictracker.track.special.DefaultTrackHandler;
 import org.dejaq.plugins.musictracker.track.special.DesolateIsleHandler;
 import org.dejaq.plugins.musictracker.track.special.MawsJawsClawsHandler;
@@ -33,6 +34,7 @@ public class SpecialTrackRegistry
 
 		register("Maws Jaws & Claws", new MawsJawsClawsHandler());
 
+		register("Dagannoth Dawn", new DagannothDawnHandler());
 		register("The Desolate Isle", new DesolateIsleHandler());
 
 		register("Title Fight", new TitleFightHandler());

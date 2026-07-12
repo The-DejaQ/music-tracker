@@ -105,7 +105,7 @@ public class PlayerState
 		return totalQuantity >= requiredQuantity;
 	}
 
-	public boolean hasAnyItemFromGroup(List<Integer> candidateItemIds, int requiredQuantity)
+	public boolean hasItemFromCollection(List<Integer> candidateItemIds, int requiredQuantity)
 	{
 		int totalQuantity = 0;
 		for (int candidateItemId : candidateItemIds)
@@ -114,6 +114,11 @@ public class PlayerState
 			totalQuantity += equipmentItemQuantities.getOrDefault(candidateItemId, 0);
 		}
 		return totalQuantity >= requiredQuantity;
+	}
+
+	public boolean hasItemFromCollection(List<Integer> candidateItemIds)
+	{
+		return hasItemFromCollection(candidateItemIds, 1);
 	}
 
 	public boolean hasItemByPartialName(String itemNameFragment, int requiredQuantity, ItemManager itemManager)

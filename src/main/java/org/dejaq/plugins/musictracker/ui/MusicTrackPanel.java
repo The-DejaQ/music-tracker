@@ -9,18 +9,26 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
+import javax.swing.plaf.basic.BasicButtonUI;
 import lombok.Getter;
 import net.runelite.api.Client;
 import net.runelite.api.GameState;
 import net.runelite.client.callback.ClientThread;
+import net.runelite.client.config.ConfigManager;
 import net.runelite.client.ui.ColorScheme;
 import net.runelite.client.ui.PluginPanel;
+import net.runelite.client.util.ImageUtil;
+import net.runelite.client.util.LinkBrowser;
+import net.runelite.client.util.SwingUtil;
 import org.dejaq.plugins.musictracker.MusicTrackManager;
 import org.dejaq.plugins.musictracker.MusicTrackerConfig;
 import org.dejaq.plugins.musictracker.MusicTrackerPlugin;
@@ -33,6 +41,8 @@ public class MusicTrackPanel extends PluginPanel
 	private static final String LOGGED_OUT_CARD_NAME = "LOGGED_OUT";
 	private static final String SETTINGS_REQUIRED_CARD_NAME = "SETTINGS_REQUIRED";
 	private static final String TRACKER_CARD_NAME = "TRACKER";
+	private static final String REPORT_ISSUE_URL = "https://github.com/The-DejaQ/music-tracker/issues/new";
+	private static final String CHANGELOG_URL = "https://github.com/The-DejaQ/music-tracker/blob/master/CHANGELOG.md";
 
 	@Getter
 	private final MusicTrackerPlugin musicTrackerPlugin;
@@ -41,6 +51,7 @@ public class MusicTrackPanel extends PluginPanel
 	@Getter
 	private final MusicTrackerConfig musicTrackerConfig;
 	private final MusicTrackManager musicTrackManager;
+	private final ConfigManager configManager;
 
 	private CardLayout innerCardLayout;
 	private JPanel innerContentPanel;
@@ -59,7 +70,7 @@ public class MusicTrackPanel extends PluginPanel
 	private TrackBuilderPanel trackBuilderPanel;
 
 	public MusicTrackPanel(MusicTrackerPlugin musicTrackerPlugin, Client client, ClientThread clientThread,
-						   MusicTrackerConfig musicTrackerConfig, MusicTrackManager musicTrackManager)
+						   MusicTrackerConfig musicTrackerConfig, MusicTrackManager musicTrackManager, ConfigManager configManager)
 	{
 		super();
 		this.musicTrackerPlugin = musicTrackerPlugin;
@@ -67,6 +78,7 @@ public class MusicTrackPanel extends PluginPanel
 		this.clientThread = clientThread;
 		this.musicTrackerConfig = musicTrackerConfig;
 		this.musicTrackManager = musicTrackManager;
+		this.configManager = configManager;
 
 		setBorder(new EmptyBorder(6, 0, 6, 6));
 		setLayout(new BorderLayout());
@@ -77,11 +89,30 @@ public class MusicTrackPanel extends PluginPanel
 	{
 		JLabel titleLabel = new JLabel("Music Tracker", SwingConstants.CENTER);
 		titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD, 18f));
-		titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+		BufferedImage githubIcon = ImageUtil.loadImageResource(MusicTrackerPlugin.class, "github.png");
+		BufferedImage changelogIcon = ImageUtil.loadImageResource(MusicTrackerPlugin.class, "changelog.png");
+
+		JButton githubButton = buildTitleIconButton(githubIcon, "Report an issue on GitHub", REPORT_ISSUE_URL);
+		JButton changelogButton = buildTitleIconButton(changelogIcon, "View the changelog", CHANGELOG_URL);
+
+		JPanel titleIconsPanel = new JPanel(new GridLayout(1, 2, 2, 0));
+		titleIconsPanel.setOpaque(false);
+		titleIconsPanel.add(githubButton);
+		titleIconsPanel.add(changelogButton);
+
+		JLabel titleSpacerLabel = new JLabel();
+		titleSpacerLabel.setPreferredSize(titleIconsPanel.getPreferredSize());
+
+		JPanel titleRowPanel = new JPanel(new BorderLayout());
+		titleRowPanel.setAlignmentX(Component.CENTER_ALIGNMENT);
+		titleRowPanel.add(titleSpacerLabel, BorderLayout.WEST);
+		titleRowPanel.add(titleLabel, BorderLayout.CENTER);
+		titleRowPanel.add(titleIconsPanel, BorderLayout.EAST);
 
 		JPanel northPanel = new JPanel();
 		northPanel.setLayout(new BoxLayout(northPanel, BoxLayout.Y_AXIS));
-		northPanel.add(titleLabel);
+		northPanel.add(titleRowPanel);
 
 		buildTabBar();
 		northPanel.add(tabBarPanel);
@@ -100,6 +131,32 @@ public class MusicTrackPanel extends PluginPanel
 		refreshState();
 	}
 
+	private JButton buildTitleIconButton(BufferedImage icon, String tooltip, String url)
+	{
+		JButton iconButton = new JButton();
+		SwingUtil.removeButtonDecorations(iconButton);
+		iconButton.setIcon(new ImageIcon(ImageUtil.resizeImage(icon, 16, 16)));
+		iconButton.setToolTipText(tooltip);
+		iconButton.setBackground(ColorScheme.DARK_GRAY_COLOR);
+		iconButton.setUI(new BasicButtonUI());
+		iconButton.addActionListener(actionEvent -> LinkBrowser.browse(url));
+		iconButton.addMouseListener(new MouseAdapter()
+		{
+			@Override
+			public void mouseEntered(MouseEvent mouseEvent)
+			{
+				iconButton.setBackground(ColorScheme.DARK_GRAY_HOVER_COLOR);
+			}
+
+			@Override
+			public void mouseExited(MouseEvent mouseEvent)
+			{
+				iconButton.setBackground(ColorScheme.DARK_GRAY_COLOR);
+			}
+		});
+		return iconButton;
+	}
+
 	private void buildInnerTrackerCards()
 	{
 		innerCardLayout = new CardLayout();
@@ -110,7 +167,7 @@ public class MusicTrackPanel extends PluginPanel
 		settingsRequiredPanel = new SettingsRequiredPanel();
 		addInnerCard(settingsRequiredPanel, SETTINGS_REQUIRED_CARD_NAME);
 
-		trackerContentPanel = new TrackerContentPanel(musicTrackerPlugin, musicTrackManager, musicTrackerConfig);
+		trackerContentPanel = new TrackerContentPanel(musicTrackerPlugin, musicTrackManager, musicTrackerConfig, configManager);
 		addInnerCard(trackerContentPanel, TRACKER_CARD_NAME);
 	}
 

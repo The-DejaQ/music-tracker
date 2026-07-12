@@ -16,6 +16,7 @@ import org.dejaq.plugins.musictracker.MusicTrack;
 import org.dejaq.plugins.musictracker.MusicTrackerPlugin;
 import org.dejaq.plugins.musictracker.requirement.DynamicRequirement;
 import org.dejaq.plugins.musictracker.requirement.ItemRequirement;
+import org.dejaq.plugins.musictracker.requirement.collections.ItemCollections;
 import org.dejaq.plugins.musictracker.track.InteractionTarget;
 import org.dejaq.plugins.musictracker.track.InteractionType;
 import org.dejaq.plugins.musictracker.track.MusicTrackEntityPoint;
@@ -39,7 +40,8 @@ public class RaceAgainstClockHandler implements SpecialTrackHandler
 	private static final String FUEL_ACTION = "fuel";
 	private static final String CHECK_ACTION = "check";
 	private static final String OPEN_ACTION = "open";
-	private static final String MINING_HINT_TEXT = "Mine 750 Barronite Shards";
+	private static final String MINING_HINT_TEXT = "Mine 750 Barronite shards";
+	private static final String PICKAXE_REQUIREMENT_TEXT = "Pickaxe to mine Barronite shards";
 	private static final String CHECK_FORGE_HINT_TEXT = "Check Sacred Forge";
 	private static final String VAULT_DOOR_HINT_TEXT = "Enter the Vault Door";
 	private static final String RUINS_STEP_NAME = "Ruins";
@@ -63,34 +65,51 @@ public class RaceAgainstClockHandler implements SpecialTrackHandler
 	private int storedBarroniteShardQuantity;
 
 	@Override
-	public List<DynamicRequirement<ItemRequirement>> getDynamicItems(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)
+	public List<DynamicRequirement<ItemRequirement>> getDynamicItems(
+		MusicTrack musicTrack,
+		Route route,
+		MusicTrackerPlugin musicTrackerPlugin)
 	{
-		int currentBarroniteShardQuantity = musicTrackerPlugin.getPlayerState().getItemQuantity(ItemID.CAMDOZAAL_BARRONITE_SHARD);
+		int currentBarroniteShardQuantity = musicTrackerPlugin.getPlayerState()
+			.getItemQuantity(ItemID.CAMDOZAAL_BARRONITE_SHARD);
 		int totalBarroniteShardQuantity = currentBarroniteShardQuantity + getKnownStoredBarroniteShardQuantity();
-		boolean forgeHasRequiredShardQuantity = hasCheckedSacredForge && storedBarroniteShardQuantity >= REQUIRED_BARRONITE_SHARD_QUANTITY;
-		boolean readyToFuelToCompletion = !forgeHasRequiredShardQuantity && totalBarroniteShardQuantity >= REQUIRED_BARRONITE_SHARD_QUANTITY;
 
-		ItemRequirement barroniteShardRequirement = new ItemRequirement(ItemID.CAMDOZAAL_BARRONITE_SHARD, REQUIRED_BARRONITE_SHARD_QUANTITY);
-		String displayText = Math.min(totalBarroniteShardQuantity, REQUIRED_BARRONITE_SHARD_QUANTITY)
+		boolean forgeHasRequiredShardQuantity = hasCheckedSacredForge
+			&& storedBarroniteShardQuantity >= REQUIRED_BARRONITE_SHARD_QUANTITY;
+		boolean readyToFuelToCompletion = !forgeHasRequiredShardQuantity
+			&& totalBarroniteShardQuantity >= REQUIRED_BARRONITE_SHARD_QUANTITY;
+
+		ItemRequirement barroniteShardRequirement = new ItemRequirement(
+			ItemID.CAMDOZAAL_BARRONITE_SHARD,
+			REQUIRED_BARRONITE_SHARD_QUANTITY
+		);
+
+		String shardDisplayText = Math.min(totalBarroniteShardQuantity, REQUIRED_BARRONITE_SHARD_QUANTITY)
 			+ " / " + REQUIRED_BARRONITE_SHARD_QUANTITY + " Barronite Shards"
 			+ (hasCheckedSacredForge ? "" : " (unverified)");
 
-		Color lineColor;
-		if (forgeHasRequiredShardQuantity)
-		{
-			lineColor = ColorScheme.PROGRESS_COMPLETE_COLOR;
-		}
-		else if (readyToFuelToCompletion)
-		{
-			lineColor = ColorScheme.PROGRESS_INPROGRESS_COLOR;
-		}
-		else
-		{
-			lineColor = ColorScheme.PROGRESS_ERROR_COLOR;
-		}
+		Color shardColor = forgeHasRequiredShardQuantity
+			? ColorScheme.PROGRESS_COMPLETE_COLOR
+			: readyToFuelToCompletion
+			? ColorScheme.PROGRESS_INPROGRESS_COLOR
+			: ColorScheme.PROGRESS_ERROR_COLOR;
+
+		boolean hasPickaxe = musicTrackerPlugin.getPlayerState()
+			.hasItemFromCollection(ItemCollections.PICKAXES.getItems());
+
+		ItemRequirement pickaxeRequirement = new ItemRequirement(
+			ItemCollections.PICKAXES,
+			1
+		);
+		pickaxeRequirement.setLabel(PICKAXE_REQUIREMENT_TEXT);
+
+		Color pickaxeColor = hasPickaxe
+			? ColorScheme.PROGRESS_COMPLETE_COLOR
+			: ColorScheme.PROGRESS_ERROR_COLOR;
 
 		return List.of(
-			DynamicRequirement.of(barroniteShardRequirement, displayText, lineColor)
+			DynamicRequirement.of(barroniteShardRequirement, shardDisplayText, shardColor),
+			DynamicRequirement.of(pickaxeRequirement, PICKAXE_REQUIREMENT_TEXT, pickaxeColor)
 		);
 	}
 

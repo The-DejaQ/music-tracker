@@ -500,7 +500,6 @@
         ],
         "name": "Route 1",
         "defaultRoute": true,
-        "quest": "THE_FREMENNIK_TRIALS",
         "items": [
           {
             "itemId": 3695,
