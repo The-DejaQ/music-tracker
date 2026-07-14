@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import net.runelite.api.Client;
 import net.runelite.client.ui.ColorScheme;
 import net.runelite.client.ui.overlay.components.LineComponent;
 import net.runelite.client.ui.overlay.components.PanelComponent;
