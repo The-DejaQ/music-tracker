@@ -6,6 +6,7 @@ import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 import net.runelite.client.config.ConfigSection;
+import org.dejaq.plugins.musictracker.navigation.ProgressionSystem;
 
 @ConfigGroup("music-tracker")
 public interface MusicTrackerConfig extends Config
@@ -73,10 +74,22 @@ public interface MusicTrackerConfig extends Config
 	String progressionSection = "progression";
 
 	@ConfigItem(
+		keyName = "progressionSystem",
+		name = "Progression System",
+		description = "Selects how the navigator decides you've passed a route step. Experimental options are for testing",
+		position = 0,
+		section = progressionSection
+	)
+	default ProgressionSystem progressionSystem()
+	{
+		return ProgressionSystem.DEFAULT;
+	}
+
+	@ConfigItem(
 		keyName = "autoProgress",
 		name = "Auto Progress",
 		description = "Automatically move to the next track after unlocking one",
-		position = 0,
+		position = 1,
 		section = progressionSection
 	)
 	default boolean autoProgress()
@@ -88,7 +101,7 @@ public interface MusicTrackerConfig extends Config
 		keyName = "stayInRegion",
 		name = "Stay in Region",
 		description = "Prefer the next eligible track in your current region over a closer one in another region; only moves to another region once the current one has none left",
-		position = 1,
+		position = 2,
 		section = progressionSection
 	)
 	default boolean stayInRegion()
@@ -136,6 +149,17 @@ public interface MusicTrackerConfig extends Config
 		hidden = true
 	)
 	default boolean hideMissingLevel()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+		keyName = "filtersCollapsed",
+		name = "",
+		description = "",
+		hidden = true
+	)
+	default boolean filtersCollapsed()
 	{
 		return false;
 	}

@@ -15,6 +15,16 @@ public class DagannothDawnHandler implements SpecialTrackHandler
 	private static final int TRAVEL_COINS_QUANTITY = 1000;
 	private static final String TRAVEL_DISPLAY_TEXT = "1,000 coins to travel";
 
+	private static final List<String> ROUTE_NAMES = List.of(
+		"Route 1"
+	);
+
+	@Override
+	public List<String> getHandledRouteNames()
+	{
+		return ROUTE_NAMES;
+	}
+
 	@Override
 	public List<DynamicRequirement<ItemRequirement>> getDynamicItems(
 		MusicTrack musicTrack,

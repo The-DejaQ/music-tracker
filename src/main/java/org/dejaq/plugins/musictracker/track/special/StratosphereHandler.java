@@ -19,7 +19,7 @@ import org.dejaq.plugins.musictracker.track.TrackStep;
 @Slf4j
 public class StratosphereHandler implements SpecialTrackHandler
 {
-	private static final String ZANARIS_ROUTE_NAME = "Zanaris";
+	private static final List<String> ZANARIS_ROUTE_NAMES = List.of("Zanaris");
 
 	private static final WorldPoint ZANARIS_CENTER = new WorldPoint(2432, 4422, 0);
 	private static final int ZANARIS_RADIUS = 64;
@@ -54,9 +54,9 @@ public class StratosphereHandler implements SpecialTrackHandler
 	private List<MusicTrackEntityPoint> cachedHighlights;
 
 	@Override
-	public String getHandledRouteName()
+	public List<String> getHandledRouteNames()
 	{
-		return ZANARIS_ROUTE_NAME;
+		return ZANARIS_ROUTE_NAMES;
 	}
 
 	@Override

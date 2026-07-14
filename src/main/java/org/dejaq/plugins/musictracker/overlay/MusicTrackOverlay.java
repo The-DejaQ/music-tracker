@@ -175,11 +175,12 @@ public class MusicTrackOverlay extends Overlay
 				"Items Required:",
 				specialTrackHandler.getDynamicItems(currentMusicTrack, currentRoute, musicTrackerPlugin),
 				currentRoute.getItems(),
-				itemRequirement -> itemRequirement.getDisplayText(musicTrackerPlugin.getItemManager()),
+				itemRequirement -> resolveItemDisplayText(itemRequirement),
 				musicTrackerPlugin::playerHasItem,
 				ColorScheme.PROGRESS_ERROR_COLOR,
 				ColorScheme.PROGRESS_ERROR_COLOR,
-				ItemRequirement::hasItem);
+				ItemRequirement::hasItem,
+				itemRequirement -> resolveItemRequirementColor(itemRequirement, ColorScheme.PROGRESS_ERROR_COLOR));
 		}
 
 		if (musicTrackerConfig.recommendedItemsOverlay())
@@ -189,11 +190,12 @@ public class MusicTrackOverlay extends Overlay
 				"Items Recommended:",
 				specialTrackHandler.getDynamicItemRecommendations(currentMusicTrack, currentRoute, musicTrackerPlugin),
 				currentRoute.getRecommendedItems(),
-				itemRequirement -> itemRequirement.getDisplayText(musicTrackerPlugin.getItemManager()),
+				itemRequirement -> resolveItemDisplayText(itemRequirement),
 				musicTrackerPlugin::playerHasItem,
 				ColorScheme.PROGRESS_ERROR_COLOR,
 				ColorScheme.PROGRESS_INPROGRESS_COLOR,
-				ItemRequirement::hasItem);
+				ItemRequirement::hasItem,
+				itemRequirement -> resolveItemRequirementColor(itemRequirement, ColorScheme.PROGRESS_ERROR_COLOR));
 		}
 
 		if (musicTrackerConfig.showLevelsOverlay())
@@ -305,6 +307,32 @@ public class MusicTrackOverlay extends Overlay
 	private String formatLevelRequirement(LevelRequirement levelRequirement)
 	{
 		return levelRequirement.getLevel() + " " + levelRequirement.getSkill().getName();
+	}
+
+	private String resolveItemDisplayText(ItemRequirement itemRequirement)
+	{
+		String displayText = itemRequirement.getDisplayText(musicTrackerPlugin.getItemManager());
+		return itemRequirement.isEquipped() ? displayText + " (Equipped)" : displayText;
+	}
+
+	private Color resolveItemRequirementColor(ItemRequirement itemRequirement, Color unsatisfiedColor)
+	{
+		if (!itemRequirement.isEquipped())
+		{
+			return musicTrackerPlugin.playerHasItem(itemRequirement) ? ColorScheme.PROGRESS_COMPLETE_COLOR : unsatisfiedColor;
+		}
+
+		if (musicTrackerPlugin.playerHasItemEquipped(itemRequirement))
+		{
+			return ColorScheme.PROGRESS_COMPLETE_COLOR;
+		}
+
+		if (musicTrackerPlugin.playerHasItem(itemRequirement))
+		{
+			return ColorScheme.PROGRESS_INPROGRESS_COLOR;
+		}
+
+		return unsatisfiedColor;
 	}
 
 	private void renderUnlockHintSection(MusicTrack currentMusicTrack)

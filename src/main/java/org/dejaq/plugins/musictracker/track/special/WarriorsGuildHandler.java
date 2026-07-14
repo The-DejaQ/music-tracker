@@ -11,12 +11,22 @@ import org.dejaq.plugins.musictracker.track.Route;
 
 public class WarriorsGuildHandler implements SpecialTrackHandler
 {
+	private static final List<String> ROUTE_NAMES = List.of(
+		"Route 1"
+	);
+
 	private static final int REQUIRED_SINGLE_SKILL_LEVEL = 99;
 	private static final int REQUIRED_COMBINED_SKILL_LEVEL = 130;
 
 	private static final String SINGLE_ATTACK_TEXT = REQUIRED_SINGLE_SKILL_LEVEL + " Attack";
 	private static final String SINGLE_STRENGTH_TEXT = REQUIRED_SINGLE_SKILL_LEVEL + " Strength";
 	private static final String COMBINED_TEXT = "Combined level " + REQUIRED_COMBINED_SKILL_LEVEL + " Attack and Strength";
+
+	@Override
+	public List<String> getHandledRouteNames()
+	{
+		return ROUTE_NAMES;
+	}
 
 	@Override
 	public List<DynamicRequirement<LevelRequirement>> getDynamicLevels(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)

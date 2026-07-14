@@ -209,33 +209,6 @@
     ]
   },
   {
-    "title": "Attack 5",
-    "region": "Quests",
-    "members": true,
-    "wikiUrl": "https://oldschool.runescape.wiki/w/Attack_5",
-    "location": "King Black Dragon Lair",
-    "unlockHint": "This track unlocks while fighting the King Black Dragon.",
-    "routes": [
-      {
-        "name": "Route 1",
-        "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 2272.0,
-              "y": 4704.0,
-              "z": 0.0
-            },
-            "name": "Step 1"
-          }
-        ]
-      }
-    ],
-    "unlockType": "QUEST",
-    "quest": "DRAGON_SLAYER_II",
-    "unlockMessage": ""
-  },
-  {
     "title": "Awful Anthem",
     "wikiUrl": "https://oldschool.runescape.wiki/w/Awful_Anthem_(music_track)",
     "members": true,

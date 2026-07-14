@@ -522,7 +522,7 @@
     "unlockHint": "This track unlocks at the Earth Altar.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Mysterious Ruins",
         "defaultRoute": true,
         "trackSteps": [
           {
@@ -1712,7 +1712,7 @@
     "unlockHint": "This track unlocks at the Water Altar.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Mysterious Ruins",
         "defaultRoute": true,
         "trackSteps": [
           {

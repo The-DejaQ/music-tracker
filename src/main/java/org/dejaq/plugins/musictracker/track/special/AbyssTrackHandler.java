@@ -41,18 +41,9 @@ import org.dejaq.plugins.musictracker.track.TrackStep;
 @Slf4j
 public class AbyssTrackHandler implements SpecialTrackHandler
 {
-	public static final String AIR_ALTAR_TRACK = "Serene";
-	public static final String BODY_ALTAR_TRACK = "Heart and Mind";
-	public static final String CHAOS_ALTAR_TRACK = "Complication";
-	public static final String COSMIC_ALTAR_TRACK = "Stratosphere"; // requires Lost City
-	public static final String DEATH_ALTAR_TRACK = "La Mort"; // requires Mourning's End Part II
-	public static final String EARTH_ALTAR_TRACK = "Down to Earth";
-	public static final String FIRE_ALTAR_TRACK = "Quest";
-	public static final String LAW_ALTAR_TRACK = "Righteousness";
-	public static final String MIND_ALTAR_TRACK = "Miracle Dance";
-	public static final String NATURE_ALTAR_TRACK = "Understanding";
-	public static final String SOUL_ALTAR_TRACK = "Soul Fall"; // requires additional steps, we'll just leave default for now
-	public static final String WATER_ALTAR_TRACK = "Zealot";
+	private static final List<String> ABYSS_ROUTE_NAMES = List.of(
+		"Abyss"
+	);
 
 	private static final String AIR_RIFT_NAME = "air rift";
 	private static final String MIND_RIFT_NAME = "mind rift";
@@ -67,26 +58,24 @@ public class AbyssTrackHandler implements SpecialTrackHandler
 	private static final String DEATH_RIFT_NAME = "death rift";
 	private static final String SOUL_RIFT_NAME = "soul rift";
 
-	private static final String ABYSS_ROUTE_NAME = "Abyss";
-
 	private static final String RIFT_EXPECTED_ACTION = null;
 
 	private static final Map<String, String> TRACK_TITLE_TO_RIFT_NAME = new HashMap<>();
 
 	static
 	{
-		TRACK_TITLE_TO_RIFT_NAME.put(AIR_ALTAR_TRACK.toLowerCase(Locale.ROOT), AIR_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(MIND_ALTAR_TRACK.toLowerCase(Locale.ROOT), MIND_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(WATER_ALTAR_TRACK.toLowerCase(Locale.ROOT), WATER_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(EARTH_ALTAR_TRACK.toLowerCase(Locale.ROOT), EARTH_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(FIRE_ALTAR_TRACK.toLowerCase(Locale.ROOT), FIRE_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(BODY_ALTAR_TRACK.toLowerCase(Locale.ROOT), BODY_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(COSMIC_ALTAR_TRACK.toLowerCase(Locale.ROOT), COSMIC_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(CHAOS_ALTAR_TRACK.toLowerCase(Locale.ROOT), CHAOS_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(NATURE_ALTAR_TRACK.toLowerCase(Locale.ROOT), NATURE_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(LAW_ALTAR_TRACK.toLowerCase(Locale.ROOT), LAW_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(DEATH_ALTAR_TRACK.toLowerCase(Locale.ROOT), DEATH_RIFT_NAME);
-		TRACK_TITLE_TO_RIFT_NAME.put(SOUL_ALTAR_TRACK.toLowerCase(Locale.ROOT), SOUL_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.AIR_ALTAR_TRACK.toLowerCase(Locale.ROOT), AIR_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.MIND_ALTAR_TRACK.toLowerCase(Locale.ROOT), MIND_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.WATER_ALTAR_TRACK.toLowerCase(Locale.ROOT), WATER_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.EARTH_ALTAR_TRACK.toLowerCase(Locale.ROOT), EARTH_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.FIRE_ALTAR_TRACK.toLowerCase(Locale.ROOT), FIRE_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.BODY_ALTAR_TRACK.toLowerCase(Locale.ROOT), BODY_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.COSMIC_ALTAR_TRACK.toLowerCase(Locale.ROOT), COSMIC_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.CHAOS_ALTAR_TRACK.toLowerCase(Locale.ROOT), CHAOS_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.NATURE_ALTAR_TRACK.toLowerCase(Locale.ROOT), NATURE_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.LAW_ALTAR_TRACK.toLowerCase(Locale.ROOT), LAW_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.DEATH_ALTAR_TRACK.toLowerCase(Locale.ROOT), DEATH_RIFT_NAME);
+		TRACK_TITLE_TO_RIFT_NAME.put(MysteriousRuinsHandler.SOUL_ALTAR_TRACK.toLowerCase(Locale.ROOT), SOUL_RIFT_NAME);
 	}
 
 	private static final WorldPoint ABYSS_INNER_RING_CENTER = new WorldPoint(3039, 4832, 0);
@@ -141,12 +130,14 @@ public class AbyssTrackHandler implements SpecialTrackHandler
 	private WorldPoint lastScannedPlayerLocation;
 
 	@Override
+	public List<String> getHandledRouteNames()
+	{
+		return ABYSS_ROUTE_NAMES;
+	}
+
+	@Override
 	public List<DynamicRequirement<ItemRequirement>> getDynamicItemRecommendations(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)
 	{
-		if (route != null && !route.isRoute(ABYSS_ROUTE_NAME))
-		{
-			return List.of();
-		}
 		List<AbyssObstacle> obstaclesRankedBest = new ArrayList<>(TOOL_GATED_OBSTACLES);
 		obstaclesRankedBest.sort(Comparator.comparingInt((AbyssObstacle abyssObstacle) -> scoreObstacle(abyssObstacle, musicTrackerPlugin)).reversed());
 
@@ -184,11 +175,6 @@ public class AbyssTrackHandler implements SpecialTrackHandler
 	@Override
 	public boolean hasVolatileDynamicHighlights(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)
 	{
-		if (route == null || !route.isRoute(ABYSS_ROUTE_NAME))
-		{
-			return false;
-		}
-
 		Player localPlayer = musicTrackerPlugin.getClient().getLocalPlayer();
 		if (localPlayer == null)
 		{
@@ -201,11 +187,6 @@ public class AbyssTrackHandler implements SpecialTrackHandler
 	@Override
 	public List<MusicTrackEntityPoint> getDynamicEntityHighlights(MusicTrack musicTrack, Route route, TrackStep trackStep, int stageIndex, MusicTrackerPlugin musicTrackerPlugin)
 	{
-		if (route != null && !route.isRoute(ABYSS_ROUTE_NAME))
-		{
-			return null;
-		}
-
 		Client client = musicTrackerPlugin.getClient();
 		if (!client.isClientThread())
 		{

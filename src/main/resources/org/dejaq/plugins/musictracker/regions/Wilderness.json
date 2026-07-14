@@ -24,6 +24,77 @@
     ]
   },
   {
+    "title": "Attack 5",
+    "region": "Wilderness",
+    "location": "King Black Dragon Lair",
+    "members": true,
+    "unlockHint": "This track unlocks while fighting the King Black Dragon.",
+    "unlockType": "NORMAL",
+    "unlockMessage": "",
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Attack_5",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "name": "Ladder",
+            "destination": {
+              "x": 3017,
+              "y": 3849,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Ladder",
+                "type": "GAME_OBJECT",
+                "hint": "Climb down",
+                "actions": [
+                  "climb-down"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lever",
+            "destination": {
+              "x": 3067,
+              "y": 10253,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entityId": -1,
+                "entity": "Lever",
+                "type": "GAME_OBJECT",
+                "hint": "Pull Lever & Prepare to teleport",
+                "actions": [
+                  "pull"
+                ]
+              }
+            ]
+          }
+        ],
+        "notes": "Can also be unlocked during the quest Dragon Slayer II.",
+        "items": [
+          {
+            "itemCollection": "SLASH_WEB_KNIFE",
+            "quantity": 1,
+            "label": "Knife"
+          }
+        ],
+        "recommendedItems": [
+          {
+            "label": "Quick teleport out"
+          }
+        ],
+        "levels": [],
+        "recommendedLevels": []
+      }
+    ]
+  },
+  {
     "title": "Bane",
     "region": "Wilderness",
     "members": true,
@@ -117,7 +188,7 @@
     "unlockHint": "This track unlocks at the Chaos Altar.",
     "routes": [
       {
-        "name": "Wilderness",
+        "name": "Mysterious Ruins",
         "defaultRoute": true,
         "trackSteps": [
           {

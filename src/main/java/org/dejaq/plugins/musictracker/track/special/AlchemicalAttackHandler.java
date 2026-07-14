@@ -13,6 +13,16 @@ import org.dejaq.plugins.musictracker.track.Route;
 // TODO Mostly need a quick teleport recommendation - for now we leave "unlocks when"
 public class AlchemicalAttackHandler implements SpecialTrackHandler
 {
+	private static final List<String> ROUTE_NAMES = List.of(
+		"Route 1"
+	);
+
+	@Override
+	public List<String> getHandledRouteNames()
+	{
+		return ROUTE_NAMES;
+	}
+
 	@Override
 	public List<DynamicRequirement<ItemRequirement>> getDynamicItems(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)
 	{

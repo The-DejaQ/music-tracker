@@ -12,13 +12,11 @@ import lombok.Setter;
 import net.runelite.api.Client;
 import net.runelite.api.GameState;
 import net.runelite.api.Item;
-import net.runelite.api.ItemComposition;
 import net.runelite.api.ItemContainer;
 import net.runelite.api.Skill;
 import net.runelite.api.gameval.InventoryID;
 import net.runelite.api.gameval.VarbitID;
 import net.runelite.client.callback.ClientThread;
-import net.runelite.client.game.ItemManager;
 import org.dejaq.plugins.musictracker.quest.Quest;
 import org.dejaq.plugins.musictracker.quest.QuestState;
 
@@ -121,30 +119,24 @@ public class PlayerState
 		return hasItemFromCollection(candidateItemIds, 1);
 	}
 
-	public boolean hasItemByPartialName(String itemNameFragment, int requiredQuantity, ItemManager itemManager)
+	public boolean hasEquippedItemQuantity(int itemId, int requiredQuantity)
 	{
-		String lowerCaseNameFragment = itemNameFragment.toLowerCase();
-		int totalQuantity = 0;
+		return equipmentItemQuantities.getOrDefault(itemId, 0) >= requiredQuantity;
+	}
 
-		for (Map.Entry<Integer, Integer> inventoryEntry : inventoryItemQuantities.entrySet())
+	public boolean hasEquippedItemFromCollection(List<Integer> candidateItemIds, int requiredQuantity)
+	{
+		int totalQuantity = 0;
+		for (int candidateItemId : candidateItemIds)
 		{
-			ItemComposition itemComposition = itemManager.getItemComposition(inventoryEntry.getKey());
-			if (itemComposition != null && itemComposition.getName() != null
-				&& itemComposition.getName().toLowerCase().contains(lowerCaseNameFragment))
-			{
-				totalQuantity += inventoryEntry.getValue();
-			}
-		}
-		for (Map.Entry<Integer, Integer> equipmentEntry : equipmentItemQuantities.entrySet())
-		{
-			ItemComposition itemComposition = itemManager.getItemComposition(equipmentEntry.getKey());
-			if (itemComposition != null && itemComposition.getName() != null
-				&& itemComposition.getName().toLowerCase().contains(lowerCaseNameFragment))
-			{
-				totalQuantity += equipmentEntry.getValue();
-			}
+			totalQuantity += equipmentItemQuantities.getOrDefault(candidateItemId, 0);
 		}
 		return totalQuantity >= requiredQuantity;
+	}
+
+	public boolean hasEquippedItemFromCollection(List<Integer> candidateItemIds)
+	{
+		return hasEquippedItemFromCollection(candidateItemIds, 1);
 	}
 
 	public void updateRealSkillLevel(Skill skill, int realLevel)

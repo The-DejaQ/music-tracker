@@ -17,9 +17,11 @@ import org.dejaq.plugins.musictracker.track.TrackStep;
 
 public interface SpecialTrackHandler
 {
-	default String getHandledRouteName()
+	List<String> getHandledRouteNames();
+
+	default List<SpecialEntity> getHandledEntities()
 	{
-		return null;
+		return List.of();
 	}
 
 	default DynamicRequirement<String> getDynamicQuest(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)
@@ -70,11 +72,6 @@ public interface SpecialTrackHandler
 	default boolean hasVolatileDynamicHighlights(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)
 	{
 		return false;
-	}
-
-	default List<Route> getDynamicRoutes(MusicTrack musicTrack, MusicTrackerPlugin musicTrackerPlugin)
-	{
-		return List.of();
 	}
 
 	default void onChatMessage(MusicTrack musicTrack, Route route, ChatMessage chatMessageEvent, MusicTrackerPlugin musicTrackerPlugin)
@@ -135,25 +132,6 @@ public interface SpecialTrackHandler
 		Route route, DynamicRequirement<LevelRequirement> additionalLevelRecommendation)
 	{
 		return addDynamicLevelRecommendations(route, List.of(additionalLevelRecommendation));
-	}
-
-	default List<Route> addDynamicRoutes(MusicTrack musicTrack, List<Route> additionalRoutes)
-	{
-		List<Route> combinedRoutes = new ArrayList<>();
-		if (musicTrack != null && musicTrack.getAllRoutes() != null)
-		{
-			combinedRoutes.addAll(musicTrack.getAllRoutes());
-		}
-		if (additionalRoutes != null)
-		{
-			combinedRoutes.addAll(additionalRoutes);
-		}
-		return combinedRoutes;
-	}
-
-	default List<Route> addDynamicRoutes(MusicTrack musicTrack, Route additionalRoute)
-	{
-		return addDynamicRoutes(musicTrack, List.of(additionalRoute));
 	}
 
 	default List<MusicTrackEntityPoint> addDynamicEntityHighlights(TrackStep trackStep, List<MusicTrackEntityPoint> additionalHighlights)

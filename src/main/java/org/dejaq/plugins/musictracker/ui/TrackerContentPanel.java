@@ -2,10 +2,15 @@ package org.dejaq.plugins.musictracker.ui;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import java.awt.Color;
 import java.awt.Component;
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.Rectangle;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,6 +29,7 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import net.runelite.api.gameval.VarbitID;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.ui.ColorScheme;
 import org.dejaq.plugins.musictracker.MusicTrack;
@@ -33,6 +39,7 @@ import org.dejaq.plugins.musictracker.MusicTrackerPlugin;
 import org.dejaq.plugins.musictracker.requirement.LevelRequirement;
 import org.dejaq.plugins.musictracker.track.Route;
 import org.dejaq.plugins.musictracker.track.UnlockType;
+import org.dejaq.plugins.musictracker.ui.builder.RouteImporter;
 import org.dejaq.plugins.musictracker.ui.components.CollapsibleRegionHeader;
 import org.dejaq.plugins.musictracker.ui.components.TrackRowPanel;
 import org.dejaq.plugins.musictracker.ui.filter.MembersFilterOption;
@@ -47,6 +54,7 @@ public class TrackerContentPanel extends JPanel
 	private static final String MEMBERS_FILTER_CONFIG_KEY = "membersFilter";
 	private static final String QUESTS_FILTER_CONFIG_KEY = "questsFilter";
 	private static final String HIDE_MISSING_LEVEL_CONFIG_KEY = "hideMissingLevel";
+	private static final String FILTERS_COLLAPSED_CONFIG_KEY = "filtersCollapsed";
 	private static final String TRACKS_CARD_NAME = "TRACKS";
 	private static final String EMPTY_STATE_CARD_NAME = "EMPTY_STATE";
 
@@ -75,6 +83,10 @@ public class TrackerContentPanel extends JPanel
 	private MembersFilterOption currentMembersFilter;
 	private QuestFilterOption currentQuestFilter;
 
+	private boolean filtersCollapsed;
+	private JLabel filtersHeaderLabel;
+	private JPanel filtersContentPanel;
+
 	public TrackerContentPanel(MusicTrackerPlugin musicTrackerPlugin, MusicTrackManager musicTrackManager, MusicTrackerConfig musicTrackerConfig, ConfigManager configManager)
 	{
 		super();
@@ -86,6 +98,7 @@ public class TrackerContentPanel extends JPanel
 		this.currentStatusFilter = parseStatusFilter(musicTrackerConfig.statusFilter());
 		this.currentMembersFilter = parseMembersFilter(musicTrackerConfig.membersFilter());
 		this.currentQuestFilter = parseQuestFilter(musicTrackerConfig.questsFilter());
+		this.filtersCollapsed = musicTrackerConfig.filtersCollapsed();
 
 		setLayout(new BorderLayout());
 		setBorder(new EmptyBorder(6, 0, 6, 6));
@@ -121,7 +134,12 @@ public class TrackerContentPanel extends JPanel
 		topControlsPanel.add(wrapCentered(refreshButton));
 		topControlsPanel.add(Box.createVerticalStrut(8));
 
-		topControlsPanel.add(buildFiltersPanel());
+		JButton importRouteButton = new JButton("Import Route");
+		importRouteButton.addActionListener(actionEvent -> openImportRouteDialog());
+		topControlsPanel.add(wrapCentered(importRouteButton));
+		topControlsPanel.add(Box.createVerticalStrut(8));
+
+		topControlsPanel.add(buildFiltersSection());
 		topControlsPanel.add(Box.createVerticalStrut(8));
 
 		searchTextField = new JTextField();
@@ -163,6 +181,106 @@ public class TrackerContentPanel extends JPanel
 		wrapperPanel.add(button);
 		wrapperPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, wrapperPanel.getPreferredSize().height));
 		return wrapperPanel;
+	}
+
+	private void openImportRouteDialog()
+	{
+		RouteImporter routeImporter = new RouteImporter(this, musicTrackManager, musicTrackerPlugin.getCustomTrackStore(), () -> {
+			musicTrackerPlugin.refreshAll();
+			refreshVisibleTracks();
+		});
+		routeImporter.openImportDialog();
+	}
+
+	private JPanel buildFiltersSection()
+	{
+		JPanel sectionPanel = new JPanel();
+		sectionPanel.setLayout(new BoxLayout(sectionPanel, BoxLayout.Y_AXIS));
+		sectionPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+		sectionPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Short.MAX_VALUE));
+
+		sectionPanel.add(buildFiltersHeaderPanel());
+		sectionPanel.add(Box.createVerticalStrut(4));
+
+		filtersContentPanel = buildFiltersPanel();
+		filtersContentPanel.setVisible(!filtersCollapsed);
+		sectionPanel.add(filtersContentPanel);
+
+		updateFiltersHeaderText();
+
+		return sectionPanel;
+	}
+
+	private JPanel buildFiltersHeaderPanel()
+	{
+		JPanel headerPanel = new JPanel(new BorderLayout());
+		headerPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+		headerPanel.setBackground(ColorScheme.DARKER_GRAY_COLOR);
+		headerPanel.setBorder(new EmptyBorder(6, 8, 6, 8));
+		headerPanel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		headerPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 30));
+
+		filtersHeaderLabel = new JLabel();
+		filtersHeaderLabel.setFont(new Font("SansSerif", Font.PLAIN, 12));
+		filtersHeaderLabel.setForeground(Color.WHITE);
+		headerPanel.add(filtersHeaderLabel, BorderLayout.WEST);
+
+		MouseAdapter toggleFiltersCollapsedListener = new MouseAdapter()
+		{
+			@Override
+			public void mouseClicked(MouseEvent mouseEvent)
+			{
+				onFiltersCollapsedToggled();
+			}
+		};
+		headerPanel.addMouseListener(toggleFiltersCollapsedListener);
+		filtersHeaderLabel.addMouseListener(toggleFiltersCollapsedListener);
+
+		updateFiltersHeaderText();
+
+		return headerPanel;
+	}
+
+	private void onFiltersCollapsedToggled()
+	{
+		filtersCollapsed = !filtersCollapsed;
+		configManager.setConfiguration(CONFIG_GROUP_NAME, FILTERS_COLLAPSED_CONFIG_KEY, filtersCollapsed);
+		filtersContentPanel.setVisible(!filtersCollapsed);
+		updateFiltersHeaderText();
+		revalidate();
+		repaint();
+	}
+
+	private void updateFiltersHeaderText()
+	{
+		if (filtersHeaderLabel == null)
+		{
+			return;
+		}
+		String arrowGlyph = filtersCollapsed ? "\u25B6" : "\u25BC";
+		filtersHeaderLabel.setText("Filters (" + computeActiveFilterCount() + " active) " + arrowGlyph);
+	}
+
+	private int computeActiveFilterCount()
+	{
+		int activeFilterCount = 0;
+		if (currentStatusFilter != StatusFilterOption.ALL)
+		{
+			activeFilterCount++;
+		}
+		if (currentMembersFilter != MembersFilterOption.ALL)
+		{
+			activeFilterCount++;
+		}
+		if (currentQuestFilter != QuestFilterOption.ALL)
+		{
+			activeFilterCount++;
+		}
+		if (hideMissingLevelsCheckBox != null && hideMissingLevelsCheckBox.isSelected())
+		{
+			activeFilterCount++;
+		}
+		return activeFilterCount;
 	}
 
 	private JPanel buildFiltersPanel()
@@ -216,6 +334,7 @@ public class TrackerContentPanel extends JPanel
 		StatusFilterOption selectedFilter = (StatusFilterOption) statusFilterComboBox.getSelectedItem();
 		currentStatusFilter = selectedFilter != null ? selectedFilter : StatusFilterOption.ALL;
 		configManager.setConfiguration(CONFIG_GROUP_NAME, STATUS_FILTER_CONFIG_KEY, currentStatusFilter.name());
+		updateFiltersHeaderText();
 		refreshVisibleTracks();
 	}
 
@@ -224,6 +343,7 @@ public class TrackerContentPanel extends JPanel
 		MembersFilterOption selectedFilter = (MembersFilterOption) membersFilterComboBox.getSelectedItem();
 		currentMembersFilter = selectedFilter != null ? selectedFilter : MembersFilterOption.ALL;
 		configManager.setConfiguration(CONFIG_GROUP_NAME, MEMBERS_FILTER_CONFIG_KEY, currentMembersFilter.name());
+		updateFiltersHeaderText();
 		refreshVisibleTracks();
 	}
 
@@ -232,12 +352,14 @@ public class TrackerContentPanel extends JPanel
 		QuestFilterOption selectedFilter = (QuestFilterOption) questFilterComboBox.getSelectedItem();
 		currentQuestFilter = selectedFilter != null ? selectedFilter : QuestFilterOption.ALL;
 		configManager.setConfiguration(CONFIG_GROUP_NAME, QUESTS_FILTER_CONFIG_KEY, currentQuestFilter.name());
+		updateFiltersHeaderText();
 		refreshVisibleTracks();
 	}
 
 	private void onHideMissingLevelsChanged()
 	{
 		configManager.setConfiguration(CONFIG_GROUP_NAME, HIDE_MISSING_LEVEL_CONFIG_KEY, hideMissingLevelsCheckBox.isSelected());
+		updateFiltersHeaderText();
 		refreshVisibleTracks();
 	}
 

@@ -288,14 +288,14 @@ public class MusicTrackerPlugin extends Plugin
 			trackNavigator.clearEntityHighlights();
 			trackNavigator.setCurrentTrack(musicTrack);
 			trackNavigator.checkProgress();
-		});
 
-		SwingUtilities.invokeLater(() -> {
-			if (musicTrack.getRegion() != null)
-			{
-				musicTrackPanel.getTrackerContentPanel().expandRegion(musicTrack.getRegion());
-			}
-			musicTrackPanel.getTrackerContentPanel().refreshVisibleTracks();
+			SwingUtilities.invokeLater(() -> {
+				if (musicTrack.getRegion() != null)
+				{
+					musicTrackPanel.getTrackerContentPanel().expandRegion(musicTrack.getRegion());
+				}
+				musicTrackPanel.getTrackerContentPanel().refreshVisibleTracks();
+			});
 		});
 
 		if (!trackingStateService.isTrackingActive())
@@ -523,11 +523,16 @@ public class MusicTrackerPlugin extends Plugin
 		{
 			return playerState.hasItemFromCollection(itemRequirement.getGroupItemIds(), itemRequirement.getQuantity());
 		}
-		if (itemRequirement.isNameBased())
-		{
-			return playerState.hasItemByPartialName(itemRequirement.getItem(), itemRequirement.getQuantity(), itemManager);
-		}
 		return playerState.hasItemQuantity(itemRequirement.getItemId(), itemRequirement.getQuantity());
+	}
+
+	public boolean playerHasItemEquipped(ItemRequirement itemRequirement)
+	{
+		if (itemRequirement.isItemCollection())
+		{
+			return playerState.hasEquippedItemFromCollection(itemRequirement.getGroupItemIds(), itemRequirement.getQuantity());
+		}
+		return playerState.hasEquippedItemQuantity(itemRequirement.getItemId(), itemRequirement.getQuantity());
 	}
 
 	public void sendGameMessage(String message)

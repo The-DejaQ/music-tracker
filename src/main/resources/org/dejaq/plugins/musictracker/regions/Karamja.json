@@ -805,7 +805,7 @@
     "unlockHint": "This track unlocks at the Nature Altar.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Mysterious Ruins",
         "defaultRoute": true,
         "trackSteps": [
           {

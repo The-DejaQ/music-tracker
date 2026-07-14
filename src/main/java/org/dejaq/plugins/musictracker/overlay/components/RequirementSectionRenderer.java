@@ -27,7 +27,7 @@ public class RequirementSectionRenderer
 	{
 		renderRequirementList(panelComponent, sectionHeaderText, dynamicRequirements, staticRequirements,
 			displayTextResolver, satisfactionChecker, unsatisfiedColorWhenRequirementKnown, unsatisfiedColorWhenRequirementUnknown,
-			staticRequirement -> true);
+			staticRequirement -> true, null);
 	}
 
 	public <T> void renderRequirementList(
@@ -41,13 +41,30 @@ public class RequirementSectionRenderer
 		Color unsatisfiedColorWhenRequirementUnknown,
 		Predicate<T> hasRealBackingData)
 	{
+		renderRequirementList(panelComponent, sectionHeaderText, dynamicRequirements, staticRequirements,
+			displayTextResolver, satisfactionChecker, unsatisfiedColorWhenRequirementKnown, unsatisfiedColorWhenRequirementUnknown,
+			hasRealBackingData, null);
+	}
+
+	public <T> void renderRequirementList(
+		PanelComponent panelComponent,
+		String sectionHeaderText,
+		List<DynamicRequirement<T>> dynamicRequirements,
+		List<T> staticRequirements,
+		Function<T, String> displayTextResolver,
+		Predicate<T> satisfactionChecker,
+		Color unsatisfiedColorWhenRequirementKnown,
+		Color unsatisfiedColorWhenRequirementUnknown,
+		Predicate<T> hasRealBackingData,
+		Function<T, Color> perRequirementColorResolver)
+	{
 		if (dynamicRequirements != null && !dynamicRequirements.isEmpty())
 		{
 			addSectionHeader(panelComponent, sectionHeaderText);
 			for (DynamicRequirement<T> dynamicRequirement : dynamicRequirements)
 			{
 				Color lineColor = resolveDynamicRequirementColor(dynamicRequirement, satisfactionChecker,
-					unsatisfiedColorWhenRequirementKnown, unsatisfiedColorWhenRequirementUnknown);
+					unsatisfiedColorWhenRequirementKnown, unsatisfiedColorWhenRequirementUnknown, perRequirementColorResolver);
 				addLine(panelComponent, dynamicRequirement.getDisplayText(), lineColor);
 			}
 			return;
@@ -66,6 +83,10 @@ public class RequirementSectionRenderer
 			{
 				lineColor = ColorScheme.TEXT_COLOR;
 			}
+			else if (perRequirementColorResolver != null && perRequirementColorResolver.apply(staticRequirement) != null)
+			{
+				lineColor = perRequirementColorResolver.apply(staticRequirement);
+			}
 			else
 			{
 				boolean isSatisfied = satisfactionChecker.test(staticRequirement);
@@ -79,7 +100,8 @@ public class RequirementSectionRenderer
 		DynamicRequirement<T> dynamicRequirement,
 		Predicate<T> satisfactionChecker,
 		Color unsatisfiedColorWhenRequirementKnown,
-		Color unsatisfiedColorWhenRequirementUnknown)
+		Color unsatisfiedColorWhenRequirementUnknown,
+		Function<T, Color> perRequirementColorResolver)
 	{
 		if (dynamicRequirement.getColor() != null)
 		{
@@ -87,6 +109,10 @@ public class RequirementSectionRenderer
 		}
 		if (dynamicRequirement.getRequirement() != null)
 		{
+			if (perRequirementColorResolver != null && perRequirementColorResolver.apply(dynamicRequirement.getRequirement()) != null)
+			{
+				return perRequirementColorResolver.apply(dynamicRequirement.getRequirement());
+			}
 			boolean isSatisfied = satisfactionChecker.test(dynamicRequirement.getRequirement());
 			return isSatisfied ? ColorScheme.PROGRESS_COMPLETE_COLOR : unsatisfiedColorWhenRequirementKnown;
 		}

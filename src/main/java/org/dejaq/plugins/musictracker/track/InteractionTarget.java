@@ -1,6 +1,7 @@
 package org.dejaq.plugins.musictracker.track;
 
 import java.util.List;
+import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,35 +24,36 @@ public class InteractionTarget
 	@Singular("action")
 	private List<String> actions;
 	private int searchRadius;
+	private Map<String, String> data;
 
 	public InteractionTarget(int entityId, String hint, InteractionType type)
 	{
-		this(entityId, null, null, type, hint, List.of(), -1);
+		this(entityId, null, null, type, hint, List.of(), -1, null);
 	}
 
 	public InteractionTarget(int entityId, String hint, WorldPoint worldPoint, InteractionType type)
 	{
-		this(entityId, null, worldPoint, type, hint, List.of(), -1);
+		this(entityId, null, worldPoint, type, hint, List.of(), -1, null);
 	}
 
 	public InteractionTarget(int entityId, InteractionType type)
 	{
-		this(entityId, null, null, type, null, List.of(), -1);
+		this(entityId, null, null, type, null, List.of(), -1, null);
 	}
 
 	public InteractionTarget(String entity, InteractionType type)
 	{
-		this(-1, entity, null, type, null, List.of(), -1);
+		this(-1, entity, null, type, null, List.of(), -1, null);
 	}
 
 	public InteractionTarget(String entity, String hint, WorldPoint worldPoint, InteractionType type)
 	{
-		this(-1, entity, worldPoint, type, hint, List.of(), -1);
+		this(-1, entity, worldPoint, type, hint, List.of(), -1, null);
 	}
 
 	public InteractionTarget(WorldPoint location, InteractionType type)
 	{
-		this(-1, null, location, type, null, List.of(), -1);
+		this(-1, null, location, type, null, List.of(), -1, null);
 	}
 
 	public boolean isIdBased()

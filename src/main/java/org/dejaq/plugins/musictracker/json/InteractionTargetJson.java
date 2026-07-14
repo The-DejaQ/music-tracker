@@ -1,6 +1,7 @@
 package org.dejaq.plugins.musictracker.json;
 
 import java.util.List;
+import java.util.Map;
 
 public class InteractionTargetJson
 {
@@ -11,4 +12,5 @@ public class InteractionTargetJson
 	public String hint;
 	public List<String> actions;
 	public Integer searchRadius;
+	public Map<String, String> data;
 }

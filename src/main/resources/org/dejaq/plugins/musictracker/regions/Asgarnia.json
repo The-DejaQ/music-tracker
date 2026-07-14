@@ -476,7 +476,7 @@
     "unlockHint": "This track unlocks at the Body Altar.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Mysterious Ruins",
         "defaultRoute": true,
         "trackSteps": [
           {
@@ -931,7 +931,7 @@
     "unlockHint": "This track unlocks at the Mind Altar.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Mysterious Ruins",
         "defaultRoute": true,
         "trackSteps": [
           {
@@ -1230,7 +1230,7 @@
     "unlockHint": "This track unlocks at the Law Altar.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Mysterious Ruins",
         "defaultRoute": true,
         "trackSteps": [
           {
@@ -1473,7 +1473,7 @@
     "unlockHint": "This track unlocks at the Air Altar.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Mysterious Ruins",
         "defaultRoute": true,
         "trackSteps": [
           {

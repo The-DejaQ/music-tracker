@@ -12,16 +12,6 @@
       {
         "name": "Route 1",
         "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 1824.0,
-              "y": 3107.0,
-              "z": 0.0
-            },
-            "name": "Step 1"
-          }
-        ],
         "quest": "CHILDREN_OF_THE_SUN"
       }
     ]
@@ -35,16 +25,36 @@
     "unlockHint": "This track unlocks in the Tlati Rainforest.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
+            "name": "Travel",
             "destination": {
-              "x": 1301.0,
-              "y": 3091.0,
-              "z": 0.0
+              "x": 1696,
+              "y": 3141,
+              "z": 0
             },
-            "name": "Step 1"
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "TAL_TEKLAN"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
+            "destination": {
+              "x": 1301,
+              "y": 3091,
+              "z": 0
+            }
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -69,7 +79,7 @@
               "y": 3121.0,
               "z": 0.0
             },
-            "name": "Step 1"
+            "name": "Unlock"
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -85,16 +95,36 @@
     "unlockHint": "This track unlocks in the Avium Savannah.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
+            "name": "Travel",
             "destination": {
-              "x": 1600.0,
-              "y": 3042.0,
-              "z": 0.0
+              "x": 1696,
+              "y": 3141,
+              "z": 0
             },
-            "name": "Step 1"
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "HUNTER_GUILD"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
+            "destination": {
+              "x": 1600,
+              "y": 3042,
+              "z": 0
+            }
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -110,7 +140,7 @@
     "unlockHint": "This track unlocks while fighting the Doom of Mokhaiotl.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
@@ -128,13 +158,13 @@
                   "z": 0.0
                 },
                 "type": "NPC",
-                "hint": "Tal Teklan",
+                "hint": "Travel -> Tal Teklan",
                 "actions": [
                   "travel"
                 ]
               }
             ],
-            "name": "Step 1"
+            "name": "Quetzal"
           },
           {
             "destination": {
@@ -156,7 +186,7 @@
                 ]
               }
             ],
-            "name": "Step 2"
+            "name": "Platform"
           },
           {
             "destination": {
@@ -178,7 +208,7 @@
                 ]
               }
             ],
-            "name": "Step 3"
+            "name": "Door"
           },
           {
             "destination": {
@@ -200,7 +230,7 @@
                 ]
               }
             ],
-            "name": "Step 4"
+            "name": "Pillar"
           },
           {
             "destination": {
@@ -222,7 +252,7 @@
                 ]
               }
             ],
-            "name": "Step 5"
+            "name": "Entrance"
           },
           {
             "destination": {
@@ -244,7 +274,7 @@
                 ]
               }
             ],
-            "name": "Step 6"
+            "name": "Gap"
           }
         ],
         "quest": "THE_FINAL_DAWN"
@@ -263,16 +293,6 @@
       {
         "name": "Route 1",
         "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 1672.0,
-              "y": 3245.0,
-              "z": 0.0
-            },
-            "name": "Step 1"
-          }
-        ],
         "quest": "THE_HEART_OF_DARKNESS"
       }
     ]
@@ -286,7 +306,7 @@
     "unlockHint": "This track unlocks while fighting the Hueycoatl.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
@@ -295,17 +315,19 @@
               "y": 3141.0,
               "z": 0.0
             },
-            "interaction": {
-              "entity": "Renu",
-              "location": {
-                "x": 1696.0,
-                "y": 3141.0,
-                "z": 0.0
-              },
-              "type": "NPC",
-              "hint": "Travel Quetzacalli Gorge"
-            },
-            "name": "Step 1"
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "QUETZACALLI_GORGE"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ],
+            "name": "Travel"
           },
           {
             "destination": {
@@ -320,9 +342,12 @@
                 "y": 3242.0,
                 "z": 0.0
               },
+              "actions": [
+                "pass-through"
+              ],
               "type": "GAME_OBJECT"
             },
-            "name": "Step 2"
+            "name": "Gate"
           },
           {
             "destination": {
@@ -330,7 +355,7 @@
               "y": 3264.0,
               "z": 0.0
             },
-            "name": "Step 3"
+            "name": "Path"
           },
           {
             "destination": {
@@ -348,7 +373,7 @@
               "type": "GAME_OBJECT",
               "hint": "Climb"
             },
-            "name": "Step 4"
+            "name": "Chain"
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -364,7 +389,7 @@
     "unlockHint": "This track unlocks on Ralos' Rise.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": false,
         "trackSteps": [
           {
@@ -376,10 +401,11 @@
             },
             "interactions": [
               {
-                "entityId": -1,
-                "entity": "Renu",
+                "entity": "QUETZAL",
                 "type": "NPC",
-                "hint": "Travel -> The Teomat",
+                "data": {
+                  "quetzal": "THE_TEOMAT"
+                },
                 "actions": [
                   "travel"
                 ]
@@ -400,16 +426,36 @@
     "unlockHint": "This track unlocks on Aldarin.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
+            "name": "Travel",
             "destination": {
-              "x": 1400.0,
-              "y": 2950.0,
-              "z": 0.0
+              "x": 1696,
+              "y": 3141,
+              "z": 0
             },
-            "name": "Step 1"
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "ALDARIN"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
+            "destination": {
+              "x": 1400,
+              "y": 2950,
+              "z": 0
+            }
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -437,10 +483,11 @@
             },
             "interactions": [
               {
-                "entityId": -1,
-                "entity": "Renu",
+                "entity": "QUETZAL",
                 "type": "NPC",
-                "hint": "Travel -> Aldarin",
+                "data": {
+                  "quetzal": "ALDARIN"
+                },
                 "actions": [
                   "travel"
                 ]
@@ -448,7 +495,7 @@
             ]
           },
           {
-            "name": "Step 1",
+            "name": "Unlock",
             "destination": {
               "x": 1397,
               "y": 2869,
@@ -472,24 +519,42 @@
     "unlockHint": "This track unlocks in the Custodia Mountains.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
+            "name": "Travel",
             "destination": {
-              "x": 1286.0,
-              "y": 3374.0,
-              "z": 0.0
+              "x": 1696,
+              "y": 3141,
+              "z": 0
             },
-            "name": "Step 1"
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "AUBURNVALE"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
+            "destination": {
+              "x": 1301,
+              "y": 3336,
+              "z": 0
+            }
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
       }
     ],
-    "unlockType": "NORMAL",
-    "quest": "CHILDREN_OF_THE_SUN",
-    "unlockMessage": ""
+    "unlockType": "NORMAL"
   },
   {
     "title": "Peace and Prosperity",
@@ -512,10 +577,11 @@
             },
             "interactions": [
               {
-                "entityId": -1,
-                "entity": "Renu",
+                "entity": "QUETZAL",
                 "type": "NPC",
-                "hint": "Travel -> Aldarin",
+                "data": {
+                  "quetzal": "ALDARIN"
+                },
                 "actions": [
                   "travel"
                 ]
@@ -523,7 +589,7 @@
             ]
           },
           {
-            "name": "Step 1",
+            "name": "Unlock",
             "destination": {
               "x": 1400,
               "y": 2950,
@@ -556,7 +622,7 @@
               "y": 3121.0,
               "z": 0.0
             },
-            "name": "Step 1"
+            "name": "Unlock"
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -572,16 +638,36 @@
     "unlockHint": "This track unlocks in the Hunter Guild.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "HUNTER_GUILD"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
             "destination": {
               "x": 1564.0,
               "y": 3046.0,
-              "z": 0.0
-            },
-            "name": "Step 1"
+              "z": 0
+            }
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -597,16 +683,36 @@
     "unlockHint": "This track unlocks in the Avium Savannah.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
+            "name": "Travel",
             "destination": {
-              "x": 1600.0,
-              "y": 3042.0,
-              "z": 0.0
+              "x": 1696,
+              "y": 3141,
+              "z": 0
             },
-            "name": "Step 1"
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "HUNTER_GUILD"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
+            "destination": {
+              "x": 1600,
+              "y": 3042.0,
+              "z": 0
+            }
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -622,11 +728,31 @@
     "unlockHint": "This track unlocks in the Auburn Valley.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
-            "name": "Step 1",
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "AUBURNVALE"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
             "destination": {
               "x": 1400,
               "y": 3300,
@@ -649,11 +775,31 @@
     "unlockHint": "This track unlocks in the Auburn Valley.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
-            "name": "Step 1",
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "AUBURNVALE"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
             "destination": {
               "x": 1400,
               "y": 3300,
@@ -676,11 +822,31 @@
     "unlockHint": "This track unlocks in Quetzacalli Gorge.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
-            "name": "Step 1",
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "QUETZACALLI_GORGE"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
             "destination": {
               "x": 1506,
               "y": 3237,
@@ -703,11 +869,31 @@
     "unlockHint": "This track unlocks in Kastori.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
-            "name": "Step 1",
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "KASTORI"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
             "destination": {
               "x": 1371,
               "y": 3044,
@@ -730,11 +916,31 @@
     "unlockHint": "This track unlocks in Tal Teklan.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
-            "name": "Step 1",
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "TAL_TEKLAN"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
             "destination": {
               "x": 1217,
               "y": 3110,
@@ -757,43 +963,50 @@
     "unlockHint": "This track unlocks in Cam Torum.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
+            "name": "Travel",
             "destination": {
-              "x": 1696.0,
-              "y": 3141.0,
-              "z": 0.0
+              "x": 1696,
+              "y": 3141,
+              "z": 0
             },
-            "interaction": {
-              "entity": "Renu",
-              "location": {
-                "x": 1696.0,
-                "y": 3141.0,
-                "z": 0.0
-              },
-              "type": "NPC",
-              "hint": "Cam Torum"
-            },
-            "name": "Step 1"
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "CAM_TORUM"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
           },
           {
+            "name": "Entrance",
             "destination": {
-              "x": 1436.0,
-              "y": 3122.0,
-              "z": 0.0
+              "x": 1436,
+              "y": 3128,
+              "z": 0
             },
-            "interaction": {
-              "entityId": 51375.0,
-              "location": {
-                "x": 1435.0,
-                "y": 3129.0,
-                "z": 0.0
-              },
-              "type": "GAME_OBJECT"
-            },
-            "name": "Step 2"
+            "interactions": [
+              {
+                "entity": "Entrance",
+                "location": {
+                  "x": 1436,
+                  "y": 3129,
+                  "z": 0
+                },
+                "type": "GAME_OBJECT",
+                "actions": [
+                  "pass-through"
+                ]
+              }
+            ]
           }
         ],
         "quest": "PERILOUS_MOONS"
@@ -809,16 +1022,36 @@
     "unlockHint": "This track unlocks in the Avium Savannah.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
+            "name": "Travel",
             "destination": {
-              "x": 1600.0,
-              "y": 3042.0,
-              "z": 0.0
+              "x": 1696,
+              "y": 3141,
+              "z": 0
             },
-            "name": "Step 1"
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "HUNTER_GUILD"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
+            "destination": {
+              "x": 1600,
+              "y": 3042.0,
+              "z": 0
+            }
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -834,7 +1067,7 @@
     "unlockHint": "This track unlocks in Sunset Coast.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
@@ -846,10 +1079,11 @@
             },
             "interactions": [
               {
-                "entityId": -1,
-                "entity": "Renu",
+                "entity": "QUETZAL",
                 "type": "NPC",
-                "hint": "Travel -> Sunset Coast",
+                "data": {
+                  "quetzal": "SUNSET_COAST"
+                },
                 "actions": [
                   "travel"
                 ]
@@ -862,7 +1096,7 @@
               "y": 2986.0,
               "z": 0.0
             },
-            "name": "Step 2"
+            "name": "Unlock"
           }
         ],
         "quest": "CHILDREN_OF_THE_SUN"
@@ -878,11 +1112,31 @@
     "unlockHint": "This track unlocks in the mountains around Quetzacalli Gorge.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Quetzal",
         "defaultRoute": true,
         "trackSteps": [
           {
-            "name": "Step 1",
+            "name": "Travel",
+            "destination": {
+              "x": 1696,
+              "y": 3141,
+              "z": 0
+            },
+            "interactions": [
+              {
+                "entity": "QUETZAL",
+                "type": "NPC",
+                "data": {
+                  "quetzal": "QUETZACALLI_GORGE"
+                },
+                "actions": [
+                  "travel"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unlock",
             "destination": {
               "x": 1584,
               "y": 3250,

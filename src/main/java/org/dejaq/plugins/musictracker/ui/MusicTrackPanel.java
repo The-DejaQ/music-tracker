@@ -41,8 +41,10 @@ public class MusicTrackPanel extends PluginPanel
 	private static final String LOGGED_OUT_CARD_NAME = "LOGGED_OUT";
 	private static final String SETTINGS_REQUIRED_CARD_NAME = "SETTINGS_REQUIRED";
 	private static final String TRACKER_CARD_NAME = "TRACKER";
+	private static final boolean ROUTES_TAB_ENABLED = false;
 	private static final String REPORT_ISSUE_URL = "https://github.com/The-DejaQ/music-tracker/issues/new";
 	private static final String CHANGELOG_URL = "https://github.com/The-DejaQ/music-tracker/blob/master/CHANGELOG.md";
+	private static final Font SANS_SERIF_PLAIN = new Font("SansSerif", Font.PLAIN, 12);
 
 	@Getter
 	private final MusicTrackerPlugin musicTrackerPlugin;
@@ -64,7 +66,10 @@ public class MusicTrackPanel extends PluginPanel
 	private JPanel outerContentPanel;
 	private JPanel tabBarPanel;
 	private JLabel trackerTabLabel;
+	private JLabel routesTabLabel;
 	private JLabel builderTabLabel;
+
+	private JPanel routesPlaceholderPanel;
 
 	@Getter
 	private TrackBuilderPanel trackBuilderPanel;
@@ -125,8 +130,11 @@ public class MusicTrackPanel extends PluginPanel
 
 		trackBuilderPanel = new TrackBuilderPanel(musicTrackerPlugin, musicTrackManager);
 
+		routesPlaceholderPanel = new JPanel(new BorderLayout());
+
 		add(outerContentPanel, BorderLayout.CENTER);
 
+		showTrackerTab();
 		refreshBuilderTabVisibility();
 		refreshState();
 	}
@@ -179,10 +187,11 @@ public class MusicTrackPanel extends PluginPanel
 
 	private void buildTabBar()
 	{
-		tabBarPanel = new JPanel(new GridLayout(1, 2, 4, 0));
+		tabBarPanel = new JPanel(new GridLayout(1, 0, 4, 0));
 		tabBarPanel.setBorder(new EmptyBorder(8, 0, 4, 0));
 
 		trackerTabLabel = createTabLabel("Tracker");
+		routesTabLabel = createTabLabel("Routes");
 		builderTabLabel = createTabLabel("Builder");
 
 		trackerTabLabel.addMouseListener(new MouseAdapter()
@@ -190,7 +199,21 @@ public class MusicTrackPanel extends PluginPanel
 			@Override
 			public void mouseClicked(MouseEvent mouseEvent)
 			{
-				showTrackerTab();
+				if (trackerTabLabel.isEnabled())
+				{
+					showTrackerTab();
+				}
+			}
+		});
+		routesTabLabel.addMouseListener(new MouseAdapter()
+		{
+			@Override
+			public void mouseClicked(MouseEvent mouseEvent)
+			{
+				if (routesTabLabel.isEnabled())
+				{
+					showRoutesTab();
+				}
 			}
 		});
 		builderTabLabel.addMouseListener(new MouseAdapter()
@@ -206,6 +229,10 @@ public class MusicTrackPanel extends PluginPanel
 		});
 
 		tabBarPanel.add(trackerTabLabel);
+		if (ROUTES_TAB_ENABLED)
+		{
+			tabBarPanel.add(routesTabLabel);
+		}
 		tabBarPanel.add(builderTabLabel);
 	}
 
@@ -215,7 +242,7 @@ public class MusicTrackPanel extends PluginPanel
 		tabLabel.setOpaque(true);
 		tabLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		tabLabel.setBorder(BorderFactory.createEmptyBorder(6, 0, 6, 0));
-		tabLabel.setFont(tabLabel.getFont().deriveFont(Font.BOLD, 12f));
+		tabLabel.setFont(SANS_SERIF_PLAIN);
 		return tabLabel;
 	}
 
@@ -225,7 +252,20 @@ public class MusicTrackPanel extends PluginPanel
 		outerContentPanel.add(innerContentPanel, BorderLayout.CENTER);
 		outerContentPanel.revalidate();
 		outerContentPanel.repaint();
-		updateTabLabelStyles(true);
+		updateTabLabelStyles(trackerTabLabel);
+	}
+
+	public void showRoutesTab()
+	{
+		if (client.getGameState() != GameState.LOGGED_IN)
+		{
+			return;
+		}
+		outerContentPanel.removeAll();
+		outerContentPanel.add(routesPlaceholderPanel, BorderLayout.CENTER);
+		outerContentPanel.revalidate();
+		outerContentPanel.repaint();
+		updateTabLabelStyles(routesTabLabel);
 	}
 
 	public void showBuilderTab()
@@ -239,27 +279,32 @@ public class MusicTrackPanel extends PluginPanel
 		outerContentPanel.revalidate();
 		outerContentPanel.repaint();
 		trackBuilderPanel.refresh();
-		updateTabLabelStyles(false);
+		updateTabLabelStyles(builderTabLabel);
 	}
 
-	private void updateTabLabelStyles(boolean trackerActive)
+	private void updateTabLabelStyles(JLabel activeTabLabel)
 	{
 		Color activeBackground = ColorScheme.DARKER_GRAY_COLOR;
 		Color inactiveBackground = ColorScheme.DARK_GRAY_COLOR;
 		Color activeForeground = Color.WHITE;
 		Color inactiveForeground = Color.LIGHT_GRAY;
 
-		trackerTabLabel.setBackground(trackerActive ? activeBackground : inactiveBackground);
-		trackerTabLabel.setForeground(trackerActive ? activeForeground : inactiveForeground);
-		builderTabLabel.setBackground(!trackerActive ? activeBackground : inactiveBackground);
-		builderTabLabel.setForeground(!trackerActive ? activeForeground : inactiveForeground);
+		for (JLabel tabLabel : new JLabel[]{trackerTabLabel, routesTabLabel, builderTabLabel})
+		{
+			boolean isActive = tabLabel == activeTabLabel;
+			tabLabel.setBackground(isActive ? activeBackground : inactiveBackground);
+			tabLabel.setForeground(isActive ? activeForeground : inactiveForeground);
+		}
 	}
 
 	public void refreshBuilderTabVisibility()
 	{
-		boolean builderEnabled = musicTrackerConfig.enableTrackBuilder();
-		tabBarPanel.setVisible(builderEnabled);
-		showTrackerTab();
+		builderTabLabel.setVisible(musicTrackerConfig.enableTrackBuilder());
+
+		if (!musicTrackerConfig.enableTrackBuilder() && isShowingBuilderTab())
+		{
+			showTrackerTab();
+		}
 
 		revalidate();
 		repaint();
@@ -269,7 +314,7 @@ public class MusicTrackPanel extends PluginPanel
 	{
 		boolean isLoggedIn = client.getGameState() == GameState.LOGGED_IN;
 
-		updateBuilderTabAvailability(isLoggedIn);
+		updateLoginGatedTabAvailability(isLoggedIn);
 
 		String targetCard;
 
@@ -291,16 +336,24 @@ public class MusicTrackPanel extends PluginPanel
 		}
 	}
 
-	private void updateBuilderTabAvailability(boolean isLoggedIn)
+	private void updateLoginGatedTabAvailability(boolean isLoggedIn)
 	{
-		builderTabLabel.setEnabled(isLoggedIn);
-		builderTabLabel.setCursor(Cursor.getPredefinedCursor(isLoggedIn ? Cursor.HAND_CURSOR : Cursor.DEFAULT_CURSOR));
-		builderTabLabel.setToolTipText(isLoggedIn ? null : "Log in to use the Builder");
+		for (JLabel loginGatedTabLabel : new JLabel[]{routesTabLabel, builderTabLabel})
+		{
+			loginGatedTabLabel.setEnabled(isLoggedIn);
+			loginGatedTabLabel.setCursor(Cursor.getPredefinedCursor(isLoggedIn ? Cursor.HAND_CURSOR : Cursor.DEFAULT_CURSOR));
+			loginGatedTabLabel.setToolTipText(isLoggedIn ? null : "Log in to use this tab");
+		}
 
-		if (!isLoggedIn && isShowingBuilderTab())
+		if (!isLoggedIn && !isShowingTrackerTab())
 		{
 			showTrackerTab();
 		}
+	}
+
+	private boolean isShowingTrackerTab()
+	{
+		return outerContentPanel.getComponentCount() > 0 && outerContentPanel.getComponent(0) == innerContentPanel;
 	}
 
 	private boolean isShowingBuilderTab()

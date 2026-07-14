@@ -26,6 +26,10 @@ import org.dejaq.plugins.musictracker.track.TrackStep;
 @Slf4j
 public class RaceAgainstClockHandler implements SpecialTrackHandler
 {
+	private static final List<String> ROUTE_NAMES = List.of(
+		"Route 1"
+	);
+
 	private static final int REQUIRED_BARRONITE_SHARD_QUANTITY = 750;
 
 	private static final WorldPoint CAMDOZAAL_CENTER = new WorldPoint(2968, 5798, 0);
@@ -63,6 +67,13 @@ public class RaceAgainstClockHandler implements SpecialTrackHandler
 
 	private boolean hasCheckedSacredForge;
 	private int storedBarroniteShardQuantity;
+
+
+	@Override
+	public List<String> getHandledRouteNames()
+	{
+		return ROUTE_NAMES;
+	}
 
 	@Override
 	public List<DynamicRequirement<ItemRequirement>> getDynamicItems(

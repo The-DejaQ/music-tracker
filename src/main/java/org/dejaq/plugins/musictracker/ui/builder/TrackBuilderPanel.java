@@ -10,7 +10,6 @@ import java.awt.Insets;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.Window;
-import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -19,7 +18,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 import javax.swing.Box;
@@ -57,7 +55,7 @@ import org.dejaq.plugins.musictracker.ui.components.CollapsibleRegionHeader;
 
 public class TrackBuilderPanel extends JPanel
 {
-	private static final boolean DEVELOPER_MODE = false;
+	private static final boolean DEVELOPER_MODE = true;
 	private static final int SCROLLBAR_UNIT_INCREMENT_PIXELS = 16;
 
 	private final MusicTrackerPlugin musicTrackerPlugin;
@@ -100,12 +98,6 @@ public class TrackBuilderPanel extends JPanel
 		newTrackButton.addActionListener(actionEvent -> openNewTrackDialog());
 		panel.add(newTrackButton);
 		panel.add(Box.createVerticalStrut(6));
-
-		JButton importButton = new JButton("Import from JSON");
-		importButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-		importButton.addActionListener(actionEvent -> openImportDialog());
-		panel.add(importButton);
-		panel.add(Box.createVerticalStrut(8));
 
 		JButton refreshButton = new JButton("Refresh");
 		refreshButton.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -712,126 +704,6 @@ public class TrackBuilderPanel extends JPanel
 		exportPanel.add(copyButton, BorderLayout.SOUTH);
 
 		JOptionPane.showMessageDialog(this, exportPanel, "Export: " + exportLabel, JOptionPane.PLAIN_MESSAGE);
-	}
-
-	private void openImportDialog()
-	{
-		JTextArea textArea = new JTextArea(18, 44);
-		JScrollPane scrollPane = new JScrollPane(textArea);
-
-		JButton pasteButton = new JButton("Paste from Clipboard");
-		pasteButton.addActionListener(actionEvent -> {
-			try
-			{
-				String clipboardText = (String) Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor);
-				textArea.setText(clipboardText);
-			}
-			catch (Exception clipboardException)
-			{
-				JOptionPane.showMessageDialog(this, "Could not read the clipboard.", "Import", JOptionPane.ERROR_MESSAGE);
-			}
-		});
-
-		JPanel topPanel = new JPanel(new BorderLayout());
-		topPanel.add(pasteButton, BorderLayout.EAST);
-
-		JPanel importPanel = new JPanel(new BorderLayout(0, 6));
-		importPanel.add(topPanel, BorderLayout.NORTH);
-		importPanel.add(scrollPane, BorderLayout.CENTER);
-
-		int result = JOptionPane.showConfirmDialog(this, importPanel, "Import Track or Route from JSON",
-			JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-
-		if (result != JOptionPane.OK_OPTION)
-		{
-			return;
-		}
-
-		String jsonText = textArea.getText();
-		if (jsonText == null || jsonText.isBlank())
-		{
-			return;
-		}
-
-		performImport(jsonText);
-	}
-
-	private void performImport(String jsonText)
-	{
-		CustomTrackStore.ImportedContentType contentType = customTrackStore.detectContentType(jsonText);
-
-		try
-		{
-			if (contentType == CustomTrackStore.ImportedContentType.TRACK)
-			{
-				MusicTrack importedTrack = customTrackStore.importTrackFromJson(jsonText);
-				musicTrackManager.registerImportedCustomTrack(importedTrack);
-			}
-			else if (contentType == CustomTrackStore.ImportedContentType.ROUTE)
-			{
-				MusicTrack targetTrack = resolveImportTargetTrack(jsonText);
-				if (targetTrack == null)
-				{
-					return;
-				}
-				Route importedRoute = customTrackStore.importRouteFromJson(jsonText, targetTrack.getAllRoutes().size(), targetTrack.getTitle());
-				musicTrackManager.addCustomRouteToTrack(targetTrack, importedRoute);
-			}
-			else
-			{
-				JOptionPane.showMessageDialog(this, "This doesn't look like a track or route (no recognizable fields found).",
-					"Import Failed", JOptionPane.ERROR_MESSAGE);
-				return;
-			}
-
-			refresh();
-			JOptionPane.showMessageDialog(this, "Import successful.", "Import", JOptionPane.INFORMATION_MESSAGE);
-		}
-		catch (Exception importException)
-		{
-			JOptionPane.showMessageDialog(this, "Failed to parse this JSON: " + importException.getMessage(),
-				"Import Failed", JOptionPane.ERROR_MESSAGE);
-		}
-	}
-
-	private MusicTrack resolveImportTargetTrack(String jsonText)
-	{
-		String embeddedTrackTitle = customTrackStore.peekRouteTrackTitle(jsonText);
-		if (embeddedTrackTitle != null)
-		{
-			Optional<MusicTrack> matchingTrack = musicTrackManager.findTrackByTitle(embeddedTrackTitle);
-			if (matchingTrack.isPresent())
-			{
-				return matchingTrack.get();
-			}
-			JOptionPane.showMessageDialog(this,
-				"This route says it belongs to \"" + embeddedTrackTitle + "\", but no track with that title was found.\nPick a track to attach it to instead.",
-				"Track Not Found", JOptionPane.WARNING_MESSAGE);
-		}
-		return promptForTargetTrack();
-	}
-
-	private MusicTrack promptForTargetTrack()
-	{
-		List<MusicTrack> sortedTracks = new ArrayList<>(musicTrackManager.getAllTracks());
-		sortedTracks.sort(Comparator.comparing(track -> track.getTitle() == null ? "" : track.getTitle(), String.CASE_INSENSITIVE_ORDER));
-
-		if (sortedTracks.isEmpty())
-		{
-			return null;
-		}
-
-		String[] trackTitles = sortedTracks.stream().map(MusicTrack::getTitle).toArray(String[]::new);
-
-		String selectedTitle = (String) JOptionPane.showInputDialog(this, "Attach this route to which track?",
-			"Select Track", JOptionPane.QUESTION_MESSAGE, null, trackTitles, trackTitles[0]);
-
-		if (selectedTitle == null)
-		{
-			return null;
-		}
-
-		return sortedTracks.stream().filter(candidateTrack -> selectedTitle.equals(candidateTrack.getTitle())).findFirst().orElse(null);
 	}
 
 	private static final class TrackMetadataDialog extends JDialog

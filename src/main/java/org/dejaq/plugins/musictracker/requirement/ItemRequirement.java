@@ -14,23 +14,18 @@ import org.dejaq.plugins.musictracker.requirement.collections.ItemCollections;
 @AllArgsConstructor
 public class ItemRequirement
 {
-
-	private int itemId;
-	private String item;
+	@Builder.Default
+	private int itemId = -1;
 	private ItemCollections itemCollection;
 	@Builder.Default
 	private int quantity = 1;
 	private String label;
+	@Builder.Default
+	private boolean equipped = false;
 
 	public ItemRequirement(int itemId, int quantity)
 	{
 		this.itemId = itemId;
-		this.quantity = quantity;
-	}
-
-	public ItemRequirement(String item, int quantity)
-	{
-		this.item = item;
 		this.quantity = quantity;
 	}
 
@@ -50,14 +45,9 @@ public class ItemRequirement
 		return isItemCollection() ? itemCollection.getItems() : List.of();
 	}
 
-	public boolean isNameBased()
-	{
-		return item != null && itemId <= 0 && itemCollection == null;
-	}
-
 	public boolean hasItem()
 	{
-		return itemId > 0 || item != null || itemCollection != null;
+		return itemId > 0 || itemCollection != null;
 	}
 
 	public String getEffectiveName(ItemManager itemManager)
@@ -70,11 +60,6 @@ public class ItemRequirement
 		if (itemCollection != null)
 		{
 			return formatItemCollectionsName(itemCollection.name());
-		}
-
-		if (item != null && !item.isBlank())
-		{
-			return item;
 		}
 
 		if (itemManager != null && itemId > 0)
@@ -144,5 +129,4 @@ public class ItemRequirement
 
 		return formattedNameBuilder.toString();
 	}
-
 }

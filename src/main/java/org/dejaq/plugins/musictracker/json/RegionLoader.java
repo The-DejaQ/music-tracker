@@ -239,10 +239,6 @@ public class RegionLoader
 				convertedItemRequirement = new ItemRequirement(-1, itemRequirementJson.quantity);
 			}
 		}
-		else if (itemRequirementJson.item != null && !itemRequirementJson.item.isBlank())
-		{
-			convertedItemRequirement = new ItemRequirement(itemRequirementJson.item, itemRequirementJson.quantity);
-		}
 		else if (itemRequirementJson.itemId > 0)
 		{
 			convertedItemRequirement = new ItemRequirement(itemRequirementJson.itemId, itemRequirementJson.quantity);
@@ -256,6 +252,8 @@ public class RegionLoader
 		{
 			convertedItemRequirement.setLabel(itemRequirementJson.label);
 		}
+
+		convertedItemRequirement.setEquipped(itemRequirementJson.equipped);
 
 		return convertedItemRequirement;
 	}
@@ -335,6 +333,11 @@ public class RegionLoader
 		}
 
 		interactionTargetBuilder.searchRadius(interactionTargetJson.searchRadius != null ? interactionTargetJson.searchRadius : -1);
+
+		if (interactionTargetJson.data != null)
+		{
+			interactionTargetBuilder.data(interactionTargetJson.data);
+		}
 
 		return interactionTargetBuilder.build();
 	}

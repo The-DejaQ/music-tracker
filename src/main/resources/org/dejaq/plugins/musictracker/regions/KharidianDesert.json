@@ -1089,7 +1089,7 @@
     "unlockHint": "This track unlocks at the Fire Altar.",
     "routes": [
       {
-        "name": "Route 1",
+        "name": "Mysterious Ruins",
         "defaultRoute": true,
         "trackSteps": [
           {
@@ -1107,10 +1107,7 @@
                   "z": 0.0
                 },
                 "type": "GAME_OBJECT",
-                "hint": "Enter / Use talisman on",
-                "actions": [
-                  "enter"
-                ]
+                "hint": "Enter / Use talisman on"
               }
             ],
             "name": "Step 1"

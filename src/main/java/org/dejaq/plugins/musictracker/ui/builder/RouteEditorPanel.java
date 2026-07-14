@@ -1,9 +1,11 @@
 package org.dejaq.plugins.musictracker.ui.builder;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.Window;
 import java.util.ArrayList;
@@ -16,8 +18,10 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
+import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
 import javax.swing.JScrollPane;
 import javax.swing.JSpinner;
 import javax.swing.JTextArea;
@@ -27,6 +31,8 @@ import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import net.runelite.api.Skill;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.ui.ColorScheme;
@@ -46,6 +52,10 @@ public class RouteEditorPanel extends JPanel
 	private static final int ROW_HEIGHT_PIXELS = 28;
 	private static final int SESSION_POLL_INTERVAL_MILLIS = 500;
 
+	private static final int ITEM_TABLE_COLUMN_GAP_PIXELS = 12;
+	private static final int ITEM_TABLE_LEFT_INSET_PIXELS = 6;
+	private static final int ITEM_TABLE_RIGHT_INSET_PIXELS = 6;
+
 	private final Route routeToEdit;
 	private final MusicTrackerPlugin musicTrackerPlugin;
 
@@ -60,10 +70,10 @@ public class RouteEditorPanel extends JPanel
 	private final JTextArea notesTextArea = new JTextArea(3, 20);
 
 	private final JPanel itemsRequiredListPanel = new JPanel();
-	private final List<ItemRow> itemsRequiredRows = new ArrayList<>();
+	private final List<ItemRequirement> itemsRequired = new ArrayList<>();
 
 	private final JPanel itemsRecommendedListPanel = new JPanel();
-	private final List<ItemRow> itemsRecommendedRows = new ArrayList<>();
+	private final List<ItemRequirement> itemsRecommended = new ArrayList<>();
 
 	private final JPanel levelsRequiredListPanel = new JPanel();
 	private final List<LevelRow> levelsRequiredRows = new ArrayList<>();
@@ -157,13 +167,13 @@ public class RouteEditorPanel extends JPanel
 
 		contentPanel.add(buildBasicFieldsSection());
 		contentPanel.add(Box.createVerticalStrut(10));
-		contentPanel.add(buildRequirementSection("Items Required", itemsRequiredListPanel, () -> addItemRow(itemsRequiredListPanel, itemsRequiredRows, null)));
+		contentPanel.add(buildRequirementSection("Items Required", "Add Required Item", itemsRequiredListPanel, () -> onAddItemClicked(itemsRequiredListPanel, itemsRequired, "Required")));
 		contentPanel.add(Box.createVerticalStrut(10));
-		contentPanel.add(buildRequirementSection("Items Recommended", itemsRecommendedListPanel, () -> addItemRow(itemsRecommendedListPanel, itemsRecommendedRows, null)));
+		contentPanel.add(buildRequirementSection("Items Recommended", "Add Recommended Item", itemsRecommendedListPanel, () -> onAddItemClicked(itemsRecommendedListPanel, itemsRecommended, "Recommended")));
 		contentPanel.add(Box.createVerticalStrut(10));
-		contentPanel.add(buildRequirementSection("Levels Required", levelsRequiredListPanel, () -> addLevelRow(levelsRequiredListPanel, levelsRequiredRows, null)));
+		contentPanel.add(buildRequirementSection("Levels Required", "Add Required Level", levelsRequiredListPanel, () -> addLevelRow(levelsRequiredListPanel, levelsRequiredRows, null)));
 		contentPanel.add(Box.createVerticalStrut(10));
-		contentPanel.add(buildRequirementSection("Levels Recommended", levelsRecommendedListPanel, () -> addLevelRow(levelsRecommendedListPanel, levelsRecommendedRows, null)));
+		contentPanel.add(buildRequirementSection("Levels Recommended", "Add Recommended Level", levelsRecommendedListPanel, () -> addLevelRow(levelsRecommendedListPanel, levelsRecommendedRows, null)));
 		contentPanel.add(Box.createVerticalStrut(10));
 		contentPanel.add(buildStepsSection());
 
@@ -206,7 +216,7 @@ public class RouteEditorPanel extends JPanel
 		return rowPanel;
 	}
 
-	private JPanel buildRequirementSection(String headerText, JPanel listPanel, Runnable onAddRow)
+	private JPanel buildRequirementSection(String headerText, String addButtonLabel, JPanel listPanel, Runnable onAddRow)
 	{
 		JPanel sectionPanel = new JPanel();
 		sectionPanel.setLayout(new BoxLayout(sectionPanel, BoxLayout.Y_AXIS));
@@ -214,23 +224,35 @@ public class RouteEditorPanel extends JPanel
 		sectionPanel.setBorder(new LineBorder(ColorScheme.DARK_GRAY_COLOR, 1));
 
 		JPanel headerPanel = new JPanel(new BorderLayout());
+		headerPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+		headerPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, ROW_HEIGHT_PIXELS));
 		headerPanel.setBorder(new EmptyBorder(4, 6, 4, 6));
 
 		JLabel headerLabel = new JLabel(headerText);
-		headerLabel.setFont(headerLabel.getFont().deriveFont(Font.BOLD, 11f));
+		headerLabel.setFont(headerLabel.getFont().deriveFont(Font.BOLD, 14f));
 		headerPanel.add(headerLabel, BorderLayout.WEST);
 
-		JButton addButton = new JButton("Add");
-		addButton.setMargin(new Insets(1, 4, 1, 4));
+		listPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+
+		JButton addButton = new JButton(addButtonLabel);
+		addButton.setFont(addButton.getFont().deriveFont(Font.PLAIN, 14f));
+		addButton.setMargin(new Insets(3, 8, 3, 8));
 		addButton.addActionListener(actionEvent -> {
 			onAddRow.run();
 			requestRelayout();
 		});
-		headerPanel.add(addButton, BorderLayout.EAST);
+
+		JPanel addButtonRowPanel = new JPanel();
+		addButtonRowPanel.setLayout(new BoxLayout(addButtonRowPanel, BoxLayout.X_AXIS));
+		addButtonRowPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+		addButtonRowPanel.setBorder(new EmptyBorder(6, 0, 6, 6));
+		addButtonRowPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, addButton.getPreferredSize().height + 12));
+		addButtonRowPanel.add(addButton);
+		addButtonRowPanel.add(Box.createHorizontalGlue());
 
 		sectionPanel.add(headerPanel);
 		sectionPanel.add(listPanel);
-		sectionPanel.add(Box.createVerticalStrut(4));
+		sectionPanel.add(addButtonRowPanel);
 
 		return sectionPanel;
 	}
@@ -246,7 +268,7 @@ public class RouteEditorPanel extends JPanel
 		headerPanel.setBorder(new EmptyBorder(4, 6, 4, 6));
 
 		JLabel headerLabel = new JLabel("Steps");
-		headerLabel.setFont(headerLabel.getFont().deriveFont(Font.BOLD, 11f));
+		headerLabel.setFont(headerLabel.getFont().deriveFont(Font.BOLD, 14f));
 		headerPanel.add(headerLabel, BorderLayout.WEST);
 
 		JPanel headerButtonsPanel = new JPanel();
@@ -315,132 +337,430 @@ public class RouteEditorPanel extends JPanel
 		}
 	}
 
-	private static final class ItemRow
+	private void onAddItemClicked(JPanel itemsListPanel, List<ItemRequirement> itemRequirements, String sectionLabel)
 	{
-		private final JPanel rowPanel;
-		private final JTextField nameField;
-		private final JCheckBox itemCollectionCheckBox;
-		private final JSpinner quantitySpinner;
-		private final JTextField labelField;
+		ItemRequirementDialog itemRequirementDialog = new ItemRequirementDialog(SwingUtilities.getWindowAncestor(this), sectionLabel, null);
+		itemRequirementDialog.setVisible(true);
 
-		private ItemRow(JPanel rowPanel, JTextField nameField, JCheckBox itemCollectionCheckBox, JSpinner quantitySpinner, JTextField labelField)
+		if (!itemRequirementDialog.wasConfirmed())
 		{
-			this.rowPanel = rowPanel;
-			this.nameField = nameField;
-			this.itemCollectionCheckBox = itemCollectionCheckBox;
-			this.quantitySpinner = quantitySpinner;
-			this.labelField = labelField;
+			return;
 		}
+
+		itemRequirements.add(itemRequirementDialog.buildItemRequirement());
+		rebuildItemsListPanel(itemsListPanel, itemRequirements, sectionLabel);
 	}
 
-	private void addItemRow(JPanel listPanel, List<ItemRow> rowList, ItemRequirement existingItem)
+	private void onEditItemClicked(JPanel itemsListPanel, List<ItemRequirement> itemRequirements, ItemRequirement itemRequirementToEdit, String sectionLabel)
+	{
+		ItemRequirementDialog itemRequirementDialog = new ItemRequirementDialog(SwingUtilities.getWindowAncestor(this), sectionLabel, itemRequirementToEdit);
+		itemRequirementDialog.setVisible(true);
+
+		if (!itemRequirementDialog.wasConfirmed())
+		{
+			return;
+		}
+
+		int itemRequirementIndex = -1;
+		for (int candidateIndex = 0; candidateIndex < itemRequirements.size(); candidateIndex++)
+		{
+			if (itemRequirements.get(candidateIndex) == itemRequirementToEdit)
+			{
+				itemRequirementIndex = candidateIndex;
+				break;
+			}
+		}
+
+		if (itemRequirementIndex >= 0)
+		{
+			itemRequirements.set(itemRequirementIndex, itemRequirementDialog.buildItemRequirement());
+		}
+		rebuildItemsListPanel(itemsListPanel, itemRequirements, sectionLabel);
+	}
+
+	private void onDeleteItemClicked(JPanel itemsListPanel, List<ItemRequirement> itemRequirements, ItemRequirement itemRequirementToDelete, String sectionLabel)
+	{
+		int confirmation = JOptionPane.showConfirmDialog(this, "Delete this item requirement?",
+			"Delete Item", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+		if (confirmation != JOptionPane.YES_OPTION)
+		{
+			return;
+		}
+
+		itemRequirements.removeIf(candidateItemRequirement -> candidateItemRequirement == itemRequirementToDelete);
+		rebuildItemsListPanel(itemsListPanel, itemRequirements, sectionLabel);
+	}
+
+	private void rebuildItemsListPanel(JPanel itemsListPanel, List<ItemRequirement> itemRequirements, String sectionLabel)
+	{
+		itemsListPanel.removeAll();
+
+		if (!itemRequirements.isEmpty())
+		{
+			itemsListPanel.add(buildItemsHeaderRow());
+			for (ItemRequirement itemRequirement : itemRequirements)
+			{
+				itemsListPanel.add(buildItemSummaryRow(itemsListPanel, itemRequirements, itemRequirement, sectionLabel));
+			}
+		}
+
+		itemsListPanel.revalidate();
+		itemsListPanel.repaint();
+		requestRelayout();
+	}
+
+	private JPanel buildItemsHeaderRow()
+	{
+		JPanel headerRowPanel = new JPanel();
+		headerRowPanel.setLayout(new BoxLayout(headerRowPanel, BoxLayout.X_AXIS));
+		headerRowPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+		headerRowPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, ROW_HEIGHT_PIXELS));
+		headerRowPanel.setBorder(new EmptyBorder(0, ITEM_TABLE_LEFT_INSET_PIXELS, 0, ITEM_TABLE_RIGHT_INSET_PIXELS));
+
+		JPanel columnsPanel = new JPanel(new GridLayout(1, 4, ITEM_TABLE_COLUMN_GAP_PIXELS, 0));
+		columnsPanel.add(columnLabel("Item", true));
+		columnsPanel.add(columnLabel("Qty", true));
+		columnsPanel.add(columnLabel("Collection", true));
+		columnsPanel.add(columnLabel("Label", true));
+		headerRowPanel.add(columnsPanel);
+
+		headerRowPanel.add(Box.createHorizontalStrut(ITEM_TABLE_COLUMN_GAP_PIXELS));
+		headerRowPanel.add(Box.createRigidArea(new Dimension(actionColumnWidthPixels(), ROW_HEIGHT_PIXELS)));
+
+		return headerRowPanel;
+	}
+
+	private JPanel buildItemSummaryRow(JPanel itemsListPanel, List<ItemRequirement> itemRequirements, ItemRequirement itemRequirement, String sectionLabel)
 	{
 		JPanel rowPanel = new JPanel();
 		rowPanel.setLayout(new BoxLayout(rowPanel, BoxLayout.X_AXIS));
 		rowPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 		rowPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, ROW_HEIGHT_PIXELS));
+		rowPanel.setBorder(new EmptyBorder(0, ITEM_TABLE_LEFT_INSET_PIXELS, 0, ITEM_TABLE_RIGHT_INSET_PIXELS));
 
-		JTextField nameField = new JTextField();
-		nameField.setToolTipText("Item name or ItemCollection");
-
-		JCheckBox itemCollectionCheckBox = new JCheckBox("Item Collection");
-
-		JSpinner quantitySpinner = new JSpinner(new SpinnerNumberModel(1, 0, Integer.MAX_VALUE, 1));
-		quantitySpinner.setMaximumSize(new Dimension(64, ROW_HEIGHT_PIXELS));
-
-		JTextField labelField = new JTextField();
-		labelField.setToolTipText("Optional display label override");
-
-		if (existingItem != null)
+		String itemColumnText;
+		if (itemRequirement.isItemCollection())
 		{
-			if (existingItem.getItemCollection() != null)
-			{
-				itemCollectionCheckBox.setSelected(true);
-				nameField.setText(existingItem.getItemCollection().name());
-			}
-			else
-			{
-				nameField.setText(existingItem.getItem() != null ? existingItem.getItem() : "");
-			}
-			quantitySpinner.setValue(Math.max(0, existingItem.getQuantity()));
-			labelField.setText(existingItem.getLabel() != null ? existingItem.getLabel() : "");
+			itemColumnText = itemRequirement.getItemCollection() != null ? itemRequirement.getItemCollection().name() : "";
+		}
+		else
+		{
+			itemColumnText = itemRequirement.getItemId() > 0 ? String.valueOf(itemRequirement.getItemId()) : "";
 		}
 
-		JButton removeButton = new JButton("x");
-		removeButton.setMargin(new Insets(0, 6, 0, 6));
+		JPanel columnsPanel = new JPanel(new GridLayout(1, 4, ITEM_TABLE_COLUMN_GAP_PIXELS, 0));
+		columnsPanel.add(columnLabel(itemColumnText, false));
+		columnsPanel.add(columnLabel(String.valueOf(itemRequirement.getQuantity()), false));
+		columnsPanel.add(columnLabel(itemRequirement.isItemCollection() ? "\u2713" : "", false));
+		columnsPanel.add(columnLabel(itemRequirement.getLabel() != null ? itemRequirement.getLabel() : "", false));
+		rowPanel.add(columnsPanel);
 
-		rowPanel.add(new JLabel("Item: "));
-		rowPanel.add(nameField);
-		rowPanel.add(Box.createHorizontalStrut(4));
-		rowPanel.add(itemCollectionCheckBox);
-		rowPanel.add(Box.createHorizontalStrut(4));
-		rowPanel.add(new JLabel("Qty: "));
-		rowPanel.add(quantitySpinner);
-		rowPanel.add(Box.createHorizontalStrut(4));
-		rowPanel.add(new JLabel("Label: "));
-		rowPanel.add(labelField);
-		rowPanel.add(Box.createHorizontalStrut(4));
-		rowPanel.add(removeButton);
+		rowPanel.add(Box.createHorizontalStrut(ITEM_TABLE_COLUMN_GAP_PIXELS));
 
-		ItemRow itemRow = new ItemRow(rowPanel, nameField, itemCollectionCheckBox, quantitySpinner, labelField);
-		removeButton.addActionListener(actionEvent -> {
-			listPanel.remove(rowPanel);
-			rowList.remove(itemRow);
-			listPanel.revalidate();
-			listPanel.repaint();
-			requestRelayout();
-		});
+		JPanel actionButtonsPanel = new JPanel();
+		actionButtonsPanel.setLayout(new BoxLayout(actionButtonsPanel, BoxLayout.X_AXIS));
+		Dimension actionColumnSize = new Dimension(actionColumnWidthPixels(), ROW_HEIGHT_PIXELS);
+		actionButtonsPanel.setPreferredSize(actionColumnSize);
+		actionButtonsPanel.setMinimumSize(actionColumnSize);
+		actionButtonsPanel.setMaximumSize(actionColumnSize);
 
-		rowList.add(itemRow);
-		listPanel.add(rowPanel);
-		listPanel.revalidate();
-		listPanel.repaint();
+		JButton editButton = createSmallButton("Edit");
+		editButton.addActionListener(actionEvent -> onEditItemClicked(itemsListPanel, itemRequirements, itemRequirement, sectionLabel));
+		actionButtonsPanel.add(editButton);
+
+		actionButtonsPanel.add(Box.createHorizontalStrut(4));
+
+		JButton deleteButton = createSmallButton("Delete");
+		deleteButton.addActionListener(actionEvent -> onDeleteItemClicked(itemsListPanel, itemRequirements, itemRequirement, sectionLabel));
+		actionButtonsPanel.add(deleteButton);
+
+		rowPanel.add(actionButtonsPanel);
+
+		return rowPanel;
 	}
 
-	private List<ItemRequirement> readItemRows(List<ItemRow> rowList)
+	private int actionColumnWidthPixels()
 	{
-		List<ItemRequirement> itemRequirements = new ArrayList<>();
-		for (ItemRow itemRow : rowList)
+		JButton editSizingButton = createSmallButton("Edit");
+		JButton deleteSizingButton = createSmallButton("Delete");
+		return editSizingButton.getPreferredSize().width + 4 + deleteSizingButton.getPreferredSize().width;
+	}
+
+	private JLabel columnLabel(String text, boolean bold)
+	{
+		JLabel label = new JLabel(text != null ? text : "");
+		if (bold)
 		{
-			String itemName = itemRow.nameField.getText();
-			String label = itemRow.labelField.getText();
-			if ((itemName == null || itemName.isBlank()) && (label == null || label.isBlank()))
+			label.setFont(label.getFont().deriveFont(Font.BOLD));
+		}
+		return label;
+	}
+
+	private JButton createSmallButton(String text)
+	{
+		JButton button = new JButton(text);
+		button.setFont(button.getFont().deriveFont(10f));
+		button.setMargin(new Insets(2, 4, 2, 4));
+		return button;
+	}
+
+	private static final class ItemRequirementDialog extends JDialog
+	{
+		private static final int MAX_COLLECTION_SUGGESTION_RESULTS = 8;
+
+		private final JCheckBox itemCollectionCheckBox = new JCheckBox("Item Collection");
+		private final JPopupMenu collectionSuggestionsPopupMenu = new JPopupMenu();
+		private final JTextField itemIdentifierField = new JTextField();
+		private final JSpinner quantitySpinner = new JSpinner(new SpinnerNumberModel(1, 0, Integer.MAX_VALUE, 1));
+		private final JTextField labelField = new JTextField();
+		private final JLabel validationMessageLabel = new JLabel(" ");
+		private final JButton saveButton = new JButton("Save");
+
+		private boolean confirmed = false;
+
+		private ItemRequirementDialog(Window owner, String sectionLabel, ItemRequirement existingItem)
+		{
+			super(owner, (existingItem == null ? "Add " : "Edit ") + sectionLabel + " Item", ModalityType.APPLICATION_MODAL);
+
+			if (existingItem != null)
 			{
-				continue;
+				if (existingItem.isItemCollection())
+				{
+					itemCollectionCheckBox.setSelected(true);
+					itemIdentifierField.setText(existingItem.getItemCollection() != null ? existingItem.getItemCollection().name() : "");
+				}
+				else if (existingItem.getItemId() > 0)
+				{
+					itemIdentifierField.setText(String.valueOf(existingItem.getItemId()));
+				}
+				quantitySpinner.setValue(Math.max(0, existingItem.getQuantity()));
+				labelField.setText(existingItem.getLabel() != null ? existingItem.getLabel() : "");
 			}
-			int quantity = (Integer) itemRow.quantitySpinner.getValue();
+
+			JPanel formPanel = new JPanel(new GridLayout(0, 2, 6, 6));
+			formPanel.setBorder(new EmptyBorder(12, 12, 12, 12));
+			formPanel.add(new JLabel("Item Collection:"));
+			formPanel.add(itemCollectionCheckBox);
+			formPanel.add(new JLabel("Item:"));
+			formPanel.add(itemIdentifierField);
+			formPanel.add(new JLabel("Quantity:"));
+			formPanel.add(quantitySpinner);
+			formPanel.add(new JLabel("Label:"));
+			formPanel.add(labelField);
+
+			validationMessageLabel.setForeground(ColorScheme.PROGRESS_ERROR_COLOR);
+			validationMessageLabel.setBorder(new EmptyBorder(0, 12, 8, 12));
+
+			addLiveTextValidation(itemIdentifierField,
+				this::refreshValidationState,
+				() -> {
+					if (itemCollectionCheckBox.isSelected())
+					{
+						updateCollectionSuggestions();
+					}
+				});
+			addLiveTextValidation(labelField, this::refreshValidationState);
+
+			itemCollectionCheckBox.addActionListener(actionEvent -> {
+				refreshValidationState();
+				updateCollectionSuggestions();
+			});
+
+			saveButton.addActionListener(actionEvent -> {
+				confirmed = true;
+				setVisible(false);
+			});
+
+			JButton cancelButton = new JButton("Cancel");
+			cancelButton.addActionListener(actionEvent -> setVisible(false));
+
+			JPanel buttonPanel = new JPanel();
+			buttonPanel.add(saveButton);
+			buttonPanel.add(cancelButton);
+
+			JPanel southPanel = new JPanel();
+			southPanel.setLayout(new BoxLayout(southPanel, BoxLayout.Y_AXIS));
+			southPanel.add(validationMessageLabel);
+			southPanel.add(buttonPanel);
+
+			setLayout(new BorderLayout());
+			add(formPanel, BorderLayout.CENTER);
+			add(southPanel, BorderLayout.SOUTH);
+
+			refreshValidationState();
+
+			pack();
+			setLocationRelativeTo(owner);
+		}
+
+		private void addLiveTextValidation(JTextField textField, Runnable... actions)
+		{
+			textField.getDocument().addDocumentListener(new DocumentListener()
+			{
+				@Override
+				public void insertUpdate(DocumentEvent documentEvent)
+				{
+					for (Runnable action : actions)
+					{
+						action.run();
+					}
+				}
+
+				@Override
+				public void removeUpdate(DocumentEvent documentEvent)
+				{
+					for (Runnable action : actions)
+					{
+						action.run();
+					}
+				}
+
+				@Override
+				public void changedUpdate(DocumentEvent documentEvent)
+				{
+					for (Runnable action : actions)
+					{
+						action.run();
+					}
+				}
+			});
+		}
+
+		private void updateCollectionSuggestions()
+		{
+			collectionSuggestionsPopupMenu.setVisible(false);
+			collectionSuggestionsPopupMenu.removeAll();
+
+			if (!itemCollectionCheckBox.isSelected())
+			{
+				return;
+			}
+
+			String input = itemIdentifierField.getText() == null ? "" : itemIdentifierField.getText().trim().toLowerCase(Locale.ROOT);
+			if (input.isEmpty())
+			{
+				return;
+			}
+
+			for (ItemCollections itemCollection : ItemCollections.values())
+			{
+				if (itemCollection.name().equalsIgnoreCase(input))
+				{
+					return;
+				}
+			}
+
+			int suggestionCount = 0;
+			for (ItemCollections itemCollection : ItemCollections.values())
+			{
+				if (suggestionCount >= MAX_COLLECTION_SUGGESTION_RESULTS)
+				{
+					break;
+				}
+				if (!itemCollection.name().toLowerCase(Locale.ROOT).contains(input))
+				{
+					continue;
+				}
+
+				JMenuItem suggestionMenuItem = new JMenuItem(itemCollection.name());
+				suggestionMenuItem.addActionListener(actionEvent -> {
+					itemIdentifierField.setText(itemCollection.name());
+					collectionSuggestionsPopupMenu.setVisible(false);
+					itemIdentifierField.requestFocusInWindow();
+				});
+				collectionSuggestionsPopupMenu.add(suggestionMenuItem);
+				suggestionCount++;
+			}
+
+			if (suggestionCount > 0)
+			{
+				collectionSuggestionsPopupMenu.show(itemIdentifierField, 0, itemIdentifierField.getHeight());
+				itemIdentifierField.requestFocusInWindow();
+			}
+		}
+
+		private String computeValidationError()
+		{
+			String itemText = itemIdentifierField.getText() == null ? "" : itemIdentifierField.getText().trim();
+			String labelText = labelField.getText() == null ? "" : labelField.getText().trim();
+			boolean isItemCollection = itemCollectionCheckBox.isSelected();
+
+			if (itemText.isEmpty() && labelText.isEmpty())
+			{
+				return "You must provide an Item or a Label.";
+			}
+
+			if (isItemCollection && labelText.isEmpty())
+			{
+				return "A Label is required when Item Collection is checked.";
+			}
+
+			if (!itemText.isEmpty())
+			{
+				boolean isPurelyNumeric = itemText.matches("\\d+");
+				if (isItemCollection)
+				{
+					if (isPurelyNumeric)
+					{
+						return "Invalid Item Collection.";
+					}
+					try
+					{
+						ItemCollections.valueOf(itemText.toUpperCase(Locale.ROOT));
+					}
+					catch (IllegalArgumentException invalidItemCollectionException)
+					{
+						return "\"" + itemText + "\" is not a known Item Collection.";
+					}
+				}
+				else if (!isPurelyNumeric)
+				{
+					return "Item ID must be numeric (e.g. 4151).";
+				}
+			}
+
+			return null;
+		}
+
+		private void refreshValidationState()
+		{
+			String validationError = computeValidationError();
+			validationMessageLabel.setText(validationError != null ? validationError : " ");
+			saveButton.setEnabled(validationError == null);
+		}
+
+		private boolean wasConfirmed()
+		{
+			return confirmed;
+		}
+
+		private ItemRequirement buildItemRequirement()
+		{
+			String itemText = itemIdentifierField.getText() == null ? "" : itemIdentifierField.getText().trim();
+			String labelText = labelField.getText() == null ? "" : labelField.getText().trim();
+			int quantity = (Integer) quantitySpinner.getValue();
 
 			ItemRequirement itemRequirement;
-			if (itemName == null || itemName.isBlank())
+			if (itemCollectionCheckBox.isSelected() && !itemText.isEmpty())
+			{
+				itemRequirement = new ItemRequirement(ItemCollections.valueOf(itemText.toUpperCase(Locale.ROOT)), quantity);
+			}
+			else if (!itemText.isEmpty())
+			{
+				itemRequirement = new ItemRequirement(Integer.parseInt(itemText), quantity);
+			}
+			else
 			{
 				itemRequirement = new ItemRequirement(-1, quantity);
 			}
-			else if (itemRow.itemCollectionCheckBox.isSelected())
+
+			if (!labelText.isEmpty())
 			{
-				try
-				{
-					ItemCollections itemCollection = ItemCollections.valueOf(itemName.trim().toUpperCase(Locale.ROOT));
-					itemRequirement = new ItemRequirement(itemCollection, quantity);
-				}
-				catch (IllegalArgumentException invalidItemCollectionException)
-				{
-					JOptionPane.showMessageDialog(this, "\"" + itemName.trim() + "\" is not a known Item Collection.",
-						"Validation", JOptionPane.WARNING_MESSAGE);
-					continue;
-				}
-			}
-			else
-			{
-				itemRequirement = new ItemRequirement(itemName.trim(), quantity);
+				itemRequirement.setLabel(labelText);
 			}
 
-			if (label != null && !label.isBlank())
-			{
-				itemRequirement.setLabel(label.trim());
-			}
-			itemRequirements.add(itemRequirement);
+			return itemRequirement;
 		}
-		return itemRequirements;
 	}
 
 	private static final class LevelRow
@@ -799,18 +1119,15 @@ public class RouteEditorPanel extends JPanel
 
 		if (routeToEdit.getItems() != null)
 		{
-			for (ItemRequirement itemRequirement : routeToEdit.getItems())
-			{
-				addItemRow(itemsRequiredListPanel, itemsRequiredRows, itemRequirement);
-			}
+			itemsRequired.addAll(routeToEdit.getItems());
 		}
+		rebuildItemsListPanel(itemsRequiredListPanel, itemsRequired, "Required");
+
 		if (routeToEdit.getRecommendedItems() != null)
 		{
-			for (ItemRequirement itemRequirement : routeToEdit.getRecommendedItems())
-			{
-				addItemRow(itemsRecommendedListPanel, itemsRecommendedRows, itemRequirement);
-			}
+			itemsRecommended.addAll(routeToEdit.getRecommendedItems());
 		}
+		rebuildItemsListPanel(itemsRecommendedListPanel, itemsRecommended, "Recommended");
 		if (routeToEdit.getLevels() != null)
 		{
 			for (LevelRequirement levelRequirement : routeToEdit.getLevels())
@@ -864,8 +1181,8 @@ public class RouteEditorPanel extends JPanel
 		String notesText = notesTextArea.getText();
 		routeToEdit.setNotes(notesText != null && !notesText.isBlank() ? notesText.trim() : null);
 
-		routeToEdit.setItems(readItemRows(itemsRequiredRows));
-		routeToEdit.setRecommendedItems(readItemRows(itemsRecommendedRows));
+		routeToEdit.setItems(new ArrayList<>(itemsRequired));
+		routeToEdit.setRecommendedItems(new ArrayList<>(itemsRecommended));
 		routeToEdit.setLevels(readLevelRows(levelsRequiredRows));
 		routeToEdit.setRecommendedLevels(readLevelRows(levelsRecommendedRows));
 

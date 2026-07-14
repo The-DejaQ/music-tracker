@@ -28,8 +28,8 @@ public class AutoProgressionService
 	private MusicTrackManager musicTrackManager;
 	@Inject
 	private TrackingStateService trackingStateService;
-	@Inject
-	private StageProgressionEngine stageProgressionEngine;
+
+	private StageProgressionEngine stageProgressionEngine = new DefaultStageProgressionEngine();
 
 	public Optional<MusicTrack> findNextAutoProgressableTrackInRegion(String regionName)
 	{

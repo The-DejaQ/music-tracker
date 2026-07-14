@@ -29,7 +29,7 @@ public class TrackNavigator
 	private ClientThread clientThread;
 
 	private final MusicTrackerPlugin musicTrackerPlugin;
-	private final StageProgressionEngine stageProgressionEngine;
+	private final StageProgressionEngineSelector stageProgressionEngineSelector;
 	@Getter
 	private final NavigationCoordinator navigationCoordinator;
 
@@ -45,10 +45,10 @@ public class TrackNavigator
 	private WorldPoint lastPlayerLocation;
 
 	@Inject
-	public TrackNavigator(MusicTrackerPlugin musicTrackerPlugin, StageProgressionEngine stageProgressionEngine, NavigationCoordinator navigationCoordinator)
+	public TrackNavigator(MusicTrackerPlugin musicTrackerPlugin, StageProgressionEngineSelector stageProgressionEngineSelector, NavigationCoordinator navigationCoordinator)
 	{
 		this.musicTrackerPlugin = musicTrackerPlugin;
-		this.stageProgressionEngine = stageProgressionEngine;
+		this.stageProgressionEngineSelector = stageProgressionEngineSelector;
 		this.navigationCoordinator = navigationCoordinator;
 	}
 
@@ -300,7 +300,12 @@ public class TrackNavigator
 				return;
 			}
 
-			if (stageProgressionEngine.hasCompletedStep(getCurrentStep(), currentPlayerLocation))
+			StageProgressionEngine stageProgressionEngine = stageProgressionEngineSelector.getActiveEngine();
+
+			ProgressionContext progressionContext = new ProgressionContext(
+				getCurrentSteps(), currentStage, lastPlayerLocation, currentPlayerLocation);
+
+			if (stageProgressionEngine.hasCompletedStep(progressionContext))
 			{
 				advanceStage();
 				lastPlayerLocation = currentPlayerLocation;
@@ -341,7 +346,7 @@ public class TrackNavigator
 
 	private void resyncToClosestStage(WorldPoint currentPlayerLocation)
 	{
-		int closestStageIndex = stageProgressionEngine.findClosestStageIndex(getCurrentSteps(), currentPlayerLocation);
+		int closestStageIndex = stageProgressionEngineSelector.getActiveEngine().findClosestStageIndex(getCurrentSteps(), currentPlayerLocation);
 		if (closestStageIndex != currentStage)
 		{
 			currentStage = closestStageIndex;
@@ -351,6 +356,8 @@ public class TrackNavigator
 
 	private void resyncAfterPlaneOrRegionChange(WorldPoint currentPlayerLocation, boolean hasChangedPlane, boolean hasChangedRegion)
 	{
+		StageProgressionEngine stageProgressionEngine = stageProgressionEngineSelector.getActiveEngine();
+
 		Optional<Integer> matchingUpcomingStage = stageProgressionEngine.findMatchingUpcomingStage(
 			getCurrentSteps(), currentStage, currentPlayerLocation, hasChangedPlane, hasChangedRegion);
 
@@ -388,7 +395,7 @@ public class TrackNavigator
 		{
 			return;
 		}
-		int closestStageIndex = stageProgressionEngine.findClosestStageIndex(getCurrentSteps(), currentPlayerLocation);
+		int closestStageIndex = stageProgressionEngineSelector.getActiveEngine().findClosestStageIndex(getCurrentSteps(), currentPlayerLocation);
 		if (closestStageIndex < currentStage - 1)
 		{
 			currentStage = closestStageIndex;

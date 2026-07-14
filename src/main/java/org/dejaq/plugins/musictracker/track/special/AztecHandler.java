@@ -28,6 +28,16 @@ public class AztecHandler implements SpecialTrackHandler
 	private int cachedTick = -1;
 	private List<MusicTrackEntityPoint> cachedHighlights;
 
+	private static final List<String> ROUTE_NAMES = List.of(
+		"Route 1"
+	);
+
+	@Override
+	public List<String> getHandledRouteNames()
+	{
+		return ROUTE_NAMES;
+	}
+
 	@Override
 	public boolean hasVolatileDynamicHighlights(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)
 	{

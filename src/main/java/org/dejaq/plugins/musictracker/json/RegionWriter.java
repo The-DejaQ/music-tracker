@@ -96,6 +96,7 @@ public class RegionWriter
 		interactionTargetJson.hint = interactionTarget.getHint();
 		interactionTargetJson.actions = interactionTarget.getActions() != null ? new ArrayList<>(interactionTarget.getActions()) : new ArrayList<>();
 		interactionTargetJson.searchRadius = interactionTarget.hasCustomSearchRadius() ? interactionTarget.getSearchRadius() : null;
+		interactionTargetJson.data = interactionTarget.getData() != null ? new java.util.LinkedHashMap<>(interactionTarget.getData()) : null;
 		return interactionTargetJson;
 	}
 
@@ -103,10 +104,10 @@ public class RegionWriter
 	{
 		ItemRequirementJson itemRequirementJson = new ItemRequirementJson();
 		itemRequirementJson.itemId = itemRequirement.getItemId();
-		itemRequirementJson.item = itemRequirement.getItem();
 		itemRequirementJson.itemCollection = itemRequirement.getItemCollection() != null ? itemRequirement.getItemCollection().name() : null;
 		itemRequirementJson.quantity = itemRequirement.getQuantity();
 		itemRequirementJson.label = itemRequirement.getLabel();
+		itemRequirementJson.equipped = itemRequirement.isEquipped();
 		return itemRequirementJson;
 	}
 

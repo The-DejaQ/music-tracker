@@ -1,5 +1,19 @@
 ## Changelog
 
+### [1.0] - 2026-07-14
+
+#### Plugin
+- Removed name-based ItemRequirement as reflection for ItemID is not allowed.
+- Added handled route names to all special tracks so we don't override every route on a Music Track.
+- More UI changes: Collapsible filter section, font changes
+- Fixed tracked title color not updating upon clicking to track.
+- Added a few more Progression systems, highly experimental.
+
+#### Tracks
+- Added proper route for track **Attack 5**
+- The plugin will now highlight the closest Quetzal to the player instead of setting default to Civitas illa Fortis.
+- Fixed **Varlamore** tracks, they now show correct highlighting for Quetzals.
+
 ### [1.0] - 2026-07-11
 
 #### Plugin
