@@ -24,6 +24,11 @@ public interface SpecialTrackHandler
 		return List.of();
 	}
 
+	default List<TrackStep> contributeTrackSteps(MusicTrack musicTrack, Route route, List<TrackStep> existingTrackSteps)
+	{
+		return existingTrackSteps;
+	}
+
 	default DynamicRequirement<String> getDynamicQuest(MusicTrack musicTrack, Route route, MusicTrackerPlugin musicTrackerPlugin)
 	{
 		return null;

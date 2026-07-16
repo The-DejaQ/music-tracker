@@ -190,27 +190,6 @@
       {
         "name": "Mysterious Ruins",
         "defaultRoute": true,
-        "trackSteps": [
-          {
-            "name": "Ruins",
-            "destination": {
-              "x": 3059,
-              "y": 3590,
-              "z": 0
-            },
-            "interactions": [
-              {
-                "entityId": -1,
-                "entity": "Mysterious ruins",
-                "type": "GAME_OBJECT",
-                "hint": "Enter / Use talisman on",
-                "actions": [
-                  "enter"
-                ]
-              }
-            ]
-          }
-        ],
         "items": [
           {
             "itemCollection": "CHAOS_ALTAR",

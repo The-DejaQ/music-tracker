@@ -478,34 +478,7 @@
       {
         "name": "Mysterious Ruins",
         "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 3053.0,
-              "y": 3443.0,
-              "z": 0.0
-            },
-            "interaction": {
-              "entity": "Mysterious ruins",
-              "location": {
-                "x": 3052.0,
-                "y": 3444.0,
-                "z": 0.0
-              },
-              "type": "GAME_OBJECT",
-              "hint": "Enter / Use talisman on"
-            },
-            "name": "Step 1"
-          }
-        ],
-        "notes": "Can also be accessed through the Abyss",
-        "items": [
-          {
-            "itemCollection": "BODY_ALTAR",
-            "quantity": 1.0,
-            "label": "Body Altar Access"
-          }
-        ]
+        "notes": "Also accessible through the Abyss"
       },
       {
         "name": "Abyss",
@@ -933,27 +906,7 @@
       {
         "name": "Mysterious Ruins",
         "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 2980.0,
-              "y": 3513.0,
-              "z": 0.0
-            },
-            "interaction": {
-              "entity": "Mysterious ruins",
-              "location": {
-                "x": 2981.0,
-                "y": 3513.0,
-                "z": 0.0
-              },
-              "type": "GAME_OBJECT",
-              "hint": "Enter / Use talisman on"
-            },
-            "name": "Step 1"
-          }
-        ],
-        "notes": "Can be accessed through the Abyss",
+        "notes": "Also accessible through the Abyss",
         "items": [
           {
             "itemCollection": "MIND_ALTAR",
@@ -1230,7 +1183,7 @@
     "unlockHint": "This track unlocks at the Law Altar.",
     "routes": [
       {
-        "name": "Mysterious Ruins",
+        "name": "Entrana",
         "defaultRoute": true,
         "trackSteps": [
           {
@@ -1261,7 +1214,7 @@
                 "hint": "Deposit all combat gear"
               }
             ],
-            "name": "Step 1"
+            "name": "Travel"
           },
           {
             "destination": {
@@ -1276,13 +1229,12 @@
                 "y": 3380.0,
                 "z": 0.0
               },
-              "type": "GAME_OBJECT",
-              "hint": "Enter / Use talisman on"
+              "type": "GAME_OBJECT"
             },
-            "name": "Step 2"
+            "name": "Ruins"
           }
         ],
-        "notes": "You visit Entrana, bank combat items.\nCan also be accessed through the Abyss",
+        "notes": "Also accessible through the Abyss\nYou visit Entrana, bank combat items\nIf Monk doesn't highlight, attempt to Take boat",
         "items": [
           {
             "itemCollection": "LAW_ALTAR",
@@ -1475,27 +1427,7 @@
       {
         "name": "Mysterious Ruins",
         "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 2985.0,
-              "y": 3290.0,
-              "z": 0.0
-            },
-            "interaction": {
-              "entity": "Mysterious ruins",
-              "location": {
-                "x": 2984.0,
-                "y": 3291.0,
-                "z": 0.0
-              },
-              "type": "GAME_OBJECT",
-              "hint": "Enter / Use talisman on"
-            },
-            "name": "Step 1"
-          }
-        ],
-        "notes": "Can be accessed through the Abyss",
+        "notes": "Also accessible through the Abyss",
         "items": [
           {
             "itemCollection": "AIR_ALTAR",

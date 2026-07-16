@@ -97,6 +97,16 @@ public class PlayerState
 		return inventoryItemQuantities.getOrDefault(itemId, 0) + equipmentItemQuantities.getOrDefault(itemId, 0);
 	}
 
+	public Set<Integer> getInventoryItemIds()
+	{
+		return Set.copyOf(inventoryItemQuantities.keySet());
+	}
+
+	public Set<Integer> getEquipmentItemIds()
+	{
+		return Set.copyOf(equipmentItemQuantities.keySet());
+	}
+
 	public boolean hasItemQuantity(int itemId, int requiredQuantity)
 	{
 		int totalQuantity = inventoryItemQuantities.getOrDefault(itemId, 0) + equipmentItemQuantities.getOrDefault(itemId, 0);

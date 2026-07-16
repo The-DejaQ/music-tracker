@@ -807,32 +807,7 @@
       {
         "name": "Mysterious Ruins",
         "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 2869.0,
-              "y": 3017.0,
-              "z": 0.0
-            },
-            "interactions": [
-              {
-                "entity": "Mysterious ruins",
-                "location": {
-                  "x": 2868.0,
-                  "y": 3018.0,
-                  "z": 0.0
-                },
-                "type": "GAME_OBJECT",
-                "hint": "Enter / Use talisman on",
-                "actions": [
-                  "enter"
-                ]
-              }
-            ],
-            "name": "Step 1"
-          }
-        ],
-        "notes": "Can also be accessed through the Abyss",
+        "notes": "Also accessible through the Abyss",
         "items": [
           {
             "itemCollection": "NATURE_ALTAR",

@@ -66,6 +66,8 @@ public class TrackNavigator
 
 		SpecialTrackRegistry.resetAll();
 
+		applySpecialTrackStepContributions();
+
 		populateAllFutureHighlights();
 
 		if (musicTrack != null && musicTrack.getUnlockType() == UnlockType.NORMAL) // we keep setting the route for non-pathed tracks
@@ -90,6 +92,8 @@ public class TrackNavigator
 		this.lastPlayerLocation = null;
 
 		SpecialTrackRegistry.resetAll();
+
+		applySpecialTrackStepContributions();
 
 		populateAllFutureHighlights();
 		navigationCoordinator.onNavigationTargetChanged(currentTrack, getCurrentTargetPoint());
@@ -119,6 +123,27 @@ public class TrackNavigator
 		navigationCoordinator.clearWorldMapPoints();
 		clearEntityHighlights();
 		SpecialTrackRegistry.resetAll();
+	}
+
+	private void applySpecialTrackStepContributions()
+	{
+		if (currentTrack == null || currentRoute == null)
+		{
+			return;
+		}
+
+		SpecialTrackHandler specialTrackHandler = SpecialTrackRegistry.getHandler(currentTrack, currentRoute);
+
+		List<TrackStep> existingTrackSteps = currentRoute.getTrackSteps() != null
+			? currentRoute.getTrackSteps()
+			: List.of();
+
+		List<TrackStep> contributedTrackSteps = specialTrackHandler.contributeTrackSteps(currentTrack, currentRoute, existingTrackSteps);
+
+		if (contributedTrackSteps != null && contributedTrackSteps != existingTrackSteps)
+		{
+			currentRoute.setTrackSteps(contributedTrackSteps);
+		}
 	}
 
 	public boolean hasActiveTrackStep()
@@ -222,7 +247,6 @@ public class TrackNavigator
 			{
 				continue;
 			}
-
 			if (stageIndex == currentStage)
 			{
 				List<MusicTrackEntityPoint> dynamicHighlights = specialTrackHandler.getDynamicEntityHighlights(

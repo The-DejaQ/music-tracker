@@ -20,6 +20,7 @@ import org.dejaq.plugins.musictracker.track.special.MorUlRekHandler;
 import org.dejaq.plugins.musictracker.track.special.MysteriousRuinsHandler;
 import org.dejaq.plugins.musictracker.track.special.QuetzalTrackHandler;
 import org.dejaq.plugins.musictracker.track.special.RaceAgainstClockHandler;
+import org.dejaq.plugins.musictracker.track.special.RighteousnessHandler;
 import org.dejaq.plugins.musictracker.track.special.SpecialEntity;
 import org.dejaq.plugins.musictracker.track.special.SpecialTrackHandler;
 import org.dejaq.plugins.musictracker.track.special.StratosphereHandler;
@@ -75,6 +76,20 @@ public class SpecialTrackRegistry
 		register(MysteriousRuinsHandler.SOUL_ALTAR_TRACK, abyssTrackHandler);
 
 		register(MysteriousRuinsHandler.COSMIC_ALTAR_TRACK, new StratosphereHandler());
+		register(MysteriousRuinsHandler.LAW_ALTAR_TRACK, new RighteousnessHandler());
+
+		// shared for the overworld "Mysterious Ruins" altar entrances (Cosmic is handled by
+		// StratosphereHandler via the Zanaris route, Law is handled by RighteousnessHandler
+		// via the Entrana route, and Soul/Death/Blood don't use this dynamic tiara/talisman check)
+		SpecialTrackHandler mysteriousRuinsHandler = new MysteriousRuinsHandler();
+		register(MysteriousRuinsHandler.AIR_ALTAR_TRACK, mysteriousRuinsHandler);
+		register(MysteriousRuinsHandler.BODY_ALTAR_TRACK, mysteriousRuinsHandler);
+		register(MysteriousRuinsHandler.CHAOS_ALTAR_TRACK, mysteriousRuinsHandler);
+		register(MysteriousRuinsHandler.EARTH_ALTAR_TRACK, mysteriousRuinsHandler);
+		register(MysteriousRuinsHandler.FIRE_ALTAR_TRACK, mysteriousRuinsHandler);
+		register(MysteriousRuinsHandler.MIND_ALTAR_TRACK, mysteriousRuinsHandler);
+		register(MysteriousRuinsHandler.NATURE_ALTAR_TRACK, mysteriousRuinsHandler);
+		register(MysteriousRuinsHandler.WATER_ALTAR_TRACK, mysteriousRuinsHandler);
 	}
 
 	public static void register(String trackTitle, SpecialTrackHandler specialTrackHandler)

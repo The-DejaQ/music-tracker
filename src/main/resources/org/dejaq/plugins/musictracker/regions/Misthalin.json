@@ -524,32 +524,7 @@
       {
         "name": "Mysterious Ruins",
         "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 3306.0,
-              "y": 3472.0,
-              "z": 0.0
-            },
-            "interactions": [
-              {
-                "entity": "Mysterious ruins",
-                "location": {
-                  "x": 3305.0,
-                  "y": 3473.0,
-                  "z": 0.0
-                },
-                "type": "GAME_OBJECT",
-                "hint": "Enter / Use talisman on",
-                "actions": [
-                  "enter"
-                ]
-              }
-            ],
-            "name": "Step 1"
-          }
-        ],
-        "notes": "Can also be accessed through the Abyss",
+        "notes": "Also accessible through the Abyss",
         "items": [
           {
             "itemCollection": "EARTH_ALTAR",
@@ -1714,32 +1689,7 @@
       {
         "name": "Mysterious Ruins",
         "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 3183.0,
-              "y": 3165.0,
-              "z": 0.0
-            },
-            "interactions": [
-              {
-                "entity": "Mysterious ruins",
-                "location": {
-                  "x": 3184.0,
-                  "y": 3164.0,
-                  "z": 0.0
-                },
-                "type": "GAME_OBJECT",
-                "hint": "Enter / Use talisman on",
-                "actions": [
-                  "enter"
-                ]
-              }
-            ],
-            "name": "Step 1"
-          }
-        ],
-        "notes": "Can also be accessed through the Abyss",
+        "notes": "Also accessible through the Abyss",
         "items": [
           {
             "itemCollection": "WATER_ALTAR",

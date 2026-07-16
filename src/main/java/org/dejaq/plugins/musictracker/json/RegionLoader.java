@@ -18,6 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Skill;
 import net.runelite.api.coords.WorldPoint;
 import org.dejaq.plugins.musictracker.MusicTrack;
+import org.dejaq.plugins.musictracker.track.Region;
 import org.dejaq.plugins.musictracker.track.UnlockType;
 import org.dejaq.plugins.musictracker.quest.Quest;
 import org.dejaq.plugins.musictracker.requirement.ItemRequirement;
@@ -33,16 +34,15 @@ public class RegionLoader
 {
 	private static final String REGIONS_RESOURCE_DIRECTORY = "/org/dejaq/plugins/musictracker/regions";
 
-	private static final String[] KNOWN_REGION_NAMES = {
-		"Misthalin", "Asgarnia", "Kandarin", "Karamja", "Morytania",
-		"KharidianDesert", "FremennikProvince", "Tirannwn", "Wilderness",
-		"GreatKourend", "Varlamore", "KebosLowlands", "Other", "Unknown",
-		"Quests", "Holiday", "Sailing"
-	};
-
 	public static String[] getKnownRegionNames()
 	{
-		return KNOWN_REGION_NAMES.clone();
+		String[] knownRegionDisplayNames = new String[Region.values().length];
+		Region[] regions = Region.values();
+		for (int regionIndex = 0; regionIndex < regions.length; regionIndex++)
+		{
+			knownRegionDisplayNames[regionIndex] = regions[regionIndex].getDisplayName();
+		}
+		return knownRegionDisplayNames;
 	}
 
 	public static List<MusicTrack> loadRegion(Gson gson, String regionName)
@@ -351,12 +351,12 @@ public class RegionLoader
 	{
 		Map<String, List<MusicTrack>> regionNameToTracks = new LinkedHashMap<>();
 
-		for (String regionName : KNOWN_REGION_NAMES)
+		for (Region region : Region.values())
 		{
-			List<MusicTrack> tracksForRegion = loadRegion(gson, regionName);
+			List<MusicTrack> tracksForRegion = loadRegion(gson, region.getResourceFileBaseName());
 			if (!tracksForRegion.isEmpty())
 			{
-				regionNameToTracks.put(regionName, tracksForRegion);
+				regionNameToTracks.put(region.getDisplayName(), tracksForRegion);
 			}
 		}
 		return regionNameToTracks;

@@ -1,6 +1,17 @@
 ## Changelog
 
-### [1.0] - 2026-07-14
+###### 2026-07-15
+
+#### Tracks
+- Added **MysteriousRuinsHandler**.
+- - Distinguishes between having a talisman or having a tiara and prompts corresponding highlight hint.
+- - Fixed some tracks not highlighting the `Mysterious ruins` object.
+- Added **RighteousnessHandler** which handles the music track at the Law Altar, with combat gear checks.
+
+#### Plugin
+- Fixed **RegionLoader** incorrectly displaying region names without spaces
+
+###### 2026-07-14
 
 #### Plugin
 - Removed name-based ItemRequirement as reflection for ItemID is not allowed.
@@ -14,7 +25,7 @@
 - The plugin will now highlight the closest Quetzal to the player instead of setting default to Civitas illa Fortis.
 - Fixed **Varlamore** tracks, they now show correct highlighting for Quetzals.
 
-### [1.0] - 2026-07-11
+###### 2026-07-11
 
 #### Plugin
 - Fixed refreshing throwing an error and fail to reload track/region data.

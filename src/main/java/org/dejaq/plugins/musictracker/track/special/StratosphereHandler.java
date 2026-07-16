@@ -10,6 +10,8 @@ import net.runelite.api.Skill;
 import net.runelite.api.coords.WorldPoint;
 import org.dejaq.plugins.musictracker.MusicTrack;
 import org.dejaq.plugins.musictracker.MusicTrackerPlugin;
+import org.dejaq.plugins.musictracker.requirement.ItemRequirement;
+import org.dejaq.plugins.musictracker.requirement.collections.ItemCollections;
 import org.dejaq.plugins.musictracker.track.InteractionTarget;
 import org.dejaq.plugins.musictracker.track.InteractionType;
 import org.dejaq.plugins.musictracker.track.MusicTrackEntityPoint;
@@ -35,6 +37,10 @@ public class StratosphereHandler implements SpecialTrackHandler
 
 	private static final String JUTTING_WALL_ENTITY_NAME = "Jutting wall";
 	private static final String MYSTERIOUS_RUINS_ENTITY_NAME = "Mysterious ruins";
+
+	private static final String HINT_ENTER = "Enter";
+	private static final String HINT_WEAR_THEN_ENTER = "Wear tiara then enter";
+	private static final String HINT_USE_TALISMAN = "Use talisman on ruins";
 
 	@Getter
 	@RequiredArgsConstructor
@@ -96,7 +102,7 @@ public class StratosphereHandler implements SpecialTrackHandler
 		int currentAgilityLevel = getCurrentAgilityLevel(musicTrackerPlugin);
 		StratospherePhase currentPhase = resolveCurrentPhase(playerLocation, currentAgilityLevel);
 
-		List<MusicTrackEntityPoint> computedHighlights = buildHighlightForPhase(currentPhase);
+		List<MusicTrackEntityPoint> computedHighlights = buildHighlightForPhase(currentPhase, musicTrackerPlugin);
 
 		musicTrackerPlugin.getTrackNavigator().getNavigationCoordinator().requestShortestPathTo(currentPhase.getLocation());
 
@@ -142,16 +148,43 @@ public class StratosphereHandler implements SpecialTrackHandler
 		return musicTrackerPlugin.getClient().getRealSkillLevel(Skill.AGILITY);
 	}
 
-	private List<MusicTrackEntityPoint> buildHighlightForPhase(StratospherePhase phase)
+	private List<MusicTrackEntityPoint> buildHighlightForPhase(StratospherePhase phase, MusicTrackerPlugin musicTrackerPlugin)
 	{
 		InteractionTarget target = InteractionTarget.builder()
 			.entityId(-1)
 			.entity(phase.getEntityName())
 			.location(phase.getLocation())
 			.type(InteractionType.GAME_OBJECT)
-			.hint(phase.getHintText())
+			.hint(resolveHintText(phase, musicTrackerPlugin))
 			.build();
 
 		return List.of(MusicTrackEntityPoint.from(phase.getLocation(), target));
+	}
+
+	private String resolveHintText(StratospherePhase phase, MusicTrackerPlugin musicTrackerPlugin)
+	{
+		if (phase != StratospherePhase.MYSTERIOUS_RUINS)
+		{
+			return phase.getHintText();
+		}
+
+		ItemRequirement wearableRequirement = new ItemRequirement(ItemCollections.COSMIC_ALTAR_WEARABLE, 1);
+		if (musicTrackerPlugin.playerHasItemEquipped(wearableRequirement))
+		{
+			return HINT_ENTER;
+		}
+
+		if (musicTrackerPlugin.playerHasItem(wearableRequirement))
+		{
+			return HINT_WEAR_THEN_ENTER;
+		}
+
+		ItemRequirement talismanRequirement = new ItemRequirement(ItemCollections.COSMIC_ALTAR, 1);
+		if (musicTrackerPlugin.playerHasItem(talismanRequirement))
+		{
+			return HINT_USE_TALISMAN;
+		}
+
+		return phase.getHintText();
 	}
 }

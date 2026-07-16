@@ -47,6 +47,16 @@ public class TrackStep
 		return interactions != null && !interactions.isEmpty();
 	}
 
+	public boolean hasEntity(String entityName)
+	{
+		if (entityName == null || !hasInteractions())
+		{
+			return false;
+		}
+		return interactions.stream()
+			.anyMatch(interactionTarget -> interactionTarget != null && entityName.equalsIgnoreCase(interactionTarget.getEntity()));
+	}
+
 	public boolean hasAdvancementInteraction()
 	{
 		if (!hasInteractions())
