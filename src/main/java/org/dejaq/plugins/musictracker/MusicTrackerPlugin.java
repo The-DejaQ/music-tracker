@@ -275,9 +275,27 @@ public class MusicTrackerPlugin extends Plugin
 		}
 
 		String unlockRestrictionMessage = musicTrack.getUnlockRestrictionMessage(trackNavigator.getCurrentRoute());
+
 		if (unlockRestrictionMessage != null)
 		{
+			// TODO temp workaround some tracks still have quest defined only inside routes instead of top-level
+			if (musicTrack.getUnlockQuest() == null && musicTrack.getUnlockType() == UnlockType.QUEST)
+			{
+				Route route = null;
+				if (musicTrack.getDefaultRoute() != null)
+				{
+					route = musicTrack.getDefaultRoute();
+				}
+
+				if (route != null && route.getQuest() != null)
+				{
+					unlockRestrictionMessage = "This track can only be unlocked during the quest "
+						+ route.getQuest().getName() + ".";
+				}
+			}
+
 			sendGameMessage(unlockRestrictionMessage);
+
 			if (musicTrack.getUnlockType() == UnlockType.AUTOMATIC)
 			{
 				return;
@@ -337,6 +355,7 @@ public class MusicTrackerPlugin extends Plugin
 			trackingStateService.setTrackingActive(false);
 			trackNavigator.clear();
 			updateTrackingButtonState(false);
+			navigationCoordinator.clearShortestPath();
 			navigationCoordinator.clearWorldMapPoints();
 			refreshTrackList();
 			return;
@@ -602,6 +621,7 @@ public class MusicTrackerPlugin extends Plugin
 					SwingUtilities.invokeLater(() -> {
 						musicTrackPanel.refreshState();
 						musicTrackPanel.getTrackerContentPanel().refreshVisibleTracks();
+						musicTrackPanel.getSettingsRequiredPanel().update(this);
 					});
 				}
 			});

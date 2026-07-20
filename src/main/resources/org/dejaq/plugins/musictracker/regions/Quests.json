@@ -824,6 +824,32 @@
     "unlockHint": "This track unlocks during the A Kingdom Divided quest."
   },
   {
+    "title": "Corridors of Power",
+    "region": "Quests",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Corridors_of_Power",
+    "unlockType": "QUEST",
+    "quest": "ROYAL_TROUBLE",
+    "location": "Miscellania and Etceteria Dungeon",
+    "unlockHint": "This track unlocks during the Royal Trouble quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2592.0,
+              "y": 10272.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "title": "The Consortium",
     "region": "Quests",
     "members": true,
@@ -846,6 +872,32 @@
           }
         ],
         "quest": "THE_GIANT_DWARF"
+      }
+    ]
+  },
+  {
+    "title": "Contest",
+    "region": "Asgarnia",
+    "members": true,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Contest",
+    "unlockType": "QUEST",
+    "quest": "TROLL_STRONGHOLD",
+    "location": "Troll arena and eastern edge of Death Plateau",
+    "unlockHint": "This track unlocks in southern Troll Country.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2889.0,
+              "y": 3680.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
       }
     ]
   },
@@ -2562,6 +2614,32 @@
     "unlockHint": "This track unlocks during The Fremennik Isles quest."
   },
   {
+    "title": "Knightmare",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/Knightmare",
+    "unlockType": "QUEST",
+    "quest": "BLACK_KNIGHTS_FORTRESS",
+    "location": "Black Knights' Fortress",
+    "unlockHint": "This track unlocks in the Black Knights' Fortress.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 3020.0,
+              "y": 3512.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "title": "Lair of the Basilisk",
     "region": "Quests",
     "members": true,
@@ -3022,6 +3100,32 @@
     "region": "Quests",
     "location": "Wizards' Tower",
     "unlockHint": "This track unlocks during the Recipe for Disaster quest."
+  },
+  {
+    "title": "The Maze",
+    "region": "Asgarnia",
+    "members": false,
+    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Maze",
+    "unlockType": "QUEST",
+    "quest": "DRAGON_SLAYER_I",
+    "location": "Melzar's Maze",
+    "unlockHint": "This track unlocks during the Dragon Slayer I quest.",
+    "routes": [
+      {
+        "name": "Route 1",
+        "defaultRoute": true,
+        "trackSteps": [
+          {
+            "destination": {
+              "x": 2931.0,
+              "y": 3247.0,
+              "z": 0.0
+            },
+            "name": "Step 1"
+          }
+        ]
+      }
+    ]
   },
   {
     "title": "A Matter of Intrigue",

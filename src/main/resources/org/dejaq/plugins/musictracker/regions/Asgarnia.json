@@ -227,32 +227,6 @@
     ]
   },
   {
-    "title": "Contest",
-    "region": "Asgarnia",
-    "members": true,
-    "wikiUrl": "https://oldschool.runescape.wiki/w/Contest",
-    "unlockType": "QUEST",
-    "location": "Troll arena and eastern edge of Death Plateau",
-    "unlockHint": "This track unlocks in southern Troll Country.",
-    "routes": [
-      {
-        "name": "Route 1",
-        "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 2889.0,
-              "y": 3680.0,
-              "z": 0.0
-            },
-            "name": "Step 1"
-          }
-        ],
-        "quest": "TROLL_STRONGHOLD"
-      }
-    ]
-  },
-  {
     "title": "Courage",
     "region": "Asgarnia",
     "members": true,
@@ -580,32 +554,6 @@
     ]
   },
   {
-    "title": "Knightmare",
-    "region": "Asgarnia",
-    "members": false,
-    "wikiUrl": "https://oldschool.runescape.wiki/w/Knightmare",
-    "unlockType": "QUEST",
-    "location": "Black Knights' Fortress",
-    "unlockHint": "This track unlocks in the Black Knights' Fortress.",
-    "routes": [
-      {
-        "name": "Route 1",
-        "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 3020.0,
-              "y": 3512.0,
-              "z": 0.0
-            },
-            "name": "Step 1"
-          }
-        ],
-        "quest": "BLACK_KNIGHTS_FORTRESS"
-      }
-    ]
-  },
-  {
     "title": "Lightness",
     "region": "Asgarnia",
     "members": false,
@@ -842,32 +790,6 @@
             "level": 80.0
           }
         ]
-      }
-    ]
-  },
-  {
-    "title": "The Maze",
-    "region": "Asgarnia",
-    "members": false,
-    "wikiUrl": "https://oldschool.runescape.wiki/w/The_Maze",
-    "unlockType": "QUEST",
-    "location": "Melzar's Maze",
-    "unlockHint": "This track unlocks during the Dragon Slayer I quest.",
-    "routes": [
-      {
-        "name": "Route 1",
-        "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 2931.0,
-              "y": 3247.0,
-              "z": 0.0
-            },
-            "name": "Step 1"
-          }
-        ],
-        "quest": "DRAGON_SLAYER_I"
       }
     ]
   },

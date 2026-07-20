@@ -1,8 +1,8 @@
 # Music Tracker TODO
 
-**Last Updated:** 2026-07-10
+**Last Updated:** 2026-07-20
 
-- Equipped item ItemRequirement check
+- Equipped item `ItemRequirement` check
 
 ### ISSUES
 
@@ -12,4 +12,11 @@
 
 #### Routes
 
-#### Other
+### Other
+- **Data Cleanup**
+    - Move all quest-locked tracks into `Quests.json`
+    - Remove `quest` field from inside routes (should only exist at top-level for `unlockType: QUEST`)
+
+- **Code Fixes**
+    - Implement proper fallback / validation for tracks with `unlockType: QUEST` but missing `quest` key
+    - Ensure `getUnlockRestrictionMessage()` always works correctly even with malformed data

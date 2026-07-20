@@ -2,6 +2,7 @@ package org.dejaq.plugins.musictracker.navigation;
 
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,6 +26,7 @@ public class NavigationCoordinator
 {
 	private static final String SHORTEST_PATH_PLUGIN_NAMESPACE = "shortestpath";
 	private static final String SHORTEST_PATH_MESSAGE_NAME = "path";
+	private static final String SHORTEST_PATH_CLEAR_MESSAGE_NAME = "clear";
 	private static final String SHORTEST_PATH_TARGET_DATA_KEY = "target";
 	private static final String WORLD_MAP_POINT_ICON_RESOURCE_NAME = "icon_cape.png";
 
@@ -104,6 +106,18 @@ public class NavigationCoordinator
 		activeWorldMapPoints.add(worldMapPoint);
 
 		log.debug("Added world map point at {} for track {}", worldMapPointLocation, musicTrack.getTitle());
+	}
+
+	// todo we don't really want this here - will fix when back from vacation
+	public void clearShortestPath()
+	{
+		clientThread.invokeLater(() -> {
+			eventBus.post(new PluginMessage(
+				SHORTEST_PATH_PLUGIN_NAMESPACE,
+				SHORTEST_PATH_CLEAR_MESSAGE_NAME,
+				Collections.emptyMap()
+			));
+		});
 	}
 
 	public void clearWorldMapPoints()

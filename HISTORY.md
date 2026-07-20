@@ -1,5 +1,18 @@
 ## Development History
 
+###### 2026-07-20
+
+#### Navigation
+- Added `clearShortestPath()` to properly clear Shortest Path plugin when stopping tracking or when no path exists
+
+#### Tracks
+- Fixed quest requirement display for tracks where `quest` was stored inside routes instead of top-level
+- Added fallback logic in `selectTrack` to pull quest from current route when top-level field is missing
+
+#### Plugin
+- Fixed `SettingsRequiredPanel` not updating correctly on first login / plugin install
+- Ensured settings panel refresh happens reliably during `GameState.LOGGED_IN`
+
 ###### 2026-07-15
 
 #### Tracks

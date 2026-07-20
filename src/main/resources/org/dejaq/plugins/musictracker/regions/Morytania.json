@@ -1394,7 +1394,8 @@
         ]
       }
     ],
-    "unlockType": "QUEST"
+    "unlockType": "QUEST",
+    "quest": "SINS_OF_THE_FATHER"
   },
   {
     "title": "The Terrible Tower",

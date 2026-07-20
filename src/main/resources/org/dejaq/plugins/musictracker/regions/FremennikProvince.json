@@ -58,32 +58,6 @@
     ]
   },
   {
-    "title": "Corridors of Power",
-    "region": "Fremennik Province",
-    "members": true,
-    "wikiUrl": "https://oldschool.runescape.wiki/w/Corridors_of_Power",
-    "unlockType": "QUEST",
-    "location": "Miscellania and Etceteria Dungeon",
-    "unlockHint": "This track unlocks during the Royal Trouble quest.",
-    "routes": [
-      {
-        "name": "Route 1",
-        "defaultRoute": true,
-        "trackSteps": [
-          {
-            "destination": {
-              "x": 2592.0,
-              "y": 10272.0,
-              "z": 0.0
-            },
-            "name": "Step 1"
-          }
-        ],
-        "quest": "ROYAL_TROUBLE"
-      }
-    ]
-  },
-  {
     "title": "Dagannoth Dawn",
     "region": "Fremennik Province",
     "members": true,
@@ -584,7 +558,8 @@
         ]
       }
     ],
-    "unlockType": "QUEST"
+    "unlockType": "QUEST",
+    "quest": "DREAM_MENTOR"
   },
   {
     "title": "Etceteria",
@@ -655,11 +630,11 @@
             },
             "name": "Step 1"
           }
-        ],
-        "quest": "THE_FREMENNIK_EXILES"
+        ]
       }
     ],
-    "unlockType": "QUEST"
+    "unlockType": "QUEST",
+    "quest": "THE_FREMENNIK_EXILES"
   },
   {
     "title": "Have a Blast",
@@ -932,6 +907,7 @@
     "members": true,
     "wikiUrl": "https://oldschool.runescape.wiki/w/Island_of_the_Trolls",
     "unlockType": "QUEST",
+    "quest": "THE_FREMENNIK_ISLES",
     "location": "North of Neitiznot and Jatizso",
     "unlockHint": "This track unlocks north of Neitiznot and Jatizso.",
     "routes": [
@@ -947,8 +923,7 @@
             },
             "name": "Step 1"
           }
-        ],
-        "quest": "THE_FREMENNIK_ISLES"
+        ]
       }
     ]
   },
@@ -958,6 +933,7 @@
     "members": true,
     "wikiUrl": "https://oldschool.runescape.wiki/w/Isle_of_Everywhere",
     "unlockType": "QUEST",
+    "quest": "LUNAR_DIPLOMACY",
     "location": "East coast of Lunar Isle",
     "unlockHint": "This track unlocks on Lunar Isle.",
     "routes": [
@@ -973,8 +949,7 @@
             },
             "name": "Step 1"
           }
-        ],
-        "quest": "LUNAR_DIPLOMACY"
+        ]
       }
     ]
   },
@@ -1077,6 +1052,7 @@
     "members": true,
     "wikiUrl": "https://oldschool.runescape.wiki/w/The_Lunar_Isle",
     "unlockType": "QUEST",
+    "quest": "LUNAR_DIPLOMACY",
     "location": "Lunar Isle",
     "unlockHint": "This track unlocks on Lunar Isle.",
     "routes": [
@@ -1092,8 +1068,7 @@
             },
             "name": "Step 1"
           }
-        ],
-        "quest": "LUNAR_DIPLOMACY"
+        ]
       }
     ]
   },
@@ -1308,6 +1283,7 @@
     "members": true,
     "wikiUrl": "https://oldschool.runescape.wiki/w/Norse_Code",
     "unlockType": "QUEST",
+    "quest": "THE_FREMENNIK_ISLES",
     "location": "Jatizso",
     "unlockHint": "This track unlocks on Jatizso.",
     "routes": [
@@ -1323,8 +1299,7 @@
             },
             "name": "Step 1"
           }
-        ],
-        "quest": "THE_FREMENNIK_ISLES"
+        ]
       }
     ]
   },

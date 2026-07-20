@@ -1,5 +1,17 @@
 ## Changelog
 
+###### 2026-07-20
+
+#### Navigation
+- The plugin now properly clears the Shortest Path when you stop tracking or select a track with no path
+
+#### Tracks
+- Fixed several quest tracks not showing the correct quest requirement message
+- Improved reliability of quest detection
+
+#### Plugin
+- Fixed Settings panel not updating properly the first time you log in after installing the plugin
+
 ###### 2026-07-15
 
 #### Tracks
